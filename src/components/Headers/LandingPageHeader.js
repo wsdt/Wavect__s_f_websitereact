@@ -16,56 +16,55 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react'
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
-import ModalVideo from "../Modals/ModalVideo";
+import { Button, Container } from 'reactstrap'
+import ModalVideo from '../Modals/ModalVideo'
 
 // core components
 
 function LandingPageHeader() {
-  let pageHeader = React.createRef();
+    let pageHeader = React.createRef()
 
-  React.useEffect(() => {
-    if (window.innerWidth < 991) {
-      const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
-      };
-      window.addEventListener("scroll", updateScroll);
-      return function cleanup() {
-        window.removeEventListener("scroll", updateScroll);
-      };
-    }
-  });
+    React.useEffect(() => {
+        if (window.innerWidth < 991) {
+            const updateScroll = () => {
+                let windowScrollTop = window.pageYOffset / 3
+                pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'
+            }
+            window.addEventListener('scroll', updateScroll)
+            return function cleanup() {
+                window.removeEventListener('scroll', updateScroll)
+            }
+        }
+    })
 
-  return (
-    <>
-      <div
-        style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
-        }}
-        className="page-header"
-        data-parallax={true}
-        ref={pageHeader}
-      >
-        <div className="filter" />
-        <Container>
-          <div className="motto text-center">
-            <h1>Become a hero</h1>
-            <h3>Solve challenges, do sth. good and win relevant prizes & money.</h3>
-            <br />
-            <ModalVideo/>
-            <Button className="btn-round" color="neutral" type="button" outline>
-              Become a Tester
-            </Button>
-          </div>
-        </Container>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <div
+                style={{
+                    backgroundImage: 'url(' + require('assets/img/daniel-olahh.jpg') + ')',
+                }}
+                className="page-header"
+                data-parallax={true}
+                ref={pageHeader}
+            >
+                <div className="filter" />
+                <Container>
+                    <div className="motto text-center">
+                        <h1>Become a hero</h1>
+                        <h3>Solve challenges, do sth. good and win relevant prizes & money.</h3>
+                        <br />
+                        <ModalVideo />
+                        <Button className="btn-round" color="neutral" type="button" outline>
+                            Become a Tester
+                        </Button>
+                    </div>
+                </Container>
+            </div>
+        </>
+    )
 }
 
-export default LandingPageHeader;
+export default LandingPageHeader

@@ -1,4 +1,4 @@
-.page-header{
+.page-header {
     background-color: $header-background;
     background-position: center center;
     background-size: cover;
@@ -9,15 +9,15 @@
     width: 100%;
     z-index: 1;
 
-    &.page-header-small{
+    &.page-header-small {
         min-height: 65vh !important;
         max-height: 700px;
     }
-    &.page-header-xs{
+    &.page-header-xs {
         min-height: 40vh !important;
     }
 
-    .page-header-image{
+    .page-header-image {
         position: absolute;
         background-size: cover;
         background-position: center center;
@@ -26,87 +26,85 @@
         z-index: -1;
     }
 
+    .content-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffffff;
+        width: 100%;
+    }
 
-    .content-center{
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       z-index: 3;
-       -ms-transform: translate(-50%,-50%);
-       -webkit-transform: translate(-50%,-50%);
-       transform: translate(-50%,-50%);
-       text-align: center;
-       color: #FFFFFF;
-       width: 100%;
-   }
-
-    .motto{
-        color: #FFFFFF;
+    .motto {
+        color: #ffffff;
         text-align: center;
         z-index: 2;
         position: relative;
     }
 
-    .filter{
-      &::after{
-        background-color: rgba(0, 0, 0, 0.5);
-        content: "";
-        display: block;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 2;
-      }
-      &.filter-primary::after{
-          background-color: rgba($filter-primary, 0.5);
-      }
-      &.filter-info::after{
-          background-color: rgba($filter-info, 0.5);
-      }
-      &.filter-success::after{
-          background-color: rgba($filter-success, 0.5);
-      }
-      &.filter-warning::after{
-          background-color: rgba($filter-warning, 0.5);
-      }
-      &.filter-danger::after{
-          background-color: rgba($filter-danger, 0.5);
-      }
+    .filter {
+        &::after {
+            background-color: rgba(0, 0, 0, 0.5);
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        &.filter-primary::after {
+            background-color: rgba($filter-primary, 0.5);
+        }
+        &.filter-info::after {
+            background-color: rgba($filter-info, 0.5);
+        }
+        &.filter-success::after {
+            background-color: rgba($filter-success, 0.5);
+        }
+        &.filter-warning::after {
+            background-color: rgba($filter-warning, 0.5);
+        }
+        &.filter-danger::after {
+            background-color: rgba($filter-danger, 0.5);
+        }
     }
 
-
-    .container{
+    .container {
         color: $white-color;
         position: relative;
         z-index: 3;
     }
-    .description{
+    .description {
         color: $white-color;
     }
 }
-.header-video{
-    &.state-play{
-        .filter::after{
+.header-video {
+    &.state-play {
+        .filter::after {
             opacity: 0;
         }
-        .video-text{
-            opacity: 0;
-        }
-
-        .btn{
+        .video-text {
             opacity: 0;
         }
 
-        &:hover{
-            .btn{
+        .btn {
+            opacity: 0;
+        }
+
+        &:hover {
+            .btn {
                 opacity: 1;
             }
         }
     }
 }
-video{
+video {
     position: absolute;
     width: 102%;
 }
@@ -114,47 +112,46 @@ video{
 // For IE Browser
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-
-    .page-header{
-        .content-center{
+    .page-header {
+        .content-center {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -75%);
         }
-        .presentation-title{
+        .presentation-title {
             background: none !important;
         }
     }
 
-    .subscribe-line{
-        .form-group{
-            .form-control{
+    .subscribe-line {
+        .form-group {
+            .form-control {
                 line-height: 50px !important;
                 height: 50px !important;
             }
         }
     }
 
-    .nav-tabs .nav-item .active.nav-link::before{
+    .nav-tabs .nav-item .active.nav-link::before {
         bottom: 2px !important;
     }
 
-    .nav-tabs .nav-item .active.nav-link::after{
+    .nav-tabs .nav-item .active.nav-link::after {
         bottom: 1px !important;
     }
-    .nav-stacked .active.nav-link::before{
+    .nav-stacked .active.nav-link::before {
         right: 0 !important;
         bottom: 7px !important;
     }
-    .nav-stacked .active.nav-link::after{
+    .nav-stacked .active.nav-link::after {
         right: -2px !important;
         bottom: 0 !important;
         top: 13px !important;
     }
-    .buy-product{
-        .page-carousel{
-            .carousel-inner{
+    .buy-product {
+        .page-carousel {
+            .carousel-inner {
                 max-height: 570px !important;
             }
         }

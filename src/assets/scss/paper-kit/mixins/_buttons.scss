@@ -16,14 +16,14 @@
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active,
     &:not(:disabled):not(.disabled).active:focus,
-    .show > &.dropdown-toggle{
+    .show > &.dropdown-toggle {
         background-color: $btn-states-color;
         color: $white-color;
         border-color: $btn-states-color;
         box-shadow: none;
     }
 
-    .caret{
+    .caret {
         border-top-color: $white-color;
     }
 
@@ -31,15 +31,15 @@
     &:disabled,
     &[disabled],
     fieldset[disabled] & {
-      &,
-      &:hover,
-      &:focus,
-      &.focus,
-      &:active,
-      &.active {
-        background-color: $btn-states-color;
-        border-color: $btn-states-color;
-      }
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: $btn-states-color;
+            border-color: $btn-states-color;
+        }
     }
 
     &.btn-link {
@@ -50,22 +50,22 @@
         &:active,
         &.active,
         &:focus:active,
-        .open > &.dropdown-toggle{
+        .open > &.dropdown-toggle {
             background-color: $transparent-bg !important;
             color: $btn-states-color !important;
         }
 
-        .caret{
+        .caret {
             border-top-color: $btn-color;
         }
     }
 
-    .caret{
-      border-top-color: $white-color;
+    .caret {
+        border-top-color: $white-color;
     }
 }
 
-@mixin btn-outline-styles($btn-color, $btn-states-color){
+@mixin btn-outline-styles($btn-color, $btn-states-color) {
     border-color: $btn-color;
     color: $btn-color;
     @include opacity(1);
@@ -78,15 +78,15 @@
     &:active:hover,
     &.active:focus,
     .show > &.dropdown-toggle {
-      background-color: $btn-color !important;
-      color: $fill-font-color;
-      border-color: $btn-color !important;
-      .caret{
-          border-top-color: $fill-font-color;
-      }
+        background-color: $btn-color !important;
+        color: $fill-font-color;
+        border-color: $btn-color !important;
+        .caret {
+            border-top-color: $fill-font-color;
+        }
     }
 
-    .caret{
+    .caret {
         border-top-color: $white-color;
     }
 
@@ -94,24 +94,23 @@
     &:disabled,
     &[disabled],
     fieldset[disabled] & {
-      &,
-      &:hover,
-      &:focus,
-      &.focus,
-      &:active,
-      &.active {
-        background-color: $transparent-bg;
-        border-color: $btn-color;
-      }
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: $transparent-bg;
+            border-color: $btn-color;
+        }
     }
 }
 
-@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height){
-   font-size: $font-size;
-   padding: $padding-vertical $padding-horizontal;
+@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height) {
+    font-size: $font-size;
+    padding: $padding-vertical $padding-horizontal;
 
-   &.btn-simple{
-       padding: $padding-vertical + 2 $padding-horizontal;
-   }
-
+    &.btn-simple {
+        padding: $padding-vertical + 2 $padding-horizontal;
+    }
 }

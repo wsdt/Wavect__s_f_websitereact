@@ -1,10 +1,10 @@
-@mixin alert-style($background-color, $color){
+@mixin alert-style($background-color, $color) {
     background-color: $background-color;
     color: $color;
-    .close{
+    .close {
         color: $color;
         opacity: 0.7;
-        &:hover{
+        &:hover {
             opacity: 1;
         }
     }
