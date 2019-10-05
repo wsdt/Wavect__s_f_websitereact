@@ -63,5 +63,10 @@
         "tslint-consistent-codestyle": "^1.16.0",
         "tslint-eslint-rules": "^5.4.0",
         "tslint-react": "^4.1.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn start prettier"
+        }
     }
 }
