@@ -25,11 +25,6 @@ import {
     CardBody,
     CardFooter,
     CardTitle,
-    Form,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
     Container,
     Row,
     Col,
@@ -153,7 +148,7 @@ function LandingPage() {
                                 <Card className="card-profile card-plain">
                                     <div className="card-avatar">
                                         <a href="#" onClick={e => e.preventDefault()}>
-                                            <img alt="..." src={require('assets/img/faces/clem-onojeghuo-3.jpg')} />
+                                            <img alt="..." src={require('assets/img/team/christof_jori.jpg')} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -193,7 +188,7 @@ function LandingPage() {
                                 <Card className="card-profile card-plain">
                                     <div className="card-avatar">
                                         <a href="#" onClick={e => e.preventDefault()}>
-                                            <img alt="..." src={require('assets/img/faces/joe-gardner-2.jpg')} />
+                                            <img alt="..." src={require('assets/img/team/mariella_galneder.jpg')} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -241,7 +236,7 @@ function LandingPage() {
                                 <Card className="card-profile card-plain">
                                     <div className="card-avatar">
                                         <a href="#" onClick={e => e.preventDefault()}>
-                                            <img alt="..." src={require('assets/img/faces/erik-lucatero-2.jpg')} />
+                                            <img alt="..." src={require('assets/img/team/reza_shokri.jpg')} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -276,7 +271,7 @@ function LandingPage() {
                                 <Card className="card-profile card-plain">
                                     <div className="card-avatar">
                                         <a href="#" onClick={e => e.preventDefault()}>
-                                            <img alt="..." src={require('assets/img/faces/erik-lucatero-2.jpg')} />
+                                            <img alt="..." src={require('assets/img/team/daniel_gosterxeier.jpg')} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -320,7 +315,7 @@ function LandingPage() {
                                 <Card className="card-profile card-plain">
                                     <div className="card-avatar">
                                         <a href="#" onClick={e => e.preventDefault()}>
-                                            <img alt="..." src={require('assets/img/faces/erik-lucatero-2.jpg')} />
+                                            <img alt="..." src={require('assets/img/team/kevin_riedl.jpg')} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -366,9 +361,10 @@ function LandingPage() {
                 <div className="section landing-section">
                     <Container>
                         <Row>
-                            <Col className="ml-auto mr-auto" md="8">
+                            <Col className="ml-auto mr-auto" md="8" style={{textAlign:"center"}}>
                                 <h2 className="text-center">Keep in touch?</h2>
-                                <Form className="contact-form">
+
+                                {/*<Form className="contact-form">
                                     <Row>
                                         <Col md="6">
                                             <label>Name</label>
@@ -402,7 +398,9 @@ function LandingPage() {
                                             </Button>
                                         </Col>
                                     </Row>
-                                </Form>
+                                </Form>*/}
+                                <br /><p>Contact us via <a href="mailto:office@wavect.io">E-Mail 'office@wavect.io'</a></p>
+
                             </Col>
                         </Row>
                     </Container>

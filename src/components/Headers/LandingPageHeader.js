@@ -19,7 +19,7 @@
 import React from 'react'
 
 // reactstrap components
-import { Button, Container } from 'reactstrap'
+import {Button, Container} from 'reactstrap'
 import ModalVideo from '../Modals/ModalVideo'
 
 // core components
@@ -43,25 +43,40 @@ function LandingPageHeader() {
     return (
         <>
             <div
-                style={{
-                    backgroundImage: 'url(' + require('assets/img/daniel-olahh.jpg') + ')',
-                }}
-                className="page-header"
+                className="page-header section-dark"
                 data-parallax={true}
                 ref={pageHeader}
-            >
-                <div className="filter" />
-                <Container>
-                    <div className="motto text-center">
-                        <h1>Become a hero</h1>
-                        <h3>Solve challenges, do sth. good and win relevant prizes & money.</h3>
-                        <br />
-                        <ModalVideo />
-                        <Button className="btn-round" color="neutral" type="button" outline>
-                            Become a Tester
-                        </Button>
-                    </div>
-                </Container>
+                style={{
+                    backgroundImage: 'url(' + require('assets/img/antoine-barres.jpg') + ')',
+                }}>
+
+                <div className="filter"/>
+                <div className="content-center">
+                    <Container>
+                        <div className="title-brand">
+                            <h1 className="presentation-title">Become a hero</h1>
+                            <div className="fog-low">
+                                <img alt="..." src={require('assets/img/fog-low.png')}/>
+                            </div>
+                            <div className="fog-low right">
+                                <img alt="..." src={require('assets/img/fog-low.png')}/>
+                            </div>
+                        </div>
+                        <h2 className="presentation-subtitle text-center">Solve challenges, do sth. good and win
+                            relevant prizes & money.</h2>
+                        {/*<br/>
+                        <div className="motto text-center">
+                            <ModalVideo/>
+                        </div>
+                        <Button className="btn-round" color="neutral" type="button" outline>Become a Tester</Button>*/}
+                    </Container>
+                </div>
+                <div
+                    className="moving-clouds"
+                    style={{
+                        backgroundImage: 'url(' + require('assets/img/clouds.png') + ')',
+                    }}
+                />
             </div>
         </>
     )
