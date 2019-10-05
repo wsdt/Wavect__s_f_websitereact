@@ -16,7 +16,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from 'react'
+import React, {useState} from 'react'
 
 // reactstrap components
 import {Container} from 'reactstrap'
@@ -24,23 +24,51 @@ import * as imgAntoineBarres from '../../assets/img/antoine-barres.jpg'
 import * as imgClouds from '../../assets/img/clouds.png'
 import imgFoglow from '../../assets/img/fog-low.png'
 
-function LandingPageHeader() {
-    const pageHeader = React.createRef<HTMLDivElement>()
+const getWindowDimensions = () => {
+    const {innerWidth: width, innerHeight: height} = window
+    return {width, height}
+}
+
+const useWindowDimensions = (pageHeader:React.RefObject<HTMLDivElement>) => {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
 
     // @ts-ignore
     React.useEffect(() => {
+        const handleResize = () => {
+            setWindowDimensions(getWindowDimensions())
+        }
+        window.addEventListener('resize', handleResize)
+
         if (window.innerWidth < 991) {
             const updateScroll = () => {
                 const windowScrollTop = window.pageYOffset / 3
                 // @ts-ignore
                 pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'
             }
+
+
             window.addEventListener('scroll', updateScroll)
+
             return function cleanup() {
                 window.removeEventListener('scroll', updateScroll)
+                window.removeEventListener('resize', handleResize)
             }
         }
+        return function cleanup() {
+            window.removeEventListener('resize', handleResize)
+        }
     })
+    return windowDimensions
+}
+
+function LandingPageHeader() {
+    const pageHeader = React.createRef<HTMLDivElement>()
+    const {width} = useWindowDimensions(pageHeader)
+
+    let subtitleFontSize:number = 0.015*width
+    if (subtitleFontSize < 14) {
+        subtitleFontSize = 14
+    }
 
     return (
         <>
@@ -56,7 +84,7 @@ function LandingPageHeader() {
                 <div className='content-center'>
                     <Container>
                         <div className='title-brand'>
-                            <h1 className='presentation-title'>Become a hero</h1>
+                            <h1 className='presentation-title' style={{fontSize:0.075*width}}>Become a hero</h1>
                             <div className='fog-low'>
                                 <img alt='fog low' src={imgFoglow}/>
                             </div>
@@ -64,7 +92,7 @@ function LandingPageHeader() {
                                 <img alt='fog low' src={imgFoglow}/>
                             </div>
                         </div>
-                        <h2 className='presentation-subtitle text-center'>Solve challenges, do sth. good and win
+                        <h2 className='presentation-subtitle text-center' style={{fontSize:subtitleFontSize}}>Solve challenges, do sth. good and win
                             relevant prizes & money.</h2>
                         {/*<br/>
                         <div className="motto text-center">
