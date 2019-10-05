@@ -131,7 +131,7 @@ paper-kit-react
             ├── SectionButtons.js
             ├── SectionCarousel.js
             ├── SectionDark.js
-            ├── SectionDownload.js
+            ├── SectionDownload.tsx
             ├── SectionExamples.js
             ├── SectionJavaScript.js
             ├── SectionLogin.js

@@ -19,120 +19,120 @@
 import React from 'react'
 
 // reactstrap components
-import { NavItem, NavLink, Nav, Pagination, PaginationItem, PaginationLink, Progress, TabContent, TabPane, Container, Row, Col } from 'reactstrap'
+import { Col, Container, Nav, NavItem, NavLink, Pagination, PaginationItem, PaginationLink, Progress, Row, TabContent, TabPane } from 'reactstrap'
 
 // core components
 
 function SectionProgress() {
     const [activeTab, setActiveTab] = React.useState('1')
-    const toggle = tab => {
+    const toggle = (tab:any) => {
         if (activeTab !== tab) {
             setActiveTab(tab)
         }
     }
     return (
         <>
-            <div className="section">
+            <div className='section'>
                 <Container>
                     <Row>
-                        <Col md="6">
-                            <div className="title">
+                        <Col md='6'>
+                            <div className='title'>
                                 <h3>Progress Bar</h3>
                                 <br />
                             </div>
-                            <Progress max="100" value="25" barClassName="progress-bar-success" />
+                            <Progress max='100' value='25' barClassName='progress-bar-success' />
                             <br />
-                            <Progress max="100" value="50" barClassName="progress-bar-info" />
+                            <Progress max='100' value='50' barClassName='progress-bar-info' />
                             <br />
-                            <Progress max="100" value="100" barClassName="progress-bar-danger" />
+                            <Progress max='100' value='100' barClassName='progress-bar-danger' />
                             <br />
-                            <Progress multi>
-                                <Progress bar max="100" value="15" />
-                                <Progress bar barClassName="progress-bar-success" max="100" value="30" />
-                                <Progress bar barClassName="progress-bar-warning" max="100" value="20" />
+                            <Progress multi={true}>
+                                <Progress bar={true} max='100' value='15' />
+                                <Progress bar={true} barClassName='progress-bar-success' max='100' value='30' />
+                                <Progress bar={true} barClassName='progress-bar-warning' max='100' value='20' />
                             </Progress>
                         </Col>
-                        <Col md="6">
-                            <div className="title">
+                        <Col md='6'>
+                            <div className='title'>
                                 <h3>Pagination</h3>
                                 <br />
                             </div>
-                            <nav aria-label="Page navigation example">
+                            <nav aria-label='Page navigation example'>
                                 <Pagination>
                                     <PaginationItem>
-                                        <PaginationLink aria-label="Previous" href="#pablo" onClick={e => e.preventDefault()}>
-                                            <i aria-hidden={true} className="fa fa-angle-left" />
-                                            <span className="sr-only">Previous</span>
+                                        <PaginationLink aria-label='Previous' href='#pablo' onClick={e => e.preventDefault()}>
+                                            <i aria-hidden={true} className='fa fa-angle-left' />
+                                            <span className='sr-only'>Previous</span>
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             1
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             2
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             3
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             4
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             5
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink aria-label="Next" href="#pablo" onClick={e => e.preventDefault()}>
-                                            <i aria-hidden={true} className="fa fa-angle-right" />
-                                            <span className="sr-only">Next</span>
+                                        <PaginationLink aria-label='Next' href='#pablo' onClick={e => e.preventDefault()}>
+                                            <i aria-hidden={true} className='fa fa-angle-right' />
+                                            <span className='sr-only'>Next</span>
                                         </PaginationLink>
                                     </PaginationItem>
                                 </Pagination>
                             </nav>
                             <br />
-                            <nav aria-label="...">
+                            <nav aria-label='...'>
                                 <Pagination>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()} tabIndex="-1">
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()} tabIndex={-1}>
                                             Previous
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             1
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             2
                                         </PaginationLink>
                                     </PaginationItem>
-                                    <PaginationItem className="active">
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
-                                            3 <span className="sr-only">(current)</span>
+                                    <PaginationItem className='active'>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
+                                            3 <span className='sr-only'>(current)</span>
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             4
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             5
                                         </PaginationLink>
                                     </PaginationItem>
                                     <PaginationItem>
-                                        <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                                        <PaginationLink href='#pablo' onClick={e => e.preventDefault()}>
                                             Next
                                         </PaginationLink>
                                     </PaginationItem>
@@ -142,13 +142,13 @@ function SectionProgress() {
                     </Row>
                     <br />
                     <Row>
-                        <Col md="6">
-                            <div className="title">
+                        <Col md='6'>
+                            <div className='title'>
                                 <h3>Navigation Tabs</h3>
                             </div>
-                            <div className="nav-tabs-navigation">
-                                <div className="nav-tabs-wrapper">
-                                    <Nav id="tabs" role="tablist" tabs>
+                            <div className='nav-tabs-navigation'>
+                                <div className='nav-tabs-wrapper'>
+                                    <Nav id='tabs' role='tablist' tabs={true}>
                                         <NavItem>
                                             <NavLink
                                                 className={activeTab === '1' ? 'active' : ''}
@@ -182,31 +182,31 @@ function SectionProgress() {
                                     </Nav>
                                 </div>
                             </div>
-                            <TabContent activeTab={activeTab} className="text-center">
-                                <TabPane tabId="1">
+                            <TabContent activeTab={activeTab} className='text-center'>
+                                <TabPane tabId='1'>
                                     <p>
                                         Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface
                                         that seamlessly meets the new Retina HD display.
                                     </p>
                                 </TabPane>
-                                <TabPane tabId="2">
+                                <TabPane tabId='2'>
                                     <p>Here is your profile.</p>
                                 </TabPane>
-                                <TabPane tabId="3">
+                                <TabPane tabId='3'>
                                     <p>Here are your messages.</p>
                                 </TabPane>
                             </TabContent>
                         </Col>
-                        <Col md="6">
-                            <div className="title">
+                        <Col md='6'>
+                            <div className='title'>
                                 <h3>Labels</h3>
                             </div>
-                            <label className="label label-default mr-1">Default</label>
-                            <label className="label label-primary mr-1">Primary</label>
-                            <label className="label label-info mr-1">Info</label>
-                            <label className="label label-success mr-1">Success</label>
-                            <label className="label label-warning mr-1">Warning</label>
-                            <label className="label label-danger">Danger</label>
+                            <label className='label label-default mr-1'>Default</label>
+                            <label className='label label-primary mr-1'>Primary</label>
+                            <label className='label label-info mr-1'>Info</label>
+                            <label className='label label-success mr-1'>Success</label>
+                            <label className='label label-warning mr-1'>Warning</label>
+                            <label className='label label-danger'>Danger</label>
                         </Col>
                     </Row>
                 </Container>

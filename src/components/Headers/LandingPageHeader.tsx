@@ -19,18 +19,20 @@
 import React from 'react'
 
 // reactstrap components
-import {Button, Container} from 'reactstrap'
-import ModalVideo from '../Modals/ModalVideo'
-
-// core components
+import {Container} from 'reactstrap'
+import * as imgAntoineBarres from '../../assets/img/antoine-barres.jpg'
+import * as imgClouds from '../../assets/img/clouds.png'
+import imgFoglow from '../../assets/img/fog-low.png'
 
 function LandingPageHeader() {
-    let pageHeader = React.createRef()
+    const pageHeader = React.createRef<HTMLDivElement>()
 
+    // @ts-ignore
     React.useEffect(() => {
         if (window.innerWidth < 991) {
             const updateScroll = () => {
-                let windowScrollTop = window.pageYOffset / 3
+                const windowScrollTop = window.pageYOffset / 3
+                // @ts-ignore
                 pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'
             }
             window.addEventListener('scroll', updateScroll)
@@ -43,26 +45,26 @@ function LandingPageHeader() {
     return (
         <>
             <div
-                className="page-header section-dark"
+                className='page-header section-dark'
                 data-parallax={true}
                 ref={pageHeader}
                 style={{
-                    backgroundImage: 'url(' + require('assets/img/antoine-barres.jpg') + ')',
+                    backgroundImage: `url(${imgAntoineBarres})`,
                 }}>
 
-                <div className="filter"/>
-                <div className="content-center">
+                <div className='filter'/>
+                <div className='content-center'>
                     <Container>
-                        <div className="title-brand">
-                            <h1 className="presentation-title">Become a hero</h1>
-                            <div className="fog-low">
-                                <img alt="..." src={require('assets/img/fog-low.png')}/>
+                        <div className='title-brand'>
+                            <h1 className='presentation-title'>Become a hero</h1>
+                            <div className='fog-low'>
+                                <img alt='fog low' src={imgFoglow}/>
                             </div>
-                            <div className="fog-low right">
-                                <img alt="..." src={require('assets/img/fog-low.png')}/>
+                            <div className='fog-low right'>
+                                <img alt='fog low' src={imgFoglow}/>
                             </div>
                         </div>
-                        <h2 className="presentation-subtitle text-center">Solve challenges, do sth. good and win
+                        <h2 className='presentation-subtitle text-center'>Solve challenges, do sth. good and win
                             relevant prizes & money.</h2>
                         {/*<br/>
                         <div className="motto text-center">
@@ -72,9 +74,9 @@ function LandingPageHeader() {
                     </Container>
                 </div>
                 <div
-                    className="moving-clouds"
+                    className='moving-clouds'
                     style={{
-                        backgroundImage: 'url(' + require('assets/img/clouds.png') + ')',
+                        backgroundImage: `url(${imgClouds})`,
                     }}
                 />
             </div>

@@ -21,24 +21,24 @@ import React from 'react'
 // reactstrap components
 
 // core components
-import IndexNavbar from 'components/Navbars/IndexNavbar.js'
-import IndexHeader from 'components/Headers/IndexHeader.js'
-import DemoFooter from 'components/Footers/DemoFooter.js'
+import DemoFooter from '../components/Footers/DemoFooter.js'
+import IndexHeader from '../components/Headers/IndexHeader.js'
+import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 
 // index sections
-import SectionButtons from 'views/index-sections/SectionButtons.js'
-import SectionNavbars from 'views/index-sections/SectionNavbars.js'
-import SectionNavigation from 'views/index-sections/SectionNavigation.js'
-import SectionProgress from 'views/index-sections/SectionProgress.js'
-import SectionNotifications from 'views/index-sections/SectionNotifications.js'
-import SectionTypography from 'views/index-sections/SectionTypography.js'
-import SectionJavaScript from 'views/index-sections/SectionJavaScript.js'
-import SectionCarousel from 'views/index-sections/SectionCarousel.js'
-import SectionNucleoIcons from 'views/index-sections/SectionNucleoIcons.js'
-import SectionDark from 'views/index-sections/SectionDark.js'
-import SectionLogin from 'views/index-sections/SectionLogin.js'
-import SectionExamples from 'views/index-sections/SectionExamples.js'
-import SectionDownload from 'views/index-sections/SectionDownload.js'
+import SectionButtons from './index-sections/SectionButtons'
+import SectionCarousel from './index-sections/SectionCarousel'
+import SectionDark from './index-sections/SectionDark'
+import SectionDownload from './index-sections/SectionDownload'
+import SectionExamples from './index-sections/SectionExamples'
+import SectionJavaScript from './index-sections/SectionJavaScript'
+import SectionLogin from './index-sections/SectionLogin'
+import SectionNavbars from './index-sections/SectionNavbars'
+import SectionNavigation from './index-sections/SectionNavigation'
+import SectionNotifications from './index-sections/SectionNotifications'
+import SectionNucleoIcons from './index-sections/SectionNucleoIcons'
+import SectionProgress from './index-sections/SectionProgress'
+import SectionTypography from './index-sections/SectionTypography'
 
 function Index() {
     document.documentElement.classList.remove('nav-open')
@@ -52,7 +52,7 @@ function Index() {
         <>
             <IndexNavbar />
             <IndexHeader />
-            <div className="main">
+            <div className='main'>
                 <SectionButtons />
                 <SectionNavbars />
                 <SectionNavigation />
