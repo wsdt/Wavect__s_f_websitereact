@@ -5,6 +5,5 @@ parentScripts.scripts.once = 'webpack-dev-server'
 parentScripts.scripts.production = 'start ./dist/index.html'
 parentScripts.scripts.test = "react-scripts test"
 parentScripts.scripts.eject = "react-scripts eject"
-parentScripts.scripts.build = 'react-scripts build'
 
 module.exports = parentScripts

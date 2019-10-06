@@ -21,6 +21,7 @@
     },
     "scripts": {
         "start": "nps",
+        "build": "react-scripts build",
         "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
         "compile-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
         "minify-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --output-style compressed",
@@ -45,6 +46,7 @@
         "typescript": "^3.6.3"
     },
     "devDependencies": {
+        "@types/classnames": "^2.2.9",
         "@types/jest": "^24.0.18",
         "@types/node": "^12.7.11",
         "@types/nouislider": "^9.0.5",

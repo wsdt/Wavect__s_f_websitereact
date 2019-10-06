@@ -16,13 +16,14 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+// nodejs library that concatenates strings
+// @ts-ignore
+import classnames from 'classnames'
 import React from 'react'
 import { Link } from 'react-router-dom'
-// nodejs library that concatenates strings
-import classnames from 'classnames'
 
 // reactstrap components
-import { Collapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container } from 'reactstrap'
+import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
 
 function ExamplesNavbar() {
     const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
@@ -49,10 +50,10 @@ function ExamplesNavbar() {
         }
     })
     return (
-        <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll="300" expand="lg">
+        <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll='300' expand='lg'>
             <Container>
-                <div className="navbar-translate">
-                    <NavbarBrand data-placement="bottom" to="/index" target="_blank" title="Home" tag={Link}>
+                <div className='navbar-translate'>
+                    <NavbarBrand data-placement='bottom' to='/index' target='_blank' title='Home' tag={Link}>
                         Wavect
                     </NavbarBrand>
                     <button
@@ -62,51 +63,51 @@ function ExamplesNavbar() {
                         })}
                         onClick={toggleNavbarCollapse}
                     >
-                        <span className="navbar-toggler-bar bar1" />
-                        <span className="navbar-toggler-bar bar2" />
-                        <span className="navbar-toggler-bar bar3" />
+                        <span className='navbar-toggler-bar bar1' />
+                        <span className='navbar-toggler-bar bar2' />
+                        <span className='navbar-toggler-bar bar3' />
                     </button>
                 </div>
-                <Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>
-                    <Nav navbar>
+                <Collapse className='justify-content-end' navbar={true} isOpen={navbarCollapse}>
+                    <Nav navbar={true}>
                         <NavItem>
-                            <NavLink href="mailto:office@wavect.io" title="Contact us via e-mail" data-placement="bottom">
-                                <i className="fa fa-envelope" /> E-Mail
+                            <NavLink href='mailto:office@wavect.io' title='Contact us via e-mail' data-placement='bottom'>
+                                <i className='fa fa-envelope' /> E-Mail
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://www.linkedin.com/company/19010151" target="_blank">
-                                <i className="fa fa-linkedin" /> LinkedIn
+                            <NavLink href='https://www.linkedin.com/company/19010151' target='_blank'>
+                                <i className='fa fa-linkedin' /> LinkedIn
                             </NavLink>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://www.facebook.com/wavect" target="_blank" title="Like us on Facebook">
-                                <i className="fa fa-facebook-square" />
-                                <p className="d-lg-none">Facebook</p>
+                            <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title='Like us on Facebook'>
+                                <i className='fa fa-facebook-square' />
+                                <p className='d-lg-none'>Facebook</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                data-placement="bottom"
-                                href="https://www.instagram.com/wavect.io"
-                                target="_blank"
-                                title="Follow us on Instagram"
+                                data-placement='bottom'
+                                href='https://www.instagram.com/wavect.io'
+                                target='_blank'
+                                title='Follow us on Instagram'
                             >
-                                <i className="fa fa-instagram" />
-                                <p className="d-lg-none">Instagram</p>
+                                <i className='fa fa-instagram' />
+                                <p className='d-lg-none'>Instagram</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://github.com/orgs/bekind-austria" target="_blank" title="Star on GitHub">
-                                <i className="fa fa-github" />
-                                <p className="d-lg-none">GitHub</p>
+                            <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star on GitHub'>
+                                <i className='fa fa-github' />
+                                <p className='d-lg-none'>GitHub</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://twitter.com/wavect_austria" target="_blank" title="Follow us on Twitter">
-                                <i className="fa fa-twitter" />
-                                <p className="d-lg-none">Twitter</p>
+                            <NavLink data-placement='bottom' href='https://twitter.com/wavect_austria' target='_blank' title='Follow us on Twitter'>
+                                <i className='fa fa-twitter' />
+                                <p className='d-lg-none'>Twitter</p>
                             </NavLink>
                         </NavItem>
                     </Nav>
