@@ -28,32 +28,22 @@ import profilePage from 'assets/img/examples/profile-page.png'
 function SectionExamples() {
     return (
         <>
-            <div className='section section-dark'>
+            <div className="section section-dark">
                 <Container>
-                    <Row className='example-page'>
-                        <Col className='text-center' md='6'>
-                            <a href='examples/landing.html' target='_blank'>
-                                <img
-                                    alt='...'
-                                    className='img-rounded img-responsive'
-                                    src={landingPage}
-                                    style={{ width: '100%' }}
-                                />
+                    <Row className="example-page">
+                        <Col className="text-center" md="6">
+                            <a href="examples/landing.html" target="_blank">
+                                <img alt="..." className="img-rounded img-responsive" src={landingPage} style={{ width: '100%' }} />
                             </a>
-                            <Button className='btn-outline-neutral btn-round' color='default' href='/landing-page' target='_blank'>
+                            <Button className="btn-outline-neutral btn-round" color="default" href="/landing-page" target="_blank">
                                 Landing Page
                             </Button>
                         </Col>
-                        <Col className='text-center' md='6'>
-                            <a href='examples/profile.html' target='_blank'>
-                                <img
-                                    alt='...'
-                                    className='img-rounded img-responsive'
-                                    src={profilePage}
-                                    style={{ width: '100%' }}
-                                />
+                        <Col className="text-center" md="6">
+                            <a href="examples/profile.html" target="_blank">
+                                <img alt="..." className="img-rounded img-responsive" src={profilePage} style={{ width: '100%' }} />
                             </a>
-                            <Button className='btn-outline-neutral btn-round' color='default' href='/profile-page' target='_blank'>
+                            <Button className="btn-outline-neutral btn-round" color="default" href="/profile-page" target="_blank">
                                 Profile Page
                             </Button>
                         </Col>

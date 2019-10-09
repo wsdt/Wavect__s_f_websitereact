@@ -31,35 +31,33 @@ function IndexHeader() {
     return (
         <>
             <div
-                className='page-header section-dark'
+                className="page-header section-dark"
                 style={{
                     backgroundImage: 'url(' + imgAntoineBarres + ')',
                 }}
             >
-                <div className='filter' />
-                <div className='content-center'>
+                <div className="filter" />
+                <div className="content-center">
                     <Container>
-                        <div className='title-brand'>
-                            <h1 className='presentation-title'>Paper Kit React</h1>
-                            <div className='fog-low'>
-                                <img alt='...' src={imgFogLow} />
+                        <div className="title-brand">
+                            <h1 className="presentation-title">Paper Kit React</h1>
+                            <div className="fog-low">
+                                <img alt="..." src={imgFogLow} />
                             </div>
-                            <div className='fog-low right'>
-                                <img alt='...' src={imgFogLow} />
+                            <div className="fog-low right">
+                                <img alt="..." src={imgFogLow} />
                             </div>
                         </div>
-                        <h2 className='presentation-subtitle text-center'>Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!</h2>
+                        <h2 className="presentation-subtitle text-center">Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!</h2>
                     </Container>
                 </div>
                 <div
-                    className='moving-clouds'
+                    className="moving-clouds"
                     style={{
                         backgroundImage: 'url(' + imgClouds + ')',
                     }}
                 />
-                <h6 className='category category-absolute'>
-                    Designed and coded by Creative Tim
-                </h6>
+                <h6 className="category category-absolute">Designed and coded by Creative Tim</h6>
             </div>
         </>
     )

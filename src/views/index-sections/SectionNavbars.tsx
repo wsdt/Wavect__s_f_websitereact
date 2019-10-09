@@ -38,41 +38,41 @@ import {
 function SectionNavbars() {
     return (
         <>
-            <div className='section section-navbars'>
-                <Container id='menu-dropdown'>
-                    <div className='title'>
+            <div className="section section-navbars">
+                <Container id="menu-dropdown">
+                    <div className="title">
                         <h3>Menu</h3>
                     </div>
                     <br />
                     <Row>
-                        <Col md='6'>
-                            <Navbar className='bg-primary' expand='lg'>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                        <Col md="6">
+                            <Navbar className="bg-primary" expand="lg">
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Menu
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarSupportedContent'
+                                    aria-controls="navbarSupportedContent"
                                     aria-expanded={false}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right'
-                                    data-target='#navbar-menu'
-                                    data-toggle='collapse'
-                                    id='navbar-menu'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right"
+                                    data-target="#navbar-menu"
+                                    data-toggle="collapse"
+                                    id="navbar-menu"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} toggler='#navbar-menu'>
-                                    <Nav className='mr-auto' navbar={true}>
+                                <UncontrolledCollapse navbar={true} toggler="#navbar-menu">
+                                    <Nav className="mr-auto" navbar={true}>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
                                                 Link
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
                                                 Link
                                             </NavLink>
                                         </NavItem>
@@ -81,35 +81,35 @@ function SectionNavbars() {
                                                 aria-expanded={false}
                                                 aria-haspopup={true}
                                                 caret={true}
-                                                color='default'
-                                                data-toggle='dropdown'
-                                                href='#pablo'
-                                                id='dropdownMenuButton'
+                                                color="default"
+                                                data-toggle="dropdown"
+                                                href="#pablo"
+                                                id="dropdownMenuButton"
                                                 nav={true}
                                                 onClick={e => e.preventDefault()}
-                                                role='button'
+                                                role="button"
                                             >
                                                 Dropdown
                                             </DropdownToggle>
-                                            <DropdownMenu aria-labelledby='dropdownMenuButton' className='dropdown-info'>
-                                                <DropdownItem header={true} tag='span'>
+                                            <DropdownMenu aria-labelledby="dropdownMenuButton" className="dropdown-info">
+                                                <DropdownItem header={true} tag="span">
                                                     Dropdown header
                                                 </DropdownItem>
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Action
                                                 </DropdownItem>
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Another action
                                                 </DropdownItem>
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Something else here
                                                 </DropdownItem>
                                                 <DropdownItem divider={true} />
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Separated link
                                                 </DropdownItem>
                                                 <DropdownItem divider={true} />
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Another separated link
                                                 </DropdownItem>
                                             </DropdownMenu>
@@ -118,35 +118,35 @@ function SectionNavbars() {
                                 </UncontrolledCollapse>
                             </Navbar>
                         </Col>
-                        <Col md='6'>
-                            <Navbar className='bg-danger' expand='lg'>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                        <Col md="6">
+                            <Navbar className="bg-danger" expand="lg">
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Icons
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarSupportedContent'
+                                    aria-controls="navbarSupportedContent"
                                     aria-expanded={false}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right'
-                                    data-target='#navbar-menu-icon'
-                                    data-toggle='collapse'
-                                    id='navbar-menu-icon'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right"
+                                    data-target="#navbar-menu-icon"
+                                    data-toggle="collapse"
+                                    id="navbar-menu-icon"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} toggler='#navbar-menu-icon'>
-                                    <Nav className='ml-auto' navbar={true}>
-                                        <NavItem className='active'>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-email-85' />
+                                <UncontrolledCollapse navbar={true} toggler="#navbar-menu-icon">
+                                    <Nav className="ml-auto" navbar={true}>
+                                        <NavItem className="active">
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-email-85" />
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-single-02' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-single-02" />
                                             </NavLink>
                                         </NavItem>
                                         <UncontrolledDropdown nav={true} inNavbar={true}>
@@ -154,27 +154,27 @@ function SectionNavbars() {
                                                 aria-expanded={false}
                                                 aria-haspopup={true}
                                                 caret={true}
-                                                color='default'
-                                                data-toggle='dropdown'
-                                                href='#pablo'
+                                                color="default"
+                                                data-toggle="dropdown"
+                                                href="#pablo"
                                                 nav={true}
                                                 onClick={e => e.preventDefault()}
-                                                role='button'
+                                                role="button"
                                             >
-                                                <i aria-hidden={true} className='nc-icon nc-settings-gear-65' />
+                                                <i aria-hidden={true} className="nc-icon nc-settings-gear-65" />
                                             </DropdownToggle>
-                                            <DropdownMenu className='dropdown-danger' right={true}>
-                                                <DropdownItem header={true} tag='span'>
+                                            <DropdownMenu className="dropdown-danger" right={true}>
+                                                <DropdownItem header={true} tag="span">
                                                     Dropdown header
                                                 </DropdownItem>
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Another action
                                                 </DropdownItem>
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Something else here
                                                 </DropdownItem>
                                                 <DropdownItem divider={true} />
-                                                <DropdownItem href='#pablo' onClick={e => e.preventDefault()}>
+                                                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                                                     Separated link
                                                 </DropdownItem>
                                             </DropdownMenu>

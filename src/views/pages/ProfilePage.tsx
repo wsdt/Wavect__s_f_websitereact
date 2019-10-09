@@ -22,14 +22,16 @@ import React from 'react'
 import { Button, Col, Container, FormGroup, Input, Label, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap'
 
 // core components
-import DemoFooter from '../../components/Footers/DemoFooter.js'
-import ProfilePageHeader from '../../components/Headers/ProfilePageHeader.js'
-import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar.js'
+import DemoFooter from '../../components/Footers/DemoFooter'
+import ProfilePageHeader from '../../components/Headers/ProfilePageHeader'
+import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
+
+import exampleFace from '../../assets/img/faces/joe-gardner-2.jpg'
 
 function ProfilePage() {
     const [activeTab, setActiveTab] = React.useState('1')
 
-    const toggle = (tab:any) => {
+    const toggle = (tab: any) => {
         if (activeTab !== tab) {
             setActiveTab(tab)
         }
@@ -50,7 +52,7 @@ function ProfilePage() {
                 <Container>
                     <div className='owner'>
                         <div className='avatar'>
-                            <img alt='...' className='img-circle img-no-padding img-responsive' src={require('assets/img/faces/joe-gardner-2.jpg')} />
+                            <img alt='...' className='img-circle img-no-padding img-responsive' src={exampleFace} />
                         </div>
                         <div className='name'>
                             <h4 className='title'>
@@ -110,7 +112,7 @@ function ProfilePage() {
                                                     <img
                                                         alt='...'
                                                         className='img-circle img-no-padding img-responsive'
-                                                        src={require('assets/img/faces/clem-onojeghuo-2.jpg')}
+                                                        src={exampleFace}
                                                     />
                                                 </Col>
                                                 <Col className='ml-auto mr-auto' lg='7' md='4' xs='4'>
@@ -136,7 +138,7 @@ function ProfilePage() {
                                                     <img
                                                         alt='...'
                                                         className='img-circle img-no-padding img-responsive'
-                                                        src={require('assets/img/faces/ayo-ogunseinde-2.jpg')}
+                                                        src={exampleFace}
                                                     />
                                                 </Col>
                                                 <Col lg='7' md='4' xs='4'>

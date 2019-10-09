@@ -25,12 +25,21 @@ import './assets/css/bootstrap.min.css'
 import './assets/scss/paper-kit.scss'
 import './assets/demo/demo.css'
 // pages
-import LandingPage from './views/examples/LandingPage'
+import LandingPage from './views/pages/LandingPage'
+import Blog from "./views/pages/Blog";
+import BlogKevinRiedl from "./views/pages/blogs/BlogKevinRiedl";
+import BlogPostHappinessNeqFulfillment from "./views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment"
+import BlogPostChangeThoughtsOnBurnoutStress from "./views/pages/blogs/posts_kevinriedl/BlogPostChangeThoughtsOnBurnoutStress";
 // others
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
+            <Route path="/blogs/kevin-riedl/change-your-thoughts-on-burnout-stress" render={props => <BlogPostChangeThoughtsOnBurnoutStress {...props} />} />
+            <Route path="/blogs/kevin-riedl/happiness-neq-fulfillment-who-are-you-really" render={props => <BlogPostHappinessNeqFulfillment {...props} />} />
+            <Route path="/blogs/kevin-riedl" render={props => <BlogKevinRiedl {...props} />} />
+            <Route path="/blogs" render={props => <Blog {...props} />} />
+
             <Route path="/" render={props => <LandingPage {...props} />} />
             <Redirect to="/" />
         </Switch>

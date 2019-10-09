@@ -21,15 +21,15 @@ import React from 'react'
 // reactstrap components
 
 // core components
-import imgFabioMangione from '../../assets/img/fabio-mangione.jpg'
+import imgBlogHeader from '../../assets/img/blogs/blog_header.jpg'
 
-function ProfilePageHeader() {
-    let pageHeader = React.createRef<HTMLDivElement>()
+function BlogPageHeader() {
+    const pageHeader = React.createRef<HTMLDivElement>()
 
     React.useEffect(() => {
         if (window.innerWidth < 991) {
             const updateScroll = () => {
-                let windowScrollTop = window.pageYOffset / 3
+                const windowScrollTop = window.pageYOffset / 3
                 // @ts-ignore
                 pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'
             }
@@ -45,16 +45,16 @@ function ProfilePageHeader() {
         <>
             <div
                 style={{
-                    backgroundImage: 'url(' + imgFabioMangione + ')',
+                    backgroundImage: 'url(' + imgBlogHeader + ')',
                 }}
-                className="page-header page-header-xs"
+                className='page-header page-header-xs'
                 data-parallax={true}
                 ref={pageHeader}
             >
-                <div className="filter" />
+                <div className='filter' />
             </div>
         </>
     )
 }
 
-export default ProfilePageHeader
+export default BlogPageHeader

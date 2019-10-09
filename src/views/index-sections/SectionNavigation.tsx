@@ -26,55 +26,55 @@ import { Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, UncontrolledColl
 function SectionNavigation() {
     return (
         <>
-            <div className='section section-navigation'>
-                <Container className='tim-container'>
-                    <div className='title'>
+            <div className="section section-navigation">
+                <Container className="tim-container">
+                    <div className="title">
                         <h3>Navigation Areas</h3>
                     </div>
                 </Container>
-                <div id='navbar'>
+                <div id="navbar">
                     <div
-                        className='navigation-example'
+                        className="navigation-example"
                         style={{
                             backgroundImage: 'url(' + require('assets/img/ilya-yakover.jpg') + ')',
                         }}
                     >
-                        <Navbar className='bg-primary' expand='lg'>
+                        <Navbar className="bg-primary" expand="lg">
                             <Container>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Primary Color
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarNav'
+                                    aria-controls="navbarNav"
                                     aria-expanded={false}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right burger-menu'
-                                    data-target='#navbar-primary'
-                                    data-toggle='collapse'
-                                    id='navbar-primary'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right burger-menu"
+                                    data-target="#navbar-primary"
+                                    data-toggle="collapse"
+                                    id="navbar-primary"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} toggler='#navbar-primary'>
-                                    <Nav className='ml-auto' navbar={true}>
+                                <UncontrolledCollapse navbar={true} toggler="#navbar-primary">
+                                    <Nav className="ml-auto" navbar={true}>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-compass-05' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-compass-05" />
                                                  Discover
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-single-02' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-single-02" />
                                                  Profile
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-settings-gear-65' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-settings-gear-65" />
                                                  Settings
                                             </NavLink>
                                         </NavItem>
@@ -82,39 +82,39 @@ function SectionNavigation() {
                                 </UncontrolledCollapse>
                             </Container>
                         </Navbar>
-                        <Navbar className='bg-info' expand='lg'>
+                        <Navbar className="bg-info" expand="lg">
                             <Container>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Info Color
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarNav'
+                                    aria-controls="navbarNav"
                                     aria-expanded={false}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right'
-                                    data-target='#navbar-info'
-                                    data-toggle='collapse'
-                                    id='navbar-info'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right"
+                                    data-target="#navbar-info"
+                                    data-toggle="collapse"
+                                    id="navbar-info"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} toggler='#navbar-info'>
-                                    <Nav className='ml-auto' navbar={true}>
+                                <UncontrolledCollapse navbar={true} toggler="#navbar-info">
+                                    <Nav className="ml-auto" navbar={true}>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
                                                 Discover
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
                                                 Profile
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
                                                 Settings
                                             </NavLink>
                                         </NavItem>
@@ -122,127 +122,127 @@ function SectionNavigation() {
                                 </UncontrolledCollapse>
                             </Container>
                         </Navbar>
-                        <Navbar className='bg-success' expand='lg'>
+                        <Navbar className="bg-success" expand="lg">
                             <Container>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Success Color
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarNav'
+                                    aria-controls="navbarNav"
                                     aria-expanded={true}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right'
-                                    data-target='#navbar-success'
-                                    data-toggle='collapse'
-                                    id='navbar-success'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right"
+                                    data-target="#navbar-success"
+                                    data-toggle="collapse"
+                                    id="navbar-success"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} style={{}} toggler='#navbar-success'>
-                                    <Nav className='ml-auto' navbar={true}>
+                                <UncontrolledCollapse navbar={true} style={{}} toggler="#navbar-success">
+                                    <Nav className="ml-auto" navbar={true}>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-compass-05' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-compass-05" />
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-single-02' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-single-02" />
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='nc-icon nc-settings-gear-65' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="nc-icon nc-settings-gear-65" />
                                             </NavLink>
                                         </NavItem>
                                     </Nav>
                                 </UncontrolledCollapse>
                             </Container>
                         </Navbar>
-                        <Navbar className='bg-warning' expand='lg'>
+                        <Navbar className="bg-warning" expand="lg">
                             <Container>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Warning Color
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarNav'
+                                    aria-controls="navbarNav"
                                     aria-expanded={false}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right'
-                                    data-target='#navbar-warning'
-                                    data-toggle='collapse'
-                                    id='navbar-warning'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right"
+                                    data-target="#navbar-warning"
+                                    data-toggle="collapse"
+                                    id="navbar-warning"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} toggler='#navbar-warning'>
-                                    <Nav className='ml-auto' navbar={true}>
+                                <UncontrolledCollapse navbar={true} toggler="#navbar-warning">
+                                    <Nav className="ml-auto" navbar={true}>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-facebook-official' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-facebook-official" />
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-twitter' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-twitter" />
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-google-plus' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-google-plus" />
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-instagram' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-instagram" />
                                             </NavLink>
                                         </NavItem>
                                     </Nav>
                                 </UncontrolledCollapse>
                             </Container>
                         </Navbar>
-                        <Navbar className='bg-danger' expand='lg'>
+                        <Navbar className="bg-danger" expand="lg">
                             <Container>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Danger Color
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarNav'
+                                    aria-controls="navbarNav"
                                     aria-expanded={true}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right'
-                                    data-target='#navbar-danger'
-                                    data-toggle='collapse'
-                                    id='navbar-danger'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right"
+                                    data-target="#navbar-danger"
+                                    data-toggle="collapse"
+                                    id="navbar-danger"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} style={{}} toggler='#navbar-danger'>
-                                    <Nav className='ml-auto' navbar={true}>
+                                <UncontrolledCollapse navbar={true} style={{}} toggler="#navbar-danger">
+                                    <Nav className="ml-auto" navbar={true}>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-facebook-official' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-facebook-official" />
                                                 Share
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-twitter' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-twitter" />
                                                 Tweet
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-pinterest' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-pinterest" />
                                                 Pin
                                             </NavLink>
                                         </NavItem>
@@ -250,42 +250,42 @@ function SectionNavigation() {
                                 </UncontrolledCollapse>
                             </Container>
                         </Navbar>
-                        <Navbar className='navbar-transparent pt-0' expand='lg'>
+                        <Navbar className="navbar-transparent pt-0" expand="lg">
                             <Container>
-                                <NavbarBrand href='#pablo' onClick={e => e.preventDefault()}>
+                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                                     Transparent
                                 </NavbarBrand>
                                 <button
-                                    aria-controls='navbarNav'
+                                    aria-controls="navbarNav"
                                     aria-expanded={false}
-                                    aria-label='Toggle navigation'
-                                    className='navbar-toggler navbar-toggler-right'
-                                    data-target='#navbar-transparent'
-                                    data-toggle='collapse'
-                                    id='navbar-transparent'
-                                    type='button'
+                                    aria-label="Toggle navigation"
+                                    className="navbar-toggler navbar-toggler-right"
+                                    data-target="#navbar-transparent"
+                                    data-toggle="collapse"
+                                    id="navbar-transparent"
+                                    type="button"
                                 >
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
-                                    <span className='navbar-toggler-bar' />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
+                                    <span className="navbar-toggler-bar" />
                                 </button>
-                                <UncontrolledCollapse navbar={true} toggler='#navbar-transparent'>
-                                    <Nav className='ml-auto' navbar={true}>
+                                <UncontrolledCollapse navbar={true} toggler="#navbar-transparent">
+                                    <Nav className="ml-auto" navbar={true}>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-facebook-official' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-facebook-official" />
                                                 Facebook
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-twitter' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-twitter" />
                                                 Twitter
                                             </NavLink>
                                         </NavItem>
                                         <NavItem>
-                                            <NavLink href='#pablo' onClick={e => e.preventDefault()}>
-                                                <i aria-hidden={true} className='fa fa-instagram' />
+                                            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                                                <i aria-hidden={true} className="fa fa-instagram" />
                                                 Instagram
                                             </NavLink>
                                         </NavItem>

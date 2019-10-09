@@ -24,20 +24,20 @@ import { Container, Row } from 'reactstrap'
 
 function DemoFooter() {
     return (
-        <footer className='footer footer-black footer-white'>
+        <footer className="footer footer-black footer-white">
             <Container>
                 <Row>
-                    <nav className='footer-nav'>
+                    <nav className="footer-nav">
                         <ul>
                             <li>
-                                <a href='https://www.linkedin.com/company/19010151' target='_blank'>
+                                <a href="https://www.linkedin.com/company/19010151" target="_blank">
                                     LinkedIn
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    <div className='credits ml-auto'>
-                        <span className='copyright'>© Design by Creative Tim</span>
+                    <div className="credits ml-auto">
+                        <span className="copyright">© Design by Creative Tim</span>
                     </div>
                 </Row>
             </Container>

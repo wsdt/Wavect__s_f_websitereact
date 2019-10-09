@@ -16,20 +16,20 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 // reactstrap components
-import {Container} from 'reactstrap'
+import { Container } from 'reactstrap'
 import * as imgAntoineBarres from '../../assets/img/antoine-barres.jpg'
 import * as imgClouds from '../../assets/img/clouds.png'
 import imgFoglow from '../../assets/img/fog-low.png'
 
 const getWindowDimensions = () => {
-    const {innerWidth: width, innerHeight: height} = window
-    return {width, height}
+    const { innerWidth: width, innerHeight: height } = window
+    return { width, height }
 }
 
-const useWindowDimensions = (pageHeader:React.RefObject<HTMLDivElement>) => {
+const useWindowDimensions = (pageHeader: React.RefObject<HTMLDivElement>) => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
 
     // @ts-ignore
@@ -45,7 +45,6 @@ const useWindowDimensions = (pageHeader:React.RefObject<HTMLDivElement>) => {
                 // @ts-ignore
                 pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'
             }
-
 
             window.addEventListener('scroll', updateScroll)
 
@@ -63,9 +62,9 @@ const useWindowDimensions = (pageHeader:React.RefObject<HTMLDivElement>) => {
 
 function LandingPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()
-    const {width} = useWindowDimensions(pageHeader)
+    const { width } = useWindowDimensions(pageHeader)
 
-    let subtitleFontSize:number = 0.015*width
+    let subtitleFontSize: number = 0.015 * width
     if (subtitleFontSize < 14) {
         subtitleFontSize = 14
     }
@@ -78,22 +77,25 @@ function LandingPageHeader() {
                 ref={pageHeader}
                 style={{
                     backgroundImage: `url(${imgAntoineBarres})`,
-                }}>
-
-                <div className='filter'/>
+                }}
+            >
+                <div className='filter' />
                 <div className='content-center'>
                     <Container>
                         <div className='title-brand'>
-                            <h1 className='presentation-title' style={{fontSize:0.075*width}}>Become a hero</h1>
+                            <h1 className='presentation-title' style={{ fontSize: 0.075 * width }}>
+                                Become a hero
+                            </h1>
                             <div className='fog-low'>
-                                <img alt='fog low' src={imgFoglow}/>
+                                <img alt='fog low' src={imgFoglow} />
                             </div>
                             <div className='fog-low right'>
-                                <img alt='fog low' src={imgFoglow}/>
+                                <img alt='fog low' src={imgFoglow} />
                             </div>
                         </div>
-                        <h2 className='presentation-subtitle text-center' style={{fontSize:subtitleFontSize}}>Solve challenges, do sth. good and win
-                            relevant prizes & money.</h2>
+                        <h2 className='presentation-subtitle text-center' style={{ fontSize: subtitleFontSize }}>
+                            Solve challenges, do something good and win relevant prizes & money.
+                        </h2>
                         {/*<br/>
                         <div className="motto text-center">
                             <ModalVideo/>

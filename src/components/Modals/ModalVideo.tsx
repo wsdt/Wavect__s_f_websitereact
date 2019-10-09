@@ -14,8 +14,7 @@ function ModalVideo() {
                 isOpen={scrollingLongContent}
                 toggle={() => setScrollingLongContent(false)}
                 className='modal-lg'
-                modalClassName='bd-example-modal-lg'
-            >
+                modalClassName='bd-example-modal-lg'>
                 <div className='modal-header'>
                     <h5 className='modal-title' id='exampleModalLongTitle'>
                         Pitch-Video (German)

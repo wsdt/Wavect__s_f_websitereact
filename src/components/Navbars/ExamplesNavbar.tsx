@@ -23,6 +23,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // reactstrap components
+import {faBlog} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
 
 function ExamplesNavbar() {
@@ -53,7 +55,7 @@ function ExamplesNavbar() {
         <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll='300' expand='lg'>
             <Container>
                 <div className='navbar-translate'>
-                    <NavbarBrand data-placement='bottom' to='/index' target='_blank' title='Home' tag={Link}>
+                    <NavbarBrand data-placement='bottom' to='/' title='Home' tag={Link}>
                         Wavect
                     </NavbarBrand>
                     <button
@@ -76,11 +78,18 @@ function ExamplesNavbar() {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href='https://www.linkedin.com/company/19010151' target='_blank'>
-                                <i className='fa fa-linkedin' /> LinkedIn
+                            <NavLink href='/blogs'>
+                                <FontAwesomeIcon icon={faBlog}/> Blogs
                             </NavLink>
                         </NavItem>
 
+
+                        <NavItem>
+                            <NavLink data-placement='bottom' href='https://www.linkedin.com/company/19010151' target='_blank' title='Follow us on LinkedIn'>
+                                <i className='fa fa-linkedin-square' />
+                                <p className='d-lg-none'>LinkedIn</p>
+                            </NavLink>
+                        </NavItem>
                         <NavItem>
                             <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title='Like us on Facebook'>
                                 <i className='fa fa-facebook-square' />
@@ -99,7 +108,7 @@ function ExamplesNavbar() {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star on GitHub'>
+                            <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star us on GitHub'>
                                 <i className='fa fa-github' />
                                 <p className='d-lg-none'>GitHub</p>
                             </NavLink>

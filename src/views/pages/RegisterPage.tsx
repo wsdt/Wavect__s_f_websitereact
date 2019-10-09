@@ -25,7 +25,7 @@ import { Button, Card, Col, Container, Form, Input, Row } from 'reactstrap'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
 
 // assets
-import * as loginImage from 'assets/img/login-image.jpg'
+import * as loginImage from '../../assets/img/login-image.jpg'
 
 function RegisterPage() {
     document.documentElement.classList.remove('nav-open')
