@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Badge from 'reactstrap/lib/Badge'
-import {BlogCategories} from '../BlogCategories'
+import {BlogCategories} from '../../BlogCategories'
 
 export interface IBlogHeaderProps {
     blogCategory: BlogCategories

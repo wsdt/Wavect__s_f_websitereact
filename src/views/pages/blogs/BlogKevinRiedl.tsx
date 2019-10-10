@@ -35,7 +35,10 @@ import {
 import DemoFooter from '../../../components/Footers/DemoFooter'
 import ExamplesNavbar from '../../../components/Navbars/ExamplesNavbar'
 
-import imgKevinRiedlHappinessNeqFulfillment from '../../../assets/img/blogs/kevin_riedl/happinessneqfulfillment_profilepic.png'
+import imgKevinRiedlHappinessNeqFulfillment from '../../../assets/img/blogs/kevin_riedl/happinessneqfulfillment_profilepic.jpg'
+import imgKevinRiedlStartReflectingOrDieFullOfRegrets from '../../../assets/img/blogs/kevin_riedl/startreflectingordiefullofregrets_profilepic.jpg'
+import imgKevinRiedlSayingYesIsABigNoToOpportunities from '../../../assets/img/blogs/kevin_riedl/sayingyesisabignotoopportunities_profilepic.jpg'
+import imgKevinRiedlStrategicHustling from '../../../assets/img/blogs/kevin_riedl/strategichustling_profilepic.jpg'
 import imgKevinRiedlChangeThoughtsOnBurnoutStress from '../../../assets/img/blogs/kevin_riedl/changethoughtsonburnoutstress_profilepic.jpg'
 import imgKevinRiedl from '../../../assets/img/team/kevin_riedl.jpg'
 import BlogPageHeader from '../../../components/Headers/BlogPageHeader'
@@ -156,6 +159,86 @@ function BlogKevinRiedl() {
                                                 <Col lg='3' md='4' xs='4'>
                                                     <br />
                                                     <a href='/blogs/kevin-riedl/change-your-thoughts-on-burnout-stress'>
+                                                        <Button className='btn-round' color='default' size='sm'>
+                                                            <i className='fa fa-arrow-circle-right'/>
+                                                        </Button>
+                                                    </a>
+                                                </Col>
+                                            </Row>
+                                        </li>
+                                        <hr/>
+                                        <li>
+                                            <Row>
+                                                <Col className='mx-auto' lg='2' md='4' xs='4'>
+                                                    <img
+                                                        alt='Strategic Hustling - Profile pic'
+                                                        className='img-circle img-no-padding img-responsive'
+                                                        src={imgKevinRiedlStrategicHustling}
+                                                    />
+                                                </Col>
+                                                <Col lg='7' md='4' xs='4'>
+                                                    <h6>
+                                                       Strategic Hustling<br/>
+                                                        <small>{BlogCategories.PERSONAL_DEVELOPMENT}</small>
+                                                    </h6>
+                                                </Col>
+                                                <Col lg='3' md='4' xs='4'>
+                                                    <br />
+                                                    <a href='/blogs/kevin-riedl/strategic-hustling'>
+                                                        <Button className='btn-round' color='default' size='sm'>
+                                                            <i className='fa fa-arrow-circle-right'/>
+                                                        </Button>
+                                                    </a>
+                                                </Col>
+                                            </Row>
+                                        </li>
+                                        <hr/>
+                                        <li>
+                                            <Row>
+                                                <Col className='mx-auto' lg='2' md='4' xs='4'>
+                                                    <img
+                                                        alt='Saying YES is a big NO to a lot of opportunities - Profile pic'
+                                                        className='img-circle img-no-padding img-responsive'
+                                                        src={imgKevinRiedlSayingYesIsABigNoToOpportunities}
+                                                    />
+                                                </Col>
+                                                <Col lg='7' md='4' xs='4'>
+                                                    <h6>
+                                                        Saying yes is a big NO to a lot of other opportunities<br/>
+                                                        <small>{BlogCategories.PERSONAL_DEVELOPMENT}</small>
+                                                    </h6>
+                                                </Col>
+                                                <Col lg='3' md='4' xs='4'>
+                                                    <br />
+                                                    <a href='/blogs/kevin-riedl/saying-yes-is-a-big-no-to-opportunities'>
+                                                        <Button className='btn-round' color='default' size='sm'>
+                                                            <i className='fa fa-arrow-circle-right'/>
+                                                        </Button>
+                                                    </a>
+                                                </Col>
+                                            </Row>
+                                        </li>
+                                        <hr/>
+
+
+                                        <li>
+                                            <Row>
+                                                <Col className='mx-auto' lg='2' md='4' xs='4'>
+                                                    <img
+                                                        alt='Start reflecting or you will die full of regrets - Profile pic'
+                                                        className='img-circle img-no-padding img-responsive'
+                                                        src={imgKevinRiedlStartReflectingOrDieFullOfRegrets}
+                                                    />
+                                                </Col>
+                                                <Col lg='7' md='4' xs='4'>
+                                                    <h6>
+                                                        Start reflecting or you will die full of regrets<br/>
+                                                        <small>{BlogCategories.PERSONAL_DEVELOPMENT}</small>
+                                                    </h6>
+                                                </Col>
+                                                <Col lg='3' md='4' xs='4'>
+                                                    <br />
+                                                    <a href='/blogs/kevin-riedl/start-reflecting-or-die-full-of-regrets'>
                                                         <Button className='btn-round' color='default' size='sm'>
                                                             <i className='fa fa-arrow-circle-right'/>
                                                         </Button>

@@ -30,11 +30,19 @@ import Blog from "./views/pages/Blog";
 import BlogKevinRiedl from "./views/pages/blogs/BlogKevinRiedl";
 import BlogPostHappinessNeqFulfillment from "./views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment"
 import BlogPostChangeThoughtsOnBurnoutStress from "./views/pages/blogs/posts_kevinriedl/BlogPostChangeThoughtsOnBurnoutStress";
+import BlogPostStrategicHustling from "./views/pages/blogs/posts_kevinriedl/BlogPostStrategicHustling";
+import BlogPostStartReflectingOrDieFullOfRegrets
+    from "./views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets";
+import BlogPostSayingYesIsABigNoToOpportunities
+    from "./views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities";
 // others
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
+            <Route path="/blogs/kevin-riedl/saying-yes-is-a-big-no-to-opportunities" render={props => <BlogPostSayingYesIsABigNoToOpportunities {...props} />} />
+            <Route path="/blogs/kevin-riedl/start-reflecting-or-die-full-of-regrets" render={props => <BlogPostStartReflectingOrDieFullOfRegrets {...props} />} />
+            <Route path="/blogs/kevin-riedl/strategic-hustling" render={props => <BlogPostStrategicHustling {...props} />} />
             <Route path="/blogs/kevin-riedl/change-your-thoughts-on-burnout-stress" render={props => <BlogPostChangeThoughtsOnBurnoutStress {...props} />} />
             <Route path="/blogs/kevin-riedl/happiness-neq-fulfillment-who-are-you-really" render={props => <BlogPostHappinessNeqFulfillment {...props} />} />
             <Route path="/blogs/kevin-riedl" render={props => <BlogKevinRiedl {...props} />} />
