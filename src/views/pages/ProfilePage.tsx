@@ -22,7 +22,7 @@ import React from 'react'
 import { Button, Col, Container, FormGroup, Input, Label, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap'
 
 // core components
-import DemoFooter from '../../components/Footers/DemoFooter'
+import Footer from '../../components/Footers/Footer'
 import ProfilePageHeader from '../../components/Headers/ProfilePageHeader'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
 
@@ -170,7 +170,7 @@ function ProfilePage() {
                     </TabContent>
                 </Container>
             </div>
-            <DemoFooter />
+            <Footer />
         </>
     )
 }

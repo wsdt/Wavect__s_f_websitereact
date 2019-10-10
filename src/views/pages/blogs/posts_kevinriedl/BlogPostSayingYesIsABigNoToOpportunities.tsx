@@ -18,29 +18,29 @@
 */
 import React from 'react'
 import {BlogCategories} from '../BlogCategories'
-import BlogDraft from '../blogs_components/BlogDraft'
-import {BlogParagraph} from '../blogs_components/blogs_draft/BlogParagraph'
-import {BlogSubHeader} from "../blogs_components/blogs_draft/BlogSubHeader";
+import TextPageDraft from '../blogs_components/TextPageDraft'
+import {TextParagraph} from '../blogs_components/text_components/TextParagraph'
+import {TextSubHeader} from "../blogs_components/text_components/TextSubHeader";
 
 function BlogPostSayingYesIsABigNoToOpportunities() {
 
-    return <BlogDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                      blogTitle='Saying yes is a big NO to a lot of other opportunities'>
-        <BlogParagraph>In today’s world there are a ton of opportunities out there. An app idea here, a job offer there or anything else which gets you closer to achieving your actual life-goals (if you have some, if not you should start to reflect on your life as it’s the source of fulfillment).</BlogParagraph>
+    return <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                          title='Saying yes is a big NO to a lot of other opportunities'>
+        <TextParagraph>In today’s world there are a ton of opportunities out there. An app idea here, a job offer there or anything else which gets you closer to achieving your actual life-goals (if you have some, if not you should start to reflect on your life as it’s the source of fulfillment).</TextParagraph>
 
-        <BlogSubHeader>Time-Management is OUT</BlogSubHeader>
-        <BlogParagraph>People always talk about time-management and how little time they have. Sure, our time is limited. But spending our time wisely will make you efficient enough to achieve everything you want. No matter if it’s spending time with your family, working on your career or a startup. But why is time-management obsolete? It’s easy: You waste a lot of time every day, every week in every month. And why do we waste time?</BlogParagraph>
+        <TextSubHeader>Time-Management is OUT</TextSubHeader>
+        <TextParagraph>People always talk about time-management and how little time they have. Sure, our time is limited. But spending our time wisely will make you efficient enough to achieve everything you want. No matter if it’s spending time with your family, working on your career or a startup. But why is time-management obsolete? It’s easy: You waste a lot of time every day, every week in every month. And why do we waste time?</TextParagraph>
 
-        <BlogSubHeader>We are not robots!</BlogSubHeader>
-        <BlogParagraph>Being a robot has a lot of advantages which might be the reason a lot of people try to act like one. But smart people rather work smart than hard. Working/Acting like robots just sets you up to loose as you can never be better in a robot’s job than an actual robot! What’s the solution, then?</BlogParagraph>
+        <TextSubHeader>We are not robots!</TextSubHeader>
+        <TextParagraph>Being a robot has a lot of advantages which might be the reason a lot of people try to act like one. But smart people rather work smart than hard. Working/Acting like robots just sets you up to loose as you can never be better in a robot’s job than an actual robot! What’s the solution, then?</TextParagraph>
 
-        <BlogSubHeader>Energy-Management</BlogSubHeader>
-        <BlogParagraph>We have a constant value of time in our life, we just don’t know how much beforehand. Thus, we can only try to use that time as efficient as possible but in a century where computers can fulfill a lot of tasks better and cheaper than most people, we should not only try to mobilize as much hours as possible. In contrast to that we should rather focus on our actual strengths as living beings. Our creativity, intuition, ethics and emotions. Building those skills and giving your body as well as your mind enough time to process new information/skills. Thus, rather give yourself a break; meditate, do yoga, go to the gym or try to something new. All those things will help you to build those skills and make you even more experienced, emotionally intelligent, mature and even more efficient! Passion and fun will influence your efficiency more than every hour ever could.</BlogParagraph>
+        <TextSubHeader>Energy-Management</TextSubHeader>
+        <TextParagraph>We have a constant value of time in our life, we just don’t know how much beforehand. Thus, we can only try to use that time as efficient as possible but in a century where computers can fulfill a lot of tasks better and cheaper than most people, we should not only try to mobilize as much hours as possible. In contrast to that we should rather focus on our actual strengths as living beings. Our creativity, intuition, ethics and emotions. Building those skills and giving your body as well as your mind enough time to process new information/skills. Thus, rather give yourself a break; meditate, do yoga, go to the gym or try to something new. All those things will help you to build those skills and make you even more experienced, emotionally intelligent, mature and even more efficient! Passion and fun will influence your efficiency more than every hour ever could.</TextParagraph>
 
-        <BlogSubHeader>A ‘yes’ is the ultimate ‘no’</BlogSubHeader>
-        <BlogParagraph>Referencing to the last paragraphs, you only have a limited amount of energy in your life. Use it wisely and for something meaningful. Reflection on what you truly desire in your life might be a good starting point.</BlogParagraph>
-        <BlogParagraph>The more skills and knowledge people have, the busier they are in general. That’s nothing bad, but often they are not doing what they actually wanted to do. People are attracted to opportunities of all kind which then leads most of the time to a “yes”. But, what people forget is that saying yes to an opportunity means that you say “no” to a ton of other opportunities which you don’t even know about. That being said, we should rather focus on our actual life-visions, our values and true desires. Every opportunity which doesn’t clearly support those goals should be rejected.</BlogParagraph>
-    </BlogDraft>
+        <TextSubHeader>A ‘yes’ is the ultimate ‘no’</TextSubHeader>
+        <TextParagraph>Referencing to the last paragraphs, you only have a limited amount of energy in your life. Use it wisely and for something meaningful. Reflection on what you truly desire in your life might be a good starting point.</TextParagraph>
+        <TextParagraph>The more skills and knowledge people have, the busier they are in general. That’s nothing bad, but often they are not doing what they actually wanted to do. People are attracted to opportunities of all kind which then leads most of the time to a “yes”. But, what people forget is that saying yes to an opportunity means that you say “no” to a ton of other opportunities which you don’t even know about. That being said, we should rather focus on our actual life-visions, our values and true desires. Every opportunity which doesn’t clearly support those goals should be rejected.</TextParagraph>
+    </TextPageDraft>
 }
 
 export default BlogPostSayingYesIsABigNoToOpportunities

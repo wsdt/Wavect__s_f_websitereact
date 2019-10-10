@@ -21,7 +21,7 @@ import React from 'react'
 // reactstrap components
 
 // core components
-import DemoFooter from '../components/Footers/DemoFooter.js'
+import Footer from '../components/Footers/Footer.js'
 import IndexHeader from '../components/Headers/IndexHeader.js'
 import IndexNavbar from '../components/Navbars/IndexNavbar.js'
 
@@ -66,7 +66,7 @@ function Index() {
                 <SectionLogin />
                 <SectionExamples />
                 <SectionDownload />
-                <DemoFooter />
+                <Footer />
             </div>
         </>
     )

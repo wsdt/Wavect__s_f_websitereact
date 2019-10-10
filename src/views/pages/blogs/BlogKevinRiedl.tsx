@@ -20,7 +20,7 @@ import React from 'react'
 // reactstrap components
 import {Button, Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane} from 'reactstrap'
 // core components
-import DemoFooter from '../../../components/Footers/DemoFooter'
+import Footer from '../../../components/Footers/Footer'
 import ExamplesNavbar from '../../../components/Navbars/ExamplesNavbar'
 
 import imgKevinRiedlHappinessNeqFulfillment
@@ -141,7 +141,7 @@ function BlogKevinRiedl() {
                     </TabContent>
                 </Container>
             </div>
-            <DemoFooter/>
+            <Footer/>
         </>
     )
 }

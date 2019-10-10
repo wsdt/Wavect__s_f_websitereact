@@ -20,21 +20,21 @@ import React from 'react'
 // reactstrap components
 import {Col, Container, Row} from 'reactstrap'
 // core components
-import DemoFooter from '../../../../components/Footers/DemoFooter'
+import Footer from '../../../../components/Footers/Footer'
 // assets
 import BlogPageHeader from '../../../../components/Headers/BlogPageHeader'
 import ExamplesNavbar from '../../../../components/Navbars/ExamplesNavbar'
 import {BlogCategories} from '../BlogCategories'
-import {BlogHeader} from './blogs_draft/BlogHeader'
+import {TextHeader} from './text_components/TextHeader'
 
 
-export interface IBlogDraftProps {
-    blogCategory: BlogCategories
-    blogTitle: string
+export interface ITextPageDraftProps {
+    blogCategory?: BlogCategories
+    title: string
     children: any
 }
 
-function BlogDraft(props:IBlogDraftProps) {
+function TextPageDraft(props:ITextPageDraftProps) {
 
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
@@ -49,7 +49,7 @@ function BlogDraft(props:IBlogDraftProps) {
             <BlogPageHeader />
             <div className='section profile-content'>
                 <Container>
-                    <BlogHeader blogCategory={props.blogCategory}>{props.blogTitle}</BlogHeader>
+                    <TextHeader blogCategory={props.blogCategory}>{props.title}</TextHeader>
 
                     <Row>
                         <Col className='ml-auto mr-auto text-center' md='8'>
@@ -60,9 +60,9 @@ function BlogDraft(props:IBlogDraftProps) {
 
                 </Container>
             </div>
-            <DemoFooter />
+            <Footer />
         </>
     )
 }
 
-export default BlogDraft
+export default TextPageDraft

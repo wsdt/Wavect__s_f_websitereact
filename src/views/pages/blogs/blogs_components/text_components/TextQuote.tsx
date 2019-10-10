@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export interface IBlogQuoteProps {
+export interface ITextQuoteProps {
     autor?: string
     quoteLink: string
     quoteSourceTitle: string
@@ -9,7 +9,7 @@ export interface IBlogQuoteProps {
     quote: string
 }
 
-export const BlogQuote = (props: IBlogQuoteProps) => {
+export const TextQuote = (props: ITextQuoteProps) => {
     return <blockquote className='blockquote'>
 
         <footer className='blockquote-footer'><span style={{fontStyle: 'italic', fontSize: 14, color: '#ccc'}}>{props.quote}</span>

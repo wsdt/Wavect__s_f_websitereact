@@ -28,7 +28,7 @@ import CardBody from 'reactstrap/lib/CardBody'
 import CardImg from 'reactstrap/lib/CardImg'
 import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
-import DemoFooter from '../../components/Footers/DemoFooter'
+import Footer from '../../components/Footers/Footer'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
 
 // assets
@@ -83,7 +83,7 @@ function Blog() {
 
                 </Container>
             </div>
-            <DemoFooter />
+            <Footer />
         </>
     )
 }

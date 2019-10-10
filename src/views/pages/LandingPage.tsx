@@ -24,7 +24,7 @@ import { Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row } fr
 // core components
 import { faAward, faHandsHelping, faListAlt, faRuler } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import DemoFooter from '../../components/Footers/DemoFooter'
+import Footer from '../../components/Footers/Footer'
 import LandingPageHeader from '../../components/Headers/LandingPageHeader'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
 
@@ -406,7 +406,7 @@ function LandingPage() {
                     </Container>
                 </div>
             </div>
-            <DemoFooter />
+            <Footer />
         </>
     )
 }

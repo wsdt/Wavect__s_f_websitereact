@@ -35,6 +35,8 @@ import BlogPostStartReflectingOrDieFullOfRegrets
     from "./views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets";
 import BlogPostSayingYesIsABigNoToOpportunities
     from "./views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities";
+import Impressum from "./views/pages/Impressum";
+import DataPrivacy from "./views/pages/DataPrivacy";
 // others
 
 ReactDOM.render(
@@ -47,6 +49,9 @@ ReactDOM.render(
             <Route path="/blogs/kevin-riedl/happiness-neq-fulfillment-who-are-you-really" render={props => <BlogPostHappinessNeqFulfillment {...props} />} />
             <Route path="/blogs/kevin-riedl" render={props => <BlogKevinRiedl {...props} />} />
             <Route path="/blogs" render={props => <Blog {...props} />} />
+
+            <Route path="/impressum" render={props => <Impressum {...props} />} />
+            <Route path="/data-privacy" render={props => <DataPrivacy {...props} />} />
 
             <Route path="/" render={props => <LandingPage {...props} />} />
             <Redirect to="/" />
