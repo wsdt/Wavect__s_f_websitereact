@@ -1,12 +1,12 @@
 
 import * as React from 'react'
 
-interface ITextParagraphProps {
+interface IPProps {
     children:any
 
 }
 
-export const TextParagraph = (props:ITextParagraphProps) => {
+export const P = (props:IPProps) => {
     return  <p style={{marginBottom: 12, textAlign: 'left', fontSize: 16}}>
         {props.children}
     </p>

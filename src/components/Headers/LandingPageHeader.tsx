@@ -16,49 +16,15 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { useState } from 'react'
+import React  from 'react'
 
 // reactstrap components
 import { Container } from 'reactstrap'
 import * as imgAntoineBarres from '../../assets/img/antoine-barres.jpg'
 import * as imgClouds from '../../assets/img/clouds.png'
 import imgFoglow from '../../assets/img/fog-low.png'
+import {useWindowDimensions} from "../../controllers/WindowController";
 
-const getWindowDimensions = () => {
-    const { innerWidth: width, innerHeight: height } = window
-    return { width, height }
-}
-
-const useWindowDimensions = (pageHeader: React.RefObject<HTMLDivElement>) => {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
-
-    // @ts-ignore
-    React.useEffect(() => {
-        const handleResize = () => {
-            setWindowDimensions(getWindowDimensions())
-        }
-        window.addEventListener('resize', handleResize)
-
-        if (window.innerWidth < 991) {
-            const updateScroll = () => {
-                const windowScrollTop = window.pageYOffset / 3
-                // @ts-ignore
-                pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'
-            }
-
-            window.addEventListener('scroll', updateScroll)
-
-            return function cleanup() {
-                window.removeEventListener('scroll', updateScroll)
-                window.removeEventListener('resize', handleResize)
-            }
-        }
-        return function cleanup() {
-            window.removeEventListener('resize', handleResize)
-        }
-    })
-    return windowDimensions
-}
 
 function LandingPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()
