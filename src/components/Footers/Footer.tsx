@@ -38,7 +38,7 @@ function Footer() {
                         </ul>
                     </nav>
                     <div className="credits ml-auto">
-                        <span className="copyright">© Design by Creative Tim</span>
+                        <span className="copyright">© Wavect</span>
                     </div>
                 </Row>
             </Container>
