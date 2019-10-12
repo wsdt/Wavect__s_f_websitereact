@@ -37,6 +37,7 @@ import BlogPostSayingYesIsABigNoToOpportunities
     from "./views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities";
 import Impressum from "./views/pages/Impressum";
 import DataPrivacy from "./views/pages/DataPrivacy";
+import Traction from "./views/pages/Traction";
 // others
 
 ReactDOM.render(
@@ -50,6 +51,7 @@ ReactDOM.render(
             <Route path="/blogs/kevin-riedl" render={props => <BlogKevinRiedl {...props} />} />
             <Route path="/blogs" render={props => <Blog {...props} />} />
 
+            <Route path="/traction" render={props => <Traction {...props} />} />
             <Route path="/impressum" render={props => <Impressum {...props} />} />
             <Route path="/data-privacy" render={props => <DataPrivacy {...props} />} />
 

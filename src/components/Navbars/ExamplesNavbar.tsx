@@ -26,6 +26,8 @@ import { Link } from 'react-router-dom'
 import {faBlog} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
+import {faHandshake} from "@fortawesome/free-solid-svg-icons/faHandshake";
+
 
 function ExamplesNavbar() {
     const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
@@ -72,18 +74,24 @@ function ExamplesNavbar() {
                 </div>
                 <Collapse className='justify-content-end' navbar={true} isOpen={navbarCollapse}>
                     <Nav navbar={true}>
+
                         <NavItem>
-                            <NavLink href='mailto:office@wavect.io' title='Contact us via e-mail' data-placement='bottom'>
-                                <i className='fa fa-envelope' /> E-Mail
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href='/blogs'>
+                            <NavLink href='/blogs' title='Blog posts of co-founders'>
                                 <FontAwesomeIcon icon={faBlog}/> Blogs
                             </NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink href='/traction' title='Past competitions & Partners'>
+                                <FontAwesomeIcon icon={faHandshake}/> Traction
+                            </NavLink>
+                        </NavItem>
 
-
+                        <NavItem>
+                            <NavLink data-placement='bottom' href='mailto:office@wavect.io' title='Contact us via e-mail'>
+                                <i className='fa fa-envelope' />
+                                <p className='d-lg-none'>E-Mail</p>
+                            </NavLink>
+                        </NavItem>
                         <NavItem>
                             <NavLink data-placement='bottom' href='https://www.linkedin.com/company/19010151' target='_blank' title='Follow us on LinkedIn'>
                                 <i className='fa fa-linkedin-square' />

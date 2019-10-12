@@ -107,7 +107,7 @@ function BlogKevinRiedl() {
                     <TabContent className='following' activeTab={activeTab}>
                         <TabPane tabId='1' id='follows'>
                             <Row>
-                                <Col className='ml-auto mr-auto' md='8'>
+                                <Col className='ml-auto mr-auto' md='auto'>
                                     <ul className='list-unstyled follows'>
                                         <BlogListDraft
                                             blogLink='/blogs/kevin-riedl/happiness-neq-fulfillment-who-are-you-really'
