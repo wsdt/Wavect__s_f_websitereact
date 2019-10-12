@@ -22,7 +22,6 @@ import React from 'react'
 import Button from 'reactstrap/lib/Button'
 import Card from 'reactstrap/lib/Card'
 import CardBody from 'reactstrap/lib/CardBody'
-import CardImg from 'reactstrap/lib/CardImg'
 import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 
@@ -30,6 +29,7 @@ import CardTitle from 'reactstrap/lib/CardTitle'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbBlogs, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
+import {GrayColorImg} from "./grayscale_color/GrayColorImg/GrayColorImg";
 
 function Blog() {
     return (
@@ -47,7 +47,7 @@ function Blog() {
 
             <a href='/blogs/kevin-riedl' style={{color: '#fff'}}>
                 <Card style={{width: '20rem'}}>
-                    <CardImg top={true} src={imgKevinRiedl} alt='CEO: Kevin Riedl'/>
+                    <GrayColorImg src={imgKevinRiedl} alt='CEO: Kevin Riedl'/>
                     <CardBody>
                         <CardTitle style={{fontWeight: 'bold'}}>Kevin Riedl, Bsc.</CardTitle>
                         <CardText>Here you'll find economical, technical & personal posts.</CardText>

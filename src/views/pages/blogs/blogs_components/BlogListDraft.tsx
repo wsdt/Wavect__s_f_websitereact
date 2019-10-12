@@ -1,25 +1,7 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from 'react'
-// reactstrap components
 import {Col, Row} from 'reactstrap'
 import {BlogCategories} from '../BlogCategories'
+import {GrayColorImg} from "../../grayscale_color/GrayColorImg/GrayColorImg";
 
 export interface IBlogListDraftProps {
     blogLink: string
@@ -33,11 +15,11 @@ function BlogListDraft(props: IBlogListDraftProps) {
         <a href={props.blogLink}>
             <li>
                 <Row>
-                    <Col className='ml-auto mr-auto' lg='5' md='8' xs='8'>
-                        <img alt={`${props.blogTitle} - header title`}
+                    <Col className='ml-auto mr-auto' lg='2' md='5' xs='5'>
+                        <GrayColorImg alt={`${props.blogTitle} - header title`}
                              className='img-circle img-no-padding img-responsive' src={props.blogHeaderImg}/>
                     </Col>
-                    <Col className='ml-auto mr-auto' lg='7' md='4' xs='4'>
+                    <Col className='ml-auto mr-auto' lg='10' md='8' xs='8'>
                         <h6>
                             {props.blogTitle}
                             <br/>

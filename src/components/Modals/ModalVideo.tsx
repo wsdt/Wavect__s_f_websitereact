@@ -1,14 +1,13 @@
 import React from 'react'
 import { Button, Modal } from 'reactstrap'
+import {GrayColorButton} from "../../views/pages/grayscale_color/GrayColorButton/GrayColorButton";
+import {faPlay} from "@fortawesome/free-solid-svg-icons";
 
 function ModalVideo() {
     const [scrollingLongContent, setScrollingLongContent] = React.useState(false)
     return (
         <>
-            <Button className='btn-round mr-1' color='primary' onClick={() => setScrollingLongContent(true)} outline={true}>
-                <i className='fa fa-play' />
-                Watch video
-            </Button>
+            <GrayColorButton icon={faPlay} onClick={() => setScrollingLongContent(true)} outline={true} title='Watch video'/>
 
             <Modal
                 isOpen={scrollingLongContent}

@@ -23,7 +23,6 @@ import { Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row } fr
 
 // core components
 import { faAward, faHandsHelping, faListAlt, faRuler } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Footer from '../../components/Footers/Footer'
 import LandingPageHeader from '../../components/Headers/LandingPageHeader'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
@@ -35,6 +34,8 @@ import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import imgMariellaGalneder from '../../assets/img/team/mariella_galneder.jpg'
 import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
 import ModalVideo from '../../components/Modals/ModalVideo'
+import {GrayColorIcon} from "./grayscale_color/GrayColorIcon/GrayColorIcon";
+import {GrayColorImg} from "./grayscale_color/GrayColorImg/GrayColorImg";
 
 function LandingPage() {
     document.documentElement.classList.remove('nav-open')
@@ -68,9 +69,8 @@ function LandingPage() {
                         <Row>
                             <Col md='3'>
                                 <div className='info'>
-                                    <div className='icon icon-primary'>
-                                        <FontAwesomeIcon icon={faListAlt} />
-                                    </div>
+                                    <GrayColorIcon icon={faListAlt} />
+
                                     <div className='description'>
                                         <h4 className='info-title'>Relevant challenges</h4>
                                         <p className='description'>
@@ -85,9 +85,7 @@ function LandingPage() {
                             </Col>
                             <Col md='3'>
                                 <div className='info'>
-                                    <div className='icon icon-primary'>
-                                        <FontAwesomeIcon icon={faAward} />
-                                    </div>
+                                    <GrayColorIcon icon={faAward} />
                                     <div className='description'>
                                         <h4 className='info-title'>Personalized prizes</h4>
                                         <p>
@@ -102,9 +100,7 @@ function LandingPage() {
                             </Col>
                             <Col md='3'>
                                 <div className='info'>
-                                    <div className='icon icon-primary'>
-                                        <FontAwesomeIcon icon={faHandsHelping} />
-                                    </div>
+                                    <GrayColorIcon icon={faHandsHelping}/>
                                     <div className='description'>
                                         <h4 className='info-title'>Micro-Volunteering</h4>
                                         <p>
@@ -119,9 +115,7 @@ function LandingPage() {
                             </Col>
                             <Col md='3'>
                                 <div className='info'>
-                                    <div className='icon icon-primary'>
-                                        <FontAwesomeIcon icon={faRuler} />
-                                    </div>
+                                    <GrayColorIcon icon={faRuler}/>
                                     <div className='description'>
                                         <h4 className='info-title'>Measurable Impact</h4>
                                         <p>
@@ -145,7 +139,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CTO: Christof Jori' src={imgChristofJori} />
+                                            <GrayColorImg alt='CTO: Christof Jori' src={imgChristofJori} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -196,7 +190,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CMO: Mariella Galneder' src={imgMariellaGalneder} />
+                                            <GrayColorImg alt='CMO: Mariella Galneder' src={imgMariellaGalneder} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -241,7 +235,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CIO: Reza Shokri' src={imgRezaShokri} />
+                                            <GrayColorImg alt='CIO: Reza Shokri' src={imgRezaShokri} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -300,7 +294,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CFO: Daniel Gosterxeier' src={imgDanielGosterxeier} />
+                                            <GrayColorImg alt='CFO: Daniel Gosterxeier' src={imgDanielGosterxeier} />
                                         </a>
                                     </div>
                                     <CardBody>
@@ -345,7 +339,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CEO: Kevin Riedl' src={imgKevinRiedl} />
+                                            <GrayColorImg alt='CEO: Kevin Riedl' src={imgKevinRiedl} />
                                         </a>
                                     </div>
                                     <CardBody>

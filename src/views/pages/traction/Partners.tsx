@@ -24,6 +24,7 @@ import imgPartnerDigipuls from '../../../assets/img/traction/partners/partner_di
 import imgPartnerInncubator from '../../../assets/img/traction/partners/partner_inncubator.png'
 import { H2 } from '../blogs/blogs_components/text_components/H2'
 import { P } from '../blogs/blogs_components/text_components/P'
+import {GrayColorImg} from '../grayscale_color/GrayColorImg/GrayColorImg'
 
 function Partners(_: any) {
     return (
@@ -35,7 +36,7 @@ function Partners(_: any) {
                     <Card className='card-profile card-plain'>
                         <div className='card-avatar'>
                             <a href='https://www.digipuls.com' target='_blank' rel='noopener noreferrer'>
-                                <img alt='DigiPuls, Oliver Feldkircher' src={imgPartnerDigipuls} />
+                                <GrayColorImg alt='DigiPuls, Oliver Feldkircher' src={imgPartnerDigipuls} />
                             </a>
                         </div>
                         <CardBody>
@@ -71,11 +72,11 @@ function Partners(_: any) {
                     </Card>
                 </Col>
 
-                <Col md='4' xs='8' className="ml-auto mr-auto text-center">
+                <Col md='4' xs='8' className='ml-auto mr-auto text-center'>
                     <Card className='card-profile card-plain'>
                         <div className='card-avatar'>
                             <a href='https://inncubator.at' target='_blank' rel='noopener noreferrer'>
-                                <img alt='Inncubator, Innsbruck (WiFi, Tyrol)' src={imgPartnerInncubator} />
+                                <GrayColorImg alt='Inncubator, Innsbruck (WiFi, Tyrol)' src={imgPartnerInncubator} />
                             </a>
                         </div>
                         <CardBody>

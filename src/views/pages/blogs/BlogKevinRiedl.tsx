@@ -38,6 +38,7 @@ import {BlogCategories} from './BlogCategories'
 import BlogListDraft from './blogs_components/BlogListDraft'
 import BreadCrumbs from "../breadcrumbs/Breadcrumbs";
 import {breadCrumbBlogKevinRiedl, breadCrumbBlogs, breadCrumbHome} from "../breadcrumbs/breadcrumbs.constants";
+import {GrayColorImg} from "../grayscale_color/GrayColorImg/GrayColorImg";
 
 function BlogKevinRiedl() {
     const [activeTab, setActiveTab] = React.useState('1')
@@ -66,7 +67,7 @@ function BlogKevinRiedl() {
                             <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl]}/>
                             <div className='owner' style={{marginTop: 100}}>
                                 <div className='avatar'>
-                                    <img alt='Kevin Riedl, Bsc.' className='img-circle img-no-padding img-responsive'
+                                    <GrayColorImg alt='Kevin Riedl, Bsc.' className='img-circle img-no-padding img-responsive'
                                          src={imgKevinRiedl}/>
                                 </div>
                                 <div className='name'>
