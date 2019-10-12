@@ -19,11 +19,11 @@
 import React from 'react'
 
 // reactstrap components
-import { Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row } from 'reactstrap'
+import {Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row} from 'reactstrap'
 
 // core components
-import { faAward, faHandsHelping, faListAlt, faRuler } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faAward, faHandsHelping, faListAlt, faRuler} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Footer from '../../components/Footers/Footer'
 import LandingPageHeader from '../../components/Headers/LandingPageHeader'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
@@ -46,8 +46,8 @@ function LandingPage() {
     })
     return (
         <>
-            <ExamplesNavbar />
-            <LandingPageHeader />
+            <ExamplesNavbar/>
+            <LandingPageHeader/>
             <div className='main'>
                 <div className='section text-center'>
                     <Container>
@@ -55,29 +55,33 @@ function LandingPage() {
                             <Col className='ml-auto mr-auto' md='8'>
                                 <h2 className='title'>Let's face the truth</h2>
                                 <h5 className='description'>
-                                    The world faces incredible huge problems: decreasing solidarity & social interaction in our society, climate
-                                    change, growing pollution & health issues. We designed a product which aims to address those issues by offering an
+                                    The world faces incredible huge problems: decreasing solidarity & social interaction
+                                    in our society, climate
+                                    change, growing pollution & health issues. We designed a platform which aims to
+                                    address those issues by offering an
                                     economical value for organizations & users.
                                 </h5>
-                                <br />
-                                <ModalVideo />
+                                <br/>
+                                <ModalVideo/>
                             </Col>
                         </Row>
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <Row>
                             <Col md='3'>
                                 <div className='info'>
                                     <div className='icon icon-info'>
-                                        <FontAwesomeIcon icon={faListAlt} />
+                                        <FontAwesomeIcon icon={faListAlt}/>
                                     </div>
                                     <div className='description'>
                                         <h4 className='info-title'>Personalized challenge</h4>
                                         <p className='description'>
-                                            Solve challenges based on what's important to you. You think climate change is a big issue, then you'll
+                                            Solve challenges based on what's important to you. You think climate change
+                                            is a big issue, then you'll
                                             receive related challenges which help to address that problem.
                                         </p>
-                                        <Button className='btn-link' color='info' href='/#' onClick={e => e.preventDefault()}>
+                                        <Button className='btn-link' color='info' href='/#'
+                                                onClick={e => e.preventDefault()}>
                                             Coming Soon
                                         </Button>
                                     </div>
@@ -86,15 +90,17 @@ function LandingPage() {
                             <Col md='3'>
                                 <div className='info'>
                                     <div className='icon icon-info'>
-                                        <FontAwesomeIcon icon={faAward} />
+                                        <FontAwesomeIcon icon={faAward}/>
                                     </div>
                                     <div className='description'>
                                         <h4 className='info-title'>Relevant prizes</h4>
                                         <p>
-                                            Solving challenges takes energy. By solving some you'll win relevant prizes which address your interests.
+                                            Solving challenges takes energy. By solving some you'll win relevant prizes
+                                            which address your interests.
                                             If you love travelling or skiing, you might win related prizes.
                                         </p>
-                                        <Button className='btn-link' color='info' href='/#' onClick={e => e.preventDefault()}>
+                                        <Button className='btn-link' color='info' href='/#'
+                                                onClick={e => e.preventDefault()}>
                                             Coming Soon
                                         </Button>
                                     </div>
@@ -103,15 +109,18 @@ function LandingPage() {
                             <Col md='3'>
                                 <div className='info'>
                                     <div className='icon icon-info'>
-                                        <FontAwesomeIcon icon={faHandsHelping} />
+                                        <FontAwesomeIcon icon={faHandsHelping}/>
                                     </div>
                                     <div className='description'>
                                         <h4 className='info-title'>Micro-Volunteering</h4>
                                         <p>
-                                            Gather points for your profile's reputation by solving challenges. This reputation can be attached to your
-                                            CV which shows your social commitment. The whole app focuses heavily on Gamification.
+                                            Gather points for your profile's reputation by solving challenges. This
+                                            reputation can be attached to your
+                                            CV which shows your social commitment. The whole app focuses heavily on
+                                            Gamification.
                                         </p>
-                                        <Button className='btn-link' color='info' href='/#' onClick={e => e.preventDefault()}>
+                                        <Button className='btn-link' color='info' href='/#'
+                                                onClick={e => e.preventDefault()}>
                                             Coming Soon
                                         </Button>
                                     </div>
@@ -120,15 +129,17 @@ function LandingPage() {
                             <Col md='3'>
                                 <div className='info'>
                                     <div className='icon icon-info'>
-                                        <FontAwesomeIcon icon={faRuler} />
+                                        <FontAwesomeIcon icon={faRuler}/>
                                     </div>
                                     <div className='description'>
                                         <h4 className='info-title'>Measurable Impact</h4>
                                         <p>
-                                            The impact of each challenge will be aggregated which shows you what & how much impact you and others have
+                                            The impact of each challenge will be aggregated which shows you what & how
+                                            much impact you and others have
                                             had on our small world. No more "I can't change anything"!
                                         </p>
-                                        <Button className='btn-link' color='info' href='/#' onClick={e => e.preventDefault()}>
+                                        <Button className='btn-link' color='info' href='/#'
+                                                onClick={e => e.preventDefault()}>
                                             Coming Soon
                                         </Button>
                                     </div>
@@ -145,7 +156,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CTO: Christof Jori' src={imgChristofJori} />
+                                            <img alt='CTO: Christof Jori' src={imgChristofJori}/>
                                         </a>
                                     </div>
                                     <CardBody>
@@ -156,27 +167,47 @@ function LandingPage() {
                                             </div>
                                         </a>
                                         <p className='card-description text-center'>
-                                            I'm Chris and I'm passionate about programming. Thus, I love to learn new, especially cutting-edge
-                                            technologies. My vision is to create a unique project that does have an immense impact on our society.
+                                            I'm Chris and I'm passionate about programming. Thus, I love to learn new,
+                                            especially cutting-edge
+                                            technologies. My vision is to create a unique project that does have an
+                                            immense impact on our society.
                                             Never stop learning!
                                         </p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
-                                        <Button
-                                            className='btn-just-icon btn-neutral'
-                                            color='link'
-                                            href='https://www.linkedin.com/in/christof-jori-a1912817a/'
-                                        >
-                                            <i className='fa fa-linkedin' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='https://www.facebook.com/crise.jori'>
-                                            <i className='fa fa-facebook' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='https://www.instagram.com/crisjny/'>
-                                            <i className='fa fa-instagram' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='mailto:christof.jori@wavect.io'>
-                                            <i className='fa fa-envelope' />
+                                        <a href='https://www.linkedin.com/in/christof-jori-a1912817a/' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral'
+                                                color='link'>
+                                                <i className='fa fa-linkedin'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='http://github.com/sevensevener' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                                                <i className='fa fa-github'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.instagram.com/crisjny/' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                                                <i className='fa fa-instagram'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.facebook.com/crise.jori' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                                                <i className='fa fa-facebook'/>
+                                            </Button>
+                                        </a>
+
+                                        <Button className='btn-just-icon btn-neutral ml-1' color='link'
+                                                href='mailto:christof.jori@wavect.io'>
+                                            <i className='fa fa-envelope'/>
                                         </Button>
                                     </CardFooter>
                                 </Card>
@@ -185,7 +216,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CMO: Mariella Galneder' src={imgMariellaGalneder} />
+                                            <img alt='CMO: Mariella Galneder' src={imgMariellaGalneder}/>
                                         </a>
                                     </div>
                                     <CardBody>
@@ -196,35 +227,47 @@ function LandingPage() {
                                             </div>
                                         </a>
                                         <p className='card-description text-center'>
-                                            My name is Mariella, but as soon as I start talking English, I introduce myself as Mary. I love dedicated
-                                            people who turn their dreams into a vision and pursue it. And my vision is it to open the people’s eyes
+                                            My name is Mariella, but as soon as I start talking English, I introduce
+                                            myself as Mary. I love dedicated
+                                            people who turn their dreams into a vision and pursue it. And my vision is
+                                            it to open the people’s eyes
                                             and make a change together.
                                         </p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
-                                        <Button
-                                            className='btn-just-icon btn-neutral'
-                                            color='link'
-                                            href='https://www.linkedin.com/in/mariella-galneder-653719180/'
-                                        >
-                                            <i className='fa fa-linkedin' />
-                                        </Button>
-                                        <Button
-                                            className='btn-just-icon btn-neutral ml-1'
-                                            color='link'
-                                            href='https://www.facebook.com/mariella.galneder'
-                                        >
-                                            <i className='fa fa-facebook' />
-                                        </Button>
-                                        <Button
-                                            className='btn-just-icon btn-neutral ml-1'
-                                            color='link'
-                                            href='https://www.instagram.com/plain_vanilla_mary/'
-                                        >
-                                            <i className='fa fa-instagram' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='mailto:mariella.galneder@wavect.io'>
-                                            <i className='fa fa-envelope' />
+                                        <a href='https://www.linkedin.com/in/mariella-galneder-653719180/'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral'
+                                                color='link'>
+                                                <i className='fa fa-linkedin'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.instagram.com/plain_vanilla_mary/'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral ml-1'
+                                                color='link'>
+                                                <i className='fa fa-instagram'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.facebook.com/mariella.galneder'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral ml-1'
+                                                color='link'>
+                                                <i className='fa fa-facebook'/>
+                                            </Button>
+                                        </a>
+
+                                        <Button className='btn-just-icon btn-neutral ml-1' color='link'
+                                                href='mailto:mariella.galneder@wavect.io'>
+                                            <i className='fa fa-envelope'/>
                                         </Button>
                                     </CardFooter>
                                 </Card>
@@ -233,7 +276,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CIO: Reza Shokri' src={imgRezaShokri} />
+                                            <img alt='CIO: Reza Shokri' src={imgRezaShokri}/>
                                         </a>
                                     </div>
                                     <CardBody>
@@ -244,20 +287,52 @@ function LandingPage() {
                                             </div>
                                         </a>
                                         <p className='card-description text-center'>
-                                            Hi, my name is Reza. I'm an entrepreneur & software engineer. It's easier than ever before to have a
-                                            social, ecological & economical impact. So, my passion is all about disruptive technologies & innovations
+                                            Hi, my name is Reza. I'm an entrepreneur & software engineer. It's easier
+                                            than ever before to have a
+                                            social, ecological & economical impact. So, my passion is all about
+                                            disruptive technologies & innovations
                                             with the possibility to reach out to billions of people.
                                         </p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
-                                        <Button className='btn-just-icon btn-neutral' color='link' href='https://www.linkedin.com/in/reza-shokri/'>
-                                            <i className='fa fa-linkedin' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='https://www.facebook.com/shokri.at'>
-                                            <i className='fa fa-facebook' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='mailto:reza.shokri@wavect.io'>
-                                            <i className='fa fa-envelope' />
+                                        <a href='https://shokri.at' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                                                <i className='fa fa-link'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.linkedin.com/in/reza-shokri/' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral' color='link'>
+                                                <i className='fa fa-linkedin'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://github.com/bioharz/' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral' color='link'>
+                                                <i className='fa fa-github'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.facebook.com/shokri.at' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                                                <i className='fa fa-facebook'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://twitter.com/bioharz33' target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral' color='link'>
+                                                <i className='fa fa-twitter'/>
+                                            </Button>
+                                        </a>
+
+                                        <Button className='btn-just-icon btn-neutral ml-1' color='link'
+                                                href='mailto:reza.shokri@wavect.io'>
+                                            <i className='fa fa-envelope'/>
                                         </Button>
                                     </CardFooter>
                                 </Card>
@@ -268,7 +343,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CFO: Daniel Gosterxeier' src={imgDanielGosterxeier} />
+                                            <img alt='CFO: Daniel Gosterxeier' src={imgDanielGosterxeier}/>
                                         </a>
                                     </div>
                                     <CardBody>
@@ -279,31 +354,46 @@ function LandingPage() {
                                             </div>
                                         </a>
                                         <p className='card-description text-center'>
-                                            Hey everybody! I’m Daniel and my role at Wavect is to find new strategy partners, networking and all about
-                                            sales & finances. I get up everyday being happy, a positive mind to influence the people around me. My
-                                            vision is a world without tribes - we're all a big family sitting in one boat.
+                                            Hey everybody! I’m Daniel and my role at Wavect is to find new strategy
+                                            partners, networking and all about
+                                            sales & finances. I get up everyday being happy, a positive mind to
+                                            influence the people around me. My
+                                            vision is a world without tribes - we're all a big family sitting in one
+                                            boat.
                                         </p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
-                                        <Button
-                                            className='btn-just-icon btn-neutral'
-                                            color='link'
-                                            href='https://www.linkedin.com/in/daniel-e-gosterxeier/'
-                                        >
-                                            <i className='fa fa-linkedin' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='https://www.facebook.com/d.gosterxeier'>
-                                            <i className='fa fa-facebook' />
-                                        </Button>
-                                        <Button
-                                            className='btn-just-icon btn-neutral ml-1'
-                                            color='link'
-                                            href='https://www.instagram.com/daniel_x_official/'
-                                        >
-                                            <i className='fa fa-instagram' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='mailto:daniel.gosterxeier@wavect.io'>
-                                            <i className='fa fa-envelope' />
+                                        <a href='https://www.linkedin.com/in/daniel-e-gosterxeier/'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral'
+                                                color='link'>
+                                                <i className='fa fa-linkedin'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.instagram.com/daniel_x_official/'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral ml-1'
+                                                color='link'>
+                                                <i className='fa fa-instagram'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.facebook.com/d.gosterxeier'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                                                <i className='fa fa-facebook'/>
+                                            </Button>
+                                        </a>
+
+                                        <Button className='btn-just-icon btn-neutral ml-1' color='link'
+                                                href='mailto:daniel.gosterxeier@wavect.io'>
+                                            <i className='fa fa-envelope'/>
                                         </Button>
                                     </CardFooter>
                                 </Card>
@@ -312,7 +402,7 @@ function LandingPage() {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <img alt='CEO: Kevin Riedl' src={imgKevinRiedl} />
+                                            <img alt='CEO: Kevin Riedl' src={imgKevinRiedl}/>
                                         </a>
                                     </div>
                                     <CardBody>
@@ -323,31 +413,56 @@ function LandingPage() {
                                             </div>
                                         </a>
                                         <p className='card-description text-center'>
-                                            I'm Kevin and I want to leave Earth just a little bit better than I found it. I love challenges and
-                                            consider myself as a lifelong learner & visionary. Thus, I dream of changing the way how people interact
-                                            with each other and I'm sure that our software application may be a good way to achieve that goal.
+                                            I'm Kevin and I want to leave Earth just a little bit better than I found
+                                            it. I love challenges and
+                                            consider myself as a lifelong learner & visionary. Thus, I dream of changing
+                                            the way how people interact
+                                            with each other and I'm sure that our software application may be a good way
+                                            to achieve that goal.
                                         </p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
-                                        <Button
-                                            className='btn-just-icon btn-neutral'
-                                            color='link'
-                                            href='https://www.linkedin.com/in/kevin-riedl-947219158/'
-                                        >
-                                            <i className='fa fa-linkedin' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='https://www.facebook.com/kriedl97'>
-                                            <i className='fa fa-facebook' />
-                                        </Button>
-                                        <Button
-                                            className='btn-just-icon btn-neutral ml-1'
-                                            color='link'
-                                            href='https://www.instagram.com/kevkevin_greenhat/'
-                                        >
-                                            <i className='fa fa-instagram' />
-                                        </Button>
-                                        <Button className='btn-just-icon btn-neutral ml-1' color='link' href='mailto:kevin.riedl@wavect.io'>
-                                            <i className='fa fa-envelope' />
+                                        <a href='https://www.linkedin.com/in/kevin-riedl-947219158'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral'
+                                                color='link'>
+                                                <i className='fa fa-linkedin'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.github.com/wsdt'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral ml-1'
+                                                color='link'>
+                                                <i className='fa fa-github'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.instagram.com/kevkevin_greenhat'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button
+                                                className='btn-just-icon btn-neutral ml-1'
+                                                color='link'>
+                                                <i className='fa fa-instagram'/>
+                                            </Button>
+                                        </a>
+
+                                        <a href='https://www.facebook.com/kriedl97'
+                                           target='_blank'
+                                           rel='noopener noreferrer'>
+                                            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                                                <i className='fa fa-facebook'/>
+                                            </Button>
+                                        </a>
+
+                                        <Button className='btn-just-icon btn-neutral ml-1' color='link'
+                                                href='mailto:kevin.riedl@wavect.io'>
+                                            <i className='fa fa-envelope'/>
                                         </Button>
                                     </CardFooter>
                                 </Card>
@@ -359,7 +474,7 @@ function LandingPage() {
                 <div className='section landing-section'>
                     <Container>
                         <Row>
-                            <Col className='ml-auto mr-auto' md='8' style={{ textAlign: 'center' }}>
+                            <Col className='ml-auto mr-auto' md='8' style={{textAlign: 'center'}}>
                                 <h2 className='text-center'>Keep in touch?</h2>
 
                                 {/*<Form className="contact-form">
@@ -397,7 +512,7 @@ function LandingPage() {
                                         </Col>
                                     </Row>
                                 </Form>*/}
-                                <br />
+                                <br/>
                                 <p>
                                     Contact us via <a href='mailto:office@wavect.io'>E-Mail 'office@wavect.io'</a>
                                 </p>
@@ -406,7 +521,7 @@ function LandingPage() {
                     </Container>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </>
     )
 }
