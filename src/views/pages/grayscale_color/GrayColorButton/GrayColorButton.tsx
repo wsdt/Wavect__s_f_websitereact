@@ -14,7 +14,9 @@ export class GrayColorButton extends PureComponent<IGrayColorButtonProps, IGrayC
     public render() {
         return <Button className='btn-round mr-1' color={this.state.isGrayscale ? 'default' : 'primary'} onClick={this.props.onClick} outline={this.props.outline}
                        onMouseEnter={() => this.changeColorState(false)}
-                       onMouseLeave={() => this.changeColorState(true)}>
+                       onMouseLeave={() => this.changeColorState(true)}
+                       onTouchStart={() => this.changeColorState(false)}
+                       onTouchEnd={() => this.changeColorState(true)}>
                 <FontAwesomeIcon icon={this.props.icon} />
                 &nbsp;{this.props.title}
             </Button>

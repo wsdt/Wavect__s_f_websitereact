@@ -11,7 +11,9 @@ export class GrayColorImg extends PureComponent<IGrayColorImgProps, IGrayColorIm
 
     public render() {
         return <div onMouseEnter={() => this.changeColorState(false)}
-                    onMouseLeave={() => this.changeColorState(true)}>
+                    onMouseLeave={() => this.changeColorState(true)}
+                    onTouchStart={() => this.changeColorState(false)}
+                    onTouchEnd={() => this.changeColorState(true)}>
 
             <img alt={this.props.alt} style={this.state.isGrayscale ? {filter: 'grayscale(100)'} : undefined} src={this.props.src} className={this.props.className} />
         </div>
