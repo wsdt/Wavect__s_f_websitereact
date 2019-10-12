@@ -47,11 +47,11 @@ function BlogPageHeader() {
                 style={{
                     backgroundImage: 'url(' + imgBlogHeader + ')',
                 }}
-                className='page-header page-header-xs'
+                className="page-header page-header-xs"
                 data-parallax={true}
                 ref={pageHeader}
             >
-                <div className='filter' />
+                <div className="filter" />
             </div>
         </>
     )

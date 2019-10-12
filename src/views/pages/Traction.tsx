@@ -17,15 +17,16 @@
 
 */
 import React from 'react'
-import {Col, Container, Row} from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 import Footer from '../../components/Footers/Footer'
 import BlogPageHeader from '../../components/Headers/BlogPageHeader'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
-import {P} from './blogs/blogs_components/text_components/P'
-import {TextHeader} from './blogs/blogs_components/text_components/TextHeader'
+import { P } from './blogs/blogs_components/text_components/P'
+import { TextHeader } from './blogs/blogs_components/text_components/TextHeader'
+import BreadCrumbs from './breadcrumbs/Breadcrumbs'
+import {breadCrumbHome, breadCrumbTraction} from './breadcrumbs/breadcrumbs.constants'
 import Competitions from './traction/Competitions'
 import Partners from './traction/Partners'
-
 
 function Traction(_: any) {
     document.documentElement.classList.remove('nav-open')
@@ -36,43 +37,43 @@ function Traction(_: any) {
         }
     })
 
+    return (
+        <>
+            <ExamplesNavbar />
+            <BlogPageHeader />
+            <div className='section profile-content'>
+                <Container>
+                    <Row>
+                        <Col className='ml-auto mr-auto text-left' md='8'>
+                            <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbTraction]}/>
 
-    return <>
-        <ExamplesNavbar/>
-        <BlogPageHeader/>
-        <div className='section profile-content'>
-            <Container>
-                <TextHeader>Traction</TextHeader>
+                            <TextHeader>Traction</TextHeader>
+                            <P>
+                                Young startups need to prove themselves; they need feedback & traction. That's why we participate in several
+                                competitions and always search for strong partners.
+                            </P>
+                            <hr />
+                            <br />
+                            <Competitions />
+                        </Col>
+                    </Row>
+                    <br />
+                </Container>
+            </div>
 
-                <Row>
-                    <Col className='ml-auto mr-auto text-left' md='8'>
-                        <P>
-                            Young startups need to prove themselves; they need feedback & traction. That's why we
-                            participate in several
-                            competitions and always search for strong partners.
-                        </P>
-                        <hr/>
-                        <br/>
-                        <Competitions/>
-                    </Col>
-                </Row>
-                <br/>
+            <div className='section section-dark text-center'>
+                <Container>
+                    <Row>
+                        <Col className='ml-auto mr-auto text-left' md='8'>
+                            <Partners />
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
 
-            </Container>
-        </div>
-
-        <div className='section section-dark text-center'>
-            <Container>
-                <Row>
-                    <Col className='ml-auto mr-auto text-left' md='8'>
-                        <Partners/>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-
-        <Footer/>
-    </>
+            <Footer />
+        </>
+    )
 }
 
 export default Traction

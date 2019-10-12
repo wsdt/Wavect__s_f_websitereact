@@ -17,14 +17,15 @@
 
 */
 import React from 'react'
+import {H2} from './blogs/blogs_components/text_components/H2'
 import {P} from './blogs/blogs_components/text_components/P'
-import {Ul, Li} from './blogs/blogs_components/text_components/Ul'
+import {Li, Ul} from './blogs/blogs_components/text_components/Ul'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
-import {H2} from "./blogs/blogs_components/text_components/H2";
+import {breadCrumbDataPrivacy, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 
 
 function DataPrivacy(_: any) {
-    return <TextPageDraft title='Datenschutzerklärung'>
+    return <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbDataPrivacy]}>
         <H2>Datenschutz</H2>
         <P>Wir haben diese Datenschutzerklärung (Fassung 10.10.2019-221104031) verfasst, um Ihnen gemäß der Vorgaben der
             Datenschutz-Grundverordnung (EU) 2016/679 und dem <a
@@ -205,54 +206,77 @@ function DataPrivacy(_: any) {
             benötigen zu Trackingzwecken eine eindeutige Kennung. Hier ist eine Liste an Cookies, die Google reCAPTCHA
             auf der Demo-Version gesetzt hat:</P>
         <P>
-            <strong>Name:</strong> IDE<br/>
-            <strong>Ablaufzeit:</strong> nach einem Jahr<br/>
+            <strong>Name:</strong> IDE
+
+            <br/>
+            <strong>Ablaufzeit:</strong> nach einem Jahr
+            <br/>
             <strong>Verwendung:</strong> Dieses Cookie wird von der Firma DoubleClick
             (gehört auch Google) gesetzt, um die Aktionen eines Users auf der Webseite im Umgang mit Werbeanzeigen zu
             registrieren und zu melden. So kann die Werbewirksamkeit gemessen und entsprechende Optimierungsmaßnahmen
-            getroffen werden. IDE wird in Browsern unter der Domain doubleclick.net gespeichert.<br/>
+            getroffen werden. IDE wird in Browsern unter der Domain doubleclick.net gespeichert.
+            <br/>
             <strong
             >Beispielwert:</strong> WqTUmlnmv_qXyi_DGNPLESKnRNrpgXoy1K-pAZtAkMbHI-221104031
             <P>
-                <strong>Name:</strong> 1P_JAR<br/>
-                <strong>Ablaufzeit:</strong> nach einem Monat<br/>
+                <strong>Name:</strong> 1P_JAR
+                <br/>
+                <strong>Ablaufzeit:</strong> nach einem Monat
+
+                <br/>
                 <strong>Verwendung:</strong> Dieses Cookie sammelt Statistiken zur
                 Website-Nutzung und misst Conversions. Eine Conversion entsteht z.B., wenn ein User zu einem Käufer
                 wird. Das Cookie wird auch verwendet, um Usern relevante Werbeanzeigen einzublenden. Weiters kann man
-                mit dem Cookie vermeiden, dass ein User dieselbe Anzeige mehr als einmal zu Gesicht bekommt.<br/>
+                mit dem Cookie vermeiden, dass ein User dieselbe Anzeige mehr als einmal zu Gesicht bekommt.
+                <br/>
                 <strong>Beispielwert:</strong> 2019-5-14-12</P>
             <P>
-                <strong>Name:</strong> ANID<br/>
-                <strong>Ablaufzeit:</strong> nach 9 Monaten<br/>
+                <strong>Name:</strong> ANID
+                <br/>
+                <strong>Ablaufzeit:</strong> nach 9 Monaten
+
+                <br/>
                 <strong>Verwendung:</strong> Viele Infos konnten wir über dieses Cookie
                 nicht in Erfahrung bringen. In der Datenschutzerklärung von Google wird das Cookie im Zusammenhang mit
                 „Werbecookies“ wie z. B. „DSID“, „FLC“, „AID“, „TAID“ erwähnt. ANID wird unter Domain google.com
-                gespeichert.<br/>
+                gespeichert.
+                <br/>
                 <strong>Beispielwert:</strong> U7j1v3dZa2211040310xgZFmiqWppRWKOr</P>
             <P>
-                <strong>Name:</strong> CONSENT<br/>
-                <strong>Ablaufzeit:</strong> nach 19 Jahren<br/>
+                <strong>Name:</strong> CONSENT
+                <br/>
+                <strong>Ablaufzeit:</strong> nach 19 Jahren
+                <br/>
                 <strong>Verwendung:</strong> Das Cookie speichert den Status der
                 Zustimmung eines Users zur Nutzung unterschiedlicher Services von Google. CONSENT dient auch der
                 Sicherheit, um User zu überprüfen, Betrügereien von Anmeldeinformationen zu verhindern und Userdaten vor
-                unbefugten Angriffen zu schützen.<br/>
+                unbefugten Angriffen zu schützen.
+                <br/>
                 <strong>Beispielwert: </strong>YES+AT.de+20150628-20-0</P>
             <P>
-                <strong>Name:</strong> NID<br/>
-                <strong>Ablaufzeit:</strong> nach 6 Monaten<br/>
+                <strong>Name:</strong> NID
+
+                <br/>
+                <strong>Ablaufzeit:</strong> nach 6 Monaten
+
+                <br/>
                 <strong>Verwendung:</strong> NID wird von Google verwendet, um
                 Werbeanzeigen an Ihre Google-Suche anzupassen. Mit Hilfe des Cookies „erinnert“ sich Google an Ihre
                 meist eingegebenen Suchanfragen oder Ihre frühere Interaktion mit Anzeigen. So bekommen Sie immer
                 maßgeschneiderte Werbeanzeigen. Das Cookie enthält eine einzigartige ID, die Google benutzt um
-                persönliche Einstellungen des Users für Werbezwecke zu sammeln.<br/>
+                persönliche Einstellungen des Users für Werbezwecke zu sammeln.
+                <br/>
                 <strong>Beispielwert:</strong> 0WmuWqy221104031zILzqV_nmt3sDXwPeM5Q</P>
             <P>
-                <strong>Name:</strong> DV<br/>
-                <strong>Ablaufzeit:</strong> nach 10 Minuten<br/>
+                <strong>Name:</strong> DV
+                <br/>
+                <strong>Ablaufzeit:</strong> nach 10 Minuten
+                <br/>
                 <strong>Verwendung:</strong> Sobald Sie das „Ich bin kein
                 Roboter“-Häkchen angekreuzt haben, wird dieses Cookie gesetzt. Das Cookie wird von Google Analytics für
                 personalisierte Werbung verwendet. DV sammelt Informationen in anonymisierter Form und wird weiters
-                benutzt, um User-Unterscheidungen treffen zu können.<br/>
+                benutzt, um User-Unterscheidungen treffen zu können.
+                <br/>
                 <strong>Beispielwert:</strong> gEAABBCjJMXcI0dSAAAANbqc221104031
                 <P>Anmerkung: Diese Aufzählung kann keinen Anspruch auf Vollständigkeit erheben, da Google
                     erfahrungsgemäß die Wahl ihrer Cookies immer wieder auch verändert.</P>
@@ -348,10 +372,12 @@ function DataPrivacy(_: any) {
                 <H2>Eingebettete Social Media Elemente Datenschutzerklärung</H2>
                 <P>Wir binden auf unserer Webseite Elemente von Social Media Diensten ein um Bilder, Videos
                     und Texte
-                    anzuzeigen.<br/>
+                    anzuzeigen.
+                    <br/>
                     Durch den Besuch von Seiten die diese Elemente darstellen, werden Daten von Ihrem Browser zum
                     jeweiligen Social Media Dienst übertragen und dort gespeichert. Wir haben keinen Zugriff auf diese
-                    Daten.<br/>
+                    Daten.
+                    <br/>
                     Die folgenden Links führen Sie zu den Seiten der jeweiligen Social Media Dienste wo erklärt wird,
                     wie diese mit Ihren Daten umgehen:</P>
                 <Ul>
@@ -369,12 +395,15 @@ function DataPrivacy(_: any) {
                 <H2>Facebook Datenschutzerklärung</H2>
                 <P>Wir verwenden auf dieser Webseite Funktionen von Facebook, einem Social Media Network der
                     FIrma
-                    Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland.<br/>
+                    Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland.
+                    <br/>
                     Welche Funktionen (Soziale Plug-ins) Facebook bereitstellt, können Sie auf
-                    https://developers.facebook.com/docs/plugins/ nachlesen.<br/>
+                    https://developers.facebook.com/docs/plugins/ nachlesen.
+                    <br/>
                     Durch den Besuch unserer Webseite können Informationen an Facebook übermittelt werden. Wenn Sie über
                     ein Facebook-Konto verfügen, kann Facebook diese Daten Ihrem persönlichen Konto zuordnen. Sollten
-                    Sie das nicht wünschen, melden Sie sich bitte von Facebook ab.<br/>
+                    Sie das nicht wünschen, melden Sie sich bitte von Facebook ab.
+                    <br/>
                     Die Datenschutzrichtlinien, welche Informationen Facebook sammelt und wie sie diese verwenden finden
                     Sie auf https://www.facebook.com/policy.php.</P>
                 <H2>YouTube Datenschutzerklärung</H2>
@@ -428,81 +457,114 @@ function DataPrivacy(_: any) {
                     Cookies, die mit angemeldetem Account gesetzt werden. Die Liste kann keinen Vollständigkeitsanspruch
                     erheben, weil die Userdaten immer von den Interaktionen auf YouTube abhängen.</P>
                 <P>
-                    <strong>Name:</strong> YSC<br/>
+                    <strong>Name:</strong> YSC
+                    <br/>
                     <strong>Verwendungszweck:</strong> Dieses Cookie registriert eine
-                    eindeutige ID, um Statistiken des gesehenen Videos zu speichern.<br/>
-                    <strong>Ablaufdatum:</strong> nach Sitzungsende<br/>
+                    eindeutige ID, um Statistiken des gesehenen Videos zu speichern.
+                    <br/>
+                    <strong>Ablaufdatum:</strong> nach Sitzungsende
+                    <br/>
                     <strong>Beispielwert:</strong> b9-CV6ojI5Y</P>
                 <P>
-                    <strong>Name:</strong> PREF<br/>
+                    <strong>Name:</strong> PREF
+                    <br/>
                     <strong>Verwendungszweck:</strong> Dieses Cookie registriert
                     ebenfalls Ihre eindeutige ID. Google bekommt über PREF Statistiken, wie Sie YouTube-Videos auf
-                    unserer Webseite verwenden.<br/>
-                    <strong>Ablaufdatum:</strong> nach 8 Monate<br/>
+                    unserer Webseite verwenden.
+                    <br/>
+                    <strong>Ablaufdatum:</strong> nach 8 Monate
+                    <br/>
                     <strong>Beispielwert:</strong> f1=50000000</P>
                 <P>
-                    <strong>Name:</strong> GPS<br/>
+                    <strong>Name:</strong> GPS
+                    <br/>
                     <strong>Verwendungszweck:</strong> Dieses Cookie registriert Ihre
-                    eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken.<br/>
-                    <strong>Ablaufdatum:</strong> nach 30 Minuten<br/>
+                    eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken.
+                    <br/>
+                    <strong>Ablaufdatum:</strong> nach 30 Minuten
+                    <br/>
                     <strong>Beispielwert:</strong> 1</P>
                 <P>
-                    <strong>Name:</strong> VISITOR_INFO1_LIVE<br/>
+                    <strong>Name:</strong> VISITOR_INFO1_LIVE
+                    <br/>
                     <strong>Verwendungszweck:</strong> Dieses Cookie versucht die
-                    Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen.<br/>
-                    <strong>Ablaufdatum:</strong> nach 8 Monaten<br/>
+                    Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen.
+                    <br/>
+                    <strong>Ablaufdatum:</strong> nach 8 Monaten
+                    <br/>
                     <strong>Beispielwert:</strong> 95Chz8bagyU</P>
                 <P>Weitere Cookies, die gesetzt werden, wenn Sie mit Ihrem YouTube-Konto angemeldet
                     sind:</P>
                 <P>
-                    <strong>Name:</strong> APISID<br/>
+                    <strong>Name:</strong> APISID
+                    <br/>
                     <strong>Verwendungszweck:</strong> Dieses Cookie wird verwendet, um
                     ein Profil über Ihre Interessen zu erstellen. Genützt werden die Daten für personalisierte
-                    Werbeanzeigen.<br/>
-                    <strong>Ablaufdatum:</strong> nach 2 Jahre<br/>
+                    Werbeanzeigen.
+                    <br/>
+                    <strong>Ablaufdatum:</strong> nach 2 Jahre
+                    <br/>
                     <strong>Beispielwert:</strong> zILlvClZSkqGsSwI/AU1aZI6HY7221104031
                     <P>
-                        <strong>Name:</strong> CONSENT<br/>
+                        <strong>Name:</strong> CONSENT
+                        <br/>
                         <strong>Verwendungszweck:</strong> Das Cookie speichert den
                         Status der Zustimmung eines Users zur Nutzung unterschiedlicher Services von Google. CONSENT
                         dient auch der Sicherheit, um User zu überprüfen und Userdaten vor unbefugten Angriffen zu
-                        schützen.<br/>
-                        <strong>Ablaufdatum: </strong>nach 19 Jahren<br/>
+                        schützen.
+                        <br/>
+                        <strong>Ablaufdatum: </strong>nach 19 Jahren
+                        <br/>
                         <strong>Beispielwert:</strong> YES+AT.de+20150628-20-0</P>
                     <P>
-                        <strong>Name:</strong> HSID<br/>
+                        <strong>Name:</strong> HSID
+                        <br/>
                         <strong>Verwendungszweck:</strong> Dieses Cookie wird verwendet,
                         um ein Profil über Ihre Interessen zu erstellen. Diese Daten helfen personalisierte Werbung
-                        anzeigen zu können.<br/>
-                        <strong>Ablaufdatum:</strong> nach 2 Jahren<br/>
+                        anzeigen zu können.
+                        <br/>
+                        <strong>Ablaufdatum:</strong> nach 2 Jahren
+                        <br/>
                         <strong>Beispielwert:</strong> AcRwpgUik9Dveht0I</P>
                     <P>
-                        <strong>Name:</strong> LOGIN_INFO<br/>
+                        <strong>Name:</strong> LOGIN_INFO
+                        <br/>
                         <strong>Verwendungszweck:</strong> In diesem Cookie werden
-                        Informationen über Ihre Login-Daten gespeichert.<br/>
-                        <strong>Ablaufdatum:</strong> nach 2 Jahren<br/>
+                        Informationen über Ihre Login-Daten gespeichert.
+                        <br/>
+                        <strong>Ablaufdatum:</strong> nach 2 Jahren
+                        <br/>
                         <strong>Beispielwert:</strong> AFmmF2swRQIhALl6aL…</P>
                     <P>
-                        <strong>Name:</strong> SAPISID<br/>
+                        <strong>Name:</strong> SAPISID
+                        <br/>
                         <strong>Verwendungszweck:</strong> Dieses Cookie funktioniert,
                         indem es Ihren Browser und Ihr Gerät eindeutig identifiziert. Es wird verwendet, um ein Profil
-                        über Ihre Interessen zu erstellen.<br/>
-                        <strong>Ablaufdatum:</strong> nach 2 Jahren<br/>
+                        über Ihre Interessen zu erstellen.
+                        <br/>
+                        <strong>Ablaufdatum:</strong> nach 2 Jahren
+                        <br/>
                         <strong>Beispielwert:</strong> 7oaPxoG-pZsJuuF5/AnUdDUIsJ9iJz2vdM
                     </P>
                     <P>
-                        <strong>Name:</strong> SID<br/>
+                        <strong>Name:</strong> SID
+                        <br/>
                         <strong>Verwendungszweck:</strong> Dieses Cookie speichert Ihre
                         Google-Konto-ID und Ihren letzten Anmeldezeitpunkt in digital signierter und verschlüsselter
-                        Form.<br/>
-                        <strong>Ablaufdatum:</strong> nach 2 Jahren<br/>
+                        Form.
+                        <br/>
+                        <strong>Ablaufdatum:</strong> nach 2 Jahren
+                        <br/>
                         <strong>Beispielwert:</strong> oQfNKjAsI221104031
                         <P>
-                            <strong>Name:</strong> SIDCC<br/>
+                            <strong>Name:</strong> SIDCC
+                            <br/>
                             <strong>Verwendungszweck:</strong> Dieses Cookie speichert
                             Informationen, wie Sie die Webseite nutzen und welche Werbung Sie vor dem Besuch auf unserer
-                            Seite möglicherweise gesehen haben.<br/>
-                            <strong>Ablaufdatum:</strong> nach 3 Monaten<br/>
+                            Seite möglicherweise gesehen haben.
+                            <br/>
+                            <strong>Ablaufdatum:</strong> nach 3 Monaten
+                            <br/>
                             <strong>Beispielwert:</strong> AN0-TYuqub2JOcDTyL</P>
                         <H2>Wie lange und wo werden die Daten gespeichert?</H2>
                         <P>Die Daten, die YouTube von Ihnen erhält und verarbeitet werden auf den
@@ -656,7 +718,8 @@ function DataPrivacy(_: any) {
                             finden Sie auf https://www.xing.com/privacy.</P>
                         <H2>Cookies</H2>
                         <P>Unsere Webseite verwendet HTTP-Cookies, um nutzerspezifische Daten zu
-                            speichern.<br/>
+                            speichern.
+                            <br/>
                             Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die
                             folgende Datenschutzerklärung besser verstehen.</P>
                         <H2>Was genau sind Cookies?</H2>
@@ -691,10 +754,12 @@ function DataPrivacy(_: any) {
                             zugreifen.</P>
                         <P>So können zum Beispiel Cookie-Daten aussehen:</P>
                         <P>
-                            <strong>Name:</strong> _ga<br/>
+                            <strong>Name:</strong> _ga
+                            <br/>
                             <strong>Wert:</strong> GA1.2.1326744211.152221104031
                             <strong>Verwendungszweck:</strong> Unterscheidung der
-                            Webseitenbesucher<br/>
+                            Webseitenbesucher
+                            <br/>
                             <strong>Ablaufdatum:</strong> nach 2 Jahren</P>
                         <P>Diese Mindestgrößen sollte ein Browser unterstützen können:</P>
                         <Ul>
@@ -710,22 +775,26 @@ function DataPrivacy(_: any) {
                             möchten wir kurz auf die verschiedenen Arten von HTTP-Cookies eingehen.</P>
                         <P>Man kann 4 Arten von Cookies unterscheiden:</P>
                         <P>
-                            <strong>Unerlässliche Cookies<br/>
+                            <strong>Unerlässliche Cookies
+                                <br/>
                             </strong>Diese Cookies sind nötig, um grundlegende Funktionen der Webseite sicherzustellen.
                             Zum Beispiel braucht es diese Cookies, wenn ein User ein Produkt in den Warenkorb legt, dann
                             auf anderen Seiten weitersurft und später erst zur Kasse geht. Durch diese Cookies wird der
                             Warenkorb nicht gelöscht, selbst wenn der User sein Browserfenster schließt.</P>
                         <P>
-                            <strong>Zweckmäßige Cookies<br/>
+                            <strong>Zweckmäßige Cookies
+                                <br/>
                             </strong>Diese Cookies sammeln Infos über das Userverhalten und ob der User etwaige
                             Fehlermeldungen bekommt. Zudem werden mithilfe dieser Cookies auch die Ladezeit und das
                             Verhalten der Webseite bei verschiedenen Browsern gemessen.</P>
                         <P>
-                            <strong>Zielorientierte Cookies<br/>
+                            <strong>Zielorientierte Cookies
+                                <br/>
                             </strong>Diese Cookies sorgen für eine bessere Nutzerfreundlichkeit. Beispielsweise werden
                             eingegebene Standorte, Schriftgrößen oder Formulardaten gespeichert.</P>
                         <P>
-                            <strong>Werbe-Cookies<br/>
+                            <strong>Werbe-Cookies
+                                <br/>
                             </strong>Diese Cookies werden auch Targeting-Cookies genannt. Sie dienen dazu dem User
                             individuell angepasste Werbung zu liefern. Das kann sehr praktisch, aber auch sehr nervig
                             sein.</P>
@@ -920,11 +989,13 @@ function DataPrivacy(_: any) {
                             werden.</P>
                         <H2>Cookies von Cloudflare</H2>
                         <P>
-                            <strong>Name:</strong> __cfduid<br/>
+                            <strong>Name:</strong> __cfduid
+                            <br/>
                             <strong
                             >Wert:</strong> d798bf7df9c1ad5b7583eda5cc5e78221104031
                             <strong>Verwendungszweck:</strong> Sicherheitseinstellungen
-                            für jeden einzelnen Besucher<br/>
+                            für jeden einzelnen Besucher
+                            <br/>
                             <strong>Ablaufdatum:</strong> nach einem Jahr</P>
                         <P>Cloudflare arbeitet auch mit Drittanbietern zusammen. Diese dürfen
                             personenbezogene Daten
@@ -974,7 +1045,8 @@ function DataPrivacy(_: any) {
                             Sie auf <a
                                 href='https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0&tid=221104031'
                                 target='_blank' rel='noopener noreferrer'
-                            >https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0</a>.<br/>
+                            >https://www.privacyshield.gov/participant?id=a2zt0000000GnZKAA0</a>.
+                            <br/>
                             Mehr Informationen zum Datenschutz bei Cloudflare finden Sie auf <a
 
                                 href='https://www.cloudflare.com/de-de/privacypolicy/?tid=221104031' target='_blank'
@@ -1068,38 +1140,53 @@ function DataPrivacy(_: any) {
                             gesetzt.</P>
                         <P>Diese Cookies wurden bei unserem Test verwendet:</P>
                         <P>
-                            <strong>Name: </strong>csrftoken<br/>
-                            <strong>Wert: </strong>„“<br/>
+                            <strong>Name: </strong>csrftoken
+                            <br/>
+                            <strong>Wert: </strong>„“
+                            <br/>
                             <strong>Verwendungszweck: </strong>Dieses Cookie wird mit
                             hoher Wahrscheinlichkeit aus Sicherheitsgründen gesetzt, um Fälschungen von Anfragen zu
-                            verhindern. Genauer konnten wir das allerdings nicht in Erfahrung bringen.<br/>
+                            verhindern. Genauer konnten wir das allerdings nicht in Erfahrung bringen.
+                            <br/>
                             <strong>Ablaufdatum:</strong> nach einem Jahr</P>
                         <P>
-                            <strong>Name: </strong>mid<br/>
-                            <strong>Wert: </strong>„“<br/>
+                            <strong>Name: </strong>mid
+                            <br/>
+                            <strong>Wert: </strong>„“
+                            <br/>
                             <strong>Verwendungszweck: </strong>Instagram setzt dieses
                             Cookie, um die eigenen Dienstleistungen und Angebote in und außerhalb von Instagram zu
-                            optimieren. Das Cookie legt eine eindeutige User-ID fest.<br/>
+                            optimieren. Das Cookie legt eine eindeutige User-ID fest.
+                            <br/>
                             <strong>Ablaufdatum:</strong> nach Ende der Sitzung</P>
                         <P>
-                            <strong>Name:</strong> fbsr_221104031124024<br/>
-                            <strong>Wert: </strong>keine Angaben<br/>
+                            <strong>Name:</strong> fbsr_221104031124024
+                            <br/>
+                            <strong>Wert: </strong>keine Angaben
+                            <br/>
                             <strong>Verwendungszweck: </strong>Dieses Cookie speichert
                             die Log-in-Anfrage für User der Instagram-App.<strong>
+
                             <br/>
                         </strong>
                             <strong>Ablaufdatum:</strong> nach Ende der Sitzung</P>
                         <P>
-                            <strong>Name:</strong> rur<br/>
-                            <strong>Wert: </strong>ATN<br/>
+                            <strong>Name:</strong> rur
+                            <br/>
+                            <strong>Wert: </strong>ATN
+                            <br/>
                             <strong>Verwendungszweck: </strong>Dabei handelt es sich um
-                            ein Instagram-Cookie, das die Funktionalität auf Instagram gewährleistet.<br/>
+                            ein Instagram-Cookie, das die Funktionalität auf Instagram gewährleistet.
+                            <br/>
                             <strong>Ablaufdatum:</strong> nach Ende der Sitzung</P>
                         <P>
-                            <strong>Name:</strong> urlgen<br/>
-                            <strong>Wert: </strong>„194.96.75.33″: 1901:1iEtYv:Y833k2_UjKvXgYe221104031“<br/>
+                            <strong>Name:</strong> urlgen
+                            <br/>
+                            <strong>Wert: </strong>„194.96.75.33″: 1901:1iEtYv:Y833k2_UjKvXgYe221104031“
+                            <br/>
                             <strong>Verwendungszweck: </strong>Dieses Cookie dient den
-                            Marketingzwecken von Instagram.<br/>
+                            Marketingzwecken von Instagram.
+                            <br/>
                             <strong>Ablaufdatum:</strong> nach Ende der Sitzung</P>
                         <P>
                             <strong>Anmerkung:</strong> Wir können hier keinen
@@ -1184,6 +1271,7 @@ function DataPrivacy(_: any) {
                                 href='https://help.instagram.com/519522125107875'
                                 target='_blank'
                                 rel='noopener noreferrer'>https://help.instagram.com/519522125107875</a>
+
                             <br/>
                             können Sie sich noch näher mit den Datenrichtlinien von Instagram
                             auseinandersetzen.</P>

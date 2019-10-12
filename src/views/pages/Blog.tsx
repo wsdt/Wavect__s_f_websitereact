@@ -28,14 +28,16 @@ import CardTitle from 'reactstrap/lib/CardTitle'
 
 // assets
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
-import TextPageDraft from "./blogs/blogs_components/TextPageDraft";
+import TextPageDraft from './blogs/blogs_components/TextPageDraft'
+import {breadCrumbBlogs, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 
 function Blog() {
     return (
-        <TextPageDraft title='Blogs'>
+        <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]}>
             <p>
                 Here you'll find personal blogs of our team-members. Topics may range from technical, economical,
-                psychological as well as spiritual ones. Feel free to share them :-)
+                psychological as well as spiritual
+                ones. Feel free to share them :-)
             </p>
             <br/>
             {/*
@@ -43,14 +45,18 @@ function Blog() {
                                 <i className='fa fa-cog' /> Settings
                             </Button>*/}
 
-            <Card style={{width: '20rem'}}>
-                <CardImg top={true} src={imgKevinRiedl} alt='CEO: Kevin Riedl'/>
-                <CardBody>
-                    <CardTitle style={{fontWeight: 'bold'}}>Kevin Riedl, Bsc.</CardTitle>
-                    <CardText>Here you'll find economical, technical & personal posts.</CardText>
-                    <Button color='info'><a href='/blogs/kevin-riedl' style={{color: '#fff'}}>Read posts</a></Button>
-                </CardBody>
-            </Card>
+            <a href='/blogs/kevin-riedl' style={{color: '#fff'}}>
+                <Card style={{width: '20rem'}}>
+                    <CardImg top={true} src={imgKevinRiedl} alt='CEO: Kevin Riedl'/>
+                    <CardBody>
+                        <CardTitle style={{fontWeight: 'bold'}}>Kevin Riedl, Bsc.</CardTitle>
+                        <CardText>Here you'll find economical, technical & personal posts.</CardText>
+                        <Button color='info'>
+                            Read posts
+                        </Button>
+                    </CardBody>
+                </Card>
+            </a>
         </TextPageDraft>
     )
 }

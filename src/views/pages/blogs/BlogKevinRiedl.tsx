@@ -23,19 +23,21 @@ import {Button, Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane}
 import Footer from '../../../components/Footers/Footer'
 import ExamplesNavbar from '../../../components/Navbars/ExamplesNavbar'
 
-import imgKevinRiedlHappinessNeqFulfillment
-    from '../../../assets/img/blogs/kevin_riedl/happinessneqfulfillment_profilepic.jpg'
-import imgKevinRiedlStartReflectingOrDieFullOfRegrets
-    from '../../../assets/img/blogs/kevin_riedl/startreflectingordiefullofregrets_profilepic.jpg'
-import imgKevinRiedlSayingYesIsABigNoToOpportunities
-    from '../../../assets/img/blogs/kevin_riedl/sayingyesisabignotoopportunities_profilepic.jpg'
-import imgKevinRiedlStrategicHustling from '../../../assets/img/blogs/kevin_riedl/strategichustling_profilepic.jpg'
 import imgKevinRiedlChangeThoughtsOnBurnoutStress
     from '../../../assets/img/blogs/kevin_riedl/changethoughtsonburnoutstress_profilepic.jpg'
+import imgKevinRiedlHappinessNeqFulfillment
+    from '../../../assets/img/blogs/kevin_riedl/happinessneqfulfillment_profilepic.jpg'
+import imgKevinRiedlSayingYesIsABigNoToOpportunities
+    from '../../../assets/img/blogs/kevin_riedl/sayingyesisabignotoopportunities_profilepic.jpg'
+import imgKevinRiedlStartReflectingOrDieFullOfRegrets
+    from '../../../assets/img/blogs/kevin_riedl/startreflectingordiefullofregrets_profilepic.jpg'
+import imgKevinRiedlStrategicHustling from '../../../assets/img/blogs/kevin_riedl/strategichustling_profilepic.jpg'
 import imgKevinRiedl from '../../../assets/img/team/kevin_riedl.jpg'
 import BlogPageHeader from '../../../components/Headers/BlogPageHeader'
 import {BlogCategories} from './BlogCategories'
-import BlogListDraft from "./blogs_components/BlogListDraft";
+import BlogListDraft from './blogs_components/BlogListDraft'
+import BreadCrumbs from "../breadcrumbs/Breadcrumbs";
+import {breadCrumbBlogKevinRiedl, breadCrumbBlogs, breadCrumbHome} from "../breadcrumbs/breadcrumbs.constants";
 
 function BlogKevinRiedl() {
     const [activeTab, setActiveTab] = React.useState('1')
@@ -59,31 +61,37 @@ function BlogKevinRiedl() {
             <BlogPageHeader/>
             <div className='section profile-content'>
                 <Container>
-                    <div className='owner'>
-                        <div className='avatar'>
-                            <img alt='Kevin Riedl, Bsc.' className='img-circle img-no-padding img-responsive'
-                                 src={imgKevinRiedl}/>
-                        </div>
-                        <div className='name'>
-                            <h4 className='title'>
-                                Kevin Riedl, Bsc. <br/>
-                            </h4>
-                            <h6 className='description'>Software Engineer & Business Administration</h6>
-                        </div>
-                    </div>
                     <Row>
-                        <Col className='ml-auto mr-auto text-center' md='6'>
+                        <Col className='ml-auto mr-auto text-center' md='8'>
+                            <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl]}/>
+                            <div className='owner' style={{marginTop: 100}}>
+                                <div className='avatar'>
+                                    <img alt='Kevin Riedl, Bsc.' className='img-circle img-no-padding img-responsive'
+                                         src={imgKevinRiedl}/>
+                                </div>
+                                <div className='name'>
+                                    <h4 className='title'>
+                                        Kevin Riedl, Bsc. <br/>
+                                    </h4>
+                                    <h6 className='description'>Software Engineer & Business Administration</h6>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className='ml-auto mr-auto text-center' md='8'>
                             <p>
                                 I attended commercial school & started studying information technology afterwards. I
-                                love learning and trying something new. Some of my role-models are Jordan Peterson,
-                                Garyvee & Simon Sinek.
+                                love learning and trying
+                                something new. Some of my role-models are Jordan Peterson, Garyvee & Simon Sinek.
                             </p>
                             <br/>
                             <a href='https://www.linkedin.com/in/kevin-riedl-947219158/' target='_blank'
                                rel='noopener noreferrer'>
                                 <Button className='btn-round' color='default' outline={true}>
                                     <i className='fa fa-linkedin'/> LinkedIn
-                                </Button></a>
+                                </Button>
+                            </a>
                         </Col>
                     </Row>
                     <br/>
@@ -113,27 +121,37 @@ function BlogKevinRiedl() {
                                             blogLink='/blogs/kevin-riedl/happiness-neq-fulfillment-who-are-you-really'
                                             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
                                             blogTitle='Happiness neq Fulfillment'
-                                            blogHeaderImg={imgKevinRiedlHappinessNeqFulfillment}/>
+                                            blogHeaderImg={imgKevinRiedlHappinessNeqFulfillment}
+                                        />
 
                                         <hr/>
-                                        <BlogListDraft blogLink='/blogs/kevin-riedl/change-your-thoughts-on-burnout-stress'
-                                                       blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                                       blogTitle='Let me change the way you think about stress & burnout'
-                                                       blogHeaderImg={imgKevinRiedlChangeThoughtsOnBurnoutStress}/>
+                                        <BlogListDraft
+                                            blogLink='/blogs/kevin-riedl/change-your-thoughts-on-burnout-stress'
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle='Let me change the way you think about stress & burnout'
+                                            blogHeaderImg={imgKevinRiedlChangeThoughtsOnBurnoutStress}
+                                        />
                                         <hr/>
-                                        <BlogListDraft blogLink='/blogs/kevin-riedl/strategic-hustling' 
-                                                       blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} 
-                                                       blogTitle='Strategic Hustling' blogHeaderImg={imgKevinRiedlStrategicHustling}/>
+                                        <BlogListDraft
+                                            blogLink='/blogs/kevin-riedl/strategic-hustling'
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle='Strategic Hustling'
+                                            blogHeaderImg={imgKevinRiedlStrategicHustling}
+                                        />
                                         <hr/>
-                                        <BlogListDraft blogLink='/blogs/kevin-riedl/saying-yes-is-a-big-no-to-opportunities'
-                                                       blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                                       blogTitle='Saying YES is a big NO to a lot of opportunities'
-                                                       blogHeaderImg={imgKevinRiedlSayingYesIsABigNoToOpportunities}/>
+                                        <BlogListDraft
+                                            blogLink='/blogs/kevin-riedl/saying-yes-is-a-big-no-to-opportunities'
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle='Saying YES is a big NO to a lot of opportunities'
+                                            blogHeaderImg={imgKevinRiedlSayingYesIsABigNoToOpportunities}
+                                        />
                                         <hr/>
-                                        <BlogListDraft blogLink='/blogs/kevin-riedl/start-reflecting-or-die-full-of-regrets'
-                                                       blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                                       blogTitle='Start reflecting or you will die full of regrets'
-                                                       blogHeaderImg={imgKevinRiedlStartReflectingOrDieFullOfRegrets}/>
+                                        <BlogListDraft
+                                            blogLink='/blogs/kevin-riedl/start-reflecting-or-die-full-of-regrets'
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle='Start reflecting or you will die full of regrets'
+                                            blogHeaderImg={imgKevinRiedlStartReflectingOrDieFullOfRegrets}
+                                        />
                                     </ul>
                                 </Col>
                             </Row>

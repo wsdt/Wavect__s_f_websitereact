@@ -18,24 +18,24 @@
 */
 import React from 'react'
 // reactstrap components
-import {Col, Container, Row} from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 // core components
 import Footer from '../../../../components/Footers/Footer'
 // assets
 import BlogPageHeader from '../../../../components/Headers/BlogPageHeader'
 import ExamplesNavbar from '../../../../components/Navbars/ExamplesNavbar'
-import {BlogCategories} from '../BlogCategories'
-import {TextHeader} from './text_components/TextHeader'
-
+import BreadCrumbs from '../../breadcrumbs/Breadcrumbs'
+import {BreadcrumbConstants} from '../../breadcrumbs/breadcrumbs.constants'
+import { BlogCategories } from '../BlogCategories'
+import { TextHeader } from './text_components/TextHeader'
 
 export interface ITextPageDraftProps {
     blogCategory?: BlogCategories
-    title: string
+    breadCrumbs: BreadcrumbConstants[]
     children: any
 }
 
-function TextPageDraft(props:ITextPageDraftProps) {
-
+function TextPageDraft(props: ITextPageDraftProps) {
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('landing-page')
@@ -43,21 +43,23 @@ function TextPageDraft(props:ITextPageDraftProps) {
             document.body.classList.remove('landing-page')
         }
     })
+
     return (
         <>
             <ExamplesNavbar />
             <BlogPageHeader />
             <div className='section profile-content'>
                 <Container>
-                    <TextHeader blogCategory={props.blogCategory}>{props.title}</TextHeader>
-
                     <Row>
                         <Col className='ml-auto mr-auto text-center' md='8'>
+                            <BreadCrumbs breadcrumbs={props.breadCrumbs}/>
+
+                            <TextHeader blogCategory={props.blogCategory}>{props.breadCrumbs[props.breadCrumbs.length-1].title}</TextHeader>
+
                             {props.children}
                         </Col>
                     </Row>
                     <br />
-
                 </Container>
             </div>
             <Footer />

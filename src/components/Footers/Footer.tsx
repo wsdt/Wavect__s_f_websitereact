@@ -24,21 +24,21 @@ import { Container, Row } from 'reactstrap'
 
 function Footer() {
     return (
-        <footer className='footer footer-black footer-white'>
+        <footer className="footer footer-black footer-white">
             <Container>
                 <Row>
-                    <nav className='footer-nav'>
+                    <nav className="footer-nav">
                         <ul>
                             <li>
-                                <a href='/impressum'>Impressum</a>
+                                <a href="/impressum">Impressum</a>
                             </li>
                             <li>
-                                <a href='/data-privacy'>Data Privacy</a>
+                                <a href="/data-privacy">Data Privacy</a>
                             </li>
                         </ul>
                     </nav>
-                    <div className='credits ml-auto'>
-                        <span className='copyright'>© Design by Creative Tim</span>
+                    <div className="credits ml-auto">
+                        <span className="copyright">© Design by Creative Tim</span>
                     </div>
                 </Row>
             </Container>

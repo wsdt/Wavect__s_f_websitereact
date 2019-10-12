@@ -18,10 +18,9 @@
 */
 import React from 'react'
 // reactstrap components
-import {Col, Row} from 'reactstrap'
+import { Col, Row } from 'reactstrap'
 import Button from 'reactstrap/lib/Button'
-import {BlogCategories} from '../BlogCategories'
-
+import { BlogCategories } from '../BlogCategories'
 
 export interface IBlogListDraftProps {
     blogLink: string
@@ -30,32 +29,31 @@ export interface IBlogListDraftProps {
     blogHeaderImg: string
 }
 
-function BlogListDraft(props:IBlogListDraftProps) {
-    return <li>
-        <Row>
-            <Col className='ml-auto mr-auto' lg='2' md='4' xs='4'>
-                <img
-                    alt={`${props.blogTitle} - header title`}
-                    className='img-circle img-no-padding img-responsive'
-                    src={props.blogHeaderImg}
-                />
-            </Col>
-            <Col className='ml-auto mr-auto' lg='7' md='4' xs='4'>
-                <h6>
-                    {props.blogTitle}<br/>
-                    <small>{props.blogCategory}</small>
-                </h6>
-            </Col>
-            <Col className='ml-auto mr-auto' lg='3' md='4' xs='4'>
-                <br />
-                <a href={props.blogLink}>
-                    <Button className='btn-round' color='default' size='sm'>
-                        <i className='fa fa-arrow-circle-right'/>
-                    </Button>
-                </a>
-            </Col>
-        </Row>
-    </li>
+function BlogListDraft(props: IBlogListDraftProps) {
+    return (
+        <li>
+            <Row>
+                <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
+                    <img alt={`${props.blogTitle} - header title`} className="img-circle img-no-padding img-responsive" src={props.blogHeaderImg} />
+                </Col>
+                <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
+                    <h6>
+                        {props.blogTitle}
+                        <br />
+                        <small>{props.blogCategory}</small>
+                    </h6>
+                </Col>
+                <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
+                    <br />
+                    <a href={props.blogLink}>
+                        <Button className="btn-round" color="default" size="sm">
+                            <i className="fa fa-arrow-circle-right" />
+                        </Button>
+                    </a>
+                </Col>
+            </Row>
+        </li>
+    )
 }
 
 export default BlogListDraft

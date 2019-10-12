@@ -5,7 +5,7 @@ function ModalVideo() {
     const [scrollingLongContent, setScrollingLongContent] = React.useState(false)
     return (
         <>
-            <Button className='btn-round mr-1' color='info' onClick={() => setScrollingLongContent(true)} outline={true}>
+            <Button className='btn-round mr-1' color='primary' onClick={() => setScrollingLongContent(true)} outline={true}>
                 <i className='fa fa-play' />
                 Watch video
             </Button>
@@ -14,7 +14,8 @@ function ModalVideo() {
                 isOpen={scrollingLongContent}
                 toggle={() => setScrollingLongContent(false)}
                 className='modal-lg'
-                modalClassName='bd-example-modal-lg'>
+                modalClassName='bd-example-modal-lg'
+            >
                 <div className='modal-header'>
                     <h5 className='modal-title' id='exampleModalLongTitle'>
                         Pitch-Video (German)

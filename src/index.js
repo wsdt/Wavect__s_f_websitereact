@@ -26,36 +26,58 @@ import './assets/scss/paper-kit.scss'
 import './assets/demo/demo.css'
 // pages
 import LandingPage from './views/pages/LandingPage'
-import Blog from "./views/pages/Blog";
-import BlogKevinRiedl from "./views/pages/blogs/BlogKevinRiedl";
-import BlogPostHappinessNeqFulfillment from "./views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment"
-import BlogPostChangeThoughtsOnBurnoutStress from "./views/pages/blogs/posts_kevinriedl/BlogPostChangeThoughtsOnBurnoutStress";
-import BlogPostStrategicHustling from "./views/pages/blogs/posts_kevinriedl/BlogPostStrategicHustling";
-import BlogPostStartReflectingOrDieFullOfRegrets
-    from "./views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets";
-import BlogPostSayingYesIsABigNoToOpportunities
-    from "./views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities";
-import Impressum from "./views/pages/Impressum";
-import DataPrivacy from "./views/pages/DataPrivacy";
-import Traction from "./views/pages/Traction";
+import Blog from './views/pages/Blog'
+import BlogKevinRiedl from './views/pages/blogs/BlogKevinRiedl'
+import BlogPostHappinessNeqFulfillment from './views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment'
+import BlogPostChangeThoughtsOnBurnoutStress from './views/pages/blogs/posts_kevinriedl/BlogPostChangeThoughtsOnBurnoutStress'
+import BlogPostStrategicHustling from './views/pages/blogs/posts_kevinriedl/BlogPostStrategicHustling'
+import BlogPostStartReflectingOrDieFullOfRegrets from './views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets'
+import BlogPostSayingYesIsABigNoToOpportunities from './views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities'
+import Impressum from './views/pages/Impressum'
+import DataPrivacy from './views/pages/DataPrivacy'
+import Traction from './views/pages/Traction'
+import {
+    breadCrumbBlogKevinRiedl,
+    breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress,
+    breadCrumbBlogKevinRiedlHappinessNeqFulfillment,
+    breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities,
+    breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
+    breadCrumbBlogKevinRiedlStrategicHustling,
+    breadCrumbBlogs,
+    breadCrumbDataPrivacy, breadCrumbHome,
+    breadCrumbImpressum,
+    breadCrumbTraction
+} from "./views/pages/breadcrumbs/breadcrumbs.constants";
 // others
 
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/blogs/kevin-riedl/saying-yes-is-a-big-no-to-opportunities" render={props => <BlogPostSayingYesIsABigNoToOpportunities {...props} />} />
-            <Route path="/blogs/kevin-riedl/start-reflecting-or-die-full-of-regrets" render={props => <BlogPostStartReflectingOrDieFullOfRegrets {...props} />} />
-            <Route path="/blogs/kevin-riedl/strategic-hustling" render={props => <BlogPostStrategicHustling {...props} />} />
-            <Route path="/blogs/kevin-riedl/change-your-thoughts-on-burnout-stress" render={props => <BlogPostChangeThoughtsOnBurnoutStress {...props} />} />
-            <Route path="/blogs/kevin-riedl/happiness-neq-fulfillment-who-are-you-really" render={props => <BlogPostHappinessNeqFulfillment {...props} />} />
-            <Route path="/blogs/kevin-riedl" render={props => <BlogKevinRiedl {...props} />} />
-            <Route path="/blogs" render={props => <Blog {...props} />} />
+            <Route
+                path={breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.link}
+                render={props => <BlogPostSayingYesIsABigNoToOpportunities {...props} />}
+            />
+            <Route
+                path={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link}
+                render={props => <BlogPostStartReflectingOrDieFullOfRegrets {...props} />}
+            />
+            <Route path={breadCrumbBlogKevinRiedlStrategicHustling.link} render={props => <BlogPostStrategicHustling {...props} />} />
+            <Route
+                path={breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.link}
+                render={props => <BlogPostChangeThoughtsOnBurnoutStress {...props} />}
+            />
+            <Route
+                path={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link}
+                render={props => <BlogPostHappinessNeqFulfillment {...props} />}
+            />
+            <Route path={breadCrumbBlogKevinRiedl.link} render={props => <BlogKevinRiedl {...props} />} />
+            <Route path={breadCrumbBlogs.link} render={props => <Blog {...props} />} />
 
-            <Route path="/traction" render={props => <Traction {...props} />} />
-            <Route path="/impressum" render={props => <Impressum {...props} />} />
-            <Route path="/data-privacy" render={props => <DataPrivacy {...props} />} />
+            <Route path={breadCrumbTraction.link} render={props => <Traction {...props} />} />
+            <Route path={breadCrumbImpressum.link} render={props => <Impressum {...props} />} />
+            <Route path={breadCrumbDataPrivacy.link} render={props => <DataPrivacy {...props} />} />
 
-            <Route path="/" render={props => <LandingPage {...props} />} />
+            <Route path={breadCrumbHome.link} render={props => <LandingPage {...props} />} />
             <Redirect to="/" />
         </Switch>
     </BrowserRouter>,

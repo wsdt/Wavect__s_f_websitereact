@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 export const getWindowDimensions = () => {
     const { innerWidth: width, innerHeight: height } = window
@@ -19,8 +19,11 @@ export const useWindowDimensions = (pageHeader: React.RefObject<HTMLDivElement>)
             const updateScroll = () => {
                 const windowScrollTop = window.pageYOffset / 3
 
-                if (pageHeader.current) {pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'}
-                else {console.error('WindowController:useWindowDimensions: Could not determine window with.')}
+                if (pageHeader.current) {
+                    pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)'
+                } else {
+                    console.error('WindowController:useWindowDimensions: Could not determine window with.')
+                }
             }
 
             window.addEventListener('scroll', updateScroll)
