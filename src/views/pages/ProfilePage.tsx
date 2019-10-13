@@ -24,7 +24,7 @@ import { Button, Col, Container, FormGroup, Input, Label, Nav, NavItem, NavLink,
 // core components
 import Footer from '../../components/Footers/Footer'
 import ProfilePageHeader from '../../components/Headers/ProfilePageHeader'
-import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
+import NavBar from '../../components/Navbars/NavBar'
 
 import exampleFace from '../../assets/img/faces/joe-gardner-2.jpg'
 
@@ -46,7 +46,7 @@ function ProfilePage() {
     })
     return (
         <>
-            <ExamplesNavbar />
+            <NavBar />
             <ProfilePageHeader />
             <div className="section profile-content">
                 <Container>

@@ -23,7 +23,7 @@ import { Col, Container, Row } from 'reactstrap'
 import Footer from '../../../../components/Footers/Footer'
 // assets
 import BlogPageHeader from '../../../../components/Headers/BlogPageHeader'
-import ExamplesNavbar from '../../../../components/Navbars/ExamplesNavbar'
+import NavBar from '../../../../components/Navbars/NavBar'
 import BreadCrumbs from '../../breadcrumbs/Breadcrumbs'
 import {BreadcrumbConstants} from '../../breadcrumbs/breadcrumbs.constants'
 import { BlogCategories } from '../BlogCategories'
@@ -46,7 +46,7 @@ function TextPageDraft(props: ITextPageDraftProps) {
 
     return (
         <>
-            <ExamplesNavbar />
+            <NavBar />
             <BlogPageHeader />
             <div className='section profile-content'>
                 <Container>

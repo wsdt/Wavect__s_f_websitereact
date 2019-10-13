@@ -19,7 +19,7 @@
 import React from 'react'
 import {H2} from './blogs/blogs_components/text_components/H2'
 import {P} from './blogs/blogs_components/text_components/P'
-import {Li, Ul} from './blogs/blogs_components/text_components/Ul'
+import {Li, Ul} from './blogs/blogs_components/text_components/List'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbDataPrivacy, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {RouteProps} from "react-router";

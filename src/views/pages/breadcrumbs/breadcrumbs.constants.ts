@@ -26,7 +26,7 @@ export class BreadcrumbConstants {
 }
 
 export const breadCrumbHome:BreadcrumbConstants = new BreadcrumbConstants('Home', '/')
-export const breadCrumbWhy:BreadcrumbConstants = new BreadcrumbConstants('Why?', '/vision-our-why')
+export const breadCrumbWhy:BreadcrumbConstants = new BreadcrumbConstants('Why & How?', '/vision-our-why-and-how')
 export const breadCrumbTraction:BreadcrumbConstants = new BreadcrumbConstants('Traction', '/traction')
 export const breadCrumbImpressum:BreadcrumbConstants = new BreadcrumbConstants('Impressum', '/impressum')
 export const breadCrumbDataPrivacy:BreadcrumbConstants = new BreadcrumbConstants('Data Privacy', '/data-privacy')

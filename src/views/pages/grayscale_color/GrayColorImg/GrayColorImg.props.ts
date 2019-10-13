@@ -4,4 +4,6 @@ export interface IGrayColorImgProps {
     alt: string
     className?:string
     additionalFilters?: string
+    height?: string|number
+    width?: string|number
 }

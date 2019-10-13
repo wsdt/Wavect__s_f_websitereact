@@ -25,7 +25,7 @@ import { Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row } fr
 import { faAward, faHandsHelping, faListAlt, faRuler } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../../components/Footers/Footer'
 import LandingPageHeader from '../../components/Headers/LandingPageHeader'
-import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
+import NavBar from '../../components/Navbars/NavBar'
 
 // assets
 import {RouteProps} from 'react-router'
@@ -48,7 +48,7 @@ function LandingPage(_:RouteProps) {
     })
     return (
         <>
-            <ExamplesNavbar />
+            <NavBar />
             <LandingPageHeader />
             <div className='main'>
                 <div className='section text-center'>

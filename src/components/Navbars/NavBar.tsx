@@ -30,7 +30,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
 import {breadCrumbBlogs, breadCrumbTraction, breadCrumbWhy} from '../../views/pages/breadcrumbs/breadcrumbs.constants'
 
-function ExamplesNavbar() {
+function NavBar() {
     const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
     const [navbarCollapse, setNavbarCollapse] = React.useState(false)
 
@@ -77,17 +77,17 @@ function ExamplesNavbar() {
                     <Nav navbar={true}>
                         <NavItem>
                             <NavLink href={breadCrumbWhy.link} title={breadCrumbWhy.title}>
-                                <FontAwesomeIcon icon={faGlasses} /> Why?
+                                <FontAwesomeIcon icon={faGlasses} /> {breadCrumbWhy.title}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbBlogs.link} title={breadCrumbBlogs.title}>
-                                <FontAwesomeIcon icon={faBlog} /> Blogs
+                                <FontAwesomeIcon icon={faBlog} /> {breadCrumbBlogs.title}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
-                                <FontAwesomeIcon icon={faHandshake} /> Traction
+                                <FontAwesomeIcon icon={faHandshake} /> {breadCrumbTraction.title}
                             </NavLink>
                         </NavItem>
 
@@ -144,4 +144,4 @@ function ExamplesNavbar() {
     )
 }
 
-export default ExamplesNavbar
+export default NavBar

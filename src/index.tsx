@@ -48,7 +48,7 @@ import Impressum from './views/pages/Impressum'
 // pages
 import LandingPage from './views/pages/LandingPage'
 import Traction from './views/pages/Traction'
-import Why from './views/pages/Why'
+import WhyHow from './views/pages/WhyHow'
 // others
 
 ReactDOM.render(
@@ -78,7 +78,7 @@ ReactDOM.render(
             <Route path={breadCrumbImpressum.link} render={props => <Impressum {...props} />} />
             <Route path={breadCrumbDataPrivacy.link} render={props => <DataPrivacy {...props} />} />
 
-            <Route path={breadCrumbWhy.link} render={props => <Why {...props} />} />
+            <Route path={breadCrumbWhy.link} render={props => <WhyHow {...props} />} />
             <Route path={breadCrumbHome.link} render={props => <LandingPage {...props} />} />
             <Redirect to='/' />
         </Switch>

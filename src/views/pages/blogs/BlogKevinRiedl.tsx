@@ -21,7 +21,7 @@ import React from 'react'
 import {Button, Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane} from 'reactstrap'
 // core components
 import Footer from '../../../components/Footers/Footer'
-import ExamplesNavbar from '../../../components/Navbars/ExamplesNavbar'
+import NavBar from '../../../components/Navbars/NavBar'
 
 import imgKevinRiedlChangeThoughtsOnBurnoutStress
     from '../../../assets/img/blogs/kevin_riedl/changethoughtsonburnoutstress_profilepic.jpg'
@@ -59,7 +59,7 @@ function BlogKevinRiedl(_:RouteProps) {
     })
     return (
         <>
-            <ExamplesNavbar/>
+            <NavBar/>
             <BlogPageHeader/>
             <div className='section profile-content'>
                 <Container>

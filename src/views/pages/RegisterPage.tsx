@@ -22,7 +22,7 @@ import React from 'react'
 import { Button, Card, Col, Container, Form, Input, Row } from 'reactstrap'
 
 // core components
-import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
+import NavBar from '../../components/Navbars/NavBar'
 
 // assets
 import * as loginImage from '../../assets/img/login-image.jpg'
@@ -37,7 +37,7 @@ function RegisterPage() {
     })
     return (
         <>
-            <ExamplesNavbar />
+            <NavBar />
             <div
                 className="page-header"
                 style={{

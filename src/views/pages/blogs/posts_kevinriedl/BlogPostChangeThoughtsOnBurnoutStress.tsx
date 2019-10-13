@@ -27,7 +27,7 @@ import { BlogCategories } from '../BlogCategories'
 import { BlockQuote } from '../blogs_components/text_components/BlockQuote'
 import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
-import { Li, Ul } from '../blogs_components/text_components/Ul'
+import { Li, Ul } from '../blogs_components/text_components/List'
 import TextPageDraft from '../blogs_components/TextPageDraft'
 import {RouteProps} from "react-router";
 

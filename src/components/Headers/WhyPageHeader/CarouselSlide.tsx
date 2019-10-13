@@ -30,6 +30,7 @@ interface ICarouselSlideProps {
 }
 
 function CarouselSlide(props: ICarouselSlideProps) {
+    const isLongTitle:boolean = props.title.length > 30
 
     return <Slide index={props.index}>
         <div className='page-header section-dark'
@@ -40,10 +41,10 @@ function CarouselSlide(props: ICarouselSlideProps) {
             <div className='content-center'>
                 <div className='title-brand'
                      style={{position: 'absolute', transform: 'translate(-50%, -50%)', left: '50%', top: '50%'}}>
-                    <h1 style={{fontSize: '4.5vw'}}>
+                    <h1 style={{fontSize: isLongTitle ? '3.75vw' : '4.5vw'}}>
                         {props.title}
                     </h1>
-                    <h2 className='presentation-subtitle text-center' style={{fontSize: '2vw'}}>
+                    <h2 className='presentation-subtitle text-center' style={{fontSize: '1.5vw'}}>
                         {props.subtitle}
                     </h2>
                 </div>
