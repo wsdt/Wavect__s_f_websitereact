@@ -1,7 +1,7 @@
 
-export interface IGrayColorImgProps {
+export interface IGrayColorBgImgProps {
     src: string
-    alt: string
     className?:string
     additionalFilters?: string
+    dataParallax?: boolean
 }

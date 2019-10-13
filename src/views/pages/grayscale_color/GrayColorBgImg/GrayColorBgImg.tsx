@@ -1,11 +1,11 @@
 import * as React from 'react'
 import {PureComponent} from 'react'
-import {IGrayColorImgProps} from './GrayColorImg.props'
-import {IGrayColorImgState} from './GrayColorImg.state'
+import {IGrayColorBgImgProps} from './GrayColorBgImg.props'
+import {IGrayColorBgImgState} from './GrayColorBgImg.state'
 
-export class GrayColorImg extends PureComponent<IGrayColorImgProps, IGrayColorImgState> {
+export class GrayColorBgImg extends PureComponent<IGrayColorBgImgProps, IGrayColorBgImgState> {
 
-    public state: IGrayColorImgState = {
+    public state: IGrayColorBgImgState = {
         isGrayscale: true,
     }
 
@@ -15,8 +15,10 @@ export class GrayColorImg extends PureComponent<IGrayColorImgProps, IGrayColorIm
         return <div onMouseEnter={() => this.changeColorState(false)}
                     onMouseLeave={() => this.changeColorState(true)}
                     onTouchStart={() => this.changeColorState(false)}
-                    onTouchEnd={() => this.changeColorState(true)}>
-            <img alt={this.props.alt} style={{filter: this.getFilter()}} src={this.props.src} className={this.props.className} />
+                    onTouchEnd={() => this.changeColorState(true)}
+                    data-parallax={this.props.dataParallax}
+                    style={{backgroundImage: `url(${this.props.src})`, filter: this.getFilter()}} className={this.props.className}>
+            {this.props.children}
         </div>
     }
 

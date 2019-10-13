@@ -23,10 +23,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // reactstrap components
-import { faBlog } from '@fortawesome/free-solid-svg-icons'
+import {faBlog, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {faGlasses} from '@fortawesome/free-solid-svg-icons/faGlasses'
+import { faHandshake } from '@fortawesome/free-solid-svg-icons/faHandshake'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
-import { faHandshake } from '@fortawesome/free-solid-svg-icons/faHandshake'
+import {breadCrumbBlogs, breadCrumbTraction, breadCrumbWhy} from '../../views/pages/breadcrumbs/breadcrumbs.constants'
 
 function ExamplesNavbar() {
     const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
@@ -53,10 +55,10 @@ function ExamplesNavbar() {
         }
     })
     return (
-        <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll="300" expand="lg">
+        <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll='300' expand='lg'>
             <Container>
-                <div className="navbar-translate">
-                    <NavbarBrand data-placement="bottom" to="/" title="Home" tag={Link}>
+                <div className='navbar-translate'>
+                    <NavbarBrand data-placement='bottom' to='/' title='Home' tag={Link}>
                         Wavect
                     </NavbarBrand>
                     <button
@@ -66,68 +68,73 @@ function ExamplesNavbar() {
                         })}
                         onClick={toggleNavbarCollapse}
                     >
-                        <span className="navbar-toggler-bar bar1" />
-                        <span className="navbar-toggler-bar bar2" />
-                        <span className="navbar-toggler-bar bar3" />
+                        <span className='navbar-toggler-bar bar1' />
+                        <span className='navbar-toggler-bar bar2' />
+                        <span className='navbar-toggler-bar bar3' />
                     </button>
                 </div>
-                <Collapse className="justify-content-end" navbar={true} isOpen={navbarCollapse}>
+                <Collapse className='justify-content-end' navbar={true} isOpen={navbarCollapse}>
                     <Nav navbar={true}>
                         <NavItem>
-                            <NavLink href="/blogs" title="Blog posts of co-founders">
+                            <NavLink href={breadCrumbWhy.link} title={breadCrumbWhy.title}>
+                                <FontAwesomeIcon icon={faGlasses} /> Why?
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href={breadCrumbBlogs.link} title={breadCrumbBlogs.title}>
                                 <FontAwesomeIcon icon={faBlog} /> Blogs
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/traction" title="Past competitions & Partners">
+                            <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
                                 <FontAwesomeIcon icon={faHandshake} /> Traction
                             </NavLink>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink data-placement="bottom" href="mailto:office@wavect.io" title="Contact us via e-mail">
-                                <i className="fa fa-envelope" />
-                                <p className="d-lg-none">E-Mail</p>
+                            <NavLink data-placement='bottom' href='mailto:office@wavect.io' title='Contact us via e-mail'>
+                                <FontAwesomeIcon icon={faEnvelope} />
+                                <p className='d-lg-none'>E-Mail</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                data-placement="bottom"
-                                href="https://www.linkedin.com/company/19010151"
-                                target="_blank"
-                                title="Follow us on LinkedIn"
+                                data-placement='bottom'
+                                href='https://www.linkedin.com/company/19010151'
+                                target='_blank'
+                                title='Follow us on LinkedIn'
                             >
-                                <i className="fa fa-linkedin-square" />
-                                <p className="d-lg-none">LinkedIn</p>
+                                <i className='fa fa-linkedin-square' />
+                                <p className='d-lg-none'>LinkedIn</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://www.facebook.com/wavect" target="_blank" title="Like us on Facebook">
-                                <i className="fa fa-facebook-square" />
-                                <p className="d-lg-none">Facebook</p>
+                            <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title='Like us on Facebook'>
+                                <i className='fa fa-facebook-square' />
+                                <p className='d-lg-none'>Facebook</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                data-placement="bottom"
-                                href="https://www.instagram.com/wavect.io"
-                                target="_blank"
-                                title="Follow us on Instagram"
+                                data-placement='bottom'
+                                href='https://www.instagram.com/wavect.io'
+                                target='_blank'
+                                title='Follow us on Instagram'
                             >
-                                <i className="fa fa-instagram" />
-                                <p className="d-lg-none">Instagram</p>
+                                <i className='fa fa-instagram' />
+                                <p className='d-lg-none'>Instagram</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://github.com/orgs/bekind-austria" target="_blank" title="Star us on GitHub">
-                                <i className="fa fa-github" />
-                                <p className="d-lg-none">GitHub</p>
+                            <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star us on GitHub'>
+                                <i className='fa fa-github' />
+                                <p className='d-lg-none'>GitHub</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://twitter.com/wavect_austria" target="_blank" title="Follow us on Twitter">
-                                <i className="fa fa-twitter" />
-                                <p className="d-lg-none">Twitter</p>
+                            <NavLink data-placement='bottom' href='https://twitter.com/wavect_austria' target='_blank' title='Follow us on Twitter'>
+                                <i className='fa fa-twitter' />
+                                <p className='d-lg-none'>Twitter</p>
                             </NavLink>
                         </NavItem>
                     </Nav>

@@ -39,8 +39,9 @@ import BlogListDraft from './blogs_components/BlogListDraft'
 import BreadCrumbs from "../breadcrumbs/Breadcrumbs";
 import {breadCrumbBlogKevinRiedl, breadCrumbBlogs, breadCrumbHome} from "../breadcrumbs/breadcrumbs.constants";
 import {GrayColorImg} from "../grayscale_color/GrayColorImg/GrayColorImg";
+import {RouteProps} from "react-router";
 
-function BlogKevinRiedl() {
+function BlogKevinRiedl(_:RouteProps) {
     const [activeTab, setActiveTab] = React.useState('1')
 
     const toggle = (tab: any) => {

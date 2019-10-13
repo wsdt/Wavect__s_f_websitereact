@@ -22,8 +22,9 @@ import { P } from './blogs/blogs_components/text_components/P'
 import { Li, Ul } from './blogs/blogs_components/text_components/Ul'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbHome, breadCrumbImpressum} from './breadcrumbs/breadcrumbs.constants'
+import {RouteProps} from "react-router";
 
-function Impressum(_: any) {
+function Impressum(_: RouteProps) {
     return (
         <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbImpressum]}>
             <P>

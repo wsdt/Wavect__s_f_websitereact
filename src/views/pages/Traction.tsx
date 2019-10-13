@@ -27,8 +27,9 @@ import BreadCrumbs from './breadcrumbs/Breadcrumbs'
 import {breadCrumbHome, breadCrumbTraction} from './breadcrumbs/breadcrumbs.constants'
 import Competitions from './traction/Competitions'
 import Partners from './traction/Partners'
+import {RouteProps} from "react-router";
 
-function Traction(_: any) {
+function Traction(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('landing-page')

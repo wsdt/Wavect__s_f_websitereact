@@ -27,8 +27,9 @@ import {
     breadCrumbBlogs,
     breadCrumbHome
 } from "../../breadcrumbs/breadcrumbs.constants";
+import {RouteProps} from "react-router";
 
-function BlogPostHappinessNeqFullfillment() {
+function BlogPostHappinessNeqFullfillment(_:RouteProps) {
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('landing-page')

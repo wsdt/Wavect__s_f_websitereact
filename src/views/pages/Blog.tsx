@@ -26,12 +26,13 @@ import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 
 // assets
+import {RouteProps} from 'react-router'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbBlogs, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
-import {GrayColorImg} from "./grayscale_color/GrayColorImg/GrayColorImg";
+import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
 
-function Blog() {
+function Blog(_:RouteProps) {
     return (
         <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]}>
             <p>

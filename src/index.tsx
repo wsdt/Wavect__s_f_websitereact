@@ -18,24 +18,19 @@
 */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 
 // styles
 import './assets/css/bootstrap.min.css'
-import './assets/scss/paper-kit.scss'
 import './assets/demo/demo.css'
-// pages
-import LandingPage from './views/pages/LandingPage'
+import './assets/scss/paper-kit.scss'
 import Blog from './views/pages/Blog'
 import BlogKevinRiedl from './views/pages/blogs/BlogKevinRiedl'
-import BlogPostHappinessNeqFulfillment from './views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment'
 import BlogPostChangeThoughtsOnBurnoutStress from './views/pages/blogs/posts_kevinriedl/BlogPostChangeThoughtsOnBurnoutStress'
-import BlogPostStrategicHustling from './views/pages/blogs/posts_kevinriedl/BlogPostStrategicHustling'
-import BlogPostStartReflectingOrDieFullOfRegrets from './views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets'
+import BlogPostHappinessNeqFulfillment from './views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment'
 import BlogPostSayingYesIsABigNoToOpportunities from './views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities'
-import Impressum from './views/pages/Impressum'
-import DataPrivacy from './views/pages/DataPrivacy'
-import Traction from './views/pages/Traction'
+import BlogPostStartReflectingOrDieFullOfRegrets from './views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets'
+import BlogPostStrategicHustling from './views/pages/blogs/posts_kevinriedl/BlogPostStrategicHustling'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress,
@@ -46,8 +41,14 @@ import {
     breadCrumbBlogs,
     breadCrumbDataPrivacy, breadCrumbHome,
     breadCrumbImpressum,
-    breadCrumbTraction
-} from "./views/pages/breadcrumbs/breadcrumbs.constants";
+    breadCrumbTraction, breadCrumbWhy
+} from './views/pages/breadcrumbs/breadcrumbs.constants'
+import DataPrivacy from './views/pages/DataPrivacy'
+import Impressum from './views/pages/Impressum'
+// pages
+import LandingPage from './views/pages/LandingPage'
+import Traction from './views/pages/Traction'
+import Why from './views/pages/Why'
 // others
 
 ReactDOM.render(
@@ -77,8 +78,9 @@ ReactDOM.render(
             <Route path={breadCrumbImpressum.link} render={props => <Impressum {...props} />} />
             <Route path={breadCrumbDataPrivacy.link} render={props => <DataPrivacy {...props} />} />
 
+            <Route path={breadCrumbWhy.link} render={props => <Why {...props} />} />
             <Route path={breadCrumbHome.link} render={props => <LandingPage {...props} />} />
-            <Redirect to="/" />
+            <Redirect to='/' />
         </Switch>
     </BrowserRouter>,
     document.getElementById('root')

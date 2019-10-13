@@ -22,9 +22,10 @@ import {P} from './blogs/blogs_components/text_components/P'
 import {Li, Ul} from './blogs/blogs_components/text_components/Ul'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbDataPrivacy, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
+import {RouteProps} from "react-router";
 
 
-function DataPrivacy(_: any) {
+function DataPrivacy(_: RouteProps) {
     return <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbDataPrivacy]}>
         <H2>Datenschutz</H2>
         <P>Wir haben diese Datenschutzerklärung (Fassung 10.10.2019-221104031) verfasst, um Ihnen gemäß der Vorgaben der

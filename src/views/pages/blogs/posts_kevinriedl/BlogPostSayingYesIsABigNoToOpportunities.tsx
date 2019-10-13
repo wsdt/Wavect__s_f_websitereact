@@ -17,6 +17,7 @@
 
 */
 import React from 'react'
+import {RouteProps} from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities,
@@ -28,7 +29,7 @@ import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
 
-function BlogPostSayingYesIsABigNoToOpportunities() {
+function BlogPostSayingYesIsABigNoToOpportunities(_: RouteProps) {
     return (
         <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities]}>
             <P>

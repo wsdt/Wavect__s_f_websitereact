@@ -24,7 +24,6 @@ import { Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row } fr
 // core components
 import { faAward, faHandsHelping, faListAlt, faRuler } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../../components/Footers/Footer'
-import LandingPageHeader from '../../components/Headers/LandingPageHeader'
 import ExamplesNavbar from '../../components/Navbars/ExamplesNavbar'
 
 // assets
@@ -34,11 +33,12 @@ import imgDanielGosterxeier from '../../assets/img/team/daniel_gosterxeier.jpg'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import imgMariellaGalneder from '../../assets/img/team/mariella_galneder.jpg'
 import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
+import WhyPageHeader from '../../components/Headers/WhyPageHeader/WhyPageHeader'
 import ModalVideo from '../../components/Modals/ModalVideo'
 import {GrayColorIcon} from './grayscale_color/GrayColorIcon/GrayColorIcon'
 import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
 
-function LandingPage(_:RouteProps) {
+function Why(_:RouteProps) {
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('profile-page')
@@ -49,7 +49,7 @@ function LandingPage(_:RouteProps) {
     return (
         <>
             <ExamplesNavbar />
-            <LandingPageHeader />
+            <WhyPageHeader />
             <div className='main'>
                 <div className='section text-center'>
                     <Container>
@@ -446,4 +446,4 @@ function LandingPage(_:RouteProps) {
     )
 }
 
-export default LandingPage
+export default Why

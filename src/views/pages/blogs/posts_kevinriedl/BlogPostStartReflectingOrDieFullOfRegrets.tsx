@@ -26,8 +26,9 @@ import {
 import { BlogCategories } from '../BlogCategories'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
+import {RouteProps} from "react-router";
 
-function BlogPostStartReflectingOrDieFullOfRegrets() {
+function BlogPostStartReflectingOrDieFullOfRegrets(_:RouteProps) {
     return (
         <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets]}>
             <P>

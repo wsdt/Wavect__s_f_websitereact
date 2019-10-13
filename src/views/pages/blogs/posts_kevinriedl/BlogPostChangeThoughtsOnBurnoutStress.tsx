@@ -29,8 +29,9 @@ import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import { Li, Ul } from '../blogs_components/text_components/Ul'
 import TextPageDraft from '../blogs_components/TextPageDraft'
+import {RouteProps} from "react-router";
 
-function BlogPostChangeThoughtsOnBurnoutStress() {
+function BlogPostChangeThoughtsOnBurnoutStress(_:RouteProps) {
     return (
         <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress]}>
             <P>Do you feel overwhelmed, empty, stressed, demotivated or just depressed? If sometimes or yes, then this post is for YOU!</P>

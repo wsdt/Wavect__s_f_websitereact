@@ -27,8 +27,9 @@ import { BlogCategories } from '../BlogCategories'
 import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
+import {RouteProps} from "react-router";
 
-function BlogPostStrategicHustling() {
+function BlogPostStrategicHustling(_:RouteProps) {
     return (
         <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStrategicHustling]}>
             <P>
