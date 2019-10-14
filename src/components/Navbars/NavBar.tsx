@@ -23,9 +23,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // reactstrap components
-import {faBlog, faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import {faGlasses} from '@fortawesome/free-solid-svg-icons/faGlasses'
-import { faHandshake } from '@fortawesome/free-solid-svg-icons/faHandshake'
+import {
+    faFacebook, faGithub,
+    faInstagram, faLinkedinIn, faTwitter
+} from '@fortawesome/free-brands-svg-icons'
+import {faBlog, faEnvelope, faGlasses, faHandshake} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap'
 import {breadCrumbBlogs, breadCrumbTraction, breadCrumbWhy} from '../../views/pages/breadcrumbs/breadcrumbs.constants'
@@ -77,23 +79,23 @@ function NavBar() {
                     <Nav navbar={true}>
                         <NavItem>
                             <NavLink href={breadCrumbWhy.link} title={breadCrumbWhy.title}>
-                                <FontAwesomeIcon icon={faGlasses} /> {breadCrumbWhy.title}
+                                <FontAwesomeIcon icon={faGlasses} size='lg'/> {breadCrumbWhy.title}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbBlogs.link} title={breadCrumbBlogs.title}>
-                                <FontAwesomeIcon icon={faBlog} /> {breadCrumbBlogs.title}
+                                <FontAwesomeIcon icon={faBlog} size='lg'/> {breadCrumbBlogs.title}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
-                                <FontAwesomeIcon icon={faHandshake} /> {breadCrumbTraction.title}
+                                <FontAwesomeIcon icon={faHandshake} size='lg'/> {breadCrumbTraction.title}
                             </NavLink>
                         </NavItem>
 
                         <NavItem>
                             <NavLink data-placement='bottom' href='mailto:office@wavect.io' title='Contact us via e-mail'>
-                                <FontAwesomeIcon icon={faEnvelope} />
+                                <FontAwesomeIcon icon={faEnvelope} style={{marginRight: 5}} size='lg' />
                                 <p className='d-lg-none'>E-Mail</p>
                             </NavLink>
                         </NavItem>
@@ -102,15 +104,14 @@ function NavBar() {
                                 data-placement='bottom'
                                 href='https://www.linkedin.com/company/19010151'
                                 target='_blank'
-                                title='Follow us on LinkedIn'
-                            >
-                                <i className='fa fa-linkedin-square' />
+                                title='Follow us on LinkedIn'>
+                                <FontAwesomeIcon icon={faLinkedinIn} style={{marginRight: 5}} size='lg'/>
                                 <p className='d-lg-none'>LinkedIn</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title='Like us on Facebook'>
-                                <i className='fa fa-facebook-square' />
+                                <FontAwesomeIcon icon={faFacebook} style={{marginRight: 5}} size='lg'/>
                                 <p className='d-lg-none'>Facebook</p>
                             </NavLink>
                         </NavItem>
@@ -121,19 +122,19 @@ function NavBar() {
                                 target='_blank'
                                 title='Follow us on Instagram'
                             >
-                                <i className='fa fa-instagram' />
+                                <FontAwesomeIcon icon={faInstagram} style={{marginRight: 5}} size='lg'/>
                                 <p className='d-lg-none'>Instagram</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star us on GitHub'>
-                                <i className='fa fa-github' />
+                                <FontAwesomeIcon icon={faGithub} style={{marginRight: 5}} size='lg'/>
                                 <p className='d-lg-none'>GitHub</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink data-placement='bottom' href='https://twitter.com/wavect_austria' target='_blank' title='Follow us on Twitter'>
-                                <i className='fa fa-twitter' />
+                                <FontAwesomeIcon icon={faTwitter} style={{marginRight: 5}} size='lg'/>
                                 <p className='d-lg-none'>Twitter</p>
                             </NavLink>
                         </NavItem>

@@ -36,15 +36,15 @@ function CarouselSlide(props: ICarouselSlideProps) {
         <div className='page-header section-dark'
              data-parallax={true}
              style={{textAlign: 'center'}}>
-            <GrayColorImg src={props.bgImage} alt={props.bgImageAlt} additionalFilters='brightness(0.5)'/>
+            <GrayColorImg src={props.bgImage} alt={props.bgImageAlt} additionalFilters='brightness(0.5)' height='100%' width='auto'/>
 
             <div className='content-center'>
                 <div className='title-brand'
                      style={{position: 'absolute', transform: 'translate(-50%, -50%)', left: '50%', top: '50%'}}>
-                    <h1 style={{fontSize: isLongTitle ? '3.75vw' : '4.5vw'}}>
+                    <h1 style={{fontSize: isLongTitle ? '4em' : '5em'}}>
                         {props.title}
                     </h1>
-                    <h2 className='presentation-subtitle text-center' style={{fontSize: '1.5vw'}}>
+                    <h2 className='presentation-subtitle text-center' style={{fontSize: '2em'}}>
                         {props.subtitle}
                     </h2>
                 </div>
