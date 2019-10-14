@@ -19,7 +19,16 @@
 import React from 'react'
 
 // reactstrap components
-import { Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row } from 'reactstrap'
+import {
+    Button,
+    Card,
+    CardBody,
+    CardFooter,
+    CardTitle,
+    Col,
+    Container,
+    Row
+} from 'reactstrap'
 
 // core components
 import { faAward, faHandsHelping, faListAlt, faRuler } from '@fortawesome/free-solid-svg-icons'
@@ -37,6 +46,7 @@ import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
 import ModalVideo from '../../components/Modals/ModalVideo'
 import {GrayColorIcon} from './grayscale_color/GrayColorIcon/GrayColorIcon'
 import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
+import ContactForm from "./ContactForm/ContactForm";
 
 function LandingPage(_:RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -391,55 +401,7 @@ function LandingPage(_:RouteProps) {
                     </Container>
                 </div>
 
-                <div className='section landing-section'>
-                    <Container>
-                        <Row>
-                            <Col className='ml-auto mr-auto' md='8' style={{ textAlign: 'center' }}>
-                                <h2 className='text-center'>Keep in touch?</h2>
-
-                                {/*<Form className="contact-form">
-                                    <Row>
-                                        <Col md="6">
-                                            <label>Name</label>
-                                            <InputGroup>
-                                                <InputGroupAddon addonType="prepend">
-                                                    <InputGroupText>
-                                                        <i className="nc-icon nc-single-02" />
-                                                    </InputGroupText>
-                                                </InputGroupAddon>
-                                                <Input placeholder="Name" type="text" />
-                                            </InputGroup>
-                                        </Col>
-                                        <Col md="6">
-                                            <label>E-Mail</label>
-                                            <InputGroup>
-                                                <InputGroupAddon addonType="prepend">
-                                                    <InputGroupText>
-                                                        <i className="nc-icon nc-email-85" />
-                                                    </InputGroupText>
-                                                </InputGroupAddon>
-                                                <Input placeholder="Email" type="email" />
-                                            </InputGroup>
-                                        </Col>
-                                    </Row>
-                                    <label>Message</label>
-                                    <Input placeholder="Tell us your thoughts and feelings..." type="textarea" rows="4" />
-                                    <Row>
-                                        <Col className="ml-auto mr-auto" md="4">
-                                            <Button className="btn-fill" color="danger" size="lg">
-                                                Send Message
-                                            </Button>
-                                        </Col>
-                                    </Row>
-                                </Form>*/}
-                                <br />
-                                <p>
-                                    Contact us via <a href='mailto:office@wavect.io'>E-Mail 'office@wavect.io'</a>
-                                </p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+               <ContactForm />
             </div>
             <Footer />
         </>
