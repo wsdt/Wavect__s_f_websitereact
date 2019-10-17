@@ -6,4 +6,5 @@ export interface IContactFormState {
     text: string,
     wasSubmissionSuccessful: boolean,
     wasFormSubmitted: boolean,
+    error:string|null
 }

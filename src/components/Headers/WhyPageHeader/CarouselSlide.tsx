@@ -47,7 +47,7 @@ function CarouselSlide(props: ICarouselSlideProps) {
 
             <div className='content-center'>
                 <div className='title-brand'
-                     style={{position: 'absolute', transform: 'translate(-50%, -50%)', left: '50%', top: '50%', width: '95%'}}>
+                     style={{position: 'absolute', transform: 'translate(-50%, -50%)', left: '50%', top: props.isMobile ? '25%' : '50%', width: '95%'}}>
                     <h1 style={{fontSize: `${fontSizeTitle}vw`}}>
                         {props.title}
                     </h1>

@@ -44,9 +44,9 @@ import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import imgMariellaGalneder from '../../assets/img/team/mariella_galneder.jpg'
 import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
 import ModalVideo from '../../components/Modals/ModalVideo'
+import ContactForm from './ContactForm/ContactForm'
 import {GrayColorIcon} from './grayscale_color/GrayColorIcon/GrayColorIcon'
 import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
-import ContactForm from "./ContactForm/ContactForm";
 
 function LandingPage(_:RouteProps) {
     document.documentElement.classList.remove('nav-open')

@@ -39,18 +39,26 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
         text: '',
         wasSubmissionSuccessful: false,
         wasFormSubmitted: false,
+        error: null,
     }
 
     private getAlert = () => {
-        return this.state.wasSubmissionSuccessful ?
-            <Alert color='success'>We'll get in touch with you soon!</Alert> :
-            <Alert color='danger'>Couldn't send e-mail.</Alert>
+
+        if (this.state.wasFormSubmitted) {
+            return this.state.wasSubmissionSuccessful ?
+                <Alert color='success'>We'll get in touch with you soon!</Alert> :
+                <Alert color='danger'>Couldn't send e-mail.</Alert>
+        } else if (this.state.error) {
+            // if not already submitted validate form
+            return <Alert color='warning'>{this.state.error}</Alert>
+        }
+        return null
     }
 
     public render() {
         return <div className='section landing-section'>
             <Container>
-                {(this.state.wasFormSubmitted) ? this.getAlert() : null}
+                {this.getAlert()}
                 <Row>
                     <Col className='ml-auto mr-auto' md='8'>
                         <h2 className='text-center'>Keep in touch?</h2>
@@ -65,7 +73,8 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
                                                 <i className='nc-icon nc-single-02'/>
                                             </InputGroupText>
                                         </InputGroupAddon>
-                                        <Input placeholder='Name' type='text' name='autorName' onChange={(e) => this.handleOnChange('autorName', e)}/>
+                                        <Input placeholder='Name' type='text' name='autorName'
+                                               onChange={(e) => this.handleOnChange('autorName', e)}/>
                                     </InputGroup>
                                 </Col>
                                 <Col md='6'>
@@ -76,7 +85,8 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
                                                 <i className='nc-icon nc-single-02'/>
                                             </InputGroupText>
                                         </InputGroupAddon>
-                                        <Input placeholder='Subject' type='text' name='subject' onChange={(e) => this.handleOnChange('subject', e)}/>
+                                        <Input placeholder='Subject' type='text' name='subject'
+                                               onChange={(e) => this.handleOnChange('subject', e)}/>
                                     </InputGroup>
                                 </Col>
                             </Row>
@@ -89,7 +99,8 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
                                                 <i className='nc-icon nc-email-85'/>
                                             </InputGroupText>
                                         </InputGroupAddon>
-                                        <Input placeholder='Email' type='email' name='autorMail' onChange={(e) => this.handleOnChange('autorMail', e)}/>
+                                        <Input placeholder='Email' type='email' name='autorMail'
+                                               onChange={(e) => this.handleOnChange('autorMail', e)}/>
                                     </InputGroup>
                                 </Col>
                             </Row>
@@ -112,7 +123,7 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
     }
 
     private handleOnChange = (key: string, event: any) => {
-        const val:string = event.target.value
+        const val: string = event.target.value
 
         this.setState((prevState: IContactFormState) => (
             {
@@ -122,35 +133,55 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
         )
     }
 
-    private sendForm = async () => {
-        try {
-            const res: ApiResponse = await (await fetch('https://api.dev.wavect.io/api/web/v1/contact/form', {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    text: this.state.text,
-                    autorMail: this.state.autorMail,
-                    subject: this.state.subject,
-                    autorName: this.state.autorName,
-                }),
-            })).json()
+    private isFormValid = ():boolean => {
+        let msg:string|null = null
+        if (!this.state.autorName) msg = 'Please tell us your name, at least use an alias.'
+        else if (!this.state.autorMail) msg = 'We need your e-mail to get in touch with you.'
+        else if (!this.state.subject) msg = 'Please add a subject.'
+        else if (!this.state.text) msg = 'An email without text?'
 
-            if (!res.err) {
-                this.setState((prevState: IContactFormState) => ({
-                        ...prevState,
-                        wasSubmissionSuccessful: true,
-                        wasFormSubmitted: true,
-                    })
-                )
-            } else {
+        if (msg) {
+            this.setState((prevState: IContactFormState) => ({
+                ...prevState,
+                error: msg
+            }))
+            return false
+        }
+        return true
+    }
+
+    private sendForm = async () => {
+        // validate form input
+        if (this.isFormValid()) {
+            try {
+                const res: ApiResponse = await (await fetch('https://api.dev.wavect.io/api/web/v1/contact/form', {
+                    method: 'POST',
+                    headers: {
+                        Accept: 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: this.state.text,
+                        autorMail: this.state.autorMail,
+                        subject: this.state.subject,
+                        autorName: this.state.autorName,
+                    }),
+                })).json()
+
+                if (!res.err) {
+                    this.setState((prevState: IContactFormState) => ({
+                            ...prevState,
+                            wasSubmissionSuccessful: true,
+                            wasFormSubmitted: true,
+                        })
+                    )
+                } else {
+                    this.setErrorAlert()
+                }
+            } catch (e) {
+                console.error('ContactForm:sendForm: Could not send form -> ' + JSON.stringify(e))
                 this.setErrorAlert()
             }
-        } catch (e) {
-            console.error('ContactForm:sendForm: Could not send form -> ' + JSON.stringify(e))
-            this.setErrorAlert()
         }
     }
 
