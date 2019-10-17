@@ -39,18 +39,15 @@ import {
     breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
     breadCrumbBlogKevinRiedlStrategicHustling,
     breadCrumbBlogs,
-    breadCrumbDataPrivacy, breadCrumbForOrganizations, breadCrumbHome,
+    breadCrumbDataPrivacy, breadCrumbHome,
     breadCrumbImpressum,
     breadCrumbTraction, breadCrumbWhy
 } from './views/pages/breadcrumbs/breadcrumbs.constants'
 import DataPrivacy from './views/pages/DataPrivacy'
 import Impressum from './views/pages/Impressum'
-// pages
 import LandingPage from './views/pages/LandingPage'
 import Traction from './views/pages/Traction'
 import WhyHow from './views/pages/WhyHow'
-import ForOrganizations from "./views/pages/ForOrganizations";
-// others
 
 ReactDOM.render(
     <BrowserRouter>
@@ -80,7 +77,7 @@ ReactDOM.render(
             <Route path={breadCrumbDataPrivacy.link} render={props => <DataPrivacy {...props} />} />
 
             <Route path={breadCrumbWhy.link} render={props => <WhyHow {...props} />} />
-            <Route path={breadCrumbForOrganizations.link} render={props => <ForOrganizations {...props} />} />
+
             <Route path={breadCrumbHome.link} render={props => <LandingPage {...props} />} />
             <Redirect to='/' />
         </Switch>

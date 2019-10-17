@@ -8,8 +8,7 @@ import {ISocialShareProps} from '../SocialShare.interfaces'
 function LinkedInShare(props: ISocialShareProps
 ) {
 
-    return <div className='network'>
-        <div className='network_clickable'>
+    return <div className='network_clickable network'>
             <LinkedinShareButton
                 url={props.fullShareUrl}>
                 <LinkedinIcon
@@ -17,7 +16,6 @@ function LinkedInShare(props: ISocialShareProps
                     round={props.isIconRound}/>
             </LinkedinShareButton>
         </div>
-    </div>
 }
 
 export default LinkedInShare

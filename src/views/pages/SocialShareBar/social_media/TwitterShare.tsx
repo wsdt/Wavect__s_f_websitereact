@@ -6,8 +6,7 @@ import {ISocialShareProps} from '../SocialShare.interfaces'
 function TwitterShare(props: ISocialShareProps
 ) {
 
-    return <div className='network'>
-        <div className='network_clickable'>
+    return <div className='network_clickable network'>
             <TwitterShareButton
                 url={props.fullShareUrl}>
                 <TwitterIcon
@@ -15,7 +14,6 @@ function TwitterShare(props: ISocialShareProps
                     round={props.isIconRound}/>
             </TwitterShareButton>
         </div>
-    </div>
 }
 
 export default TwitterShare

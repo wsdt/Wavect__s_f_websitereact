@@ -6,8 +6,7 @@ import {ISocialShareProps} from '../SocialShare.interfaces'
 function WhatsAppShare(props: ISocialShareProps
 ) {
 
-    return <div className='network'>
-        <div className='network_clickable'>
+    return <div className='network_clickable network'>
             <WhatsappShareButton
                 url={props.fullShareUrl}>
                 <WhatsappIcon
@@ -15,7 +14,6 @@ function WhatsAppShare(props: ISocialShareProps
                     round={props.isIconRound}/>
             </WhatsappShareButton>
         </div>
-    </div>
 }
 
 export default WhatsAppShare

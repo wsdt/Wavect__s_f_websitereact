@@ -1,14 +1,12 @@
 import * as React from 'react'
-import {RedditIcon, RedditShareButton, RedditShareCount} from 'react-share'
-import {Badge} from 'reactstrap'
+import {RedditIcon, RedditShareButton} from 'react-share'
 import '../SocialShare.css'
 import {ISocialShareProps} from '../SocialShare.interfaces'
 
 function RedditShare(props: ISocialShareProps
 ) {
 
-    return <div className='network'>
-        <div className='network_clickable'>
+    return <div className='network_clickable network'>
             <RedditShareButton
                 url={props.fullShareUrl}>
                 <RedditIcon
@@ -16,13 +14,6 @@ function RedditShare(props: ISocialShareProps
                     round={props.isIconRound}/>
             </RedditShareButton>
         </div>
-        <RedditShareCount
-            url={props.fullShareUrl}>
-            {count => (
-                <Badge color='default'><strong>{count}</strong></Badge>
-            )}
-        </RedditShareCount>
-    </div>
 }
 
 export default RedditShare

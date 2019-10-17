@@ -1,17 +1,15 @@
 import * as React from 'react'
 import {
     FacebookIcon,
-    FacebookShareButton, FacebookShareCount,
+    FacebookShareButton
 } from 'react-share'
-import {Badge} from 'reactstrap'
 import '../SocialShare.css'
 import {ISocialShareProps} from '../SocialShare.interfaces'
 
 function FacebookShare(props: ISocialShareProps
 ) {
 
-    return <div className='network'>
-        <div className='network_clickable'>
+    return <div className='network_clickable network'>
             <FacebookShareButton
                 url={props.fullShareUrl}>
                 <FacebookIcon
@@ -19,13 +17,6 @@ function FacebookShare(props: ISocialShareProps
                     round={props.isIconRound}/>
             </FacebookShareButton>
         </div>
-        <FacebookShareCount
-            url={props.fullShareUrl}>
-            {count => (
-                <Badge color='default'><strong>{count}</strong></Badge>
-            )}
-        </FacebookShareCount>
-    </div>
 }
 
 export default FacebookShare
