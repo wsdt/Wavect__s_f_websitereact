@@ -5,6 +5,10 @@ export const getWindowDimensions = () => {
     return { width, height }
 }
 
+export const isMobileWidth = (totalWidth:number):boolean => {
+    return totalWidth < 500
+}
+
 export const useWindowDimensions = (pageHeader: React.RefObject<HTMLDivElement>) => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
 

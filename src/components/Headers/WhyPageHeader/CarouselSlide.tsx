@@ -27,10 +27,17 @@ interface ICarouselSlideProps {
     subtitle: string
     bgImage: string
     bgImageAlt: string
+    isMobile: boolean
 }
 
 function CarouselSlide(props: ICarouselSlideProps) {
     const isLongTitle:boolean = props.title.length > 30
+    let fontSizeSubtitle:number = 2
+    let fontSizeTitle:number = isLongTitle ? 4 : 5
+    if (props.isMobile) {
+        fontSizeTitle *= 2
+        fontSizeSubtitle *= 2
+    }
 
     return <Slide index={props.index}>
         <div className='page-header section-dark'
@@ -40,11 +47,11 @@ function CarouselSlide(props: ICarouselSlideProps) {
 
             <div className='content-center'>
                 <div className='title-brand'
-                     style={{position: 'absolute', transform: 'translate(-50%, -50%)', left: '50%', top: '50%'}}>
-                    <h1 style={{fontSize: isLongTitle ? '4em' : '5em'}}>
+                     style={{position: 'absolute', transform: 'translate(-50%, -50%)', left: '50%', top: '50%', width: '95%'}}>
+                    <h1 style={{fontSize: `${fontSizeTitle}vw`}}>
                         {props.title}
                     </h1>
-                    <h2 className='presentation-subtitle text-center' style={{fontSize: '2em'}}>
+                    <h2 className='presentation-subtitle text-center' style={{fontSize: `${fontSizeSubtitle}vw`}}>
                         {props.subtitle}
                     </h2>
                 </div>
