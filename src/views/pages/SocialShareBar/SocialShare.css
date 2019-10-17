@@ -1,0 +1,19 @@
+.all_networks {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.network {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.network_clickable {
+    cursor: pointer;
+}
+
+.network_clickable:hover:not(:active) {
+    opacity: 0.75;
+}

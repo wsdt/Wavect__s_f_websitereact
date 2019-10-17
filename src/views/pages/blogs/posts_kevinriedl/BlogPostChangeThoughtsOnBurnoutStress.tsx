@@ -30,6 +30,7 @@ import { P } from '../blogs_components/text_components/P'
 import { Li, Ul } from '../blogs_components/text_components/List'
 import TextPageDraft from '../blogs_components/TextPageDraft'
 import {RouteProps} from "react-router";
+import SocialShareBar from "../../SocialShareBar/SocialShareBar"
 
 function BlogPostChangeThoughtsOnBurnoutStress(_:RouteProps) {
     return (
@@ -133,6 +134,8 @@ function BlogPostChangeThoughtsOnBurnoutStress(_:RouteProps) {
                 </Li>
                 <Li>Do something nice every day (e.g. Holding the door open for a stranger).</Li>
             </Ul>
+
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.link}/>
         </TextPageDraft>
     )
 }

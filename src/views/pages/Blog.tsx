@@ -31,6 +31,7 @@ import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbBlogs, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
+import SocialShareBar from './SocialShareBar/SocialShareBar'
 
 function Blog(_:RouteProps) {
     return (
@@ -58,6 +59,8 @@ function Blog(_:RouteProps) {
                     </CardBody>
                 </Card>
             </a>
+
+            <SocialShareBar shareUrl={breadCrumbBlogs.link}/>
         </TextPageDraft>
     )
 }

@@ -17,17 +17,18 @@
 
 */
 import React from 'react'
+import {RouteProps} from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlStrategicHustling,
     breadCrumbBlogs,
     breadCrumbHome
 } from '../../breadcrumbs/breadcrumbs.constants'
+import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
 import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
-import {RouteProps} from "react-router";
 
 function BlogPostStrategicHustling(_:RouteProps) {
     return (
@@ -88,6 +89,8 @@ function BlogPostStrategicHustling(_:RouteProps) {
                 important to find a midway between procrastination and extreme hustling. Don’t forget, you want to be happy and fulfilled, not just
                 successful financially!
             </P>
+
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStrategicHustling.link}/>
         </TextPageDraft>
     )
 }

@@ -28,6 +28,7 @@ import { BlogCategories } from '../BlogCategories'
 import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
+import SocialShareBar from "../../SocialShareBar/SocialShareBar"
 
 function BlogPostSayingYesIsABigNoToOpportunities(_: RouteProps) {
     return (
@@ -76,6 +77,8 @@ function BlogPostSayingYesIsABigNoToOpportunities(_: RouteProps) {
                 about. That being said, we should rather focus on our actual life-visions, our values and true desires. Every opportunity which
                 doesn’t clearly support those goals should be rejected.
             </P>
+
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.link}/>
         </TextPageDraft>
     )
 }

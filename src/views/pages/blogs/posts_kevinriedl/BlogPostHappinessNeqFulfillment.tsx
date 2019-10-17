@@ -17,17 +17,18 @@
 
 */
 import React from 'react'
-import { BlogCategories } from '../BlogCategories'
-import TextPageDraft from '../blogs_components/TextPageDraft'
-import { P } from '../blogs_components/text_components/P'
-import { H2 } from '../blogs_components/text_components/H2'
+import {RouteProps} from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlHappinessNeqFulfillment,
     breadCrumbBlogs,
     breadCrumbHome
-} from "../../breadcrumbs/breadcrumbs.constants";
-import {RouteProps} from "react-router";
+} from '../../breadcrumbs/breadcrumbs.constants'
+import SocialShareBar from '../../SocialShareBar/SocialShareBar'
+import { BlogCategories } from '../BlogCategories'
+import { H2 } from '../blogs_components/text_components/H2'
+import { P } from '../blogs_components/text_components/P'
+import TextPageDraft from '../blogs_components/TextPageDraft'
 
 function BlogPostHappinessNeqFullfillment(_:RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -83,6 +84,8 @@ function BlogPostHappinessNeqFullfillment(_:RouteProps) {
                 One thing you could do today: Write three things down for what you are grateful for and ask yourself -> “Would I do what I do, when
                 nobody is watching, I’m dying within a year or money would not be relevant?”
             </P>
+
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link}/>
         </TextPageDraft>
     )
 }

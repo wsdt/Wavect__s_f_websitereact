@@ -40,6 +40,7 @@ import BreadCrumbs from "../breadcrumbs/Breadcrumbs";
 import {breadCrumbBlogKevinRiedl, breadCrumbBlogs, breadCrumbHome} from "../breadcrumbs/breadcrumbs.constants";
 import {GrayColorImg} from "../grayscale_color/GrayColorImg/GrayColorImg";
 import {RouteProps} from "react-router";
+import SocialShareBar from "../SocialShareBar/SocialShareBar";
 
 function BlogKevinRiedl(_:RouteProps) {
     const [activeTab, setActiveTab] = React.useState('1')
@@ -159,6 +160,9 @@ function BlogKevinRiedl(_:RouteProps) {
                             </Row>
                         </TabPane>
                     </TabContent>
+
+
+                    <SocialShareBar shareUrl={breadCrumbBlogKevinRiedl.link}/>
                 </Container>
             </div>
             <Footer/>

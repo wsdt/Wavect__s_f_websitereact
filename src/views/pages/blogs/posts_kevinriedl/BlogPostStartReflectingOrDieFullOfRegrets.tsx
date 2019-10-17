@@ -17,16 +17,17 @@
 
 */
 import React from 'react'
+import {RouteProps} from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
     breadCrumbBlogs,
     breadCrumbHome
 } from '../../breadcrumbs/breadcrumbs.constants'
+import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
-import {RouteProps} from "react-router";
 
 function BlogPostStartReflectingOrDieFullOfRegrets(_:RouteProps) {
     return (
@@ -52,6 +53,8 @@ function BlogPostStartReflectingOrDieFullOfRegrets(_:RouteProps) {
                 You are going to look back at your life and will be full of regrets in case you don’t live like you wanted. And you only truly know
                 what you want, when you reflect every day!
             </P>
+
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link}/>
         </TextPageDraft>
     )
 }
