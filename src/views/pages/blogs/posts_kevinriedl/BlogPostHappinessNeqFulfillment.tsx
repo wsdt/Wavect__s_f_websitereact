@@ -17,12 +17,12 @@
 
 */
 import React from 'react'
-import {RouteProps} from 'react-router'
+import { RouteProps } from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlHappinessNeqFulfillment,
     breadCrumbBlogs,
-    breadCrumbHome
+    breadCrumbHome,
 } from '../../breadcrumbs/breadcrumbs.constants'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
@@ -30,7 +30,7 @@ import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
 
-function BlogPostHappinessNeqFullfillment(_:RouteProps) {
+function BlogPostHappinessNeqFullfillment(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('landing-page')
@@ -39,7 +39,10 @@ function BlogPostHappinessNeqFullfillment(_:RouteProps) {
         }
     })
     return (
-        <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlHappinessNeqFulfillment]}>
+        <TextPageDraft
+            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+            breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlHappinessNeqFulfillment]}
+        >
             <H2>Why does this post matter?</H2>
             <P>
                 Do you know who you are? Sounds like a silly question and the answer might be redundant, but are you actually sure you know the
@@ -85,7 +88,7 @@ function BlogPostHappinessNeqFullfillment(_:RouteProps) {
                 nobody is watching, I’m dying within a year or money would not be relevant?”
             </P>
 
-            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link}/>
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link} />
         </TextPageDraft>
     )
 }

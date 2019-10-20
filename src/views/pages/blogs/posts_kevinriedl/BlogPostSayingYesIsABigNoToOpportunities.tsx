@@ -17,22 +17,25 @@
 
 */
 import React from 'react'
-import {RouteProps} from 'react-router'
+import { RouteProps } from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities,
     breadCrumbBlogs,
-    breadCrumbHome
+    breadCrumbHome,
 } from '../../breadcrumbs/breadcrumbs.constants'
 import { BlogCategories } from '../BlogCategories'
 import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
-import SocialShareBar from "../../SocialShareBar/SocialShareBar"
+import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 
 function BlogPostSayingYesIsABigNoToOpportunities(_: RouteProps) {
     return (
-        <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities]}>
+        <TextPageDraft
+            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+            breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities]}
+        >
             <P>
                 In today’s world there are a ton of opportunities out there. An app idea here, a job offer there or anything else which gets you
                 closer to achieving your actual life-goals (if you have some, if not you should start to reflect on your life as it’s the source of
@@ -78,7 +81,7 @@ function BlogPostSayingYesIsABigNoToOpportunities(_: RouteProps) {
                 doesn’t clearly support those goals should be rejected.
             </P>
 
-            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.link}/>
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.link} />
         </TextPageDraft>
     )
 }

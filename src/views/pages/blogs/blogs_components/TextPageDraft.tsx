@@ -25,7 +25,7 @@ import Footer from '../../../../components/Footers/Footer'
 import BlogPageHeader from '../../../../components/Headers/BlogPageHeader'
 import NavBar from '../../../../components/Navbars/NavBar'
 import BreadCrumbs from '../../breadcrumbs/Breadcrumbs'
-import {BreadcrumbConstants} from '../../breadcrumbs/breadcrumbs.constants'
+import { BreadcrumbConstants } from '../../breadcrumbs/breadcrumbs.constants'
 import { BlogCategories } from '../BlogCategories'
 import { TextHeader } from './text_components/TextHeader'
 
@@ -48,13 +48,13 @@ function TextPageDraft(props: ITextPageDraftProps) {
         <>
             <NavBar />
             <BlogPageHeader />
-            <div className='section profile-content'>
+            <div className="section profile-content">
                 <Container>
                     <Row>
-                        <Col className='ml-auto mr-auto text-center' md='8'>
-                            <BreadCrumbs breadcrumbs={props.breadCrumbs}/>
+                        <Col className="ml-auto mr-auto text-center" md="8">
+                            <BreadCrumbs breadcrumbs={props.breadCrumbs} />
 
-                            <TextHeader blogCategory={props.blogCategory}>{props.breadCrumbs[props.breadCrumbs.length-1].title}</TextHeader>
+                            <TextHeader blogCategory={props.blogCategory}>{props.breadCrumbs[props.breadCrumbs.length - 1].title}</TextHeader>
 
                             {props.children}
                         </Col>

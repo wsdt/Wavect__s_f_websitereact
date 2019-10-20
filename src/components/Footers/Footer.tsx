@@ -21,14 +21,14 @@ import React from 'react'
 
 // reactstrap components
 import { Container, Row } from 'reactstrap'
-import {breadCrumbDataPrivacy, breadCrumbImpressum} from '../../views/pages/breadcrumbs/breadcrumbs.constants'
+import { breadCrumbDataPrivacy, breadCrumbImpressum } from '../../views/pages/breadcrumbs/breadcrumbs.constants'
 
 function Footer() {
     return (
-        <footer className='footer footer-black footer-white'>
+        <footer className="footer footer-black footer-white">
             <Container>
                 <Row>
-                    <nav className='footer-nav'>
+                    <nav className="footer-nav">
                         <ul>
                             <li>
                                 <a href={breadCrumbImpressum.link}>{breadCrumbImpressum.title}</a>
@@ -38,8 +38,8 @@ function Footer() {
                             </li>
                         </ul>
                     </nav>
-                    <div className='credits ml-auto'>
-                        <span className='copyright'>© Wavect</span>
+                    <div className="credits ml-auto">
+                        <span className="copyright">© Wavect</span>
                     </div>
                 </Row>
             </Container>

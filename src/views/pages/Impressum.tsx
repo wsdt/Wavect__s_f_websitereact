@@ -21,8 +21,8 @@ import { H2 } from './blogs/blogs_components/text_components/H2'
 import { P } from './blogs/blogs_components/text_components/P'
 import { Li, Ul } from './blogs/blogs_components/text_components/List'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
-import {breadCrumbHome, breadCrumbImpressum} from './breadcrumbs/breadcrumbs.constants'
-import {RouteProps} from "react-router";
+import { breadCrumbHome, breadCrumbImpressum } from './breadcrumbs/breadcrumbs.constants'
+import { RouteProps } from 'react-router'
 
 function Impressum(_: RouteProps) {
     return (
@@ -47,7 +47,7 @@ function Impressum(_: RouteProps) {
             <P>
                 <strong>Tel.:</strong> +436503056644
                 <br />
-                <strong>E-Mail:</strong> <a href='mailto:office@wavect.io'>office@wavect.io</a>
+                <strong>E-Mail:</strong> <a href="mailto:office@wavect.io">office@wavect.io</a>
             </P>
             <P>
                 <strong>Verleihungsstaat:</strong> Österreich
@@ -55,16 +55,16 @@ function Impressum(_: RouteProps) {
             <P>
                 Quelle: Erstellt mit dem{' '}
                 <a
-                    title='Impressum Generator von firmenwebseiten.at'
-                    href='https://www.firmenwebseiten.at/impressum-generator/'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    title="Impressum Generator von firmenwebseiten.at"
+                    href="https://www.firmenwebseiten.at/impressum-generator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ textDecoration: 'none' }}
                 >
                     Impressum Generator von firmenwebseiten.at
                 </a>{' '}
                 in Kooperation mit{' '}
-                <a href='https://www.pressefeuer.at' target='_blank' rel='noopener noreferrer' title='' style={{ textDecoration: 'none' }}>
+                <a href="https://www.pressefeuer.at" target="_blank" rel="noopener noreferrer" title="" style={{ textDecoration: 'none' }}>
                     pressefeuer.at
                 </a>
             </P>
@@ -74,7 +74,7 @@ function Impressum(_: RouteProps) {
                 Online-Streitbeilegungsplattform (OS-Plattform) informieren.
                 <br />
                 Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter{' '}
-                <a href='https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE' target='_blank' rel='noopener noreferrer'>
+                <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE" target="_blank" rel="noopener noreferrer">
                     http://ec.europa.eu/odr?tid=221104031
                 </a>{' '}
                 zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.
@@ -98,9 +98,9 @@ function Impressum(_: RouteProps) {
                 Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Haftung für verlinkte Websites
                 besteht laut{' '}
                 <a
-                    href='https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025813&tid=221104031'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025813&tid=221104031"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     § 17 ECG
                 </a>{' '}

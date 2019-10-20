@@ -24,10 +24,10 @@ import NavBar from '../../components/Navbars/NavBar'
 import { P } from './blogs/blogs_components/text_components/P'
 import { TextHeader } from './blogs/blogs_components/text_components/TextHeader'
 import BreadCrumbs from './breadcrumbs/Breadcrumbs'
-import {breadCrumbHome, breadCrumbTraction} from './breadcrumbs/breadcrumbs.constants'
+import { breadCrumbHome, breadCrumbTraction } from './breadcrumbs/breadcrumbs.constants'
 import Competitions from './traction/Competitions'
 import Partners from './traction/Partners'
-import {RouteProps} from "react-router";
+import { RouteProps } from 'react-router'
 
 function Traction(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -42,11 +42,11 @@ function Traction(_: RouteProps) {
         <>
             <NavBar />
             <BlogPageHeader />
-            <div className='section profile-content'>
+            <div className="section profile-content">
                 <Container>
                     <Row>
-                        <Col className='ml-auto mr-auto text-left' md='8'>
-                            <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbTraction]}/>
+                        <Col className="ml-auto mr-auto text-left" md="8">
+                            <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbTraction]} />
 
                             <TextHeader>Traction</TextHeader>
                             <P>
@@ -62,10 +62,10 @@ function Traction(_: RouteProps) {
                 </Container>
             </div>
 
-            <div className='section section-dark text-center'>
+            <div className="section section-dark text-center">
                 <Container>
                     <Row>
-                        <Col className='ml-auto mr-auto text-left' md='8'>
+                        <Col className="ml-auto mr-auto text-left" md="8">
                             <Partners />
                         </Col>
                     </Row>

@@ -17,12 +17,12 @@
 
 */
 import React from 'react'
-import {RouteProps} from 'react-router'
+import { RouteProps } from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlStrategicHustling,
     breadCrumbBlogs,
-    breadCrumbHome
+    breadCrumbHome,
 } from '../../breadcrumbs/breadcrumbs.constants'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
@@ -30,9 +30,12 @@ import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
 
-function BlogPostStrategicHustling(_:RouteProps) {
+function BlogPostStrategicHustling(_: RouteProps) {
     return (
-        <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStrategicHustling]}>
+        <TextPageDraft
+            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+            breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStrategicHustling]}
+        >
             <P>
                 Read this, if you want to have better grades, be more successful in your job or just be more independent and happy in everything you
                 do.
@@ -90,7 +93,7 @@ function BlogPostStrategicHustling(_:RouteProps) {
                 successful financially!
             </P>
 
-            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStrategicHustling.link}/>
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStrategicHustling.link} />
         </TextPageDraft>
     )
 }

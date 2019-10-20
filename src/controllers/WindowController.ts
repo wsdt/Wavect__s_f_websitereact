@@ -5,7 +5,7 @@ export const getWindowDimensions = () => {
     return { width, height }
 }
 
-export const isMobileWidth = (totalWidth:number):boolean => {
+export const isMobileWidth = (totalWidth: number): boolean => {
     return totalWidth < 500
 }
 

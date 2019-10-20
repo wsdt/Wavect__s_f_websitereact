@@ -17,21 +17,24 @@
 
 */
 import React from 'react'
-import {RouteProps} from 'react-router'
+import { RouteProps } from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
     breadCrumbBlogs,
-    breadCrumbHome
+    breadCrumbHome,
 } from '../../breadcrumbs/breadcrumbs.constants'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
 
-function BlogPostStartReflectingOrDieFullOfRegrets(_:RouteProps) {
+function BlogPostStartReflectingOrDieFullOfRegrets(_: RouteProps) {
     return (
-        <TextPageDraft blogCategory={BlogCategories.PERSONAL_DEVELOPMENT} breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets]}>
+        <TextPageDraft
+            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+            breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets]}
+        >
             <P>
                 How many have heard of the well-known “midlife-crisis”? People have a midlife crisis when they feel like they missed something in
                 their life. Interestingly, more and more people get the so-called “midlife-crisis” already between the age of 20–30 years as many
@@ -54,7 +57,7 @@ function BlogPostStartReflectingOrDieFullOfRegrets(_:RouteProps) {
                 what you want, when you reflect every day!
             </P>
 
-            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link}/>
+            <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link} />
         </TextPageDraft>
     )
 }

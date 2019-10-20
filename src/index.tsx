@@ -39,11 +39,15 @@ import {
     breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
     breadCrumbBlogKevinRiedlStrategicHustling,
     breadCrumbBlogs,
-    breadCrumbDataPrivacy, breadCrumbHome,
+    breadCrumbDataPrivacy, breadCrumbForCompanies, breadCrumbForOrganizations,
+    breadCrumbHome,
     breadCrumbImpressum,
-    breadCrumbTraction, breadCrumbWhy
+    breadCrumbTraction,
+    breadCrumbWhy,
 } from './views/pages/breadcrumbs/breadcrumbs.constants'
 import DataPrivacy from './views/pages/DataPrivacy'
+import B2B from './views/pages/for_organizations/b2b/B2B'
+import B2G from './views/pages/for_organizations/b2g/B2G'
 import Impressum from './views/pages/Impressum'
 import LandingPage from './views/pages/LandingPage'
 import Traction from './views/pages/Traction'
@@ -65,10 +69,7 @@ ReactDOM.render(
                 path={breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.link}
                 render={props => <BlogPostChangeThoughtsOnBurnoutStress {...props} />}
             />
-            <Route
-                path={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link}
-                render={props => <BlogPostHappinessNeqFulfillment {...props} />}
-            />
+            <Route path={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link} render={props => <BlogPostHappinessNeqFulfillment {...props} />} />
             <Route path={breadCrumbBlogKevinRiedl.link} render={props => <BlogKevinRiedl {...props} />} />
             <Route path={breadCrumbBlogs.link} render={props => <Blog {...props} />} />
 
@@ -77,6 +78,8 @@ ReactDOM.render(
             <Route path={breadCrumbDataPrivacy.link} render={props => <DataPrivacy {...props} />} />
 
             <Route path={breadCrumbWhy.link} render={props => <WhyHow {...props} />} />
+            <Route path={breadCrumbForOrganizations.link} render={props => <B2G {...props} />} />
+            <Route path={breadCrumbForCompanies.link} render={props => <B2B {...props} />} />
 
             <Route path={breadCrumbHome.link} render={props => <LandingPage {...props} />} />
             <Redirect to='/' />
