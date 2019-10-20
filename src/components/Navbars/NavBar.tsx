@@ -25,6 +25,7 @@ import { Link } from 'react-router-dom'
 // reactstrap components
 import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faBlog, faEnvelope, faGlasses, faHandshake } from '@fortawesome/free-solid-svg-icons'
+import { faSitemap } from '@fortawesome/free-solid-svg-icons/faSitemap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     Collapse,
@@ -39,6 +40,7 @@ import {
     NavLink,
     UncontrolledDropdown,
 } from 'reactstrap'
+import imgWavectLogo from '../../assets/img/wavect_logo.png'
 import {
     breadCrumbBlogs,
     breadCrumbForCompanies,
@@ -46,10 +48,11 @@ import {
     breadCrumbTraction,
     breadCrumbWhy,
 } from '../../views/pages/breadcrumbs/breadcrumbs.constants'
-import { faSitemap } from '@fortawesome/free-solid-svg-icons/faSitemap'
+import {GrayColorImg} from '../../views/pages/grayscale_color/GrayColorImg/GrayColorImg'
 
-function NavBar() {
+const NavBar = () => {
     const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
+    const [isNavbarBrandAsText, setNavbarBrandAsText] = React.useState(true)
     const [navbarCollapse, setNavbarCollapse] = React.useState(false)
 
     const toggleNavbarCollapse = () => {
@@ -61,8 +64,10 @@ function NavBar() {
         const updateNavbarColor = () => {
             if (document.documentElement.scrollTop > 299 || document.body.scrollTop > 299) {
                 setNavbarColor('')
+                setNavbarBrandAsText(false)
             } else if (document.documentElement.scrollTop < 300 || document.body.scrollTop < 300) {
                 setNavbarColor('navbar-transparent')
+                setNavbarBrandAsText(true)
             }
         }
 
@@ -73,11 +78,12 @@ function NavBar() {
         }
     })
     return (
-        <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll="300" expand="lg">
+        <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll='300' expand='lg'>
             <Container>
-                <div className="navbar-translate">
-                    <NavbarBrand data-placement="bottom" to="/" title="Home" tag={Link}>
-                        Wavect
+                <div className='navbar-translate'>
+                    <NavbarBrand data-placement='bottom' to='/' title='Home' tag={Link}>
+                        {isNavbarBrandAsText ? 'Wavect'
+                            : <GrayColorImg src={imgWavectLogo} alt='Wavect Logo' width={40} />}
                     </NavbarBrand>
                     <button
                         aria-expanded={navbarCollapse}
@@ -86,96 +92,96 @@ function NavBar() {
                         })}
                         onClick={toggleNavbarCollapse}
                     >
-                        <span className="navbar-toggler-bar bar1" />
-                        <span className="navbar-toggler-bar bar2" />
-                        <span className="navbar-toggler-bar bar3" />
+                        <span className='navbar-toggler-bar bar1' />
+                        <span className='navbar-toggler-bar bar2' />
+                        <span className='navbar-toggler-bar bar3' />
                     </button>
                 </div>
-                <Collapse className="justify-content-end" navbar={true} isOpen={navbarCollapse}>
+                <Collapse className='justify-content-end' navbar={true} isOpen={navbarCollapse}>
                     <Nav navbar={true}>
                         <NavItem>
                             <NavLink href={breadCrumbWhy.link} title={breadCrumbWhy.title}>
-                                <FontAwesomeIcon icon={faGlasses} size="lg" /> {breadCrumbWhy.title}
+                                <FontAwesomeIcon icon={faGlasses} size='lg' /> {breadCrumbWhy.title}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
-                                <FontAwesomeIcon icon={faHandshake} size="lg" /> {breadCrumbTraction.title}
+                                <FontAwesomeIcon icon={faHandshake} size='lg' /> {breadCrumbTraction.title}
                             </NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav={true} inNavbar={true}>
                             <DropdownToggle
                                 aria-haspopup={true}
                                 caret={true}
-                                color="default"
-                                data-toggle="dropdown"
-                                href="/#"
-                                id="navbarDropdownMenuLink"
+                                color='default'
+                                data-toggle='dropdown'
+                                href='/#'
+                                id='navbarDropdownMenuLink'
                                 nav={true}
                                 onClick={e => e.preventDefault()}
                             >
-                                <FontAwesomeIcon icon={faSitemap} size="lg" /> For Organizations
+                                <FontAwesomeIcon icon={faSitemap} size='lg' /> For Organizations
                             </DropdownToggle>
-                            <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
-                                <DropdownItem to={breadCrumbForCompanies.link} tag={Link} title="B2B">
+                            <DropdownMenu aria-labelledby='navbarDropdownMenuLink'>
+                                <DropdownItem to={breadCrumbForCompanies.link} tag={Link} title='B2B'>
                                     {breadCrumbForCompanies.title}
                                 </DropdownItem>
                                 <DropdownItem divider={true} />
-                                <DropdownItem title="B2G" to={breadCrumbForOrganizations.link} tag={Link}>
+                                <DropdownItem title='B2G' to={breadCrumbForOrganizations.link} tag={Link}>
                                     {breadCrumbForOrganizations.title}
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <NavItem>
                             <NavLink href={breadCrumbBlogs.link} title={breadCrumbBlogs.title}>
-                                <FontAwesomeIcon icon={faBlog} size="lg" /> {breadCrumbBlogs.title}
+                                <FontAwesomeIcon icon={faBlog} size='lg' /> {breadCrumbBlogs.title}
                             </NavLink>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink data-placement="bottom" href="mailto:office@wavect.io" title="Contact us via e-mail">
-                                <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: 5 }} size="lg" />
-                                <p className="d-lg-none">E-Mail</p>
+                            <NavLink data-placement='bottom' href='mailto:office@wavect.io' title='Contact us via e-mail'>
+                                <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: 5 }} size='lg' />
+                                <p className='d-lg-none'>E-Mail</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                data-placement="bottom"
-                                href="https://www.linkedin.com/company/19010151"
-                                target="_blank"
-                                title="Follow us on LinkedIn"
+                                data-placement='bottom'
+                                href='https://www.linkedin.com/company/19010151'
+                                target='_blank'
+                                title='Follow us on LinkedIn'
                             >
-                                <FontAwesomeIcon icon={faLinkedinIn} style={{ marginRight: 5 }} size="lg" />
-                                <p className="d-lg-none">LinkedIn</p>
+                                <FontAwesomeIcon icon={faLinkedinIn} style={{ marginRight: 5 }} size='lg' />
+                                <p className='d-lg-none'>LinkedIn</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://www.facebook.com/wavect" target="_blank" title="Like us on Facebook">
-                                <FontAwesomeIcon icon={faFacebook} style={{ marginRight: 5 }} size="lg" />
-                                <p className="d-lg-none">Facebook</p>
+                            <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title='Like us on Facebook'>
+                                <FontAwesomeIcon icon={faFacebook} style={{ marginRight: 5 }} size='lg' />
+                                <p className='d-lg-none'>Facebook</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                data-placement="bottom"
-                                href="https://www.instagram.com/wavect.io"
-                                target="_blank"
-                                title="Follow us on Instagram"
+                                data-placement='bottom'
+                                href='https://www.instagram.com/wavect.io'
+                                target='_blank'
+                                title='Follow us on Instagram'
                             >
-                                <FontAwesomeIcon icon={faInstagram} style={{ marginRight: 5 }} size="lg" />
-                                <p className="d-lg-none">Instagram</p>
+                                <FontAwesomeIcon icon={faInstagram} style={{ marginRight: 5 }} size='lg' />
+                                <p className='d-lg-none'>Instagram</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://github.com/orgs/bekind-austria" target="_blank" title="Star us on GitHub">
-                                <FontAwesomeIcon icon={faGithub} style={{ marginRight: 5 }} size="lg" />
-                                <p className="d-lg-none">GitHub</p>
+                            <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star us on GitHub'>
+                                <FontAwesomeIcon icon={faGithub} style={{ marginRight: 5 }} size='lg' />
+                                <p className='d-lg-none'>GitHub</p>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href="https://twitter.com/wavect_austria" target="_blank" title="Follow us on Twitter">
-                                <FontAwesomeIcon icon={faTwitter} style={{ marginRight: 5 }} size="lg" />
-                                <p className="d-lg-none">Twitter</p>
+                            <NavLink data-placement='bottom' href='https://twitter.com/wavect_austria' target='_blank' title='Follow us on Twitter'>
+                                <FontAwesomeIcon icon={faTwitter} style={{ marginRight: 5 }} size='lg' />
+                                <p className='d-lg-none'>Twitter</p>
                             </NavLink>
                         </NavItem>
                     </Nav>
