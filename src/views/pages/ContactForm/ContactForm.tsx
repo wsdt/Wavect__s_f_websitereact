@@ -32,77 +32,63 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
         error: null,
     }
 
-    private getAlert = () => {
-        if (this.state.wasFormSubmitted) {
-            return this.state.wasSubmissionSuccessful ? (
-                <Alert color="success">We'll get in touch with you soon!</Alert>
-            ) : (
-                <Alert color="danger">Couldn't send e-mail.</Alert>
-            )
-        } else if (this.state.error) {
-            // if not already submitted validate form
-            return <Alert color="warning">{this.state.error}</Alert>
-        }
-        return null
-    }
-
     public render() {
         return (
-            <div className="section landing-section">
+            <div className='section landing-section'>
                 <Container>
                     {this.getAlert()}
                     <Row>
-                        <Col className="ml-auto mr-auto" md="8">
-                            <h2 className="text-center">Keep in touch?</h2>
+                        <Col className='ml-auto mr-auto' md='8'>
+                            <h2 className='text-center'>Keep in touch?</h2>
 
-                            <Form className="contact-form">
+                            <Form className='contact-form'>
                                 <Row>
-                                    <Col md="6">
+                                    <Col md='6'>
                                         <label>Name</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType="prepend">
+                                            <InputGroupAddon addonType='prepend'>
                                                 <InputGroupText>
-                                                    <i className="nc-icon nc-single-02" />
+                                                    <i className='nc-icon nc-single-02' />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
-                                                placeholder="Name"
-                                                type="text"
-                                                name="autorName"
+                                                placeholder='Name'
+                                                type='text'
+                                                name='autorName'
                                                 onChange={e => this.handleOnChange('autorName', e)}
                                             />
                                         </InputGroup>
                                     </Col>
-                                    <Col md="6">
+                                    <Col md='6'>
                                         <label>Subject</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType="prepend">
+                                            <InputGroupAddon addonType='prepend'>
                                                 <InputGroupText>
-                                                    <i className="nc-icon nc-single-02" />
+                                                    <i className='nc-icon nc-single-02' />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
-                                                placeholder="Subject"
-                                                type="text"
-                                                name="subject"
+                                                placeholder='Subject'
+                                                type='text'
+                                                name='subject'
                                                 onChange={e => this.handleOnChange('subject', e)}
                                             />
                                         </InputGroup>
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col md="12">
+                                    <Col md='12'>
                                         <label>E-Mail</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType="prepend">
+                                            <InputGroupAddon addonType='prepend'>
                                                 <InputGroupText>
-                                                    <i className="nc-icon nc-email-85" />
+                                                    <i className='nc-icon nc-email-85' />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
-                                                placeholder="Email"
-                                                type="email"
-                                                name="autorMail"
+                                                placeholder='Email'
+                                                type='email'
+                                                name='autorMail'
                                                 onChange={e => this.handleOnChange('autorMail', e)}
                                             />
                                         </InputGroup>
@@ -110,15 +96,15 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
                                 </Row>
                                 <label>Message</label>
                                 <Input
-                                    placeholder="Tell us your thoughts and feelings..."
-                                    type="textarea"
-                                    rows="4"
-                                    name="text"
+                                    placeholder='Tell us your thoughts and feelings...'
+                                    type='textarea'
+                                    rows='4'
+                                    name='text'
                                     onChange={e => this.handleOnChange('text', e)}
                                 />
                                 <Row>
-                                    <Col className="ml-auto mr-auto" md="4">
-                                        <Button className="btn-fill" color="danger" size="lg" onClick={() => this.sendForm()}>
+                                    <Col className='ml-auto mr-auto text-center' md='12'>
+                                        <Button className='btn-fill' color='danger' size='lg' onClick={() => this.sendForm()}>
                                             Send
                                         </Button>
                                     </Col>
@@ -129,6 +115,20 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
                 </Container>
             </div>
         )
+    }
+
+    private getAlert = () => {
+        if (this.state.wasFormSubmitted) {
+            return this.state.wasSubmissionSuccessful ? (
+                <Alert color='success'>We'll get in touch with you soon!</Alert>
+            ) : (
+                <Alert color='danger'>Couldn't send e-mail.</Alert>
+            )
+        } else if (this.state.error) {
+            // if not already submitted validate form
+            return <Alert color='warning'>{this.state.error}</Alert>
+        }
+        return null
     }
 
     private handleOnChange = (key: string, event: any) => {

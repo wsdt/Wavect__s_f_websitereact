@@ -25,8 +25,11 @@ import Footer from '../../components/Footers/Footer'
 import WhyPageHeader from '../../components/Headers/SlideHeaders/WhyPageHeader'
 import NavBar from '../../components/Navbars/NavBar'
 import { P } from './blogs/blogs_components/text_components/P'
+import {breadCrumbWhy} from './breadcrumbs/breadcrumbs.constants'
 import { GrayColorIcon } from './grayscale_color/GrayColorIcon/GrayColorIcon'
 import { GrayColorImg } from './grayscale_color/GrayColorImg/GrayColorImg'
+import SocialShareBar from './SocialShareBar/SocialShareBar'
+import ContactForm from "./ContactForm/ContactForm";
 
 function WhyHow(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -40,33 +43,33 @@ function WhyHow(_: RouteProps) {
         <>
             <NavBar />
             <WhyPageHeader />
-            <div className="main">
-                <div className="section text-center">
+            <div className='main'>
+                <div className='section text-center'>
                     <Container>
                         <Row>
-                            <Col className="ml-auto mr-auto" md="8">
-                                <h2 className="title">How does it work?</h2>
-                                <h5 className="description">
+                            <Col className='ml-auto mr-auto' md='8'>
+                                <h2 className='title'>How does it work?</h2>
+                                <h5 className='description'>
                                     <P>
                                         It's really easy! As soon as you have a profile on our "social network" (we don't like it's actual definition
                                         & reputation, but our platform is more easily understood by this term), you are eligible to win prizes by
                                         doing something good for humanity.
                                     </P>
                                 </h5>
-                                <GrayColorImg src={imgAppMockup} alt="Wavect App Mockup" width="50%" />
+                                <GrayColorImg src={imgAppMockup} alt='Wavect App Mockup' width='50%' />
                                 <br />
                             </Col>
                         </Row>
                         <br />
                         <br />
                         <Row>
-                            <Col md="3">
-                                <div className="info">
+                            <Col md='3'>
+                                <div className='info'>
                                     <GrayColorIcon icon={faSignInAlt} />
 
-                                    <div className="description">
-                                        <h4 className="info-title">Register</h4>
-                                        <p className="description">
+                                    <div className='description'>
+                                        <h4 className='info-title'>Register</h4>
+                                        <p className='description'>
                                             You may tell us what's important to you which helps us to show you{' '}
                                             <strong>relevant challenges based on your moral</strong> (e.g. environmental challenges esp. related to
                                             plastic,...).
@@ -74,11 +77,11 @@ function WhyHow(_: RouteProps) {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md="3">
-                                <div className="info">
+                            <Col md='3'>
+                                <div className='info'>
                                     <GrayColorIcon icon={faStarHalfAlt} />
-                                    <div className="description">
-                                        <h4 className="info-title">Solve challenges and...</h4>
+                                    <div className='description'>
+                                        <h4 className='info-title'>Solve challenges and...</h4>
                                         <p>
                                             ...<strong>proof it with videos/pictures or even ask a friend</strong> for verification. Additionally,
                                             your followers will rate your post based on it's authenticity to ensure high quality & fair-play.
@@ -86,11 +89,11 @@ function WhyHow(_: RouteProps) {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md="3">
-                                <div className="info">
+                            <Col md='3'>
+                                <div className='info'>
                                     <GrayColorIcon icon={faMoneyBill} />
-                                    <div className="description">
-                                        <h4 className="info-title">Sponsoring</h4>
+                                    <div className='description'>
+                                        <h4 className='info-title'>Sponsoring</h4>
                                         <p>
                                             If you win a prize, the sponsor will contact you to exchange further details about your prize. You will
                                             always gather karma points which will be shown on your profile and can be attached to your CV as
@@ -99,11 +102,11 @@ function WhyHow(_: RouteProps) {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md="3">
-                                <div className="info">
+                            <Col md='3'>
+                                <div className='info'>
                                     <GrayColorIcon icon={faPeopleCarry} />
-                                    <div className="description">
-                                        <h4 className="info-title">Your Impact</h4>
+                                    <div className='description'>
+                                        <h4 className='info-title'>Your Impact</h4>
                                         <p>
                                             Your impact will be aggregated to show you & your followers how much impact you had on our small planet.{' '}
                                             <strong>No more "I can't change anything"</strong>.
@@ -114,22 +117,22 @@ function WhyHow(_: RouteProps) {
                         </Row>
                     </Container>
                 </div>
-                <div className="section section-dark text-center">
+                <div className='section section-dark text-center'>
                     <Container>
-                        <h2 className="title">Exemplary challenges</h2>
+                        <h2 className='title'>Exemplary challenges</h2>
                         <Row>
-                            <Col md="4">
+                            <Col md='4'>
                                 <Card style={{ backgroundColor: 'transparent', border: '1px solid #ccc' }}>
                                     <CardBody>
-                                        <a href="/#" onClick={e => e.preventDefault()}>
-                                            <div className="author">
-                                                <CardTitle tag="h4" style={{ color: '#fff' }}>
+                                        <a href='/#' onClick={e => e.preventDefault()}>
+                                            <div className='author'>
+                                                <CardTitle tag='h4' style={{ color: '#fff' }}>
                                                     Invite a stranger for a drink
                                                 </CardTitle>
-                                                <h6 className="card-category">Social challenge</h6>
+                                                <h6 className='card-category'>Social challenge</h6>
                                             </div>
                                         </a>
-                                        <p className="card-description text-center">
+                                        <p className='card-description text-center'>
                                             Approach someone on the street or any other public place where people may be responsive to such a gesture
                                             and invite them for a casual drink. Take a selfie with or without your possibly new friend and claim your
                                             prize.
@@ -137,36 +140,36 @@ function WhyHow(_: RouteProps) {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md="4">
+                            <Col md='4'>
                                 <Card style={{ backgroundColor: 'transparent', border: '1px solid #ccc' }}>
                                     <CardBody>
-                                        <a href="/#" onClick={e => e.preventDefault()}>
-                                            <div className="author">
-                                                <CardTitle tag="h4" style={{ color: '#fff' }}>
+                                        <a href='/#' onClick={e => e.preventDefault()}>
+                                            <div className='author'>
+                                                <CardTitle tag='h4' style={{ color: '#fff' }}>
                                                     Go for a 15 minute walk
                                                 </CardTitle>
-                                                <h6 className="card-category">Health challenge</h6>
+                                                <h6 className='card-category'>Health challenge</h6>
                                             </div>
                                         </a>
-                                        <p className="card-description text-center">
+                                        <p className='card-description text-center'>
                                             Walking is incredible healthy as you free your mind, reduce your stress level, get fresh air and the best
                                             of it: you even burn fat. Just take a selfie at your final destination or share your route via screenshot.
                                         </p>
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md="4">
+                            <Col md='4'>
                                 <Card style={{ backgroundColor: 'transparent', border: '1px solid #ccc' }}>
                                     <CardBody>
-                                        <a href="/#" onClick={e => e.preventDefault()}>
-                                            <div className="author">
-                                                <CardTitle tag="h4" style={{ color: '#fff' }}>
+                                        <a href='/#' onClick={e => e.preventDefault()}>
+                                            <div className='author'>
+                                                <CardTitle tag='h4' style={{ color: '#fff' }}>
                                                     Gather 5 pieces of trash
                                                 </CardTitle>
-                                                <h6 className="card-category">Environmental challenge</h6>
+                                                <h6 className='card-category'>Environmental challenge</h6>
                                             </div>
                                         </a>
-                                        <p className="card-description text-center">
+                                        <p className='card-description text-center'>
                                             Gather cigarette stubs, plastic bottles or anything else which doesn't belong to the environment and
                                             dispose it properly. Just don't forget about your hygiene and wear (reusable) gloves. Take a picture of
                                             everything you gathered and post it.
@@ -176,18 +179,18 @@ function WhyHow(_: RouteProps) {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md="4">
+                            <Col md='4'>
                                 <Card style={{ backgroundColor: 'transparent', border: '1px solid #ccc' }}>
                                     <CardBody>
-                                        <a href="/#" onClick={e => e.preventDefault()}>
-                                            <div className="author">
-                                                <CardTitle tag="h4" style={{ color: '#fff' }}>
+                                        <a href='/#' onClick={e => e.preventDefault()}>
+                                            <div className='author'>
+                                                <CardTitle tag='h4' style={{ color: '#fff' }}>
                                                     Assist in a retirement home
                                                 </CardTitle>
-                                                <h6 className="card-category">Social challenge</h6>
+                                                <h6 className='card-category'>Social challenge</h6>
                                             </div>
                                         </a>
-                                        <p className="card-description text-center">
+                                        <p className='card-description text-center'>
                                             The older you get the more lonely you might become as e.g. many loose contact to friends or because of
                                             dying family-members. Help out in a retirement home, talk about life and become wiser & more mature than
                                             you can imagine.
@@ -195,18 +198,18 @@ function WhyHow(_: RouteProps) {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md="4">
+                            <Col md='4'>
                                 <Card style={{ backgroundColor: 'transparent', border: '1px solid #ccc' }}>
                                     <CardBody>
-                                        <a href="/#" onClick={e => e.preventDefault()}>
-                                            <div className="author">
-                                                <CardTitle tag="h4" style={{ color: '#fff' }}>
+                                        <a href='/#' onClick={e => e.preventDefault()}>
+                                            <div className='author'>
+                                                <CardTitle tag='h4' style={{ color: '#fff' }}>
                                                     Hold a 5 second handstand
                                                 </CardTitle>
-                                                <h6 className="card-category">Health challenge</h6>
+                                                <h6 className='card-category'>Health challenge</h6>
                                             </div>
                                         </a>
-                                        <p className="card-description text-center">
+                                        <p className='card-description text-center'>
                                             A controlled and well-formed handstand is hard to learn, but good for your intramuscular coordination.
                                             Nevertheless, most athletes neglect training their balance and body tension. Record your handstand and
                                             upload it on our platform.
@@ -214,18 +217,18 @@ function WhyHow(_: RouteProps) {
                                     </CardBody>
                                 </Card>
                             </Col>
-                            <Col md="4">
+                            <Col md='4'>
                                 <Card style={{ backgroundColor: 'transparent', border: '1px solid #ccc' }}>
                                     <CardBody>
-                                        <a href="/#" onClick={e => e.preventDefault()}>
-                                            <div className="author">
-                                                <CardTitle tag="h4" style={{ color: '#fff' }}>
+                                        <a href='/#' onClick={e => e.preventDefault()}>
+                                            <div className='author'>
+                                                <CardTitle tag='h4' style={{ color: '#fff' }}>
                                                     Plant a tree
                                                 </CardTitle>
-                                                <h6 className="card-category">Environmental challenge</h6>
+                                                <h6 className='card-category'>Environmental challenge</h6>
                                             </div>
                                         </a>
-                                        <p className="card-description text-center">
+                                        <p className='card-description text-center'>
                                             Every tree counts. Huge forest fires have been active in the last few years and destroyed an enormous
                                             wooded area. Buy a seedling and plant it in an approved stretch of land. Take a selfie or record a video
                                             when planting your tree.
@@ -237,20 +240,8 @@ function WhyHow(_: RouteProps) {
                     </Container>
                 </div>
 
-                <div className="section landing-section">
-                    <Container>
-                        <Row>
-                            <Col className="ml-auto mr-auto" md="8" style={{ textAlign: 'center' }}>
-                                <h2 className="text-center">Any questions?</h2>
-                                <br />
-                                <P>
-                                    We love feedback and would like to hear from you! Don't hesitate to contact us via{' '}
-                                    <a href="mailto:office@wavect.io">E-Mail 'office@wavect.io'</a>
-                                </P>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+              <ContactForm/>
+                <SocialShareBar shareUrl={breadCrumbWhy.link}/>
             </div>
             <Footer />
         </>

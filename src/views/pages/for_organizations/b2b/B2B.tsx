@@ -29,9 +29,10 @@ import Footer from '../../../../components/Footers/Footer'
 import B2BPageHeader from '../../../../components/Headers/SlideHeaders/B2BPageHeader'
 import NavBar from '../../../../components/Navbars/NavBar'
 import {Li, Ol} from '../../blogs/blogs_components/text_components/List'
-import {P} from '../../blogs/blogs_components/text_components/P'
-import {breadCrumbWhy} from '../../breadcrumbs/breadcrumbs.constants'
+import {breadCrumbForCompanies, breadCrumbWhy} from '../../breadcrumbs/breadcrumbs.constants'
+import ContactForm from '../../ContactForm/ContactForm'
 import {GrayColorIcon} from '../../grayscale_color/GrayColorIcon/GrayColorIcon'
+import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import B2BFacts from './B2BFacts'
 
 function B2B(_: RouteProps) {
@@ -138,21 +139,8 @@ function B2B(_: RouteProps) {
                     <B2BFacts />
                 </div>
 
-                <div className='section landing-section'>
-                    <Container>
-                        <Row>
-                            <Col className='ml-auto mr-auto' md='8' style={{textAlign: 'center'}}>
-                                <h2 className='text-center'>Want to know more?</h2>
-                                <br/>
-                                <P>
-                                    If you are interested, you can contact as at any time. Feedback is highly
-                                    appreciated too. Just contact us via{' '}
-                                    <a href='mailto:office@wavect.io'>E-Mail 'office@wavect.io'</a>
-                                </P>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+               <ContactForm/>
+                <SocialShareBar shareUrl={breadCrumbForCompanies.link}/>
             </div>
             <Footer/>
         </>

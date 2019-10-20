@@ -28,6 +28,7 @@ import { breadCrumbHome, breadCrumbTraction } from './breadcrumbs/breadcrumbs.co
 import Competitions from './traction/Competitions'
 import Partners from './traction/Partners'
 import { RouteProps } from 'react-router'
+import SocialShareBar from "./SocialShareBar/SocialShareBar";
 
 function Traction(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -72,6 +73,7 @@ function Traction(_: RouteProps) {
                 </Container>
             </div>
 
+            <SocialShareBar shareUrl={breadCrumbTraction.link}/>
             <Footer />
         </>
     )
