@@ -12,6 +12,8 @@ export class GrayColorIcon extends PureComponent<IGrayColorIconProps, IGrayColor
     public render() {
         return (
             <div
+                style={{cursor: 'pointer'}}
+                onClick={this.props.onClick}
                 className={this.getGrayColorClass()}
                 onMouseEnter={() => this.changeColorState(false)}
                 onMouseLeave={() => this.changeColorState(true)}

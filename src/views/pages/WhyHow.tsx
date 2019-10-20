@@ -25,11 +25,11 @@ import Footer from '../../components/Footers/Footer'
 import WhyPageHeader from '../../components/Headers/SlideHeaders/WhyPageHeader'
 import NavBar from '../../components/Navbars/NavBar'
 import { P } from './blogs/blogs_components/text_components/P'
-import {breadCrumbWhy} from './breadcrumbs/breadcrumbs.constants'
-import { GrayColorIcon } from './grayscale_color/GrayColorIcon/GrayColorIcon'
+import { breadCrumbWhy } from './breadcrumbs/breadcrumbs.constants'
+import {CollapseIconText} from './CollapseIconText'
+import ContactForm from './ContactForm/ContactForm'
 import { GrayColorImg } from './grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from './SocialShareBar/SocialShareBar'
-import ContactForm from "./ContactForm/ContactForm";
 
 function WhyHow(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -64,55 +64,22 @@ function WhyHow(_: RouteProps) {
                         <br />
                         <Row>
                             <Col md='3'>
-                                <div className='info'>
-                                    <GrayColorIcon icon={faSignInAlt} />
-
-                                    <div className='description'>
-                                        <h4 className='info-title'>Register</h4>
-                                        <p className='description'>
-                                            You may tell us what's important to you which helps us to show you{' '}
-                                            <strong>relevant challenges based on your moral</strong> (e.g. environmental challenges esp. related to
-                                            plastic,...).
-                                        </p>
-                                    </div>
-                                </div>
+                                <CollapseIconText icon={faSignInAlt} title='Register' descr={<>You may tell us what's important to you which helps us to show you{' '}
+                                    <strong>relevant challenges based on your moral</strong> (e.g. environmental challenges esp. related to
+                                    plastic,...).</>}/>
                             </Col>
                             <Col md='3'>
-                                <div className='info'>
-                                    <GrayColorIcon icon={faStarHalfAlt} />
-                                    <div className='description'>
-                                        <h4 className='info-title'>Solve challenges and...</h4>
-                                        <p>
-                                            ...<strong>proof it with videos/pictures or even ask a friend</strong> for verification. Additionally,
-                                            your followers will rate your post based on it's authenticity to ensure high quality & fair-play.
-                                        </p>
-                                    </div>
-                                </div>
+                                <CollapseIconText icon={faStarHalfAlt} title='Solve challenges and...' descr={<>...<strong>proof it with videos/pictures or even ask a friend</strong> for verification. Additionally,
+                                    your followers will rate your post based on it's authenticity to ensure high quality & fair-play.</>}/>
                             </Col>
                             <Col md='3'>
-                                <div className='info'>
-                                    <GrayColorIcon icon={faMoneyBill} />
-                                    <div className='description'>
-                                        <h4 className='info-title'>Sponsoring</h4>
-                                        <p>
-                                            If you win a prize, the sponsor will contact you to exchange further details about your prize. You will
-                                            always gather karma points which will be shown on your profile and can be attached to your CV as
-                                            <strong> Micro-Volunteering</strong>.
-                                        </p>
-                                    </div>
-                                </div>
+                                <CollapseIconText icon={faMoneyBill} title='Sponsoring' descr={<>If you win a prize, the sponsor will contact you to exchange further details about your prize. You will
+                                    always gather karma points which will be shown on your profile and can be attached to your CV as
+                                    <strong> Micro-Volunteering</strong>.</>}/>
                             </Col>
                             <Col md='3'>
-                                <div className='info'>
-                                    <GrayColorIcon icon={faPeopleCarry} />
-                                    <div className='description'>
-                                        <h4 className='info-title'>Your Impact</h4>
-                                        <p>
-                                            Your impact will be aggregated to show you & your followers how much impact you had on our small planet.{' '}
-                                            <strong>No more "I can't change anything"</strong>.
-                                        </p>
-                                    </div>
-                                </div>
+                                <CollapseIconText icon={faPeopleCarry} title='Your Impact' descr={<>Your impact will be aggregated to show you & your followers how much impact you had on our small planet.{' '}
+                                    <strong>No more "I can't change anything"</strong>.</>}/>
                             </Col>
                         </Row>
                     </Container>
@@ -240,8 +207,8 @@ function WhyHow(_: RouteProps) {
                     </Container>
                 </div>
 
-              <ContactForm/>
-                <SocialShareBar shareUrl={breadCrumbWhy.link}/>
+                <ContactForm />
+                <SocialShareBar shareUrl={breadCrumbWhy.link} />
             </div>
             <Footer />
         </>

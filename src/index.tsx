@@ -39,7 +39,9 @@ import {
     breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
     breadCrumbBlogKevinRiedlStrategicHustling,
     breadCrumbBlogs,
-    breadCrumbDataPrivacy, breadCrumbForCompanies, breadCrumbForOrganizations,
+    breadCrumbDataPrivacy,
+    breadCrumbForCompanies,
+    breadCrumbForOrganizations,
     breadCrumbHome,
     breadCrumbImpressum,
     breadCrumbTraction,
@@ -82,7 +84,7 @@ ReactDOM.render(
             <Route path={breadCrumbForCompanies.link} render={props => <B2B {...props} />} />
 
             <Route path={breadCrumbHome.link} render={props => <LandingPage {...props} />} />
-            <Redirect to='/' />
+            <Redirect to="/" />
         </Switch>
     </BrowserRouter>,
     document.getElementById('root')
