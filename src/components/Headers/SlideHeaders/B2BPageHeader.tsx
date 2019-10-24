@@ -21,7 +21,7 @@ import React from 'react'
 // reactstrap components
 import { CarouselProvider, Slider } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import { isMobileWidth, useWindowDimensions } from '../../../controllers/WindowController'
+import {isMobileWidth, isSmallerHeight, useWindowDimensions} from '../../../controllers/WindowController'
 import CarouselSlide from './CarouselSlide'
 
 import imgB2B_0 from '../../../assets/img/b2b/carousel/imgB2B_0.jpg'
@@ -38,6 +38,7 @@ function B2BPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width, height } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
+    const isShortHeight: boolean = isSmallerHeight(height)
 
     return (
         <div ref={pageHeader}>
@@ -50,6 +51,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_0}
                         bgImageAlt="Desk full of working material"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={1}
@@ -58,6 +60,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_1}
                         bgImageAlt="Books with instructions"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={2}
@@ -66,6 +69,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_2}
                         bgImageAlt="Individual in big city"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={3}
@@ -74,6 +78,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_3}
                         bgImageAlt="Light bulbs turned off"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={4}
@@ -82,6 +87,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_4}
                         bgImageAlt="Rating a company"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={5}
@@ -90,6 +96,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_5}
                         bgImageAlt="Small company working on Corporate-Social-Responsibility (CSR) strategies"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={6}
@@ -98,6 +105,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_6}
                         bgImageAlt="Attention equals revenues"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={7}
@@ -106,6 +114,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_7}
                         bgImageAlt="Virus - Viral Marketing"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={8}
@@ -114,6 +123,7 @@ function B2BPageHeader() {
                         bgImage={imgB2B_8}
                         bgImageAlt="Word-of-Mouth Marketing"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                 </Slider>
             </CarouselProvider>

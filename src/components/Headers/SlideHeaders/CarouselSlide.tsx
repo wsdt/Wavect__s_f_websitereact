@@ -28,6 +28,7 @@ interface ICarouselSlideProps {
     bgImage: string
     bgImageAlt: string
     isMobile: boolean
+    isShortHeight: boolean
 }
 
 function CarouselSlide(props: ICarouselSlideProps) {
@@ -38,25 +39,29 @@ function CarouselSlide(props: ICarouselSlideProps) {
         fontSizeTitle *= 2
         fontSizeSubtitle *= 2
     }
+    if (props.isShortHeight) {
+        fontSizeTitle /= 2
+        fontSizeSubtitle /= 2
+    }
 
     return (
         <Slide index={props.index}>
-            <div className="page-header section-dark" data-parallax={true} style={{ textAlign: 'center' }}>
-                <GrayColorImg src={props.bgImage} alt={props.bgImageAlt} additionalFilters="brightness(0.4)" height="100%" width="auto" />
+            <div className='page-header section-dark' data-parallax={true} style={{ textAlign: 'center' }}>
+                <GrayColorImg src={props.bgImage} alt={props.bgImageAlt} additionalFilters='brightness(0.4)' height='100%' width='auto' />
 
-                <div className="content-center">
+                <div className='content-center'>
                     <div
-                        className="title-brand"
+                        className='title-brand'
                         style={{
                             position: 'absolute',
                             transform: 'translate(-50%, -50%)',
                             left: '50%',
-                            top: props.isMobile ? '25%' : '50%',
+                            top: props.isMobile || props.isShortHeight ? '25%' : '50%',
                             width: '95%',
                         }}
                     >
                         <h1 style={{ fontSize: `${fontSizeTitle}vw` }}>{props.title}</h1>
-                        <h2 className="presentation-subtitle text-center" style={{ fontSize: `${fontSizeSubtitle}vw` }}>
+                        <h2 className='presentation-subtitle text-center' style={{ fontSize: `${fontSizeSubtitle}vw` }}>
                             {props.subtitle}
                         </h2>
                     </div>

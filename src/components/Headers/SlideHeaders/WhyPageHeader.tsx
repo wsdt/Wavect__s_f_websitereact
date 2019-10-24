@@ -30,13 +30,14 @@ import imgWhyHealth3 from '../../../assets/img/why/carousel/why_health_3.jpg'
 import imgWhySocial1 from '../../../assets/img/why/carousel/why_social_1.jpg'
 import imgWhySocial2 from '../../../assets/img/why/carousel/why_social_2.jpg'
 import imgWhySocial3 from '../../../assets/img/why/carousel/why_social_3.jpg'
-import { isMobileWidth, useWindowDimensions } from '../../../controllers/WindowController'
+import {isMobileWidth, isSmallerHeight, useWindowDimensions} from '../../../controllers/WindowController'
 import CarouselSlide from './CarouselSlide'
 
 function WhyPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width, height } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
+    const isShortHeight:boolean = isSmallerHeight(height)
 
     return (
         <div ref={pageHeader}>
@@ -49,6 +50,7 @@ function WhyPageHeader() {
                         bgImage={imgWhySocial1}
                         bgImageAlt="Poor child in slums"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={1}
@@ -57,6 +59,7 @@ function WhyPageHeader() {
                         bgImage={imgWhyEnvironment1}
                         bgImageAlt="Polluted beach"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={2}
@@ -65,6 +68,7 @@ function WhyPageHeader() {
                         bgImage={imgWhyHealth1}
                         bgImageAlt="Obese women"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={3}
@@ -73,6 +77,7 @@ function WhyPageHeader() {
                         bgImage={imgWhySocial2}
                         bgImageAlt="Homeless man seeking kindness"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={4}
@@ -81,6 +86,7 @@ function WhyPageHeader() {
                         bgImage={imgWhyEnvironment2}
                         bgImageAlt="Plastic bag on tree"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={5}
@@ -89,6 +95,7 @@ function WhyPageHeader() {
                         bgImage={imgWhyHealth2}
                         bgImageAlt="Smoking cigarettes"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={6}
@@ -97,6 +104,7 @@ function WhyPageHeader() {
                         bgImage={imgWhySocial3}
                         bgImageAlt="Old man exhausted"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={7}
@@ -105,6 +113,7 @@ function WhyPageHeader() {
                         bgImage={imgWhyEnvironment3}
                         bgImageAlt="Fish dying in plastic"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={8}
@@ -113,6 +122,7 @@ function WhyPageHeader() {
                         bgImage={imgWhyHealth3}
                         bgImageAlt="Man drinking alcohol, abuse"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                 </Slider>
             </CarouselProvider>

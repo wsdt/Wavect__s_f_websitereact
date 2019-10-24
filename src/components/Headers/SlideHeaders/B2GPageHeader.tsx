@@ -21,7 +21,7 @@ import React from 'react'
 // reactstrap components
 import { CarouselProvider, Slider } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import { isMobileWidth, useWindowDimensions } from '../../../controllers/WindowController'
+import {isMobileWidth, isSmallerHeight, useWindowDimensions} from '../../../controllers/WindowController'
 import CarouselSlide from './CarouselSlide'
 
 import imgB2G_0 from '../../../assets/img/b2g/carousel/imgB2G_0.jpg'
@@ -39,6 +39,7 @@ function B2GPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width, height } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
+    const isShortHeight: boolean = isSmallerHeight(height)
 
     return (
         <div ref={pageHeader}>
@@ -51,6 +52,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_0}
                         bgImageAlt="Desk full of working material"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={1}
@@ -59,6 +61,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_1}
                         bgImageAlt="Books with instructions"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={2}
@@ -67,6 +70,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_2}
                         bgImageAlt="Individual in big city"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={3}
@@ -75,6 +79,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_3}
                         bgImageAlt="Small company working on Corporate-Social-Responsibility (CSR) strategies"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={4}
@@ -83,6 +88,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_4}
                         bgImageAlt="Light bulbs turned off"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={5}
@@ -91,6 +97,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_5}
                         bgImageAlt="Books with instructions"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={6}
@@ -99,6 +106,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_6}
                         bgImageAlt="Rating a company"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={7}
@@ -107,6 +115,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_7}
                         bgImageAlt="Attention equals revenues"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={8}
@@ -115,6 +124,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_8}
                         bgImageAlt="Virus - Viral Marketing"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={9}
@@ -123,6 +133,7 @@ function B2GPageHeader() {
                         bgImage={imgB2G_9}
                         bgImageAlt="Word-of-Mouth Marketing"
                         isMobile={isMobile}
+                        isShortHeight={isShortHeight}
                     />
                 </Slider>
             </CarouselProvider>

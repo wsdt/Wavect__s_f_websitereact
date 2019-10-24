@@ -1,12 +1,17 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 
 export const getWindowDimensions = () => {
-    const { innerWidth: width, innerHeight: height } = window
-    return { width, height }
+    const {innerWidth: width, innerHeight: height} = window
+    return {width, height}
 }
 
 export const isMobileWidth = (totalWidth: number): boolean => {
     return totalWidth < 500
+}
+
+/** Also reduces top position, but does not increase font size. */
+export const isSmallerHeight = (totalHeight: number): boolean => {
+    return totalHeight < 700
 }
 
 export const useWindowDimensions = (pageHeader: React.RefObject<HTMLDivElement>) => {
