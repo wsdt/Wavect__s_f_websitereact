@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as React from 'react'
 import { PureComponent } from 'react'
+import {transitionDuration, transitionTimingFunction} from '../grayscale_color.constants'
 import { IGrayColorIconProps } from './GrayColorIcon.props'
 import { IGrayColorIconState } from './GrayColorIcon.state'
 
@@ -12,7 +13,7 @@ export class GrayColorIcon extends PureComponent<IGrayColorIconProps, IGrayColor
     public render() {
         return (
             <div
-                style={{cursor: 'pointer'}}
+                style={{cursor: 'pointer', transition: `all ${transitionDuration} ${transitionTimingFunction}` }}
                 onClick={this.props.onClick}
                 className={this.getGrayColorClass()}
                 onMouseEnter={() => this.changeColorState(false)}

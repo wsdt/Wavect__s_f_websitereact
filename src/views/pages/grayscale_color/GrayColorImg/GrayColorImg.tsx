@@ -2,6 +2,7 @@ import * as React from 'react'
 import { PureComponent } from 'react'
 import { IGrayColorImgProps } from './GrayColorImg.props'
 import { IGrayColorImgState } from './GrayColorImg.state'
+import {transitionDuration, transitionTimingFunction} from "../grayscale_color.constants";
 
 export class GrayColorImg extends PureComponent<IGrayColorImgProps, IGrayColorImgState> {
     public state: IGrayColorImgState = {
@@ -18,7 +19,7 @@ export class GrayColorImg extends PureComponent<IGrayColorImgProps, IGrayColorIm
             >
                 <img
                     alt={this.props.alt}
-                    style={{ filter: this.getFilter() }}
+                    style={{ filter: this.getFilter(),  transition: `all ${transitionDuration} ${transitionTimingFunction}`}}
                     src={this.props.src}
                     className={this.props.className}
                     width={this.props.width}
@@ -28,11 +29,12 @@ export class GrayColorImg extends PureComponent<IGrayColorImgProps, IGrayColorIm
         )
     }
 
+
     private getFilter = () => {
         if (this.props.additionalFilters) {
-            return this.state.isGrayscale ? `grayscale(1) ${this.props.additionalFilters}` : this.props.additionalFilters
+            return this.state.isGrayscale ? `grayscale(1) ${this.props.additionalFilters}` : `grayscale(0) ${this.props.additionalFilters}`
         } else {
-            return this.state.isGrayscale ? 'grayscale(1)' : ''
+            return this.state.isGrayscale ? 'grayscale(1)' : 'grayscale(0)'
         }
     }
 
