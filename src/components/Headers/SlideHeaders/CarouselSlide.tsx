@@ -38,8 +38,7 @@ function CarouselSlide(props: ICarouselSlideProps) {
     if (props.isMobile) {
         fontSizeTitle *= 2
         fontSizeSubtitle *= 2
-    }
-    if (props.isShortHeight) {
+    } else if (props.isShortHeight) {
         fontSizeTitle /= 2
         fontSizeSubtitle /= 2
     }
