@@ -31,9 +31,17 @@ import { Li, Ul } from '../blogs_components/text_components/List'
 import TextPageDraft from '../blogs_components/TextPageDraft'
 import { RouteProps } from 'react-router'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
+import {Helmet} from "react-helmet";
 
 function BlogPostChangeThoughtsOnBurnoutStress(_: RouteProps) {
-    return (
+    return <>
+        <Helmet>
+            <title>{breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.title}</title>
+            <meta name='description'
+                  content='Do you feel overwhelmed, empty, stressed, demotivated or just depressed? If sometimes or yes, then this post is for YOU!'/>
+            <meta name='keywords' content='wavect,blog,post,stress,motivation,depression,help'/>
+        </Helmet>
+
         <TextPageDraft
             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
             breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress]}
@@ -140,7 +148,7 @@ function BlogPostChangeThoughtsOnBurnoutStress(_: RouteProps) {
 
             <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.link} />
         </TextPageDraft>
-    )
+    </>
 }
 
 export default BlogPostChangeThoughtsOnBurnoutStress

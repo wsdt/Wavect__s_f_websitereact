@@ -29,9 +29,18 @@ import { BlogCategories } from '../BlogCategories'
 import { H2 } from '../blogs_components/text_components/H2'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
+import {Helmet} from "react-helmet";
 
 function BlogPostStrategicHustling(_: RouteProps) {
-    return (
+    return <>
+        <Helmet>
+            <title>{breadCrumbBlogKevinRiedlStrategicHustling.title}</title>
+            <meta name='description'
+                  content='Read this, if you want to have better grades, be more successful in your job or just be more independent and happy in everything you
+                do.'/>
+            <meta name='keywords' content='wavect,blog,post,strategy,hustle,job,success,happiness,energy'/>
+        </Helmet>
+
         <TextPageDraft
             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
             breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStrategicHustling]}
@@ -95,7 +104,7 @@ function BlogPostStrategicHustling(_: RouteProps) {
 
             <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStrategicHustling.link} />
         </TextPageDraft>
-    )
+    </>
 }
 
 export default BlogPostStrategicHustling

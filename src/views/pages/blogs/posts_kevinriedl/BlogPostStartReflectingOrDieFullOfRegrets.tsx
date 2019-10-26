@@ -28,9 +28,17 @@ import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
 import { P } from '../blogs_components/text_components/P'
 import TextPageDraft from '../blogs_components/TextPageDraft'
+import {Helmet} from "react-helmet";
 
 function BlogPostStartReflectingOrDieFullOfRegrets(_: RouteProps) {
-    return (
+    return <>
+        <Helmet>
+            <title>{breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.title}</title>
+            <meta name='description'
+                  content='How could you avoid a midlife crisis? You only regret those things, you have never acted on.'/>
+            <meta name='keywords' content='wavect,blog,post,regret,die,reflect,midlife,crisis,act'/>
+        </Helmet>
+
         <TextPageDraft
             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
             breadCrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl, breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets]}
@@ -59,7 +67,7 @@ function BlogPostStartReflectingOrDieFullOfRegrets(_: RouteProps) {
 
             <SocialShareBar shareUrl={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link} />
         </TextPageDraft>
-    )
+    </>
 }
 
 export default BlogPostStartReflectingOrDieFullOfRegrets

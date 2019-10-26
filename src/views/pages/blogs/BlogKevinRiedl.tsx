@@ -37,6 +37,7 @@ import { breadCrumbBlogKevinRiedl, breadCrumbBlogs, breadCrumbHome } from '../br
 import { GrayColorImg } from '../grayscale_color/GrayColorImg/GrayColorImg'
 import { RouteProps } from 'react-router'
 import SocialShareBar from '../SocialShareBar/SocialShareBar'
+import {Helmet} from "react-helmet";
 
 function BlogKevinRiedl(_: RouteProps) {
     const [activeTab, setActiveTab] = React.useState('1')
@@ -56,6 +57,13 @@ function BlogKevinRiedl(_: RouteProps) {
     })
     return (
         <>
+            <Helmet>
+                <title>Blog - Kevin A. Riedl, Bsc.</title>
+                <meta name='description'
+                      content='Blog posts of our CEO, Kevin Riedl. His posts deal with technical, economical as well as personal questions.'/>
+                <meta name='keywords' content='wavect,blog,ceo,kevin,riedl,post,technical,economical,personal'/>
+            </Helmet>
+
             <NavBar />
             <BlogPageHeader />
             <div className="section profile-content">

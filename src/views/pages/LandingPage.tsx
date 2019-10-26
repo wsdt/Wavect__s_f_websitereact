@@ -23,6 +23,7 @@ import {Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row} from
 
 // core components
 import {faAward, faHandsHelping, faListAlt, faRuler} from '@fortawesome/free-solid-svg-icons'
+import {Helmet} from 'react-helmet'
 import Footer from '../../components/Footers/Footer'
 import LandingPageHeader from '../../components/Headers/LandingPageHeader'
 import NavBar from '../../components/Navbars/NavBar'
@@ -51,6 +52,14 @@ function LandingPage(_: RouteProps) {
     })
     return (
         <>
+            <Helmet>
+                <title>Become a hero - Let's make an impact</title>
+                <meta name='description'
+                      content='Solve challenges related to environment protection, health and solidarity & win personalized
+                      prizes based on your interests.'/>
+                      <meta name='keywords' content='wavect,challenge,environment,social,health,home'/>
+            </Helmet>
+
             <NavBar/>
             <LandingPageHeader/>
             <div className='main'>

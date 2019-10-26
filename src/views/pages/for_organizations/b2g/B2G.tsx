@@ -30,6 +30,7 @@ import {CollapseIconText} from '../../CollapseIconText'
 import ContactForm from '../../ContactForm/ContactForm'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import B2GFacts from './B2GFacts'
+import {Helmet} from "react-helmet";
 
 function B2G(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -41,6 +42,13 @@ function B2G(_: RouteProps) {
     })
     return (
         <>
+            <Helmet>
+                <title>Wavect for NGOs, politicians or other governmental organizations</title>
+                <meta name='description'
+                      content='Fight societal issues right at its root right before any charity, volunteer or government needs to help. Improve the reputation of your organization and create sustainable impact.'/>
+                <meta name='keywords' content='wavect,government,issue,society,solidarity,environment,health,charity,reputation,sustainability'/>
+            </Helmet>
+
             <NavBar />
             <B2GPageHeader />
             <div className='main'>

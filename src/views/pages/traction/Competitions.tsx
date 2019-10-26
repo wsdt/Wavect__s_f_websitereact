@@ -46,12 +46,10 @@ function Competitions(_: any) {
                         <Card style={{ width: '20rem' }}>
                             <GrayColorImg src={imgCompetitionAdventureX} alt="Adventure X - Innsbruck, Tyrol" />
                             <CardBody>
-                                <a href="/#" onClick={e => e.preventDefault()}>
                                     <div className="author">
                                         <CardTitle tag="h4">Adventure X - Innsbruck</CardTitle>
                                         <h6 className="card-category">Finalist (2019)</h6>
                                     </div>
-                                </a>
                                 <CardText className="card-description text-center">
                                     AdventureX is a business model competition for young startups and already established companies. Our business
                                     model has been selected from over 55 companies to compete with the top 6 startups in Tyrol.
@@ -67,12 +65,10 @@ function Competitions(_: any) {
                         <Card style={{ width: '20rem' }}>
                             <GrayColorImg src={imgCompetitionBeadyDays} alt="Beady Awards - Kufstein, Tyrol" />
                             <CardBody>
-                                <a href="/#" onClick={e => e.preventDefault()}>
                                     <div className="author">
                                         <CardTitle tag="h4">Beady Awards - Kufstein</CardTitle>
                                         <h6 className="card-category">Finalist (2019)</h6>
                                     </div>
-                                </a>
                                 <CardText className="card-description text-center">
                                     The Beady Awards honor the best concepts to make the world a better place and it's organizers claim to be the
                                     youngest festival in Austria. Our business model got into the top 3 startups in October 2019 .

@@ -26,40 +26,49 @@ import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 
 // assets
-import { RouteProps } from 'react-router'
+import {RouteProps} from 'react-router'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
-import { breadCrumbBlogs, breadCrumbHome } from './breadcrumbs/breadcrumbs.constants'
-import { GrayColorImg } from './grayscale_color/GrayColorImg/GrayColorImg'
+import {breadCrumbBlogs, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
+import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from './SocialShareBar/SocialShareBar'
+import {Helmet} from "react-helmet";
 
 function Blog(_: RouteProps) {
-    return (
+    return <>
+        <Helmet>
+            <title>Blogs of Co-Founders</title>
+            <meta name='description'
+                  content='We all are just humans. That is why our co-founders posted some blog posts about personal development, technical as well as economical topics and some stories about their lives.'/>
+            <meta name='keywords' content='wavect,blog,founder,post,personal,development,software,technical,economical,topic'/>
+        </Helmet>
+
         <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]}>
             <p>
-                Here you'll find personal blogs of our team-members. Topics may range from technical, economical, psychological as well as spiritual
+                Here you'll find personal blogs of our team-members. Topics may range from technical, economical,
+                psychological as well as spiritual
                 ones. Feel free to share them :-)
             </p>
-            <br />
+            <br/>
             {/*
                             <Button className='btn-round' color='default' outline={true}>
                                 <i className='fa fa-cog' /> Settings
                             </Button>*/}
 
-            <a href="/blogs/kevin-riedl" style={{ color: '#fff' }}>
-                <Card style={{ width: '20rem' }}>
-                    <GrayColorImg src={imgKevinRiedl} alt="CEO: Kevin Riedl" />
+            <a href="/blogs/kevin-riedl" style={{color: '#fff'}}>
+                <Card style={{width: '20rem'}}>
+                    <GrayColorImg src={imgKevinRiedl} alt="CEO: Kevin Riedl"/>
                     <CardBody>
-                        <CardTitle style={{ fontWeight: 'bold' }}>Kevin Riedl, Bsc.</CardTitle>
+                        <CardTitle style={{fontWeight: 'bold'}}>Kevin Riedl, Bsc.</CardTitle>
                         <CardText>Here you'll find economical, technical & personal posts.</CardText>
                         <Button color="info">Read posts</Button>
                     </CardBody>
                 </Card>
             </a>
 
-            <SocialShareBar shareUrl={breadCrumbBlogs.link} />
+            <SocialShareBar shareUrl={breadCrumbBlogs.link}/>
         </TextPageDraft>
-    )
+    </>
 }
 
 export default Blog

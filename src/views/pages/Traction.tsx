@@ -29,6 +29,7 @@ import Competitions from './traction/Competitions'
 import Partners from './traction/Partners'
 import { RouteProps } from 'react-router'
 import SocialShareBar from './SocialShareBar/SocialShareBar'
+import {Helmet} from "react-helmet";
 
 function Traction(_: RouteProps) {
     document.documentElement.classList.remove('nav-open')
@@ -41,6 +42,12 @@ function Traction(_: RouteProps) {
 
     return (
         <>
+            <Helmet>
+                <title>Wavect - Traction</title>
+                <meta name='description'
+                      content='We want to change something, but we need you! See our partners, past sponsors, competitions etc.'/>
+                <meta name='keywords' content='wavect,traction,change,inspire,partner,sponsor,impact'/>
+            </Helmet>
             <NavBar />
             <BlogPageHeader />
             <div className="section profile-content">
