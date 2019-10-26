@@ -138,49 +138,49 @@ const NavBar = () => {
                             </NavLink>
                         </NavItem>
 
-                        <NavItem>
+                        <NavItem style={{ marginRight: -10 }}>
                             <NavLink data-placement='bottom' href='mailto:office@wavect.io' title='Contact us via e-mail'>
-                                <FontAwesomeIcon icon={faEnvelope} style={{ marginRight: 5 }} size='lg' />
+                                <FontAwesomeIcon icon={faEnvelope} size='lg' />
                                 <p className='d-lg-none'>E-Mail</p>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem style={{ marginRight: -10 }} >
                             <NavLink
                                 data-placement='bottom'
                                 href='https://www.linkedin.com/company/19010151'
                                 target='_blank'
                                 title='Follow us on LinkedIn'
                             >
-                                <FontAwesomeIcon icon={faLinkedinIn} style={{ marginRight: 5 }} size='lg' />
+                                <FontAwesomeIcon icon={faLinkedinIn} size='lg' />
                                 <p className='d-lg-none'>LinkedIn</p>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem style={{ marginRight: -10 }} >
                             <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title='Like us on Facebook'>
-                                <FontAwesomeIcon icon={faFacebook} style={{ marginRight: 5 }} size='lg' />
+                                <FontAwesomeIcon icon={faFacebook} size='lg' />
                                 <p className='d-lg-none'>Facebook</p>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem style={{ marginRight: -10 }} >
                             <NavLink
                                 data-placement='bottom'
                                 href='https://www.instagram.com/wavect.io'
                                 target='_blank'
                                 title='Follow us on Instagram'
                             >
-                                <FontAwesomeIcon icon={faInstagram} style={{ marginRight: 5 }} size='lg' />
+                                <FontAwesomeIcon icon={faInstagram} size='lg' />
                                 <p className='d-lg-none'>Instagram</p>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem style={{ marginRight: -10 }} >
                             <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star us on GitHub'>
-                                <FontAwesomeIcon icon={faGithub} style={{ marginRight: 5 }} size='lg' />
+                                <FontAwesomeIcon icon={faGithub} size='lg' />
                                 <p className='d-lg-none'>GitHub</p>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem style={{ marginRight: -10 }} >
                             <NavLink data-placement='bottom' href='https://twitter.com/wavect_austria' target='_blank' title='Follow us on Twitter'>
-                                <FontAwesomeIcon icon={faTwitter} style={{ marginRight: 5 }} size='lg' />
+                                <FontAwesomeIcon icon={faTwitter} size='lg' />
                                 <p className='d-lg-none'>Twitter</p>
                             </NavLink>
                         </NavItem>
