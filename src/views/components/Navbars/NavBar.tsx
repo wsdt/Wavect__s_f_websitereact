@@ -24,7 +24,8 @@ import { Link } from 'react-router-dom'
 
 // reactstrap components
 import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBlog, faEnvelope, faGlasses, faHandshake } from '@fortawesome/free-solid-svg-icons'
+import { faSitemap } from '@fortawesome/free-solid-svg-icons/faSitemap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     Collapse,
@@ -100,12 +101,12 @@ const NavBar = () => {
                     <Nav navbar={true}>
                         <NavItem>
                             <NavLink href={breadCrumbWhy.link} title={breadCrumbWhy.title}>
-                                {breadCrumbWhy.title}
+                                <FontAwesomeIcon icon={faGlasses} size='lg' className='d-lg-none' /> {breadCrumbWhy.title}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
-                                {breadCrumbTraction.title}
+                                <FontAwesomeIcon icon={faHandshake} size='lg' className='d-lg-none' /> {breadCrumbTraction.title}
                             </NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav={true} inNavbar={true}>
@@ -117,8 +118,9 @@ const NavBar = () => {
                                 href='/#'
                                 id='navbarDropdownMenuLink'
                                 nav={true}
-                                onClick={e => e.preventDefault()}>
-                                For Organizations
+                                onClick={e => e.preventDefault()}
+                            >
+                                <FontAwesomeIcon icon={faSitemap} size='lg' className='d-lg-none'/> For Organizations
                             </DropdownToggle>
                             <DropdownMenu aria-labelledby='navbarDropdownMenuLink'>
                                 <DropdownItem to={breadCrumbForCompanies.link} tag={Link} title='B2B'>
@@ -132,7 +134,7 @@ const NavBar = () => {
                         </UncontrolledDropdown>
                         <NavItem>
                             <NavLink href={breadCrumbBlogs.link} title={breadCrumbBlogs.title}>
-                                {breadCrumbBlogs.title}
+                                <FontAwesomeIcon icon={faBlog} size='lg' className='d-lg-none'/> {breadCrumbBlogs.title}
                             </NavLink>
                         </NavItem>
 

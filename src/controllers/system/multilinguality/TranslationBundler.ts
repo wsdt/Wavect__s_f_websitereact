@@ -10,3 +10,5 @@ export const getCurrentLang = ():string => {
 export const TranslationBundle: {[key:string]:any} = {
     en,
 }
+
+

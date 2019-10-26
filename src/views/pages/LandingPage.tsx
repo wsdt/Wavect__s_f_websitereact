@@ -36,7 +36,6 @@ import imgDanielGosterxeier from '../../assets/img/team/daniel_gosterxeier.jpg'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import imgMariellaGalneder from '../../assets/img/team/mariella_galneder.jpg'
 import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
-import * as _schema from '../../controllers/system/multilinguality/_schema.json'
 import ModalVideo from '../components/Modals/ModalVideo'
 import {breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from './CollapseIconText'
@@ -49,9 +48,7 @@ interface ILandingPageProps {
     t: (key:string) => string,
 }
 
-function LandingPage(props: ILandingPageProps) {
-    const {t} = props
-
+function LandingPage(_: ILandingPageProps) {
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('profile-page')
@@ -62,9 +59,9 @@ function LandingPage(props: ILandingPageProps) {
     return (
         <>
             <Helmet>
-                <title>{t(_schema.pages.landingPage.header.title)}</title>
+                <title>Become a hero - Let's make an impact</title>
                 <meta name='description'
-                      content={t(_schema.pages.landingPage.header.description)}/>
+                      content='Solve challenges related to environment protection, health and solidarity & win personalized prizes based on your interests.'/>
                       <meta name='keywords' content='wavect,challenge,environment,social,health,home'/>
             </Helmet>
 
