@@ -24,8 +24,7 @@ import { Link } from 'react-router-dom'
 
 // reactstrap components
 import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faBlog, faEnvelope, faGlasses, faHandshake } from '@fortawesome/free-solid-svg-icons'
-import { faSitemap } from '@fortawesome/free-solid-svg-icons/faSitemap'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     Collapse,

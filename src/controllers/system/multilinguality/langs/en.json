@@ -2,7 +2,8 @@
     "pages": {
         "landingPage": {
             "header": {
-                "title": "Become a hero - Let's make an impact"
+                "title": "Become a hero - Let's make an impact",
+                "description": "Solve challenges related to environment protection, health and solidarity & win personalized prizes based on your interests."
             }
         }
     }

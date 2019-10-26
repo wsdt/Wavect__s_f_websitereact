@@ -2,7 +2,8 @@
     "pages": {
         "landingPage": {
             "header": {
-                "title": "pages.landingPage.header.title"
+                "title": "pages.landingPage.header.title",
+                "description": "pages.landingPage.header.description"
             }
         }
     }

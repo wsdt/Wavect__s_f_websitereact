@@ -29,12 +29,14 @@ import LandingPageHeader from '../components/Headers/LandingPageHeader'
 import NavBar from '../components/Navbars/NavBar'
 
 // assets
+import {translate} from 'react-polyglot'
 import {RouteProps} from 'react-router'
 import imgChristofJori from '../../assets/img/team/christof_jori.jpg'
 import imgDanielGosterxeier from '../../assets/img/team/daniel_gosterxeier.jpg'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import imgMariellaGalneder from '../../assets/img/team/mariella_galneder.jpg'
 import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
+import * as _schema from '../../controllers/system/multilinguality/_schema.json'
 import ModalVideo from '../components/Modals/ModalVideo'
 import {breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from './CollapseIconText'
@@ -42,7 +44,14 @@ import ContactForm from './ContactForm/ContactForm'
 import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from './SocialShareBar/SocialShareBar'
 
-function LandingPage(_: RouteProps) {
+interface ILandingPageProps {
+    routeProps:RouteProps,
+    t: (key:string) => string,
+}
+
+function LandingPage(props: ILandingPageProps) {
+    const {t} = props
+
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('profile-page')
@@ -53,10 +62,9 @@ function LandingPage(_: RouteProps) {
     return (
         <>
             <Helmet>
-                <title>Become a hero - Let's make an impact</title>
+                <title>{t(_schema.pages.landingPage.header.title)}</title>
                 <meta name='description'
-                      content='Solve challenges related to environment protection, health and solidarity & win personalized
-                      prizes based on your interests.'/>
+                      content={t(_schema.pages.landingPage.header.description)}/>
                       <meta name='keywords' content='wavect,challenge,environment,social,health,home'/>
             </Helmet>
 
@@ -396,7 +404,7 @@ function LandingPage(_: RouteProps) {
                     </Container>
                 </div>
 
-                <ContactForm/>
+                <ContactForm />
 
                 <SocialShareBar shareUrl={breadCrumbHome.link}/>
             </div>
@@ -405,4 +413,4 @@ function LandingPage(_: RouteProps) {
     )
 }
 
-export default LandingPage
+export default translate()(LandingPage)
