@@ -21,7 +21,7 @@ import React from 'react'
 // reactstrap components
 
 // core components
-import imgFabioMangione from '../../assets/img/fabio-mangione.jpg'
+import imgFabioMangione from '../../../assets/img/fabio-mangione.jpg'
 
 function ProfilePageHeader() {
     let pageHeader = React.createRef<HTMLDivElement>()

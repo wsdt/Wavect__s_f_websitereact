@@ -21,7 +21,7 @@ import React from 'react'
 // reactstrap components
 
 // core components
-import imgBlogHeader from '../../assets/img/blogs/blog_header.jpg'
+import imgBlogHeader from '../../../assets/img/blogs/blog_header.jpg'
 
 function BlogPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()

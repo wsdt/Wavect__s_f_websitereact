@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Modal } from 'reactstrap'
-import { GrayColorButton } from '../../views/pages/grayscale_color/GrayColorButton/GrayColorButton'
+import { GrayColorButton } from '../../pages/grayscale_color/GrayColorButton/GrayColorButton'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 function ModalVideo() {

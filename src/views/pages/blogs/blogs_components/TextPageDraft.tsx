@@ -20,10 +20,10 @@ import React from 'react'
 // reactstrap components
 import { Col, Container, Row } from 'reactstrap'
 // core components
-import Footer from '../../../../components/Footers/Footer'
+import Footer from '../../../components/Footers/Footer'
 // assets
-import BlogPageHeader from '../../../../components/Headers/BlogPageHeader'
-import NavBar from '../../../../components/Navbars/NavBar'
+import BlogPageHeader from '../../../components/Headers/BlogPageHeader'
+import NavBar from '../../../components/Navbars/NavBar'
 import BreadCrumbs from '../../breadcrumbs/Breadcrumbs'
 import { BreadcrumbConstants } from '../../breadcrumbs/breadcrumbs.constants'
 import { BlogCategories } from '../BlogCategories'

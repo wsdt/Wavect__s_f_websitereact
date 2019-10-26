@@ -32,9 +32,10 @@ import Impressum from '../../../views/pages/Impressum'
 import LandingPage from '../../../views/pages/LandingPage'
 import Traction from '../../../views/pages/Traction'
 import WhyHow from '../../../views/pages/WhyHow'
+import {BrowserRouter} from "react-router-dom";
 
 const CustomRouter = () => {
-    return (
+    return <BrowserRouter>
         <Switch>
             <Route
                 exact={true}
@@ -69,7 +70,7 @@ const CustomRouter = () => {
 
             <Redirect to='/'/>
         </Switch>
-    )
+    </BrowserRouter>
 }
 
 export default CustomRouter

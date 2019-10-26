@@ -22,9 +22,9 @@ import React from 'react'
 import { Button, Col, Container, FormGroup, Input, Label, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap'
 
 // core components
-import Footer from '../../components/Footers/Footer'
-import ProfilePageHeader from '../../components/Headers/ProfilePageHeader'
-import NavBar from '../../components/Navbars/NavBar'
+import Footer from '../components/Footers/Footer'
+import ProfilePageHeader from '../components/Headers/ProfilePageHeader'
+import NavBar from '../components/Navbars/NavBar'
 
 import exampleFace from '../../assets/img/faces/joe-gardner-2.jpg'
 

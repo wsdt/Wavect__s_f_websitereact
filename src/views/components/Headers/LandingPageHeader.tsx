@@ -20,10 +20,10 @@ import React from 'react'
 
 // reactstrap components
 import { Container } from 'reactstrap'
-import * as imgAntoineBarres from '../../assets/img/antoine-barres.jpg'
-import * as imgClouds from '../../assets/img/clouds.png'
-import imgFoglow from '../../assets/img/fog-low.png'
-import { isMobileWidth, useWindowDimensions } from '../../controllers/WindowController'
+import * as imgAntoineBarres from '../../../assets/img/antoine-barres.jpg'
+import * as imgClouds from '../../../assets/img/clouds.png'
+import imgFoglow from '../../../assets/img/fog-low.png'
+import { isMobileWidth, useWindowDimensions } from '../../../controllers/WindowController'
 
 function LandingPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()

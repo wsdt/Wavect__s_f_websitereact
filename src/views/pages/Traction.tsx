@@ -18,9 +18,9 @@
 */
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import Footer from '../../components/Footers/Footer'
-import BlogPageHeader from '../../components/Headers/BlogPageHeader'
-import NavBar from '../../components/Navbars/NavBar'
+import Footer from '../components/Footers/Footer'
+import BlogPageHeader from '../components/Headers/BlogPageHeader'
+import NavBar from '../components/Navbars/NavBar'
 import { P } from './blogs/blogs_components/text_components/P'
 import { TextHeader } from './blogs/blogs_components/text_components/TextHeader'
 import BreadCrumbs from './breadcrumbs/Breadcrumbs'

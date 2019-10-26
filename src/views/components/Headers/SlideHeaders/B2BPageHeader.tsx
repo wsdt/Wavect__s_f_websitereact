@@ -21,21 +21,20 @@ import React from 'react'
 // reactstrap components
 import { CarouselProvider, Slider } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import {isMobileWidth, isSmallerHeight, useWindowDimensions} from '../../../controllers/WindowController'
+import {isMobileWidth, isSmallerHeight, useWindowDimensions} from '../../../../controllers/WindowController'
 import CarouselSlide from './CarouselSlide'
 
-import imgB2G_0 from '../../../assets/img/b2g/carousel/imgB2G_0.jpg'
-import imgB2G_1 from '../../../assets/img/b2g/carousel/imgB2G_1.jpg'
-import imgB2G_2 from '../../../assets/img/b2g/carousel/imgB2G_2.jpg'
-import imgB2G_3 from '../../../assets/img/b2g/carousel/imgB2G_3.jpg'
-import imgB2G_4 from '../../../assets/img/b2g/carousel/imgB2G_4.jpg'
-import imgB2G_5 from '../../../assets/img/b2g/carousel/imgB2G_5.jpg'
-import imgB2G_6 from '../../../assets/img/b2g/carousel/imgB2G_6.jpg'
-import imgB2G_7 from '../../../assets/img/b2g/carousel/imgB2G_7.jpg'
-import imgB2G_8 from '../../../assets/img/b2g/carousel/imgB2G_8.jpg'
-import imgB2G_9 from '../../../assets/img/b2g/carousel/imgB2G_9.jpg'
+import imgB2B_0 from '../../../../assets/img/b2b/carousel/imgB2B_0.jpg'
+import imgB2B_1 from '../../../../assets/img/b2b/carousel/imgB2B_1.jpg'
+import imgB2B_2 from '../../../../assets/img/b2b/carousel/imgB2B_2.jpg'
+import imgB2B_3 from '../../../../assets/img/b2b/carousel/imgB2B_3.jpg'
+import imgB2B_4 from '../../../../assets/img/b2b/carousel/imgB2B_4.jpg'
+import imgB2B_5 from '../../../../assets/img/b2b/carousel/imgB2B_5.jpg'
+import imgB2B_6 from '../../../../assets/img/b2b/carousel/imgB2B_6.jpg'
+import imgB2B_7 from '../../../../assets/img/b2b/carousel/imgB2B_7.jpg'
+import imgB2B_8 from '../../../../assets/img/b2b/carousel/imgB2B_8.jpg'
 
-function B2GPageHeader() {
+function B2BPageHeader() {
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width, height } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
@@ -43,22 +42,22 @@ function B2GPageHeader() {
 
     return (
         <div ref={pageHeader}>
-            <CarouselProvider naturalSlideWidth={width} naturalSlideHeight={height} totalSlides={10} isPlaying={true} interval={5000}>
+            <CarouselProvider naturalSlideWidth={width} naturalSlideHeight={height} totalSlides={9} isPlaying={true} interval={5000}>
                 <Slider>
                     <CarouselSlide
                         index={0}
-                        title="Politician, NGO, charity, governmental organization or club?"
-                        subtitle="Enterprises are not the only organizations which can profit from our service."
-                        bgImage={imgB2G_0}
+                        title="Sponsor challenges with rebates, products, vouchers or even cash."
+                        subtitle="Causing real environmental, social or health-related impact via sponsoring has never been so easy."
+                        bgImage={imgB2B_0}
                         bgImageAlt="Desk full of working material"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={1}
-                        title="Sponsor challenges with cash, products, vouchers or rebates.."
-                        subtitle=".. to acquire volunteers, to enhance your image & to engage more people to participate in your events. "
-                        bgImage={imgB2G_1}
+                        title="How does it work?"
+                        subtitle="Select a challenge, choose what to sponsor and acquire new loyal customers by triggering emotions."
+                        bgImage={imgB2B_1}
                         bgImageAlt="Books with instructions"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
@@ -66,71 +65,62 @@ function B2GPageHeader() {
                     <CarouselSlide
                         index={2}
                         title="Personalized CSR"
-                        subtitle="Users receive personalized challenges and win relevant prizes. This enables political parties, charities, communes... to convince voters, volunteers or donors to trust your organization."
-                        bgImage={imgB2G_2}
+                        subtitle="Users receive personalized challenges and win relevant prizes. This maximizes impact and allows targeting customer needs as well as customers' ethics."
+                        bgImage={imgB2B_2}
                         bgImageAlt="Individual in big city"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={3}
-                        title="Low-Priced CSR"
-                        subtitle="Every sponsor has to pay a small fee related to the size & type of their organization. Cause real impact without investing big sums."
-                        bgImage={imgB2G_3}
-                        bgImageAlt="Small company working on Corporate-Social-Responsibility (CSR) strategies"
-                        isMobile={isMobile}
-                        isShortHeight={isShortHeight}
-                    />
-                    <CarouselSlide
-                        index={4}
                         title="Functional Ads are OUT"
-                        subtitle="Modern campaigns trigger emotions, educate and tell stories. Ads on our platform do exactly that, are subtle (e.g. small watermark on a users post) & get shared on existing social-media."
-                        bgImage={imgB2G_4}
+                        subtitle="Modern ads trigger emotions, educate and tell stories. Ads on our platform do exactly that, are subtle (e.g. small watermark on a users post) & get shared on existing social-media. "
+                        bgImage={imgB2B_3}
                         bgImageAlt="Light bulbs turned off"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
-                        index={5}
-                        title="Shortage of Volunteers?"
-                        subtitle="Need more volunteers for your event (e.g. gathering trash in your commune)?"
-                        bgImage={imgB2G_5}
-                        bgImageAlt="Books with instructions"
-                        isMobile={isMobile}
-                        isShortHeight={isShortHeight}
-                    />
-                    <CarouselSlide
-                        index={6}
-                        title="Enhance the reputation of your organization"
-                        subtitle="If society wants you to succeed, you will succeed. Give value with 0 expectations and you'll accomplish your organization's mission."
-                        bgImage={imgB2G_6}
+                        index={4}
+                        title="Enhance the reputation of your enterprise."
+                        subtitle="No idea how to start? Just sponsor a challenge instead of organizing huge CSR-Events or drafting expensive marketing campaigns. No green-washing, you cause real impact."
+                        bgImage={imgB2B_4}
                         bgImageAlt="Rating a company"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
-                        index={7}
-                        title="Low Effort"
-                        subtitle="Sponsoring a challenge is easy! We create your marketing campaign, drafting a challenge will cost you no more than 5 minutes."
-                        bgImage={imgB2G_7}
+                        index={5}
+                        title="Low-Priced CSR"
+                        subtitle="CSR becomes increasingly important. Every sponsor has to pay a small fee related to the size of their organization. Our service itself & this price-scheme make CSR more accessible to SMEs."
+                        bgImage={imgB2B_5}
+                        bgImageAlt="Small company working on Corporate-Social-Responsibility (CSR) strategies"
+                        isMobile={isMobile}
+                        isShortHeight={isShortHeight}
+                    />
+                    <CarouselSlide
+                        index={6}
+                        title="Attention = Revenue"
+                        subtitle="Nothing generates more yields than attention. Regular ads need to be expensively developed and have a high risk of becoming a bummer. Sponsor a challenge, cause impact and users will share their stories!"
+                        bgImage={imgB2B_6}
                         bgImageAlt="Attention equals revenues"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
-                        index={8}
+                        index={7}
                         title="High chance viral marketing"
                         subtitle="Making an ad to go viral is incredible costly and hard. In such cases quantity may increase your chance of viral posts. By sponsoring a challenge users share related media on our & other platforms with dedication to your organization."
-                        bgImage={imgB2G_8}
+                        bgImage={imgB2B_7}
                         bgImageAlt="Virus - Viral Marketing"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
-                        index={9}
+                        index={8}
                         title="Word-of-Mouth at its best"
                         subtitle="Just imagine people telling friends what prizes they won by doing something good. It's basically a raffle without risking money."
-                        bgImage={imgB2G_9}
+                        bgImage={imgB2B_8}
                         bgImageAlt="Word-of-Mouth Marketing"
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
@@ -141,4 +131,4 @@ function B2GPageHeader() {
     )
 }
 
-export default B2GPageHeader
+export default B2BPageHeader

@@ -23,9 +23,9 @@ import React from 'react'
 import { Container } from 'reactstrap'
 
 // assets
-import * as imgAntoineBarres from 'assets/img/antoine-barres.jpg'
-import imgFogLow from 'assets/img/fog-low.png'
-import * as imgClouds from 'assets/img/clouds.png'
+import * as imgAntoineBarres from 'src/assets/img/antoine-barres.jpg'
+import imgFogLow from 'src/assets/img/fog-low.png'
+import * as imgClouds from 'src/assets/img/clouds.png'
 
 function IndexHeader() {
     return (

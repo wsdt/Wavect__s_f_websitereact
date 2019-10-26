@@ -1,0 +1,9 @@
+{
+    "pages": {
+        "landingPage": {
+            "header": {
+                "title": "pages.landingPage.header.title"
+            }
+        }
+    }
+}

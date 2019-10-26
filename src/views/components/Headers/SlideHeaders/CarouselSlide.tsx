@@ -19,7 +19,7 @@
 import React from 'react'
 
 import { Slide } from 'pure-react-carousel'
-import { GrayColorImg } from '../../../views/pages/grayscale_color/GrayColorImg/GrayColorImg'
+import { GrayColorImg } from '../../../pages/grayscale_color/GrayColorImg/GrayColorImg'
 
 interface ICarouselSlideProps {
     index: number

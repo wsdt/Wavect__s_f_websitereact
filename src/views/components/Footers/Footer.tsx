@@ -21,7 +21,7 @@ import React from 'react'
 
 // reactstrap components
 import { Container, Row } from 'reactstrap'
-import { breadCrumbDataPrivacy, breadCrumbImpressum } from '../../views/pages/breadcrumbs/breadcrumbs.constants'
+import { breadCrumbDataPrivacy, breadCrumbImpressum } from '../../pages/breadcrumbs/breadcrumbs.constants'
 
 function Footer() {
     return (

@@ -22,7 +22,7 @@ import React from 'react'
 import { Button, Card, Col, Container, Form, Input, Row } from 'reactstrap'
 
 // core components
-import NavBar from '../../components/Navbars/NavBar'
+import NavBar from '../components/Navbars/NavBar'
 
 // assets
 import * as loginImage from '../../assets/img/login-image.jpg'

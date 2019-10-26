@@ -18,15 +18,19 @@
 */
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-// styles
-import {BrowserRouter} from 'react-router-dom'
+import {I18n} from 'react-polyglot'
 import './assets/css/bootstrap.min.css'
 import './assets/demo/demo.css'
 import './assets/scss/paper-kit.scss'
+import {TranslationBundle} from './controllers/system/multilinguality/TranslationBundler'
+import {getCurrentLang} from './controllers/system/multilinguality/TranslationBundler'
 import CustomRouter from './controllers/system/routers/CustomRouter'
 
+const lang:string = getCurrentLang()
+
 ReactDOM.render(
-    <BrowserRouter><CustomRouter/></BrowserRouter>,
+    <I18n locale={lang} messages={TranslationBundle[lang]}>
+        <CustomRouter/>
+    </I18n>,
     document.getElementById('root')
 )

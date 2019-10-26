@@ -40,15 +40,15 @@ import {
     NavLink,
     UncontrolledDropdown,
 } from 'reactstrap'
-import imgWavectLogo from '../../assets/img/wavect_logo.png'
+import imgWavectLogo from '../../../assets/img/wavect_logo.png'
 import {
     breadCrumbBlogs,
     breadCrumbForCompanies,
     breadCrumbForOrganizations,
     breadCrumbTraction,
     breadCrumbWhy,
-} from '../../views/pages/breadcrumbs/breadcrumbs.constants'
-import {GrayColorImg} from '../../views/pages/grayscale_color/GrayColorImg/GrayColorImg'
+} from '../../pages/breadcrumbs/breadcrumbs.constants'
+import {GrayColorImg} from '../../pages/grayscale_color/GrayColorImg/GrayColorImg'
 
 const NavBar = () => {
     const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
@@ -101,12 +101,12 @@ const NavBar = () => {
                     <Nav navbar={true}>
                         <NavItem>
                             <NavLink href={breadCrumbWhy.link} title={breadCrumbWhy.title}>
-                                <FontAwesomeIcon icon={faGlasses} size='lg' /> {breadCrumbWhy.title}
+                                {breadCrumbWhy.title}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
-                                <FontAwesomeIcon icon={faHandshake} size='lg' /> {breadCrumbTraction.title}
+                                {breadCrumbTraction.title}
                             </NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav={true} inNavbar={true}>
@@ -118,9 +118,8 @@ const NavBar = () => {
                                 href='/#'
                                 id='navbarDropdownMenuLink'
                                 nav={true}
-                                onClick={e => e.preventDefault()}
-                            >
-                                <FontAwesomeIcon icon={faSitemap} size='lg' /> For Organizations
+                                onClick={e => e.preventDefault()}>
+                                For Organizations
                             </DropdownToggle>
                             <DropdownMenu aria-labelledby='navbarDropdownMenuLink'>
                                 <DropdownItem to={breadCrumbForCompanies.link} tag={Link} title='B2B'>
@@ -134,7 +133,7 @@ const NavBar = () => {
                         </UncontrolledDropdown>
                         <NavItem>
                             <NavLink href={breadCrumbBlogs.link} title={breadCrumbBlogs.title}>
-                                <FontAwesomeIcon icon={faBlog} size='lg' /> {breadCrumbBlogs.title}
+                                {breadCrumbBlogs.title}
                             </NavLink>
                         </NavItem>
 

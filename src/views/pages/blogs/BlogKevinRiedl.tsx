@@ -20,8 +20,8 @@ import React from 'react'
 // reactstrap components
 import { Button, Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane } from 'reactstrap'
 // core components
-import Footer from '../../../components/Footers/Footer'
-import NavBar from '../../../components/Navbars/NavBar'
+import Footer from '../../components/Footers/Footer'
+import NavBar from '../../components/Navbars/NavBar'
 
 import imgKevinRiedlChangeThoughtsOnBurnoutStress from '../../../assets/img/blogs/kevin_riedl/changethoughtsonburnoutstress_profilepic.jpg'
 import imgKevinRiedlHappinessNeqFulfillment from '../../../assets/img/blogs/kevin_riedl/happinessneqfulfillment_profilepic.jpg'
@@ -29,7 +29,7 @@ import imgKevinRiedlSayingYesIsABigNoToOpportunities from '../../../assets/img/b
 import imgKevinRiedlStartReflectingOrDieFullOfRegrets from '../../../assets/img/blogs/kevin_riedl/startreflectingordiefullofregrets_profilepic.jpg'
 import imgKevinRiedlStrategicHustling from '../../../assets/img/blogs/kevin_riedl/strategichustling_profilepic.jpg'
 import imgKevinRiedl from '../../../assets/img/team/kevin_riedl.jpg'
-import BlogPageHeader from '../../../components/Headers/BlogPageHeader'
+import BlogPageHeader from '../../components/Headers/BlogPageHeader'
 import { BlogCategories } from './BlogCategories'
 import BlogListDraft from './blogs_components/BlogListDraft'
 import BreadCrumbs from '../breadcrumbs/Breadcrumbs'

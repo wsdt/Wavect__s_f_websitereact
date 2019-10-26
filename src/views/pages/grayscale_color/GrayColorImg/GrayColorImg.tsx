@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { PureComponent } from 'react'
+import {transitionDuration, transitionTimingFunction} from '../grayscale_color.constants'
 import { IGrayColorImgProps } from './GrayColorImg.props'
 import { IGrayColorImgState } from './GrayColorImg.state'
-import {transitionDuration, transitionTimingFunction} from "../grayscale_color.constants";
 
 export class GrayColorImg extends PureComponent<IGrayColorImgProps, IGrayColorImgState> {
     public state: IGrayColorImgState = {

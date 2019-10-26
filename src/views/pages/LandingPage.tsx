@@ -24,9 +24,9 @@ import {Button, Card, CardBody, CardFooter, CardTitle, Col, Container, Row} from
 // core components
 import {faAward, faHandsHelping, faListAlt, faRuler} from '@fortawesome/free-solid-svg-icons'
 import {Helmet} from 'react-helmet'
-import Footer from '../../components/Footers/Footer'
-import LandingPageHeader from '../../components/Headers/LandingPageHeader'
-import NavBar from '../../components/Navbars/NavBar'
+import Footer from '../components/Footers/Footer'
+import LandingPageHeader from '../components/Headers/LandingPageHeader'
+import NavBar from '../components/Navbars/NavBar'
 
 // assets
 import {RouteProps} from 'react-router'
@@ -35,7 +35,7 @@ import imgDanielGosterxeier from '../../assets/img/team/daniel_gosterxeier.jpg'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import imgMariellaGalneder from '../../assets/img/team/mariella_galneder.jpg'
 import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
-import ModalVideo from '../../components/Modals/ModalVideo'
+import ModalVideo from '../components/Modals/ModalVideo'
 import {breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from './CollapseIconText'
 import ContactForm from './ContactForm/ContactForm'
