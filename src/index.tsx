@@ -18,74 +18,15 @@
 */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 
 // styles
+import {BrowserRouter} from 'react-router-dom'
 import './assets/css/bootstrap.min.css'
 import './assets/demo/demo.css'
 import './assets/scss/paper-kit.scss'
-import Blog from './views/pages/Blog'
-import BlogKevinRiedl from './views/pages/blogs/BlogKevinRiedl'
-import BlogPostChangeThoughtsOnBurnoutStress from './views/pages/blogs/posts_kevinriedl/BlogPostChangeThoughtsOnBurnoutStress'
-import BlogPostHappinessNeqFulfillment from './views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment'
-import BlogPostSayingYesIsABigNoToOpportunities from './views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities'
-import BlogPostStartReflectingOrDieFullOfRegrets from './views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets'
-import BlogPostStrategicHustling from './views/pages/blogs/posts_kevinriedl/BlogPostStrategicHustling'
-import {
-    breadCrumbBlogKevinRiedl,
-    breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress,
-    breadCrumbBlogKevinRiedlHappinessNeqFulfillment,
-    breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities,
-    breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
-    breadCrumbBlogKevinRiedlStrategicHustling,
-    breadCrumbBlogs,
-    breadCrumbDataPrivacy,
-    breadCrumbForCompanies,
-    breadCrumbForOrganizations,
-    breadCrumbHome,
-    breadCrumbImpressum,
-    breadCrumbTraction,
-    breadCrumbWhy,
-} from './views/pages/breadcrumbs/breadcrumbs.constants'
-import DataPrivacy from './views/pages/DataPrivacy'
-import B2B from './views/pages/for_organizations/b2b/B2B'
-import B2G from './views/pages/for_organizations/b2g/B2G'
-import Impressum from './views/pages/Impressum'
-import LandingPage from './views/pages/LandingPage'
-import Traction from './views/pages/Traction'
-import WhyHow from './views/pages/WhyHow'
+import CustomRouter from './controllers/system/routers/CustomRouter'
 
 ReactDOM.render(
-    <BrowserRouter>
-        <Switch>
-            <Route
-                path={breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.link}
-                render={props => <BlogPostSayingYesIsABigNoToOpportunities {...props} />}
-            />
-            <Route
-                path={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link}
-                render={props => <BlogPostStartReflectingOrDieFullOfRegrets {...props} />}
-            />
-            <Route path={breadCrumbBlogKevinRiedlStrategicHustling.link} render={props => <BlogPostStrategicHustling {...props} />} />
-            <Route
-                path={breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.link}
-                render={props => <BlogPostChangeThoughtsOnBurnoutStress {...props} />}
-            />
-            <Route path={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link} render={props => <BlogPostHappinessNeqFulfillment {...props} />} />
-            <Route path={breadCrumbBlogKevinRiedl.link} render={props => <BlogKevinRiedl {...props} />} />
-            <Route path={breadCrumbBlogs.link} render={props => <Blog {...props} />} />
-
-            <Route path={breadCrumbTraction.link} render={props => <Traction {...props} />} />
-            <Route path={breadCrumbImpressum.link} render={props => <Impressum {...props} />} />
-            <Route path={breadCrumbDataPrivacy.link} render={props => <DataPrivacy {...props} />} />
-
-            <Route path={breadCrumbWhy.link} render={props => <WhyHow {...props} />} />
-            <Route path={breadCrumbForOrganizations.link} render={props => <B2G {...props} />} />
-            <Route path={breadCrumbForCompanies.link} render={props => <B2B {...props} />} />
-
-            <Route path={breadCrumbHome.link} render={props => <LandingPage {...props} />} />
-            <Redirect to="/" />
-        </Switch>
-    </BrowserRouter>,
+    <BrowserRouter><CustomRouter/></BrowserRouter>,
     document.getElementById('root')
 )
