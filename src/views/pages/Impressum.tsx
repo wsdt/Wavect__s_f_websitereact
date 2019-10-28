@@ -24,13 +24,23 @@ import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbHome, breadCrumbImpressum} from './breadcrumbs/breadcrumbs.constants'
 import {RouteProps} from 'react-router'
 import {Helmet} from "react-helmet";
+import {translate} from "react-polyglot";
+import _schema from '../../controllers/system/multilinguality/_schema.json'
 
-function Impressum(_: RouteProps) {
+interface IImpressumProps {
+    routeProps:RouteProps,
+    t: (key:string, ...args:any) => string,
+}
+
+function Impressum(props: IImpressumProps) {
+    const {t} = props
+    const schema = _schema.pages.impressum
+
     return <>
         <Helmet>
-            <title>Wavect - Impressum</title>
+            <title>{t(schema.header.title)}</title>
             <meta name='description'
-                  content='Every professional website has an impressum, so here is ours.'/>
+                  content={t(schema.header.description)}/>
             <meta name='keywords' content='wavect,impressum,data,privacy,user,protection'/>
         </Helmet>
 
@@ -147,4 +157,4 @@ function Impressum(_: RouteProps) {
     </>
 }
 
-export default Impressum
+export default translate()(Impressum)

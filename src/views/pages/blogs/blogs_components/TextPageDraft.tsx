@@ -28,14 +28,18 @@ import BreadCrumbs from '../../breadcrumbs/Breadcrumbs'
 import { BreadcrumbConstants } from '../../breadcrumbs/breadcrumbs.constants'
 import { BlogCategories } from '../BlogCategories'
 import { TextHeader } from './text_components/TextHeader'
+import {translate} from "react-polyglot";
 
 export interface ITextPageDraftProps {
     blogCategory?: BlogCategories
     breadCrumbs: BreadcrumbConstants[]
-    children: any
+    children: any,
+    t: (key:string, ...args:any) => string,
 }
 
 function TextPageDraft(props: ITextPageDraftProps) {
+    const {t} = props
+
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('landing-page')
@@ -54,7 +58,7 @@ function TextPageDraft(props: ITextPageDraftProps) {
                         <Col className="ml-auto mr-auto text-center" md="8">
                             <BreadCrumbs breadcrumbs={props.breadCrumbs} />
 
-                            <TextHeader blogCategory={props.blogCategory}>{props.breadCrumbs[props.breadCrumbs.length - 1].title}</TextHeader>
+                            <TextHeader blogCategory={props.blogCategory}>{t(props.breadCrumbs[props.breadCrumbs.length - 1].title)}</TextHeader>
 
                             {props.children}
                         </Col>
@@ -67,4 +71,4 @@ function TextPageDraft(props: ITextPageDraftProps) {
     )
 }
 
-export default TextPageDraft
+export default translate()(TextPageDraft)

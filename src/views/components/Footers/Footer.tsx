@@ -18,33 +18,37 @@
 */
 /*eslint-disable*/
 import React from 'react'
-
-// reactstrap components
 import { Container, Row } from 'reactstrap'
 import { breadCrumbDataPrivacy, breadCrumbImpressum } from '../../pages/breadcrumbs/breadcrumbs.constants'
+import _schema from '../../../controllers/system/multilinguality/_schema.json'
+import {translate} from "react-polyglot";
 
-function Footer() {
-    return (
-        <footer className="footer footer-black footer-white">
+interface IFooterProps {
+    t: (key:string, ...args:any) => string,
+}
+
+function Footer(props:IFooterProps) {
+    const {t} = props
+
+    return <footer className='footer footer-black footer-white'>
             <Container>
                 <Row>
-                    <nav className="footer-nav">
+                    <nav className='footer-nav'>
                         <ul>
                             <li>
-                                <a href={breadCrumbImpressum.link}>{breadCrumbImpressum.title}</a>
+                                <a href={breadCrumbImpressum.link}>{t(breadCrumbImpressum.title)}</a>
                             </li>
                             <li>
-                                <a href={breadCrumbDataPrivacy.link}>{breadCrumbDataPrivacy.title}</a>
+                                <a href={breadCrumbDataPrivacy.link}>{t(breadCrumbDataPrivacy.title)}</a>
                             </li>
                         </ul>
                     </nav>
-                    <div className="credits ml-auto">
-                        <span className="copyright">© Wavect</span>
+                    <div className='credits ml-auto'>
+                        <span className='copyright'>© {t(_schema.general.wavect.title)}</span>
                     </div>
                 </Row>
             </Container>
         </footer>
-    )
 }
 
-export default Footer
+export default translate()(Footer)

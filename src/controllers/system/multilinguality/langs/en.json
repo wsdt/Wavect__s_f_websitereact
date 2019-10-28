@@ -1,6 +1,11 @@
 {
 	"general": {
-		"readmore": "Read more"
+		"readmore": "Read more",
+		"wavect": {
+			"title": "Wavect",
+			"logoAltTag": "Wavect Logo"
+		},
+		"accesssource": "Access Source"
 	},
 	"common_components": {
 		"navbar": {
@@ -109,6 +114,18 @@
 		}
 	},
     "pages": {
+		"impressum": {
+			"header": {
+				"title": "Wavect - Impressum",
+				"description": "Every professional website has an impressum, so here is ours."
+			}
+		},
+		"dataprivacy": {
+			"header": {
+				"title": "Wavect - Data Privacy",
+				"description": "We value your privacy. Nevertheless, some data is necessary to provide you with a great experience."
+			}
+		},
 		"blog": {
 			"header": {
 				"title": "Blogs of Co-Founders",
@@ -124,6 +141,22 @@
 						"imgAltTag": "CEO: Kevin Riedl", 
 						"title": "Kevin Riedl, Bsc.",
 						"description": "Here you'll find economical, technical & personal posts."
+					}
+				}
+			},
+			"blogs": {
+				"general": {
+					"posts": "Posts"
+				},
+				"kevinriedl": {
+					"header": {
+						"title": "Blog - Kevin A. Riedl, Bsc.",
+						"description": "Blog posts of our CEO, Kevin Riedl. His posts deal with technical, economical as well as personal questions."
+					},
+					"intro": {
+						"name": "Kevin Riedl, Bsc.",
+						"shortDescription": "Software Engineer & Business Administration",
+						"description": "I attended commercial school & started studying information technology afterwards. I love learning and trying something new. Some of my role-models are Jordan Peterson, Garyvee & Simon Sinek."
 					}
 				}
 			}

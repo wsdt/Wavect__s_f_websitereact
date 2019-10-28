@@ -1,6 +1,11 @@
 {
     "general": {
-        "readmore": "general.readmore"
+        "readmore": "general.readmore",
+        "wavect": {
+            "title": "general.wavect.title",
+            "logoAltTag": "general.wavect.logoAltTag"
+        },
+        "accesssource": "general.accesssource"
     },
     "common_components": {
         "navbar": {
@@ -109,6 +114,18 @@
         }
     },
     "pages": {
+        "impressum": {
+            "header": {
+                "title": "pages.impressum.header.title",
+                "description": "pages.impressum.header.description"
+            }
+        },
+        "dataprivacy": {
+            "header": {
+                "title": "pages.dataprivacy.header.title",
+                "description": "pages.dataprivacy.header.description"
+            }
+        },
         "blog": {
             "header": {
                 "title": "pages.blog.header.title",
@@ -124,6 +141,22 @@
                         "imgAltTag": "pages.blog.intro.blogs.kevin_riedl.imgAltTag",
                         "title": "pages.blog.intro.blogs.kevin_riedl.title",
                         "description": "pages.blog.intro.blogs.kevin_riedl.description"
+                    }
+                }
+            },
+            "blogs": {
+                "general": {
+                    "posts": "pages.blog.blogs.general.posts"
+                },
+                "kevinriedl": {
+                    "header": {
+                        "title": "pages.blog.blogs.kevinriedl.header.title",
+                        "description": "pages.blog.blogs.kevinriedl.header.description"
+                    },
+                    "intro": {
+                        "name": "pages.blog.blogs.kevinriedl.intro.name",
+                        "shortDescription": "pages.blog.blogs.kevinriedl.intro.shortDescription",
+                        "description": "pages.blog.blogs.kevinriedl.intro.description"
                     }
                 }
             }

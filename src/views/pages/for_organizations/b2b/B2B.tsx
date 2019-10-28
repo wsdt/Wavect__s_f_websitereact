@@ -69,7 +69,7 @@ function B2B(props: IB2BProps) {
                                 <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>
                                     <Ol>
-                                        <Li>{t(schema.intro.description._1, {link:breadCrumbWhy.link})}</Li>
+                                        <Li>{parse(t(schema.intro.description._1, {link:breadCrumbWhy.link}))}</Li>
                                         <Li>{t(schema.intro.description._2)}</Li>
                                         <Li>{t(schema.intro.description._3)}</Li>
                                         <Li>{t(schema.intro.description._4)}</Li>

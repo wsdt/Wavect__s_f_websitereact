@@ -27,6 +27,7 @@ import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTwitter } from '@for
 import { faBlog, faEnvelope, faGlasses, faHandshake } from '@fortawesome/free-solid-svg-icons'
 import { faSitemap } from '@fortawesome/free-solid-svg-icons/faSitemap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {translate} from 'react-polyglot'
 import {
     Collapse,
     Container,
@@ -41,6 +42,7 @@ import {
     UncontrolledDropdown,
 } from 'reactstrap'
 import imgWavectLogo from '../../../assets/img/wavect_logo.png'
+import _schema from '../../../controllers/system/multilinguality/_schema.json'
 import {
     breadCrumbBlogs,
     breadCrumbForCompanies,
@@ -49,8 +51,6 @@ import {
     breadCrumbWhy,
 } from '../../pages/breadcrumbs/breadcrumbs.constants'
 import {GrayColorImg} from '../../pages/grayscale_color/GrayColorImg/GrayColorImg'
-import {translate} from "react-polyglot";
-import _schema from '../../../controllers/system/multilinguality/_schema.json'
 
 interface INavBarProps {
     t: (key:string, ...args:any) => string,
@@ -90,8 +90,8 @@ const NavBar = (props:INavBarProps) => {
             <Container>
                 <div className='navbar-translate'>
                     <NavbarBrand data-placement='bottom' to='/' title='Home' tag={Link}>
-                        {isNavbarBrandAsText ? 'Wavect'
-                            : <GrayColorImg src={imgWavectLogo} alt='Wavect Logo' width={40} />}
+                        {isNavbarBrandAsText ? t(_schema.general.wavect.title)
+                            : <GrayColorImg src={imgWavectLogo} alt={t(_schema.general.wavect.logoAltTag)} width={40} />}
                     </NavbarBrand>
                     <button
                         aria-expanded={navbarCollapse}

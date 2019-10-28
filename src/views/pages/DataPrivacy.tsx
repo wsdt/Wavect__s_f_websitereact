@@ -17,21 +17,30 @@
 
 */
 import React from 'react'
+import {Helmet} from 'react-helmet'
+import {translate} from 'react-polyglot'
+import {RouteProps} from 'react-router'
+import _schema from '../../controllers/system/multilinguality/_schema.json'
 import {H2} from './blogs/blogs_components/text_components/H2'
-import {P} from './blogs/blogs_components/text_components/P'
 import {Li, Ul} from './blogs/blogs_components/text_components/List'
+import {P} from './blogs/blogs_components/text_components/P'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbDataPrivacy, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
-import {RouteProps} from "react-router";
-import {Helmet} from "react-helmet";
 
+interface IDataPrivacyProps {
+    routeProps:RouteProps,
+    t: (key:string, ...args:any) => string,
+}
 
-function DataPrivacy(_: RouteProps) {
+function DataPrivacy(props: IDataPrivacyProps) {
+    const {t} = props
+    const schema = _schema.pages.dataprivacy
+
     return <>
         <Helmet>
-            <title>Wavect - Data Privacy</title>
+            <title>{t(schema.header.title)}</title>
             <meta name='description'
-                  content='We value your privacy. Nevertheless, some data is necessary to provide you with a great experience.'/>
+                  content={t(schema.header.description)}/>
             <meta name='keywords' content='wavect,data,privacy,value,experience,social,media'/>
         </Helmet>
 
@@ -1471,4 +1480,5 @@ function DataPrivacy(_: RouteProps) {
     </>
 }
 
-export default DataPrivacy
+export default translate()(DataPrivacy)
+
