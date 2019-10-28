@@ -19,9 +19,10 @@
 import {faAd, faCreditCard, faFilter, faUsers} from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import {Helmet} from 'react-helmet'
+import {translate} from 'react-polyglot'
 import {RouteProps} from 'react-router'
-import {Link} from 'react-router-dom'
 import {Col, Container, Row} from 'reactstrap'
+import _schema from '../../../../controllers/system/multilinguality/_schema.json'
 import Footer from '../../../components/Footers/Footer'
 import B2BPageHeader from '../../../components/Headers/SlideHeaders/B2BPageHeader'
 import NavBar from '../../../components/Navbars/NavBar'
@@ -31,8 +32,17 @@ import {CollapseIconText} from '../../CollapseIconText'
 import ContactForm from '../../ContactForm/ContactForm'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import B2BFacts from './B2BFacts'
+import parse from 'html-react-parser'
 
-function B2B(_: RouteProps) {
+interface IB2BProps {
+    routeProps:RouteProps,
+    t: (key:string, ...args:any) => string,
+}
+
+function B2B(props: IB2BProps) {
+    const {t} = props
+    const schema = _schema.pages.b2b
+
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('profile-page')
@@ -43,9 +53,9 @@ function B2B(_: RouteProps) {
     return (
         <>
             <Helmet>
-                <title>Wavect for Enterprises</title>
+                <title>{t(schema.header.title)}</title>
                 <meta name='description'
-                      content='Personalized & Low-Priced Corporate Social Responsibility. Create real impact, acquire new customers and improve your image. Modern storytelling is made by users.'/>
+                      content={t(schema.header.description)}/>
                 <meta name='keywords' content='wavect,sponsor,customer,corporate,social,responsibility,csr,personalize,low,price,storytelling,image,reputation'/>
             </Helmet>
 
@@ -56,22 +66,13 @@ function B2B(_: RouteProps) {
                     <Container>
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
-                                <h2 className='title'>How to sponsor a challenge?</h2>
+                                <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>
                                     <Ol>
-                                        <Li>
-                                            Tell us what kind of challenge you want to sponsor{' '}
-                                            <Link to={breadCrumbWhy.link}>(e.g. gathering trash, ...)</Link>.
-                                        </Li>
-                                        <Li>
-                                            Choose what to sponsor (e.g. giving an exclusive rebate on your products,
-                                            raffle products or vouchers,
-                                            cash, ...).
-                                        </Li>
-                                        <Li>Send us a short paragraph why you sponsor the challenge you have
-                                            selected.</Li>
-                                        <Li>Distribute your prizes amongst those users who have solved your
-                                            challenge.</Li>
+                                        <Li>{t(schema.intro.description._1, {link:breadCrumbWhy.link})}</Li>
+                                        <Li>{t(schema.intro.description._2)}</Li>
+                                        <Li>{t(schema.intro.description._3)}</Li>
+                                        <Li>{t(schema.intro.description._4)}</Li>
                                     </Ol>
                                 </h5>
                                 <br/>
@@ -81,46 +82,29 @@ function B2B(_: RouteProps) {
                         <br/>
                         <Row>
                             <Col md='3'>
-                                <CollapseIconText icon={faCreditCard} title='Low-Priced CSR'
-                                                  descr={<>A small fee has to be settled to sponsor a challenge.{' '}
-                                                      <strong>This fee is dependent on the size of your
-                                                          organization</strong> as especially smaller companies
-                                                      have difficulties with CSR or have never thought of using it as a
-                                                      marketing strategy.</>}/>
+                                <CollapseIconText icon={faCreditCard} title={t(schema.intro.iconcols.lowpricedcsr.title)}
+                                                  descr={parse(t(schema.intro.iconcols.lowpricedcsr.description))}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faFilter} title='Personalized CSR'
-                                                  descr={<>Challenges will be <strong>issued to users based on their
-                                                      interests & ethics</strong>. Moreover, raffles
-                                                      are also personalized, which means that only users who are
-                                                      interested in your products/services can win
-                                                      your prizes.</>}/>
+                                <CollapseIconText icon={faFilter} title={t(schema.intro.iconcols.personalizedcsr.title)}
+                                                  descr={parse(t(schema.intro.iconcols.personalizedcsr.description))}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faAd} title='Storytelling'
-                                                  descr={<>Users have to post a video or picture to proof that they
-                                                      solved your challenge. A watermark will be added
-                                                      on their media and gets shared on Wavect as well as other social
-                                                      media.{' '}
-                                                      <strong>Modern storytelling is made by users instead of marketing
-                                                          specialists.</strong></>}/>
+                                <CollapseIconText icon={faAd} title={t(schema.intro.iconcols.storytelling.title)}
+                                                  descr={parse(t(schema.intro.iconcols.storytelling.description))}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faUsers} title='Aggregated Impact'
-                                                  descr={<>As you give users additional incentives to do sth. good,{' '}
-                                                      <strong>all impact can be dedicated to your organization</strong>.
-                                                      The caused impact will be aggregated to
-                                                      show you and your potential customers what implication your
-                                                      sponsoring had.</>}/>
+                                <CollapseIconText icon={faUsers} title={t(schema.intro.iconcols.aggregatedimpact.title)}
+                                                  descr={parse(t(schema.intro.iconcols.aggregatedimpact.description))}/>
                             </Col>
                         </Row>
                     </Container>
                 </div>
                 <div className='section section-dark text-center'>
-                    <B2BFacts/>
+                    <B2BFacts t={t}/>
                 </div>
 
-                <ContactForm/>
+                <ContactForm t={t}/>
                 <SocialShareBar shareUrl={breadCrumbForCompanies.link}/>
             </div>
             <Footer/>
@@ -128,4 +112,4 @@ function B2B(_: RouteProps) {
     )
 }
 
-export default B2B
+export default translate()(B2B)

@@ -1,4 +1,4 @@
-import * as en from './langs/en.json'
+import en from './langs/en.json' // do not import via '* as en'
 
 
 export const getCurrentLang = ():string => {

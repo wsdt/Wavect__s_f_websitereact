@@ -1,9 +1,483 @@
 {
+    "general": {
+        "readmore": "general.readmore"
+    },
+    "common_components": {
+        "navbar": {
+            "home": {
+                "title": "common_components.navbar.home.title",
+                "linkTitle": "common_components.navbar.home.linkTitle"
+            },
+            "whyhow": {
+                "title": "common_components.navbar.whyhow.title",
+                "linkTitle": "common_components.navbar.whyhow.linkTitle"
+            },
+            "organizations": {
+                "title": "common_components.navbar.organizations.title",
+                "linkTitle": "common_components.navbar.organizations.linkTitle"
+            },
+            "b2b": {
+                "title": "common_components.navbar.b2b.title",
+                "linkTitle": "common_components.navbar.b2b.linkTitle"
+            },
+            "b2g": {
+                "title": "common_components.navbar.b2g.title",
+                "linkTitle": "common_components.navbar.b2g.linkTitle"
+            },
+            "traction": {
+                "title": "common_components.navbar.traction.title",
+                "linkTitle": "common_components.navbar.traction.linkTitle"
+            },
+            "impressum": {
+                "title": "common_components.navbar.impressum.title",
+                "linkTitle": "common_components.navbar.impressum.linkTitle"
+            },
+            "dataprivacy": {
+                "title": "common_components.navbar.dataprivacy.title",
+                "linkTitle": "common_components.navbar.dataprivacy.linkTitle"
+            },
+            "blogs": {
+                "title": "common_components.navbar.blogs.title",
+                "linkTitle": "common_components.navbar.blogs.linkTitle",
+                "autors": {
+                    "kevinriedl": "common_components.navbar.blogs.autors.kevinriedl"
+                },
+                "posts": {
+                    "strategichustling": "common_components.navbar.blogs.posts.strategichustling",
+                    "changethoughtsonstress": "common_components.navbar.blogs.posts.changethoughtsonstress",
+                    "reflectorregret": "common_components.navbar.blogs.posts.reflectorregret",
+                    "yesisabignotoopportunities": "common_components.navbar.blogs.posts.yesisabignotoopportunities",
+                    "happinessneqfulfillment": "common_components.navbar.blogs.posts.happinessneqfulfillment"
+                }
+            },
+            "email": {
+                "title": "common_components.navbar.email.title",
+                "linkTitle": "common_components.navbar.email.linkTitle"
+            },
+            "linkedin": {
+                "title": "common_components.navbar.linkedin.title",
+                "linkTitle": "common_components.navbar.linkedin.linkTitle"
+            },
+            "facebook": {
+                "title": "common_components.navbar.facebook.title",
+                "linkTitle": "common_components.navbar.facebook.linkTitle"
+            },
+            "instagram": {
+                "title": "common_components.navbar.instagram.title",
+                "linkTitle": "common_components.navbar.instagram.linkTitle"
+            },
+            "github": {
+                "title": "common_components.navbar.github.title",
+                "linkTitle": "common_components.navbar.github.linkTitle"
+            },
+            "twitter": {
+                "title": "common_components.navbar.twitter.title",
+                "linkTitle": "common_components.navbar.twitter.linkTitle"
+            }
+        },
+        "contactform": {
+            "title": "common_components.contactform.title",
+            "inputs": {
+                "name": {
+                    "lbl": "common_components.contactform.inputs.name.lbl",
+                    "placeholder": "common_components.contactform.inputs.name.placeholder"
+                },
+                "subject": {
+                    "lbl": "common_components.contactform.inputs.subject.lbl",
+                    "placeholder": "common_components.contactform.inputs.subject.placeholder"
+                },
+                "email": {
+                    "lbl": "common_components.contactform.inputs.email.lbl",
+                    "placeholder": "common_components.contactform.inputs.email.placeholder"
+                },
+                "msg": {
+                    "lbl": "common_components.contactform.inputs.msg.lbl",
+                    "placeholder": "common_components.contactform.inputs.msg.placeholder"
+                },
+                "btnSubmit": "common_components.contactform.inputs.btnSubmit"
+            },
+            "alerts": {
+                "success": "common_components.contactform.alerts.success",
+                "servererror": "common_components.contactform.alerts.servererror",
+                "clientvalidationerror": {
+                    "autorName": "common_components.contactform.alerts.clientvalidationerror.autorName",
+                    "autorMail": "common_components.contactform.alerts.clientvalidationerror.autorMail",
+                    "subject": "common_components.contactform.alerts.clientvalidationerror.subject",
+                    "text": "common_components.contactform.alerts.clientvalidationerror.text"
+                }
+            }
+        }
+    },
     "pages": {
+        "blog": {
+            "header": {
+                "title": "pages.blog.header.title",
+                "description": "pages.blog.header.description"
+            },
+            "general": {
+                "readposts": "pages.blog.general.readposts"
+            },
+            "intro": {
+                "description": "pages.blog.intro.description",
+                "blogs": {
+                    "kevin_riedl": {
+                        "imgAltTag": "pages.blog.intro.blogs.kevin_riedl.imgAltTag",
+                        "title": "pages.blog.intro.blogs.kevin_riedl.title",
+                        "description": "pages.blog.intro.blogs.kevin_riedl.description"
+                    }
+                }
+            }
+        },
+        "b2b": {
+            "header": {
+                "title": "pages.b2b.header.title",
+                "description": "pages.b2b.header.description"
+            },
+            "intro": {
+                "title": "pages.b2b.intro.title",
+                "description": {
+                    "_1": "pages.b2b.intro.description._1",
+                    "_2": "pages.b2b.intro.description._2",
+                    "_3": "pages.b2b.intro.description._3",
+                    "_4": "pages.b2b.intro.description._4"
+                },
+                "iconcols": {
+                    "lowpricedcsr": {
+                        "title": "pages.b2b.intro.iconcols.lowpricedcsr.title",
+                        "description": "pages.b2b.intro.iconcols.lowpricedcsr.description"
+                    },
+                    "personalizedcsr": {
+                        "title": "pages.b2b.intro.iconcols.personalizedcsr.title",
+                        "description": "pages.b2b.intro.iconcols.personalizedcsr.description"
+                    },
+                    "storytelling": {
+                        "title": "pages.b2b.intro.iconcols.storytelling.title",
+                        "description": "pages.b2b.intro.iconcols.storytelling.description"
+                    },
+                    "aggregatedimpact": {
+                        "title": "pages.b2b.intro.iconcols.aggregatedimpact.title",
+                        "description": "pages.b2b.intro.iconcols.aggregatedimpact.description"
+                    }
+                }
+            },
+            "facts": {
+                "title": "pages.b2b.facts.title",
+                "elems": {
+                    "_1": {
+                        "quote": "pages.b2b.facts.elems._1.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._1.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._1.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._1.sourceExactSource"
+                    },
+                    "_2": {
+                        "quote": "pages.b2b.facts.elems._2.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._2.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._2.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._2.sourceExactSource"
+                    },
+                    "_3": {
+                        "quote": "pages.b2b.facts.elems._3.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._3.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._3.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._3.sourceExactSource"
+                    },
+                    "_4": {
+                        "quote": "pages.b2b.facts.elems._4.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._4.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._4.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._4.sourceExactSource"
+                    },
+                    "_5": {
+                        "quote": "pages.b2b.facts.elems._5.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._5.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._5.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._5.sourceExactSource"
+                    },
+                    "_6": {
+                        "quote": "pages.b2b.facts.elems._6.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._6.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._6.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._6.sourceExactSource"
+                    },
+                    "_7": {
+                        "quote": "pages.b2b.facts.elems._7.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._7.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._7.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._7.sourceExactSource"
+                    },
+                    "_8": {
+                        "quote": "pages.b2b.facts.elems._8.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._8.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._8.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._8.sourceExactSource"
+                    },
+                    "_9": {
+                        "quote": "pages.b2b.facts.elems._9.quote",
+                        "sourceTitle": "pages.b2b.facts.elems._9.sourceTitle",
+                        "sourceLongTitle": "pages.b2b.facts.elems._9.sourceLongTitle",
+                        "sourceExactSource": "pages.b2b.facts.elems._9.sourceExactSource"
+                    }
+                }
+            }
+        },
+        "b2g": {
+            "header": {
+                "title": "pages.b2g.header.title",
+                "description": "pages.b2g.header.description"
+            },
+            "intro": {
+                "title": "pages.b2g.intro.title",
+                "description": {
+                    "_1": "pages.b2g.intro.description._1",
+                    "_2": "pages.b2g.intro.description._2",
+                    "_3": "pages.b2g.intro.description._3",
+                    "_4": "pages.b2g.intro.description._4"
+                },
+                "iconcols": {
+                    "lowpricedcsr": {
+                        "title": "pages.b2g.intro.iconcols.lowpricedcsr.title",
+                        "description": "pages.b2g.intro.iconcols.lowpricedcsr.description"
+                    },
+                    "personalizedcsr": {
+                        "title": "pages.b2g.intro.iconcols.personalizedcsr.title",
+                        "description": "pages.b2g.intro.iconcols.personalizedcsr.description"
+                    },
+                    "storytelling": {
+                        "title": "pages.b2g.intro.iconcols.storytelling.title",
+                        "description": "pages.b2g.intro.iconcols.storytelling.description"
+                    },
+                    "aggregatedimpact": {
+                        "title": "pages.b2g.intro.iconcols.aggregatedimpact.title",
+                        "description": "pages.b2g.intro.iconcols.aggregatedimpact.description"
+                    }
+                }
+            },
+            "facts": {
+                "title": "pages.b2g.facts.title",
+                "elems": {
+                    "_1": {
+                        "quote": "pages.b2g.facts.elems._1.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._1.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._1.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._1.sourceExactSource"
+                    },
+                    "_2": {
+                        "quote": "pages.b2g.facts.elems._2.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._2.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._2.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._2.sourceExactSource"
+                    },
+                    "_3": {
+                        "quote": "pages.b2g.facts.elems._3.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._3.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._3.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._3.sourceExactSource"
+                    },
+                    "_4": {
+                        "quote": "pages.b2g.facts.elems._4.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._4.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._4.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._4.sourceExactSource"
+                    },
+                    "_5": {
+                        "quote": "pages.b2g.facts.elems._5.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._5.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._5.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._5.sourceExactSource"
+                    },
+                    "_6": {
+                        "quote": "pages.b2g.facts.elems._6.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._6.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._6.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._6.sourceExactSource"
+                    },
+                    "_7": {
+                        "quote": "pages.b2g.facts.elems._7.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._7.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._7.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._7.sourceExactSource"
+                    },
+                    "_8": {
+                        "quote": "pages.b2g.facts.elems._8.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._8.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._8.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._8.sourceExactSource"
+                    },
+                    "_9": {
+                        "quote": "pages.b2g.facts.elems._9.quote",
+                        "sourceTitle": "pages.b2g.facts.elems._9.sourceTitle",
+                        "sourceLongTitle": "pages.b2g.facts.elems._9.sourceLongTitle",
+                        "sourceExactSource": "pages.b2g.facts.elems._9.sourceExactSource"
+                    }
+                }
+            }
+        },
+        "whyhow": {
+            "header": {
+                "title": "pages.whyhow.header.title",
+                "description": "pages.whyhow.header.description"
+            },
+            "intro": {
+                "title": "pages.whyhow.intro.title",
+                "description": "pages.whyhow.intro.description",
+                "altImg": "pages.whyhow.intro.altImg",
+                "iconcols": {
+                    "register": {
+                        "title": "pages.whyhow.intro.iconcols.register.title",
+                        "description": "pages.whyhow.intro.iconcols.register.description"
+                    },
+                    "solvechallenges": {
+                        "title": "pages.whyhow.intro.iconcols.solvechallenges.title",
+                        "description": "pages.whyhow.intro.iconcols.solvechallenges.description"
+                    },
+                    "sponsoring": {
+                        "title": "pages.whyhow.intro.iconcols.sponsoring.title",
+                        "description": "pages.whyhow.intro.iconcols.sponsoring.description"
+                    },
+                    "impact": {
+                        "title": "pages.whyhow.intro.iconcols.impact.title",
+                        "description": "pages.whyhow.intro.iconcols.impact.description"
+                    }
+                }
+            },
+            "exemplarychallenges": {
+                "title": "pages.whyhow.exemplarychallenges.title",
+                "categories": {
+                    "health": "pages.whyhow.exemplarychallenges.categories.health",
+                    "environment": "pages.whyhow.exemplarychallenges.categories.environment",
+                    "social": "pages.whyhow.exemplarychallenges.categories.social"
+                },
+                "challenges": {
+                    "invitestrangerdrink": {
+                        "title": "pages.whyhow.exemplarychallenges.challenges.invitestrangerdrink.title",
+                        "description": "pages.whyhow.exemplarychallenges.challenges.invitestrangerdrink.description"
+                    },
+                    "goforawalk": {
+                        "title": "pages.whyhow.exemplarychallenges.challenges.goforawalk.title",
+                        "description": "pages.whyhow.exemplarychallenges.challenges.goforawalk.description"
+                    },
+                    "gathertrash": {
+                        "title": "pages.whyhow.exemplarychallenges.challenges.gathertrash.title",
+                        "description": "pages.whyhow.exemplarychallenges.challenges.gathertrash.description"
+                    },
+                    "assistretirementhome": {
+                        "title": "pages.whyhow.exemplarychallenges.challenges.assistretirementhome.title",
+                        "description": "pages.whyhow.exemplarychallenges.challenges.assistretirementhome.description"
+                    },
+                    "holdhandstand": {
+                        "title": "pages.whyhow.exemplarychallenges.challenges.holdhandstand.title",
+                        "description": "pages.whyhow.exemplarychallenges.challenges.holdhandstand.description"
+                    },
+                    "planttree": {
+                        "title": "pages.whyhow.exemplarychallenges.challenges.planttree.title",
+                        "description": "pages.whyhow.exemplarychallenges.challenges.planttree.description"
+                    }
+                }
+            }
+        },
+        "traction": {
+            "header": {
+                "title": "pages.traction.header.title",
+                "description": "pages.traction.header.description"
+            },
+            "intro": {
+                "title": "pages.traction.intro.title",
+                "description": "pages.traction.intro.description"
+            },
+            "competitions": {
+                "title": "pages.traction.competitions.title",
+                "description": "pages.traction.competitions.description",
+                "comps": {
+                    "adventurex_2019": {
+                        "title": "pages.traction.competitions.comps.adventurex_2019.title",
+                        "subtitle": "pages.traction.competitions.comps.adventurex_2019.subtitle",
+                        "description": "pages.traction.competitions.comps.adventurex_2019.description"
+                    },
+                    "beadydays_2019": {
+                        "title": "pages.traction.competitions.comps.beadydays_2019.title",
+                        "subtitle": "pages.traction.competitions.comps.beadydays_2019.subtitle",
+                        "description": "pages.traction.competitions.comps.beadydays_2019.description"
+                    }
+                }
+            },
+            "partners": {
+                "title": "pages.traction.partners.title",
+                "description": "pages.traction.partners.description",
+                "partner": {
+                    "digipuls": {
+                        "altImg": "pages.traction.partners.partner.digipuls.altImg",
+                        "title": "pages.traction.partners.partner.digipuls.title",
+                        "subtitle": "pages.traction.partners.partner.digipuls.subtitle",
+                        "description": "pages.traction.partners.partner.digipuls.description"
+                    },
+                    "innc": {
+                        "altImg": "pages.traction.partners.partner.innc.altImg",
+                        "title": "pages.traction.partners.partner.innc.title",
+                        "subtitle": "pages.traction.partners.partner.innc.subtitle",
+                        "description": "pages.traction.partners.partner.innc.description"
+                    }
+                }
+            }
+        },
         "landingPage": {
             "header": {
                 "title": "pages.landingPage.header.title",
                 "description": "pages.landingPage.header.description"
+            },
+            "intro": {
+                "title": "pages.landingPage.intro.title",
+                "description": "pages.landingPage.intro.description",
+                "iconcols": {
+                    "relevantchallenges": {
+                        "title": "pages.landingPage.intro.iconcols.relevantchallenges.title",
+                        "description": "pages.landingPage.intro.iconcols.relevantchallenges.description"
+                    },
+                    "personalizedprizes": {
+                        "title": "pages.landingPage.intro.iconcols.personalizedprizes.title",
+                        "description": "pages.landingPage.intro.iconcols.personalizedprizes.description"
+                    },
+                    "microvolunteering": {
+                        "title": "pages.landingPage.intro.iconcols.microvolunteering.title",
+                        "description": "pages.landingPage.intro.iconcols.microvolunteering.description"
+                    },
+                    "measurableimpact": {
+                        "title": "pages.landingPage.intro.iconcols.measurableimpact.title",
+                        "description": "pages.landingPage.intro.iconcols.measurableimpact.description"
+                    }
+                }
+            },
+            "aboutus": {
+                "title": "pages.landingPage.aboutus.title",
+                "cto": {
+                    "imgAltTag": "pages.landingPage.aboutus.cto.imgAltTag",
+                    "name": "pages.landingPage.aboutus.cto.name",
+                    "duty": "pages.landingPage.aboutus.cto.duty",
+                    "ownIntro": "pages.landingPage.aboutus.cto.ownIntro"
+                },
+                "cmo": {
+                    "imgAltTag": "pages.landingPage.aboutus.cmo.imgAltTag",
+                    "name": "pages.landingPage.aboutus.cmo.name",
+                    "duty": "pages.landingPage.aboutus.cmo.duty",
+                    "ownIntro": "pages.landingPage.aboutus.cmo.ownIntro"
+                },
+                "cio": {
+                    "imgAltTag": "pages.landingPage.aboutus.cio.imgAltTag",
+                    "name": "pages.landingPage.aboutus.cio.name",
+                    "duty": "pages.landingPage.aboutus.cio.duty",
+                    "ownIntro": "pages.landingPage.aboutus.cio.ownIntro"
+                },
+                "cfo": {
+                    "imgAltTag": "pages.landingPage.aboutus.cfo.imgAltTag",
+                    "name": "pages.landingPage.aboutus.cfo.name",
+                    "duty": "pages.landingPage.aboutus.cfo.duty",
+                    "ownIntro": "pages.landingPage.aboutus.cfo.ownIntro"
+                },
+                "ceo": {
+                    "imgAltTag": "pages.landingPage.aboutus.ceo.imgAltTag",
+                    "name": "pages.landingPage.aboutus.ceo.name",
+                    "duty": "pages.landingPage.aboutus.ceo.duty",
+                    "ownIntro": "pages.landingPage.aboutus.ceo.ownIntro"
+                }
             }
         }
     }

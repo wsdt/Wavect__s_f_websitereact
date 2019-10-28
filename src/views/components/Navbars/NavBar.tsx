@@ -20,7 +20,7 @@
 // @ts-ignore
 import classnames from 'classnames'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 // reactstrap components
 import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -49,8 +49,16 @@ import {
     breadCrumbWhy,
 } from '../../pages/breadcrumbs/breadcrumbs.constants'
 import {GrayColorImg} from '../../pages/grayscale_color/GrayColorImg/GrayColorImg'
+import {translate} from "react-polyglot";
+import _schema from '../../../controllers/system/multilinguality/_schema.json'
 
-const NavBar = () => {
+interface INavBarProps {
+    t: (key:string, ...args:any) => string,
+}
+
+const NavBar = (props:INavBarProps) => {
+    const {t} = props
+    const schema = _schema.common_components.navbar
     const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
     const [isNavbarBrandAsText, setNavbarBrandAsText] = React.useState(true)
     const [navbarCollapse, setNavbarCollapse] = React.useState(false)
@@ -100,13 +108,13 @@ const NavBar = () => {
                 <Collapse className='justify-content-end' navbar={true} isOpen={navbarCollapse}>
                     <Nav navbar={true}>
                         <NavItem>
-                            <NavLink href={breadCrumbWhy.link} title={breadCrumbWhy.title}>
-                                <FontAwesomeIcon icon={faGlasses} size='lg' className='d-lg-none' /> {breadCrumbWhy.title}
+                            <NavLink href={breadCrumbWhy.link} title={t(breadCrumbWhy.title)}>
+                                <FontAwesomeIcon icon={faGlasses} size='lg' className='d-lg-none' /> {t(breadCrumbWhy.title)}
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
-                                <FontAwesomeIcon icon={faHandshake} size='lg' className='d-lg-none' /> {breadCrumbTraction.title}
+                                <FontAwesomeIcon icon={faHandshake} size='lg' className='d-lg-none' /> {t(breadCrumbTraction.title)}
                             </NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav={true} inNavbar={true}>
@@ -116,32 +124,33 @@ const NavBar = () => {
                                 color='default'
                                 data-toggle='dropdown'
                                 href='/#'
+                                title={t(schema.organizations.linkTitle)}
                                 id='navbarDropdownMenuLink'
                                 nav={true}
                                 onClick={e => e.preventDefault()}
                             >
-                                <FontAwesomeIcon icon={faSitemap} size='lg' className='d-lg-none'/> For Organizations
+                                <FontAwesomeIcon icon={faSitemap} size='lg' className='d-lg-none'/> {t(schema.organizations.title)}
                             </DropdownToggle>
                             <DropdownMenu aria-labelledby='navbarDropdownMenuLink'>
-                                <DropdownItem to={breadCrumbForCompanies.link} tag={Link} title='B2B'>
-                                    {breadCrumbForCompanies.title}
+                                <DropdownItem to={breadCrumbForCompanies.link} tag={Link} title={t(schema.b2b.linkTitle)}>
+                                    {t(breadCrumbForCompanies.title)}
                                 </DropdownItem>
                                 <DropdownItem divider={true} />
-                                <DropdownItem title='B2G' to={breadCrumbForOrganizations.link} tag={Link}>
-                                    {breadCrumbForOrganizations.title}
+                                <DropdownItem title={t(schema.b2g.linkTitle)} to={breadCrumbForOrganizations.link} tag={Link}>
+                                    {t(breadCrumbForOrganizations.title)}
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <NavItem>
-                            <NavLink href={breadCrumbBlogs.link} title={breadCrumbBlogs.title}>
-                                <FontAwesomeIcon icon={faBlog} size='lg' className='d-lg-none'/> {breadCrumbBlogs.title}
+                            <NavLink href={breadCrumbBlogs.link} title={t(schema.blogs.linkTitle)}>
+                                <FontAwesomeIcon icon={faBlog} size='lg' className='d-lg-none'/> {t(breadCrumbBlogs.title)}
                             </NavLink>
                         </NavItem>
 
                         <NavItem style={{ marginRight: -10 }}>
-                            <NavLink data-placement='bottom' href='mailto:office@wavect.io' title='Contact us via e-mail'>
+                            <NavLink data-placement='bottom' href='mailto:office@wavect.io' title={t(schema.email.linkTitle)}>
                                 <FontAwesomeIcon icon={faEnvelope} size='lg' />
-                                <p className='d-lg-none'> E-Mail</p>
+                                <p className='d-lg-none'> {t(schema.email.title)}</p>
                             </NavLink>
                         </NavItem>
                         <NavItem style={{ marginRight: -10 }} >
@@ -149,16 +158,16 @@ const NavBar = () => {
                                 data-placement='bottom'
                                 href='https://www.linkedin.com/company/19010151'
                                 target='_blank'
-                                title='Follow us on LinkedIn'
+                                title={t(schema.linkedin.linkTitle)}
                             >
                                 <FontAwesomeIcon icon={faLinkedinIn} size='lg' />
-                                <p className='d-lg-none'> LinkedIn</p>
+                                <p className='d-lg-none'> {t(schema.linkedin.title)}</p>
                             </NavLink>
                         </NavItem>
                         <NavItem style={{ marginRight: -10 }} >
-                            <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title='Like us on Facebook'>
+                            <NavLink data-placement='bottom' href='https://www.facebook.com/wavect' target='_blank' title={t(schema.facebook.linkTitle)}>
                                 <FontAwesomeIcon icon={faFacebook} size='lg' />
-                                <p className='d-lg-none'> Facebook</p>
+                                <p className='d-lg-none'> {t(schema.facebook.title)}</p>
                             </NavLink>
                         </NavItem>
                         <NavItem style={{ marginRight: -10 }} >
@@ -166,22 +175,22 @@ const NavBar = () => {
                                 data-placement='bottom'
                                 href='https://www.instagram.com/wavect.io'
                                 target='_blank'
-                                title='Follow us on Instagram'
+                                title={t(schema.instagram.linkTitle)}
                             >
                                 <FontAwesomeIcon icon={faInstagram} size='lg' />
-                                <p className='d-lg-none'> Instagram</p>
+                                <p className='d-lg-none'> {t(schema.instagram.title)}</p>
                             </NavLink>
                         </NavItem>
                         <NavItem style={{ marginRight: -10 }} >
-                            <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title='Star us on GitHub'>
+                            <NavLink data-placement='bottom' href='https://github.com/orgs/bekind-austria' target='_blank' title={t(schema.github.linkTitle)}>
                                 <FontAwesomeIcon icon={faGithub} size='lg' />
-                                <p className='d-lg-none'> GitHub</p>
+                                <p className='d-lg-none'> {t(schema.github.title)}</p>
                             </NavLink>
                         </NavItem>
                         <NavItem style={{ marginRight: -10 }} >
-                            <NavLink data-placement='bottom' href='https://twitter.com/wavect_austria' target='_blank' title='Follow us on Twitter'>
+                            <NavLink data-placement='bottom' href='https://twitter.com/wavect_austria' target='_blank' title={t(schema.twitter.linkTitle)}>
                                 <FontAwesomeIcon icon={faTwitter} size='lg' />
-                                <p className='d-lg-none'> Twitter</p>
+                                <p className='d-lg-none'> {t(schema.twitter.title)}</p>
                             </NavLink>
                         </NavItem>
                     </Nav>
@@ -191,4 +200,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default translate()(NavBar)

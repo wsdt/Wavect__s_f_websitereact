@@ -7,7 +7,7 @@ importJsonPath = currDir+"/langs/en.json"
 exportJsonSchemaPath = currDir+"/_schema.json"
 
 # De as default for schema generation as certainly always available
-with open(importJsonPath) as f:
+with open(importJsonPath, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 

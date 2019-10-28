@@ -23,57 +23,56 @@ import Col from 'reactstrap/lib/Col'
 import Row from 'reactstrap/lib/Row'
 import imgCompetitionAdventureX from '../../../assets/img/traction/competitions/adventurex_tyrol_2019.jpg'
 import imgCompetitionBeadyDays from '../../../assets/img/traction/competitions/beadydays_kufstein_2019.jpg'
+import _schema from '../../../controllers/system/multilinguality/_schema.json'
 import { H2 } from '../blogs/blogs_components/text_components/H2'
 import { P } from '../blogs/blogs_components/text_components/P'
 import { GrayColorImg } from '../grayscale_color/GrayColorImg/GrayColorImg'
+import parse from 'html-react-parser'
 
-function Competitions(_: any) {
+interface ICompetitionsProps {
+    t: (key:string) => string,
+}
+
+function Competitions(props: ICompetitionsProps) {
+    const {t} = props
+    const schema = _schema.pages.traction.competitions
     return (
         <>
-            <H2>Past competitions</H2>
-            <P>
-                You may know us from one of the following competitions. Drop us a <a href="mailto:office@wavect.io">message</a> if you think we should
-                participate in a particular competition.
-            </P>
+            <H2>{t(schema.title)}</H2>
+            <P>{parse(t(schema.description))}</P>
             <Row>
-                <Col className="ml-auto mr-auto text-center" md="auto">
+                <Col className='ml-auto mr-auto text-center' md='auto'>
                     <a
-                        href="https://www.startupeuregio.eu/de/startups/adventure-x"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href='https://www.startupeuregio.eu/de/startups/adventure-x'
+                        target='_blank'
+                        rel='noopener noreferrer'
                         style={{ color: '#fff' }}
                     >
                         <Card style={{ width: '20rem' }}>
-                            <GrayColorImg src={imgCompetitionAdventureX} alt="Adventure X - Innsbruck, Tyrol" />
+                            <GrayColorImg src={imgCompetitionAdventureX} alt={t(schema.comps.adventurex_2019.title)} />
                             <CardBody>
-                                    <div className="author">
-                                        <CardTitle tag="h4">Adventure X - Innsbruck</CardTitle>
-                                        <h6 className="card-category">Finalist (2019)</h6>
+                                    <div className='author'>
+                                        <CardTitle tag='h4'>{t(schema.comps.adventurex_2019.title)}</CardTitle>
+                                        <h6 className='card-category'>{t(schema.comps.adventurex_2019.subtitle)}</h6>
                                     </div>
-                                <CardText className="card-description text-center">
-                                    AdventureX is a business model competition for young startups and already established companies. Our business
-                                    model has been selected from over 55 companies to compete with the top 6 startups in Tyrol.
-                                </CardText>
-                                <Button color="info">Read more</Button>
+                                <CardText className='card-description text-center'>{t(schema.comps.adventurex_2019.description)}</CardText>
+                                <Button color='info'>{t(_schema.general.readmore)}</Button>
                             </CardBody>
                         </Card>
                     </a>
                 </Col>
 
-                <Col className="ml-auto mr-auto text-center" md="auto">
-                    <a href="https://www.beady-days.at/de/beady-award.html" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
+                <Col className='ml-auto mr-auto text-center' md='auto'>
+                    <a href='https://www.beady-days.at/de/beady-award.html' target='_blank' rel='noopener noreferrer' style={{ color: '#fff' }}>
                         <Card style={{ width: '20rem' }}>
-                            <GrayColorImg src={imgCompetitionBeadyDays} alt="Beady Awards - Kufstein, Tyrol" />
+                            <GrayColorImg src={imgCompetitionBeadyDays} alt='Beady Awards - Kufstein, Tyrol' />
                             <CardBody>
-                                    <div className="author">
-                                        <CardTitle tag="h4">Beady Awards - Kufstein</CardTitle>
-                                        <h6 className="card-category">Finalist (2019)</h6>
+                                    <div className='author'>
+                                        <CardTitle tag='h4'>{t(schema.comps.beadydays_2019.title)}</CardTitle>
+                                        <h6 className='card-category'>{t(schema.comps.beadydays_2019.subtitle)}</h6>
                                     </div>
-                                <CardText className="card-description text-center">
-                                    The Beady Awards honor the best concepts to make the world a better place and it's organizers claim to be the
-                                    youngest festival in Austria. Our business model got into the top 3 startups in October 2019 .
-                                </CardText>
-                                <Button color="info">Read more</Button>
+                                <CardText className='card-description text-center'>{t(schema.comps.beadydays_2019.description)}</CardText>
+                                <Button color='info'>{t(_schema.general.readmore)}</Button>
                             </CardBody>
                         </Card>
                     </a>

@@ -18,10 +18,17 @@
 */
 import React from 'react'
 import { Alert, Button, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap'
+import _schema from '../../../controllers/system/multilinguality/_schema.json'
 import { ApiResponse } from '../../../models/ApiResponse'
 import { IContactFormState } from './ContactForm.state'
 
-class ContactForm extends React.PureComponent<any, IContactFormState> {
+const schema = _schema.common_components.contactform
+
+interface IContactFormProps {
+    t: (key:string, ...args:any) => string,
+}
+
+class ContactForm extends React.PureComponent<IContactFormProps, IContactFormState> {
     public state: IContactFormState = {
         autorName: '',
         autorMail: '',
@@ -33,79 +40,81 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
     }
 
     public render() {
+        const {t} = this.props
+
         return (
-            <div className="section landing-section">
+            <div className='section landing-section'>
                 <Container>
                     {this.getAlert()}
                     <Row>
-                        <Col className="ml-auto mr-auto" md="8">
-                            <h2 className="text-center">Keep in touch?</h2>
+                        <Col className='ml-auto mr-auto' md='8'>
+                            <h2 className='text-center'>{t(schema.title)}</h2>
 
-                            <Form className="contact-form">
+                            <Form className='contact-form'>
                                 <Row>
-                                    <Col md="6">
-                                        <label>Name</label>
+                                    <Col md='6'>
+                                        <label>{t(schema.inputs.name.lbl)}</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType="prepend">
+                                            <InputGroupAddon addonType='prepend'>
                                                 <InputGroupText>
-                                                    <i className="nc-icon nc-single-02" />
+                                                    <i className='nc-icon nc-single-02' />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
-                                                placeholder="Name"
-                                                type="text"
-                                                name="autorName"
+                                                placeholder={t(schema.inputs.name.placeholder)}
+                                                type='text'
+                                                name='autorName'
                                                 onChange={e => this.handleOnChange('autorName', e)}
                                             />
                                         </InputGroup>
                                     </Col>
-                                    <Col md="6">
-                                        <label>Subject</label>
+                                    <Col md='6'>
+                                        <label>{t(schema.inputs.subject.lbl)}</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType="prepend">
+                                            <InputGroupAddon addonType='prepend'>
                                                 <InputGroupText>
-                                                    <i className="nc-icon nc-single-02" />
+                                                    <i className='nc-icon nc-single-02' />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
-                                                placeholder="Subject"
-                                                type="text"
-                                                name="subject"
+                                                placeholder={t(schema.inputs.subject.placeholder)}
+                                                type='text'
+                                                name='subject'
                                                 onChange={e => this.handleOnChange('subject', e)}
                                             />
                                         </InputGroup>
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col md="12">
-                                        <label>E-Mail</label>
+                                    <Col md='12'>
+                                        <label>{t(schema.inputs.email.lbl)}</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType="prepend">
+                                            <InputGroupAddon addonType='prepend'>
                                                 <InputGroupText>
-                                                    <i className="nc-icon nc-email-85" />
+                                                    <i className='nc-icon nc-email-85' />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
-                                                placeholder="Email"
-                                                type="email"
-                                                name="autorMail"
+                                                placeholder={t(schema.inputs.email.placeholder)}
+                                                type='email'
+                                                name='autorMail'
                                                 onChange={e => this.handleOnChange('autorMail', e)}
                                             />
                                         </InputGroup>
                                     </Col>
                                 </Row>
-                                <label>Message</label>
+                                <label>{t(schema.inputs.msg.lbl)}</label>
                                 <Input
-                                    placeholder="Tell us your thoughts and feelings..."
-                                    type="textarea"
-                                    rows="4"
-                                    name="text"
+                                    placeholder={t(schema.inputs.msg.placeholder)}
+                                    type='textarea'
+                                    rows='4'
+                                    name='text'
                                     onChange={e => this.handleOnChange('text', e)}
                                 />
                                 <Row>
-                                    <Col className="ml-auto mr-auto text-center" md="12">
-                                        <Button className="btn-fill" color="danger" size="lg" onClick={() => this.sendForm()}>
-                                            Send
+                                    <Col className='ml-auto mr-auto text-center' md='12'>
+                                        <Button className='btn-fill' color='danger' size='lg' onClick={() => this.sendForm()}>
+                                            {t(schema.inputs.btnSubmit)}
                                         </Button>
                                     </Col>
                                 </Row>
@@ -118,15 +127,17 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
     }
 
     private getAlert = () => {
+        const {t} = this.props
+
         if (this.state.wasFormSubmitted) {
             return this.state.wasSubmissionSuccessful ? (
-                <Alert color="success">We'll get in touch with you soon!</Alert>
+                <Alert color='success'>{t(schema.alerts.success)}</Alert>
             ) : (
-                <Alert color="danger">Couldn't send e-mail.</Alert>
+                <Alert color='danger'>{t(schema.alerts.servererror)}</Alert>
             )
         } else if (this.state.error) {
             // if not already submitted validate form
-            return <Alert color="warning">{this.state.error}</Alert>
+            return <Alert color='warning'>{this.state.error}</Alert>
         }
         return null
     }
@@ -141,11 +152,13 @@ class ContactForm extends React.PureComponent<any, IContactFormState> {
     }
 
     private isFormValid = (): boolean => {
+        const {t} = this.props
+
         let msg: string | null = null
-        if (!this.state.autorName) msg = 'Please tell us your name, at least use an alias.'
-        else if (!this.state.autorMail) msg = 'We need your e-mail to get in touch with you.'
-        else if (!this.state.subject) msg = 'Please add a subject.'
-        else if (!this.state.text) msg = 'An email without text?'
+        if (!this.state.autorName) msg = t(schema.alerts.clientvalidationerror.autorName)
+        else if (!this.state.autorMail) msg = t(schema.alerts.clientvalidationerror.autorMail)
+        else if (!this.state.subject) msg = t(schema.alerts.clientvalidationerror.subject)
+        else if (!this.state.text) msg = t(schema.alerts.clientvalidationerror.text)
 
         if (msg) {
             this.setState((prevState: IContactFormState) => ({

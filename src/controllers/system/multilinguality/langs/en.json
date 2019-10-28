@@ -1,10 +1,484 @@
 {
+	"general": {
+		"readmore": "Read more"
+	},
+	"common_components": {
+		"navbar": {
+			"home": {
+				"title": "Home",
+				"linkTitle": "Home page"
+			},
+			"whyhow": {
+				"title": "Why & How?",
+				"linkTitle": "Our vision & mission"
+			},
+			"organizations": {
+				"title": "For organizations",
+				"linkTitle": "B2B & B2G"
+			},
+			"b2b": {
+				"title": "For Companies",
+				"linkTitle": "B2B"
+			},
+			"b2g": {
+				"title": "For other organizations",
+				"linkTitle": "B2G"
+			},
+			"traction": {
+				"title": "Traction",
+				"linkTitle": "Past competitions, impact, ..."
+			},
+			"impressum": {
+				"title": "Impressum",
+				"linkTitle": "Legal texts"
+			},
+			"dataprivacy": {
+				"title": "Data privacy",
+				"linkTitle": "All about your data"
+			},
+			"blogs": {
+				"title": "Blogs", 
+				"linkTitle": "Blogs of Co-Founders",
+				"autors": {
+					"kevinriedl": "Kevin Riedl"
+				},
+				"posts": {
+					"strategichustling": "Strategic Hustling",
+					"changethoughtsonstress": "Let me change the way you think about Stress & Burnout",
+					"reflectorregret": "Start reflecting or you will die full of regrets",
+					"yesisabignotoopportunities": "Saying yes is a big NO to a lot of other opportunities",
+					"happinessneqfulfillment": "Happiness != Fulfillment: Who are you really?"
+				}
+			},
+			"email": {
+				"title": "E-Mail",
+				"linkTitle": "Contact us via e-mail"
+			},
+			"linkedin": {
+				"title": "LinkedIn",
+				"linkTitle": "Follow us on LinkedIn"
+			},
+			"facebook": {
+				"title": "Facebook",
+				"linkTitle": "Like us on Facebook"
+			},
+			"instagram": {
+				"title": "Instagram",
+				"linkTitle": "Follow us on Instagram"
+			},
+			"github": {
+				"title": "Github",
+				"linkTitle": "Star us on Github"
+			},
+			"twitter": {
+				"title": "Twitter",
+				"linkTitle": "Follow us on Twitter"
+			}
+		},
+		"contactform": {
+			"title": "Keep in touch?",
+			"inputs": {
+				"name": {
+					"lbl": "Name", 
+					"placeholder": "Your name"
+				},
+				"subject": {
+					"lbl": "Subject", 
+					"placeholder": "Subject"
+				},
+				"email": {
+					"lbl": "E-Mail", 
+					"placeholder": "your.mail@wavect.io"
+				},
+				"msg": {
+					"lbl": "Message", 
+					"placeholder": "Tell us your thoughts and feelings..."
+				},
+				"btnSubmit": "Send"
+			},
+			"alerts": {
+				"success": "We'll get in touch with you soon!",
+				"servererror": "Couldn't send e-mail.",
+				"clientvalidationerror": {
+					"autorName": "Please tell us your name, at least use an alias.",
+					"autorMail": "We need your e-mail to get in touch with you.",
+					"subject": "Please add a subject",
+					"text": "An email without text?"
+				}
+			}
+		}
+	},
     "pages": {
+		"blog": {
+			"header": {
+				"title": "Blogs of Co-Founders",
+				"description": "We all are just humans. That is why our co-founders posted some blog posts about personal development, technical as well as economical topics and some stories about their lives."
+			},
+			"general": {
+				"readposts": "Read posts"
+			},
+			"intro": {
+				"description": "Here you'll find personal blogs of our team-members. Topics may range from technical, economical, psychological as well as spiritual ones. Feel free to share them :-)",
+				"blogs": {
+					"kevin_riedl": {
+						"imgAltTag": "CEO: Kevin Riedl", 
+						"title": "Kevin Riedl, Bsc.",
+						"description": "Here you'll find economical, technical & personal posts."
+					}
+				}
+			}
+		},
+		"b2b": {
+			"header": {
+				"title": "Wavect for Enterprises",
+				"description": "Personalized & Low-Priced Corporate Social Responsibility. Create real impact, acquire new customers and improve your image. Modern storytelling is made by users."
+			},
+			"intro": {
+				"title": "How to sponsor a challenge?",
+				"description": {
+					"_1": "Tell us what kind of challenge you want to sponsor <a href='%{link}' title='Exemplary challenges'>(e.g. gathering trash, ...)</a>.",
+					"_2": "Choose what to sponsor (e.g. giving an exclusive rebate on your products, raffle products or vouchers, cash, ...).",
+					"_3": "Send us a short paragraph why you sponsor the challenge you have selected.",
+					"_4": "Distribute your prizes amongst those users who have solved your challenge."
+				},
+				"iconcols": {
+					"lowpricedcsr": {
+						"title": "Low-Priced CSR",
+						"description": "A small fee has to be settled to sponsor a challenge. <strong>This fee is dependent on the size of your organization</strong> as especially smaller companies have difficulties with CSR or have never thought of using it as a marketing strategy."
+					},
+					"personalizedcsr": {
+						"title": "Personalized CSR",
+						"description": "Challenges will be <strong>issued to users based on their interests & ethics</strong>. Moreover, raffles are also personalized, which means that only users who are interested in your products/services can win your prizes."
+					},
+					"storytelling": {
+						"title": "Storytelling",
+						"description": "Users have to post a video or picture to proof that they solved your challenge. A watermark will be added on their media and gets shared on Wavect as well as other social media. <strong>Modern storytelling is made by users instead of marketing specialists.</strong>"
+					},
+					"aggregatedimpact": {
+						"title": "Aggregated Impact",
+						"description": "As you give users additional incentives to do sth. good, <strong>all impact can be dedicated to your organization</strong>. The caused impact will be aggregated to show you and your potential customers what implication your sponsoring had."
+					}
+				}
+			},
+			"facts": {
+				"title": "Some facts",
+				"elems": {
+					"_1": {
+						"quote": "CSR leads to more customer attention and more positive emotions towards products, trademarks and enterprises.",
+						"sourceTitle": "GfK Austria, 2017",
+						"sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
+						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+					},
+					"_2": {
+						"quote": "About 41 % of the respondents are patrons/regular customers, while 68 % feel ignored by companies.",
+						"sourceTitle": "Reichl, 2019",
+						"sourceLongTitle": "Consumer Trends",
+						"sourceExactSource": "AMC Study 2019. Vienna, Austria: GfK Austria"
+					},
+					"_3": {
+						"quote": "Many trademarks have difficulties to market their products and services to Millennials.",
+						"sourceTitle": "GfK Austria, 2017",
+						"sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
+						"sourceExactSource": "Retrieved 6 24, 2019, from  https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+					},
+					"_4": {
+						"quote": "Corporate-Social-Responsibility becomes increasingly interesting for consumers. 78 % of Austrians state that CSR is extremely important. Moreover, more and more Austrians expect that enterprises engage socially, especially related to environment-protection and their region. Consumers are convinced that enterprises should invest in CSR and profit from such measures. Social responsibility leads to a better company-reputation, which then leads to the company’s success.",
+						"sourceTitle": "GfK Austria, 2018/2019",
+						"sourceLongTitle": "CSR Monitor 2019. Austria: GfK Austria",
+						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
+					},
+					"_5": {
+						"quote": "A brand’s image has a more specific influence on the customers’ perceptions of product and service quality while the company’s reputation has a broader influence on perceptions of customer value and customer loyalty.",
+						"sourceTitle": "Cretu, A. E., & Roderick, B. J., 2017",
+						"sourceLongTitle": "The influence of brand image and company reputation where manufacturers market to small firms: A customer value perspective.",
+						"sourceExactSource": "Industrial marketing management, 36(2), pp. 230-240. doi:https://doi.org/10.1016/j.indmarman.2005.08.013"
+					},
+					"_6": {
+						"quote": "Approximately 45 % of consumers feel guilty when they do something which harms the environment. About 32 % of consumers state that sustainability is really important, appr. 40 % think it’s extremely important.",
+						"sourceTitle": "Reichl, 2019",
+						"sourceLongTitle": "Consumer Trends",
+						"sourceExactSource": "AMC Study 2019. Vienna, Austria: GfK Austria"
+					},
+					"_7": {
+						"quote": "Empirical evidence suggests that (1) a buyer's response to a service is consistent with his/her attitude toward the vendor's reputation, (2) the common factor underlying a company's reputation is primarily uni-dimensional, and (3) the effectiveness of a specific communications program can be enhanced by utilizing the company's reputation.",
+						"sourceTitle": "Yoon, E., Guffey, H. J., & Kijewski, V., 1993",
+						"sourceLongTitle": "The effects on information and company reputation on intentions to buy a business service.",
+						"sourceExactSource": "Journal of Business research, 27(3), pp. 215-228. doi:https://doi.org/10.1016/0148-2963(93)90027-M"
+					},
+					"_8": {
+						"quote": "According to a French survey the broad public thinks that regular ads are obsolete, while Sponsoring is considered State-of-the-Art.",
+						"sourceTitle": "Walliser, 2013",
+						"sourceLongTitle": "Sponsoring: Bedeutung, Wirkung und Kontrollmöglichkeiten.",
+						"sourceExactSource": "Springer-Verlag"
+					},
+					"_9": {
+						"quote": "Sustainable products will be more and more in demand. A rising number of consumers conditionally choose products/services on ethical questions.",
+						"sourceTitle": "Lange, 2019",
+						"sourceLongTitle": "Manager-Magazin",
+						"sourceExactSource": "Retrieved 6 24, 2019, from Top 10 Global Consumer Trends: https://www.manager-magazin.de/unternehmen/handel/top-10-global-consumer-trends-2019-von-euromonitor-verbrauchertrends-a-1247990.html"
+					}
+				}
+			}
+		},
+		"b2g": {
+			"header": {
+				"title": "Wavect for NGOs, politicians or other governmental organizations",
+				"description": "Fight societal issues right at its root right before any charity, volunteer or government needs to help. Improve the reputation of your organization and create sustainable impact."
+			},
+			"intro": {
+				"title": "How to sponsor a challenge?",
+				"description": {
+					"_1": "Tell us what kind of challenge you want to sponsor <a href='%{link}' title='Exemplary challenges'>(e.g. gathering trash, ...)</a>.",
+					"_2": "Choose what to sponsor (e.g. giving an exclusive rebate on your products, raffle products or vouchers, cash, ...). If you don't have any products, you simply can buy vouchers/products from other organizations (e.g. Amazon) or pay out cash.",
+					"_3": "Send us a short paragraph why you sponsor the challenge you have selected.",
+					"_4": "Distribute your prizes amongst those users who have solved your challenge."
+				}, 
+				"iconcols": {
+					"lowpricedcsr": {
+						"title": "Low-Priced CSR",
+						"description": "A small fee has to be settled to sponsor a challenge. <strong>This fee is dependent on the size & type of your organization</strong> as especially smaller organizations have difficulties with CSR or have never thought of using it as a marketing strategy."
+					},
+					"personalizedcsr": {
+						"title": "Personalized CSR",
+						"description": "Challenges & prizes will be <strong>issued to users based on their interests & ethics</strong>. This way you can acquire voters, volunteers and donors in a completely new manner. You'll create value by giving people incentives to do sth. good. Public relations made easy."
+					},
+					"storytelling": {
+						"title": "Storytelling",
+						"description": "Users have to post a video or picture to proof that they solved your challenge. A watermark will be added on their media and gets shared on Wavect as well as other social media. <strong>Modern storytelling is made by users instead of marketing specialists.</strong>"
+					},
+					"aggregatedimpact": {
+						"title": "Aggregated Impact", 
+						"description": "As you give users additional incentives to do sth. good, <strong>all impact can be dedicated to your organization</strong>. The caused impact will be aggregated to show you and your potential voters, donors or volunteers what implication your sponsoring had."
+					}
+				}
+			},
+			"facts": {
+				"title": "Some facts",
+				"elems": {
+					"_1": {
+						"quote": "CSR leads to more customer attention and more positive emotions towards products, trademarks and organizations.",
+						"sourceTitle": "GfK Austria, 2017",
+						"sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
+						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+					},
+					"_2": {
+						"quote": "Many trademarks have difficulties to market their products and services to Millennials.",
+						"sourceTitle": "GfK Austria, 2017",
+						"sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
+						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+					},
+					"_3": {
+						"quote": "Future innovations will be led by four cornerstones: “Freedom”, “Rewards”, “Security” and “Wellbeing”.",
+						"sourceTitle": "GfK Austria, 2017",
+						"sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
+						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+					},
+					"_4": {
+						"quote": "Corporate-Social-Responsibility becomes increasingly interesting for consumers. 78 % of Austrians state that CSR is extremely important. Moreover, more and more Austrians expect that organizations engage socially, especially related to environment-protection and their region. Consumers are convinced that organizations should invest in CSR and profit from such measures. Social responsibility leads to a better organization-reputation, which then leads to the organization’s success.",
+						"sourceTitle": "GfK Austria, 2018/2019",
+						"sourceLongTitle": "CSR Monitor 2019. Austria: GfK Austria", 
+						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
+					},
+					"_5": {
+						"quote": "Physical- and mind sport, awareness, transparency, “Hygge”, We-Culture, “Good-Citizen”, Social-Business, Flexitarian, Zero-Waste, Minimalism, Mindful-Economy, Glocalization [sic], Outsourcing of daily routines, Edutainment, Life-long learning, social-networks, “OMline” [sic]4, Playfulness, Connectivity, Creative-Economy and many more will play an important role in the future.",
+						"sourceTitle": "Zukunftsinstitut, 2019",
+						"sourceLongTitle": "Megatrend-Documentation. Deutschland: Zukunftsinstitut",
+						"sourceExactSource": "Retrieved 6 24, 2019, from https://onlineshop.zukunftsinstitut.de/shop/megatrend-dokumentation/"
+					},
+					"_6": {
+						"quote": "The percentage of elder people rises. According to “Consumer Trends Report of Euromonitor”, products and services which do not focus on specific age groups will be more successful in future. All age groups have more commonalities as the majority thinks. Thus, enterprises who focus rather on similarities than of differences across different age groups might profit more than others.",
+						"sourceTitle": "Lange, 2019",
+						"sourceLongTitle": "Manager-Magazin",
+						"sourceExactSource": "Retrieved 6 24, 2019, from Top 10 Global Consumer Trends: https://www.manager-magazin.de/unternehmen/handel/top-10-global-consumer-trends-2019-von-euromonitor-verbrauchertrends-a-1247990.html"
+					},
+					"_7": {
+						"quote": "Shawn Achor, a Professor at Harvard discovered that 75 % of job success can be predicted by happiness as it leads to more intelligence, creativity, productivity, a longer life and more money.",
+						"sourceTitle": "Achor, S., 2010",
+						"sourceLongTitle": "The Happiness Advantage",
+						"sourceExactSource": "How a Positive Brain Fuels Success in Work and Life. USA: Currency."
+					},
+					"_8": {
+						"quote": "An organization’s image has a more specific influence on the customers’ perceptions of product and service quality while the organization’s reputation has a broader influence on perceptions of customer value and customer loyalty.",
+						"sourceTitle": "Cretu, A. E., & Roderick, B. J., 2017",
+						"sourceLongTitle": "The influence of brand image and company reputation where manufacturers market to small firms: A customer value perspective.",
+						"sourceExactSource": "Industrial marketing management, 36(2), pp. 230-240. doi:https://doi.org/10.1016/j.indmarman.2005.08.013"
+					},
+					"_9": {
+						"quote": "According to a French survey the broad public thinks that regular ads are obsolete, while Sponsoring is considered State-of-the-Art.",
+						"sourceTitle": "Walliser, 2013",
+						"sourceLongTitle": "Sponsoring: Bedeutung, Wirkung und Kontrollmöglichkeiten.",
+						"sourceExactSource": "Springer-Verlag"
+					}
+				}
+			}
+		},
+		"whyhow": {
+			"header": {
+				"title": "Wavect - How does it work?",
+				"description": "Change the world by using our app, win relevant prizes and improve your curriculum vitae by gathering points (Micro-Volunteering)."
+			},
+			"intro": {
+				"title": "How does it work?",
+				"description": "It's really easy! As soon as you have a profile on our 'social network' (we don't like it's actual definition & reputation, but our platform is more easily understood by this term), you are eligible to win prizes by doing something good for humanity.",
+				"altImg": "Wavect App Mockup",
+				"iconcols": {
+					"register": {
+						"title": "Register",
+						"description": "You may tell us what's important to you which helps us to show you{' '} <strong>relevant challenges based on your moral</strong> (e.g. environmental challenges esp. related to plastic,...)."
+					},
+					"solvechallenges": {
+						"title": "Solve challenges and...",
+						"description": "...<strong>proof it with videos/pictures or even ask a friend</strong> for verification. Additionally, your followers will rate your post based on it's authenticity to ensure high quality & fair-play."
+					},
+					"sponsoring": {
+						"title": "Sponsoring", 
+						"description": "If you win a prize, the sponsor will contact you to exchange further details about your prize. You will always gather karma points which will be shown on your profile and can be attached to your CV as <strong> Micro-Volunteering</strong>."
+					},
+					"impact": {
+						"title": "Your Impact",
+						"description": "Your impact will be aggregated to show you & your followers how much impact you had on our small planet. <strong>No more 'I can't change anything'</strong>."
+					}
+				}
+			},
+			"exemplarychallenges": {
+				"title": "Exemplary challenges",
+				"categories": {
+					"health": "Health challenge",
+					"environment": "Environmental challenge",
+					"social": "Social challenge"
+				},
+				"challenges": {
+					"invitestrangerdrink": {
+						"title": "Invite a stranger for a drink",
+						"description": "Approach someone on the street or any other public place where people may be responsive to such a gesture and invite them for a casual drink. Take a selfie with or without your possibly new friend and claim your prize."
+					},
+					"goforawalk": {
+						"title": "Go for a 15 minute walk",
+						"description": "Walking is incredible healthy as you free your mind, reduce your stress level, get fresh air and the best of it: you even burn fat. Just take a selfie at your final destination or share your route via screenshot."
+					},
+					"gathertrash": {
+						"title": "Gather 5 pieces of trash",
+						"description": "Gather cigarette stubs, plastic bottles or anything else which doesn't belong to the environment and dispose it properly. Just don't forget about your hygiene and wear (reusable) gloves. Take a picture of everything you gathered and post it."
+					},
+					"assistretirementhome": {
+						"title": "Assist in a retirement home",
+						"description": "The older you get the more lonely you might become as e.g. many loose contact to friends or because of dying family-members. Help out in a retirement home, talk about life and become wiser & more mature than you can imagine."
+					},
+					"holdhandstand": {
+						"title": "Hold a 5 second handstand",
+						"description": "A controlled and well-formed handstand is hard to learn, but good for your intramuscular coordination. Nevertheless, most athletes neglect training their balance and body tension. Record your handstand and upload it on our platform."
+					},
+					"planttree": {
+						"title": "Plant a tree",
+						"description": "Every tree counts. Huge forest fires have been active in the last few years and destroyed an enormous wooded area. Buy a seedling and plant it in an approved stretch of land. Take a selfie or record a video when planting your tree."
+					}
+				}
+			}
+		},
+		"traction": {
+			"header": {
+				"title": "Wavect - Traction",
+				"description": "We want to change something, but we need you! See our partners, past sponsors, competitions etc."
+			},
+			"intro": {
+				"title": "Traction",
+				"description": "Young startups need to prove themselves; they need feedback & traction. That's why we participate in several competitions and always search for strong partners."
+			},
+			"competitions": {
+				"title": "Past competitions",
+				"description": "You may know us from one of the following competitions. Drop us a <a href='mailto:office@wavect.io'>message</a> if you think we should participate in a particular competition.",
+				"comps": {
+					"adventurex_2019": {
+						"title":"Adventure X - Innsbruck",
+						"subtitle": "Finalist (2019)",
+						"description": "AdventureX is a business model competition for young startups and already established companies. Our business model has been selected from over 55 companies to compete with the top 6 startups in Tyrol."
+					},
+					"beadydays_2019": {
+						"title": "Beady Awards - Kufstein",
+						"subtitle": "Finalist (2019)",
+						"description": "The Beady Awards honor the best concepts to make the world a better place and it's organizers claim to be the youngest festival in Austria. Our business model got into the top 3 startups in October 2019."
+					}
+				}
+			},
+			"partners": {
+				"title": "Our partners",
+				"description": "In today's globalized and interconnected world strong partners have never been that important.",
+				"partner": {
+					"digipuls": {
+						"altImg": "DigiPuls, Oliver Feldkircher",
+						"title": "digiPULS",
+						"subtitle": "Oliver Feldkircher, CEO",
+						"description": "Our relationship to Oliver & his professional consultancy may be described as an amicably mentor."
+					},
+					"innc": {
+						"altImg": "Inncubator, Innsbruck (WiFi, Tyrol)",
+						"title": "Inncubator",
+						"subtitle": "Incubator in Innsbruck",
+						"description": "The Inncubator [sic] is an incubator program by the university of Innsbruck and the WKO for young startups."
+					}
+				}
+			}
+		},
         "landingPage": {
             "header": {
                 "title": "Become a hero - Let's make an impact",
                 "description": "Solve challenges related to environment protection, health and solidarity & win personalized prizes based on your interests."
-            }
+            },
+			"intro": {
+				"title": "Let's face the truth",
+				"description": "The world faces incredible huge problems: decreasing solidarity & social interaction in our society, climate change, growing pollution & health issues. We designed a platform which aims to address those issues by offering an economical value for organizations & users.",
+				"iconcols": {
+					"relevantchallenges":{
+						"title": "Relevant challenges",
+						"description": "Solve challenges based on what's important to you. You think climate change is a big issue, then you'll receive related challenges which help to address that problem."
+					},
+					"personalizedprizes": {
+						"title": "Personalized prizes",
+						"description": "Solving challenges takes energy. By solving some you'll win relevant prizes which address your interests. If you love travelling or skiing, you might win related prizes."
+					},
+					"microvolunteering": {
+						"title": "Micro-Volunteering",
+						"description": "Gather points for your profile's reputation by solving challenges. This reputation can be attached to your CV which shows your social commitment. The whole app focuses heavily on Gamification."
+					},
+					"measurableimpact": {
+						"title": "Measurable Impact",
+						"description": "The impact of each challenge will be aggregated which shows you what & how much impact you and others have had on our small world. No more 'I cannot change anything'!"
+					}
+				}
+			},
+			"aboutus": {
+				"title": "Let's talk about us",
+				"cto": {
+					"imgAltTag":"CTO: Christof Jori",
+					"name": "Christof Jori",
+					"duty": "CTO",
+					"ownIntro": "I'm Chris and I'm passionate about programming. Thus, I love to learn new, especially cutting-edge technologies. My vision is to create a unique project that does have an immense impact on our society. Never stop learning!"
+				},
+				"cmo": {
+					"imgAltTag": "CMO: Mariella Galneder",
+					"name": "Mariella Galneder",
+					"duty": "CMO",
+					"ownIntro": "My name is Mariella, but as soon as I start talking English, I introduce myself as Mary. I love dedicated people who turn their dreams into a vision and pursue it. And my vision is it to open the people’s eyes and make a change together."
+				},
+				"cio": {
+					"imgAltTag": "CIO: Reza Shokri",
+					"name": "Reza Shokri", 
+					"duty": "CIO",
+					"ownIntro": "Hi, my name is Reza. I'm an entrepreneur & software engineer. It's easier than ever before to have a social, ecological & economical impact. So, my passion is all about disruptive technologies & innovations with the possibility to reach out to billions of people."
+				},
+				"cfo": {
+					"imgAltTag": "CFO: Daniel Gosterxeier",
+					"name": "Daniel Gosterxeier", 
+					"duty": "CFO",
+					"ownIntro": "Hey everybody! I’m Daniel and my role at Wavect is to find new strategy partners, networking and all about sales & finances. I get up everyday being happy, a positive mind to influence the people around me. My vision is a world without tribes - we're all a big family sitting in one boat."
+				},
+				"ceo": {
+					"imgAltTag": "CEO: Kevin Riedl",
+					"name": "Kevin Riedl",
+					"duty": "CEO",
+					"ownIntro": "I'm Kevin and I want to leave Earth just a little bit better than I found it. I love challenges and consider myself as a lifelong learner & visionary. Thus, I dream of changing the way how people interact with each other and I'm sure that our software application may be a good way to achieve that goal."
+				}
+			}
         }
     }
 }

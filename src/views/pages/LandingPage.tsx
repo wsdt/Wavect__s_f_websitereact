@@ -31,11 +31,12 @@ import NavBar from '../components/Navbars/NavBar'
 // assets
 import {translate} from 'react-polyglot'
 import {RouteProps} from 'react-router'
-import imgChristofJori from '../../assets/img/team/christof_jori.jpg'
-import imgDanielGosterxeier from '../../assets/img/team/daniel_gosterxeier.jpg'
-import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
-import imgMariellaGalneder from '../../assets/img/team/mariella_galneder.jpg'
-import imgRezaShokri from '../../assets/img/team/reza_shokri.jpg'
+import imgChristofJori from '../../assets/img/team/circle/christof_jori.png'
+import imgDanielGosterxeier from '../../assets/img/team/circle/daniel_gosterxeier.png'
+import imgKevinRiedl from '../../assets/img/team/circle/kevin_riedl.png'
+import imgMariellaGalneder from '../../assets/img/team/circle/mariella_galneder.png'
+import imgRezaShokri from '../../assets/img/team/circle/reza_shokri.png'
+import _schema from '../../controllers/system/multilinguality/_schema.json'
 import ModalVideo from '../components/Modals/ModalVideo'
 import {breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from './CollapseIconText'
@@ -45,10 +46,13 @@ import SocialShareBar from './SocialShareBar/SocialShareBar'
 
 interface ILandingPageProps {
     routeProps:RouteProps,
-    t: (key:string) => string,
+    t: (key:string, ...args:any) => string,
 }
 
-function LandingPage(_: ILandingPageProps) {
+function LandingPage(props: ILandingPageProps) {
+    const {t} = props
+    const schema = _schema.pages.landingPage
+
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
         document.body.classList.add('profile-page')
@@ -59,9 +63,9 @@ function LandingPage(_: ILandingPageProps) {
     return (
         <>
             <Helmet>
-                <title>Become a hero - Let's make an impact</title>
+                <title>{t(schema.header.title)}</title>
                 <meta name='description'
-                      content='Solve challenges related to environment protection, health and solidarity & win personalized prizes based on your interests.'/>
+                      content={t(schema.header.description)}/>
                       <meta name='keywords' content='wavect,challenge,environment,social,health,home'/>
             </Helmet>
 
@@ -72,14 +76,8 @@ function LandingPage(_: ILandingPageProps) {
                     <Container>
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
-                                <h2 className='title'>Let's face the truth</h2>
-                                <h5 className='description'>
-                                    The world faces incredible huge problems: decreasing solidarity & social interaction
-                                    in our society, climate
-                                    change, growing pollution & health issues. We designed a platform which aims to
-                                    address those issues by offering
-                                    an economical value for organizations & users.
-                                </h5>
+                                <h2 className='title'>{t(schema.intro.title)}</h2>
+                                <h5 className='description'>{t(schema.intro.description)}</h5>
                                 <br/>
                                 <ModalVideo/>
                             </Col>
@@ -88,52 +86,43 @@ function LandingPage(_: ILandingPageProps) {
                         <br/>
                         <Row>
                             <Col md='3'>
-                                <CollapseIconText icon={faListAlt} title='Relevant challenges' descr=" Solve challenges based on what's important to you. You think climate change
-                                            is a big issue, then you'll
-                                            receive related challenges which help to address that problem."/>
+                                <CollapseIconText icon={faListAlt} title={t(schema.intro.iconcols.relevantchallenges.title)}
+                                                  descr={t(schema.intro.iconcols.relevantchallenges.description)}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faAward} title='Personalized prizes' descr="Solving challenges takes energy. By solving some you'll win relevant prizes
-                                            which address your interests.
-                                            If you love travelling or skiing, you might win related prizes."/>
+                                <CollapseIconText icon={faAward} title={t(schema.intro.iconcols.personalizedprizes.title)}
+                                                  descr={t(schema.intro.iconcols.personalizedprizes.description)}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faHandsHelping} title='Micro-Volunteering' descr="Gather points for your profile's reputation by solving challenges. This reputation can be attached to your
-                                                  CV which shows your social commitment. The whole app focuses heavily on Gamification."/>
+                                <CollapseIconText icon={faHandsHelping} title={t(schema.intro.iconcols.microvolunteering.title)}
+                                                  descr={t(schema.intro.iconcols.microvolunteering.description)}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faRuler} title='Measurable Impact' descr="The impact of each challenge will be aggregated which shows you what & how
-                                            much impact you and others have
-                                            had on our small world. No more 'I cannot change anything'!"/>
+                                <CollapseIconText icon={faRuler} title={t(schema.intro.iconcols.measurableimpact.title)}
+                                                  descr={t(schema.intro.iconcols.measurableimpact.description)}/>
                             </Col>
                         </Row>
                     </Container>
                 </div>
                 <div className='section section-dark text-center'>
                     <Container>
-                        <h2 className='title'>Let's talk about us</h2>
+                        <h2 className='title'>{t(schema.aboutus.title)}</h2>
                         <Row>
                             <Col md='4'>
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <GrayColorImg alt='CTO: Christof Jori' src={imgChristofJori}/>
+                                            <GrayColorImg alt={t(schema.aboutus.cto.imgAltTag)} src={imgChristofJori}/>
                                         </a>
                                     </div>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
-                                                <CardTitle tag='h4'>Christof Jori</CardTitle>
-                                                <h6 className='card-category'>CTO</h6>
+                                                <CardTitle tag='h4'>{t(schema.aboutus.cto.name)}</CardTitle>
+                                                <h6 className='card-category'>{t(schema.aboutus.cto.duty)}</h6>
                                             </div>
                                         </a>
-                                        <p className='card-description text-center'>
-                                            I'm Chris and I'm passionate about programming. Thus, I love to learn new,
-                                            especially cutting-edge
-                                            technologies. My vision is to create a unique project that does have an
-                                            immense impact on our society.
-                                            Never stop learning!
-                                        </p>
+                                        <p className='card-description text-center'>{t(schema.aboutus.cto.ownIntro)}</p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
                                         <a href='https://www.linkedin.com/in/christof-jori-a1912817a/' target='_blank'
@@ -175,23 +164,17 @@ function LandingPage(_: ILandingPageProps) {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <GrayColorImg alt='CMO: Mariella Galneder' src={imgMariellaGalneder}/>
+                                            <GrayColorImg alt={t(schema.aboutus.cmo.imgAltTag)} src={imgMariellaGalneder}/>
                                         </a>
                                     </div>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
-                                                <CardTitle tag='h4'>Mariella Galneder</CardTitle>
-                                                <h6 className='card-category'>CMO</h6>
+                                                <CardTitle tag='h4'>{t(schema.aboutus.cmo.name)}</CardTitle>
+                                                <h6 className='card-category'>{t(schema.aboutus.cmo.duty)}</h6>
                                             </div>
                                         </a>
-                                        <p className='card-description text-center'>
-                                            My name is Mariella, but as soon as I start talking English, I introduce
-                                            myself as Mary. I love dedicated
-                                            people who turn their dreams into a vision and pursue it. And my vision is
-                                            it to open the people’s eyes
-                                            and make a change together.
-                                        </p>
+                                        <p className='card-description text-center'>{t(schema.aboutus.cmo.ownIntro)}</p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
                                         <a href='https://www.linkedin.com/in/mariella-galneder-653719180/'
@@ -226,23 +209,17 @@ function LandingPage(_: ILandingPageProps) {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <GrayColorImg alt='CIO: Reza Shokri' src={imgRezaShokri}/>
+                                            <GrayColorImg alt={t(schema.aboutus.cio.imgAltTag)} src={imgRezaShokri}/>
                                         </a>
                                     </div>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
-                                                <CardTitle tag='h4'>Reza Shokri</CardTitle>
-                                                <h6 className='card-category'>CIO</h6>
+                                                <CardTitle tag='h4'>{t(schema.aboutus.cio.name)}</CardTitle>
+                                                <h6 className='card-category'>{t(schema.aboutus.cio.duty)}</h6>
                                             </div>
                                         </a>
-                                        <p className='card-description text-center'>
-                                            Hi, my name is Reza. I'm an entrepreneur & software engineer. It's easier
-                                            than ever before to have a
-                                            social, ecological & economical impact. So, my passion is all about
-                                            disruptive technologies & innovations
-                                            with the possibility to reach out to billions of people.
-                                        </p>
+                                        <p className='card-description text-center'>{t(schema.aboutus.cio.ownIntro)}</p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
                                         <a href='https://shokri.at' target='_blank' rel='noopener noreferrer'>
@@ -291,24 +268,17 @@ function LandingPage(_: ILandingPageProps) {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <GrayColorImg alt='CFO: Daniel Gosterxeier' src={imgDanielGosterxeier}/>
+                                            <GrayColorImg alt={t(schema.aboutus.cfo.imgAltTag)} src={imgDanielGosterxeier}/>
                                         </a>
                                     </div>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
-                                                <CardTitle tag='h4'>Daniel Gosterxeier</CardTitle>
-                                                <h6 className='card-category'>CFO</h6>
+                                                <CardTitle tag='h4'>{t(schema.aboutus.cfo.name)}</CardTitle>
+                                                <h6 className='card-category'>{t(schema.aboutus.cfo.duty)}</h6>
                                             </div>
                                         </a>
-                                        <p className='card-description text-center'>
-                                            Hey everybody! I’m Daniel and my role at Wavect is to find new strategy
-                                            partners, networking and all about
-                                            sales & finances. I get up everyday being happy, a positive mind to
-                                            influence the people around me. My
-                                            vision is a world without tribes - we're all a big family sitting in one
-                                            boat.
-                                        </p>
+                                        <p className='card-description text-center'>{t(schema.aboutus.cfo.ownIntro)}</p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
                                         <a href='https://www.linkedin.com/in/daniel-e-gosterxeier/' target='_blank'
@@ -343,24 +313,17 @@ function LandingPage(_: ILandingPageProps) {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <GrayColorImg alt='CEO: Kevin Riedl' src={imgKevinRiedl}/>
+                                            <GrayColorImg alt={t(schema.aboutus.ceo.imgAltTag)} src={imgKevinRiedl}/>
                                         </a>
                                     </div>
                                     <CardBody>
                                         <a href='//#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
-                                                <CardTitle tag='h4'>Kevin Riedl</CardTitle>
-                                                <h6 className='card-category'>CEO</h6>
+                                                <CardTitle tag='h4'>{t(schema.aboutus.ceo.name)}</CardTitle>
+                                                <h6 className='card-category'>{t(schema.aboutus.ceo.duty)}</h6>
                                             </div>
                                         </a>
-                                        <p className='card-description text-center'>
-                                            I'm Kevin and I want to leave Earth just a little bit better than I found
-                                            it. I love challenges and
-                                            consider myself as a lifelong learner & visionary. Thus, I dream of changing
-                                            the way how people interact
-                                            with each other and I'm sure that our software application may be a good way
-                                            to achieve that goal.
-                                        </p>
+                                        <p className='card-description text-center'>{t(schema.aboutus.ceo.ownIntro)}</p>
                                     </CardBody>
                                     <CardFooter className='text-center'>
                                         <a href='https://www.linkedin.com/in/kevin-riedl-947219158' target='_blank'
@@ -401,7 +364,7 @@ function LandingPage(_: ILandingPageProps) {
                     </Container>
                 </div>
 
-                <ContactForm />
+                <ContactForm t={t} />
 
                 <SocialShareBar shareUrl={breadCrumbHome.link}/>
             </div>

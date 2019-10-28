@@ -26,42 +26,48 @@ import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 
 // assets
+import {Helmet} from 'react-helmet'
 import {RouteProps} from 'react-router'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
+import _schema from '../../controllers/system/multilinguality/_schema.json'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
 import {breadCrumbBlogs, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from './SocialShareBar/SocialShareBar'
-import {Helmet} from "react-helmet";
+import {translate} from "react-polyglot";
 
-function Blog(_: RouteProps) {
+interface IBlogProps {
+    routeProps:RouteProps,
+    t: (key:string, ...args:any) => string,
+}
+
+function Blog(props: IBlogProps) {
+    const {t} = props
+    const schema = _schema.pages.blog
+
     return <>
         <Helmet>
-            <title>Blogs of Co-Founders</title>
+            <title>{t(schema.header.title)}</title>
             <meta name='description'
-                  content='We all are just humans. That is why our co-founders posted some blog posts about personal development, technical as well as economical topics and some stories about their lives.'/>
+                  content={t(schema.header.description)}/>
             <meta name='keywords' content='wavect,blog,founder,post,personal,development,software,technical,economical,topic'/>
         </Helmet>
 
         <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]}>
-            <p>
-                Here you'll find personal blogs of our team-members. Topics may range from technical, economical,
-                psychological as well as spiritual
-                ones. Feel free to share them :-)
-            </p>
+            <p>{t(schema.intro.description)}</p>
             <br/>
             {/*
                             <Button className='btn-round' color='default' outline={true}>
                                 <i className='fa fa-cog' /> Settings
                             </Button>*/}
 
-            <a href="/blogs/kevin-riedl" style={{color: '#fff'}}>
+            <a href='/blogs/kevin-riedl' style={{color: '#fff'}}>
                 <Card style={{width: '20rem'}}>
-                    <GrayColorImg src={imgKevinRiedl} alt="CEO: Kevin Riedl"/>
+                    <GrayColorImg src={imgKevinRiedl} alt={t(schema.intro.blogs.kevin_riedl.imgAltTag)}/>
                     <CardBody>
-                        <CardTitle style={{fontWeight: 'bold'}}>Kevin Riedl, Bsc.</CardTitle>
-                        <CardText>Here you'll find economical, technical & personal posts.</CardText>
-                        <Button color="info">Read posts</Button>
+                        <CardTitle style={{fontWeight: 'bold'}}>{t(schema.intro.blogs.kevin_riedl.title)}</CardTitle>
+                        <CardText>{t(schema.intro.blogs.kevin_riedl.description)}</CardText>
+                        <Button color='info'>{t(schema.general.readposts)}</Button>
                     </CardBody>
                 </Card>
             </a>
@@ -71,4 +77,4 @@ function Blog(_: RouteProps) {
     </>
 }
 
-export default Blog
+export default translate()(Blog)

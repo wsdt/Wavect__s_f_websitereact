@@ -31,7 +31,7 @@ import B2G from '../../../views/pages/for_organizations/b2g/B2G'
 import Impressum from '../../../views/pages/Impressum'
 import LandingPage from '../../../views/pages/LandingPage'
 import Traction from '../../../views/pages/Traction'
-import WhyHow from '../../../views/pages/WhyHow'
+import WhyHow from '../../../views/pages/whyhow/WhyHow'
 import {BrowserRouter} from "react-router-dom";
 
 const CustomRouter = () => {
