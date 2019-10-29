@@ -61,7 +61,7 @@ function B2G(props: IB2GProps) {
             </Helmet>
 
             <NavBar />
-            <B2GPageHeader />
+            <B2GPageHeader t={t} />
             <div className='main'>
                 <div className='section text-center'>
                     <Container>

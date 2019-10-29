@@ -8,6 +8,13 @@
         "accesssource": "general.accesssource"
     },
     "common_components": {
+        "modalvideo": {
+            "landingpage": {
+                "btnLbl": "common_components.modalvideo.landingpage.btnLbl",
+                "modalTitle": "common_components.modalvideo.landingpage.modalTitle",
+                "iframeTitle": "common_components.modalvideo.landingpage.iframeTitle"
+            }
+        },
         "navbar": {
             "home": {
                 "title": "common_components.navbar.home.title",
@@ -166,6 +173,53 @@
                 "title": "pages.b2b.header.title",
                 "description": "pages.b2b.header.description"
             },
+            "slider": {
+                "slide_0": {
+                    "title": "pages.b2b.slider.slide_0.title",
+                    "subtitle": "pages.b2b.slider.slide_0.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_0.bgImgAlt"
+                },
+                "slide_1": {
+                    "title": "pages.b2b.slider.slide_1.title",
+                    "subtitle": "pages.b2b.slider.slide_1.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_1.bgImgAlt"
+                },
+                "slide_2": {
+                    "title": "pages.b2b.slider.slide_2.title",
+                    "subtitle": "pages.b2b.slider.slide_2.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_2.bgImgAlt"
+                },
+                "slide_3": {
+                    "title": "pages.b2b.slider.slide_3.title",
+                    "subtitle": "pages.b2b.slider.slide_3.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_3.bgImgAlt"
+                },
+                "slide_4": {
+                    "title": "pages.b2b.slider.slide_4.title",
+                    "subtitle": "pages.b2b.slider.slide_4.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_4.bgImgAlt"
+                },
+                "slide_5": {
+                    "title": "pages.b2b.slider.slide_5.title",
+                    "subtitle": "pages.b2b.slider.slide_5.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_5.bgImgAlt"
+                },
+                "slide_6": {
+                    "title": "pages.b2b.slider.slide_6.title",
+                    "subtitle": "pages.b2b.slider.slide_6.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_6.bgImgAlt"
+                },
+                "slide_7": {
+                    "title": "pages.b2b.slider.slide_7.title",
+                    "subtitle": "pages.b2b.slider.slide_7.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_7.bgImgAlt"
+                },
+                "slide_8": {
+                    "title": "pages.b2b.slider.slide_8.title",
+                    "subtitle": "pages.b2b.slider.slide_8.subtitle",
+                    "bgImgAlt": "pages.b2b.slider.slide_8.bgImgAlt"
+                }
+            },
             "intro": {
                 "title": "pages.b2b.intro.title",
                 "description": {
@@ -258,6 +312,58 @@
                 "title": "pages.b2g.header.title",
                 "description": "pages.b2g.header.description"
             },
+            "slider": {
+                "slide_0": {
+                    "title": "pages.b2g.slider.slide_0.title",
+                    "subtitle": "pages.b2g.slider.slide_0.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_0.bgImgAlt"
+                },
+                "slide_1": {
+                    "title": "pages.b2g.slider.slide_1.title",
+                    "subtitle": "pages.b2g.slider.slide_1.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_1.bgImgAlt"
+                },
+                "slide_2": {
+                    "title": "pages.b2g.slider.slide_2.title",
+                    "subtitle": "pages.b2g.slider.slide_2.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_2.bgImgAlt"
+                },
+                "slide_3": {
+                    "title": "pages.b2g.slider.slide_3.title",
+                    "subtitle": "pages.b2g.slider.slide_3.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_3.bgImgAlt"
+                },
+                "slide_4": {
+                    "title": "pages.b2g.slider.slide_4.title",
+                    "subtitle": "pages.b2g.slider.slide_4.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_4.bgImgAlt"
+                },
+                "slide_5": {
+                    "title": "pages.b2g.slider.slide_5.title",
+                    "subtitle": "pages.b2g.slider.slide_5.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_5.bgImgAlt"
+                },
+                "slide_6": {
+                    "title": "pages.b2g.slider.slide_6.title",
+                    "subtitle": "pages.b2g.slider.slide_6.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_6.bgImgAlt"
+                },
+                "slide_7": {
+                    "title": "pages.b2g.slider.slide_7.title",
+                    "subtitle": "pages.b2g.slider.slide_7.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_7.bgImgAlt"
+                },
+                "slide_8": {
+                    "title": "pages.b2g.slider.slide_8.title",
+                    "subtitle": "pages.b2g.slider.slide_8.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_8.bgImgAlt"
+                },
+                "slide_9": {
+                    "title": "pages.b2g.slider.slide_9.title",
+                    "subtitle": "pages.b2g.slider.slide_9.subtitle",
+                    "bgImgAlt": "pages.b2g.slider.slide_9.bgImgAlt"
+                }
+            },
             "intro": {
                 "title": "pages.b2g.intro.title",
                 "description": {
@@ -349,6 +455,53 @@
             "header": {
                 "title": "pages.whyhow.header.title",
                 "description": "pages.whyhow.header.description"
+            },
+            "slider": {
+                "slide_0": {
+                    "title": "pages.whyhow.slider.slide_0.title",
+                    "subtitle": "pages.whyhow.slider.slide_0.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_0.bgImgAlt"
+                },
+                "slide_1": {
+                    "title": "pages.whyhow.slider.slide_1.title",
+                    "subtitle": "pages.whyhow.slider.slide_1.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_1.bgImgAlt"
+                },
+                "slide_2": {
+                    "title": "pages.whyhow.slider.slide_2.title",
+                    "subtitle": "pages.whyhow.slider.slide_2.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_2.bgImgAlt"
+                },
+                "slide_3": {
+                    "title": "pages.whyhow.slider.slide_3.title",
+                    "subtitle": "pages.whyhow.slider.slide_3.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_3.bgImgAlt"
+                },
+                "slide_4": {
+                    "title": "pages.whyhow.slider.slide_4.title",
+                    "subtitle": "pages.whyhow.slider.slide_4.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_4.bgImgAlt"
+                },
+                "slide_5": {
+                    "title": "pages.whyhow.slider.slide_5.title",
+                    "subtitle": "pages.whyhow.slider.slide_5.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_5.bgImgAlt"
+                },
+                "slide_6": {
+                    "title": "pages.whyhow.slider.slide_6.title",
+                    "subtitle": "pages.whyhow.slider.slide_6.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_6.bgImgAlt"
+                },
+                "slide_7": {
+                    "title": "pages.whyhow.slider.slide_7.title",
+                    "subtitle": "pages.whyhow.slider.slide_7.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_7.bgImgAlt"
+                },
+                "slide_8": {
+                    "title": "pages.whyhow.slider.slide_8.title",
+                    "subtitle": "pages.whyhow.slider.slide_8.subtitle",
+                    "bgImgAlt": "pages.whyhow.slider.slide_8.bgImgAlt"
+                }
             },
             "intro": {
                 "title": "pages.whyhow.intro.title",
@@ -456,6 +609,10 @@
             "header": {
                 "title": "pages.landingPage.header.title",
                 "description": "pages.landingPage.header.description"
+            },
+            "landingview": {
+                "title": "pages.landingPage.landingview.title",
+                "subtitle": "pages.landingPage.landingview.subtitle"
             },
             "intro": {
                 "title": "pages.landingPage.intro.title",

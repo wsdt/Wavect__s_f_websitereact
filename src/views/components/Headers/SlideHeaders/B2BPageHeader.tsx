@@ -33,8 +33,16 @@ import imgB2B_5 from '../../../../assets/img/b2b/carousel/imgB2B_5.jpg'
 import imgB2B_6 from '../../../../assets/img/b2b/carousel/imgB2B_6.jpg'
 import imgB2B_7 from '../../../../assets/img/b2b/carousel/imgB2B_7.jpg'
 import imgB2B_8 from '../../../../assets/img/b2b/carousel/imgB2B_8.jpg'
+import _schema from "../../../../controllers/system/multilinguality/_schema.json";
 
-function B2BPageHeader() {
+interface IB2BPageHeaderProps {
+    t: (key: string, ...args: any) => string,
+}
+
+function B2BPageHeader(props:IB2BPageHeaderProps) {
+    const {t} = props
+    const schema = _schema.pages.b2b.slider
+
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width, height } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
@@ -46,82 +54,82 @@ function B2BPageHeader() {
                 <Slider>
                     <CarouselSlide
                         index={0}
-                        title="Sponsor challenges with rebates, products, vouchers or even cash."
-                        subtitle="Causing real environmental, social or health-related impact via sponsoring has never been so easy."
+                        title={t(schema.slide_0.title)}
+                        subtitle={t(schema.slide_0.subtitle)}
                         bgImage={imgB2B_0}
-                        bgImageAlt="Desk full of working material"
+                        bgImageAlt={t(schema.slide_0.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={1}
-                        title="How does it work?"
-                        subtitle="Select a challenge, choose what to sponsor and acquire new loyal customers by triggering emotions."
+                        title={t(schema.slide_1.title)}
+                        subtitle={t(schema.slide_1.subtitle)}
                         bgImage={imgB2B_1}
-                        bgImageAlt="Books with instructions"
+                        bgImageAlt={t(schema.slide_1.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={2}
-                        title="Personalized CSR"
-                        subtitle="Users receive personalized challenges and win relevant prizes. This maximizes impact and allows targeting customer needs as well as customers' ethics."
+                        title={t(schema.slide_2.title)}
+                        subtitle={t(schema.slide_2.subtitle)}
                         bgImage={imgB2B_2}
-                        bgImageAlt="Individual in big city"
+                        bgImageAlt={t(schema.slide_2.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={3}
-                        title="Functional Ads are OUT"
-                        subtitle="Modern ads trigger emotions, educate and tell stories. Ads on our platform do exactly that, are subtle (e.g. small watermark on a users post) & get shared on existing social-media. "
+                        title={t(schema.slide_3.title)}
+                        subtitle={t(schema.slide_3.subtitle)}
                         bgImage={imgB2B_3}
-                        bgImageAlt="Light bulbs turned off"
+                        bgImageAlt={t(schema.slide_3.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={4}
-                        title="Enhance the reputation of your enterprise."
-                        subtitle="No idea how to start? Just sponsor a challenge instead of organizing huge CSR-Events or drafting expensive marketing campaigns. No green-washing, you cause real impact."
+                        title={t(schema.slide_4.title)}
+                        subtitle={t(schema.slide_4.subtitle)}
                         bgImage={imgB2B_4}
-                        bgImageAlt="Rating a company"
+                        bgImageAlt={t(schema.slide_4.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={5}
-                        title="Low-Priced CSR"
-                        subtitle="CSR becomes increasingly important. Every sponsor has to pay a small fee related to the size of their organization. Our service itself & this price-scheme make CSR more accessible to SMEs."
+                        title={t(schema.slide_5.title)}
+                        subtitle={t(schema.slide_5.subtitle)}
                         bgImage={imgB2B_5}
-                        bgImageAlt="Small company working on Corporate-Social-Responsibility (CSR) strategies"
+                        bgImageAlt={t(schema.slide_5.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={6}
-                        title="Attention = Revenue"
-                        subtitle="Nothing generates more yields than attention. Regular ads need to be expensively developed and have a high risk of becoming a bummer. Sponsor a challenge, cause impact and users will share their stories!"
+                        title={t(schema.slide_6.title)}
+                        subtitle={t(schema.slide_6.subtitle)}
                         bgImage={imgB2B_6}
-                        bgImageAlt="Attention equals revenues"
+                        bgImageAlt={t(schema.slide_6.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={7}
-                        title="High chance viral marketing"
-                        subtitle="Making an ad to go viral is incredible costly and hard. In such cases quantity may increase your chance of viral posts. By sponsoring a challenge users share related media on our & other platforms with dedication to your organization."
+                        title={t(schema.slide_7.title)}
+                        subtitle={t(schema.slide_7.subtitle)}
                         bgImage={imgB2B_7}
-                        bgImageAlt="Virus - Viral Marketing"
+                        bgImageAlt={t(schema.slide_7.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={8}
-                        title="Word-of-Mouth at its best"
-                        subtitle="Just imagine people telling friends what prizes they won by doing something good. It's basically a raffle without risking money."
+                        title={t(schema.slide_8.title)}
+                        subtitle={t(schema.slide_8.subtitle)}
                         bgImage={imgB2B_8}
-                        bgImageAlt="Word-of-Mouth Marketing"
+                        bgImageAlt={t(schema.slide_8.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />

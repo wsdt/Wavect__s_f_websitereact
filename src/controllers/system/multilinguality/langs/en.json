@@ -8,6 +8,13 @@
 		"accesssource": "Access Source"
 	},
 	"common_components": {
+		"modalvideo": {
+			"landingpage": {
+				"btnLbl": "Watch video",
+				"modalTitle": "Pitch-Video (German)",
+				"iframeTitle": "Facebook Video"
+			}
+		},
 		"navbar": {
 			"home": {
 				"title": "Home",
@@ -166,6 +173,53 @@
 				"title": "Wavect for Enterprises",
 				"description": "Personalized & Low-Priced Corporate Social Responsibility. Create real impact, acquire new customers and improve your image. Modern storytelling is made by users."
 			},
+			"slider": {
+				"slide_0": {
+					"title": "Sponsor challenges with rebates, products, vouchers or even cash.",
+					"subtitle": "Causing real environmental, social or health-related impact via sponsoring has never been so easy.",
+					"bgImgAlt": "Desk full of working material"
+				},
+				"slide_1": {
+					"title": "How does it work?",
+					"subtitle": "Select a challenge, choose what to sponsor and acquire new loyal customers by triggering emotions.",
+					"bgImgAlt": "Books with instructions"
+				},
+				"slide_2": {
+					"title": "Personalized CSR",
+					"subtitle": "Users receive personalized challenges and win relevant prizes. This maximizes impact and allows targeting customer needs as well as customers' ethics.",
+					"bgImgAlt": "Individual in big city"
+				},
+				"slide_3": {
+					"title": "Functional Ads are OUT",
+					"subtitle": "Modern ads trigger emotions, educate and tell stories. Ads on our platform do exactly that, are subtle (e.g. small watermark on a users post) & get shared on existing social-media.",
+					"bgImgAlt": "Light bulbs turned off"
+				},
+				"slide_4": {
+					"title": "Enhance the reputation of your enterprise",
+					"subtitle": "No idea how to start? Just sponsor a challenge instead of organizing huge CSR-Events or drafting expensive marketing campaigns. No green-washing, you cause real impact.",
+					"bgImgAlt": "Rating a company"
+				},
+				"slide_5": {
+					"title": "Low-Priced CSR",
+					"subtitle": "CSR becomes increasingly important. Every sponsor has to pay a small fee related to the size of their organization. Our service itself & this price-scheme make CSR more accessible to SMEs.",
+					"bgImgAlt": "Small company working on Corporate-Social-Responsibility (CSR) strategies"
+				},
+				"slide_6": {
+					"title": "Attention = Revenue",
+					"subtitle": "Nothing generates more yields than attention. Regular ads need to be expensively developed and have a high risk of becoming a bummer. Sponsor a challenge, cause impact and users will share their stories!",
+					"bgImgAlt": "Attention equals revenues"
+				},
+				"slide_7": {
+					"title": "High chance viral marketing",
+					"subtitle": "Making an ad to go viral is incredible costly and hard. In such cases quantity may increase your chance of viral posts. By sponsoring a challenge users share related media on our & other platforms with dedication to your organization.",
+					"bgImgAlt": "Virus - Viral Marketing"
+				},
+				"slide_8": {
+					"title": "Word-of-Mouth at its best",
+					"subtitle": "Just imagine people telling friends what prizes they won by doing something good. It's basically a raffle without risking money.",
+					"bgImgAlt": "Word-of-Mouth Marketing"
+				}
+			},
 			"intro": {
 				"title": "How to sponsor a challenge?",
 				"description": {
@@ -258,6 +312,58 @@
 				"title": "Wavect for NGOs, politicians or other governmental organizations",
 				"description": "Fight societal issues right at its root right before any charity, volunteer or government needs to help. Improve the reputation of your organization and create sustainable impact."
 			},
+			"slider": {
+				"slide_0": {
+					"title": "Politician, NGO, charity, governmental organization or club?",
+					"subtitle": "Enterprises are not the only organizations which can profit from our service.",
+					"bgImgAlt": "Desk full of working material"
+				},
+				"slide_1": {
+					"title": "Sponsor challenges with cash, products, vouchers or rebates..",
+					"subtitle": ".. to acquire volunteers, to enhance your image & to engage more people to participate in your events.",
+					"bgImgAlt": "Books with instructions"
+				},
+				"slide_2": {
+					"title": "Personalized CSR",
+					"subtitle": "Users receive personalized challenges and win relevant prizes. This enables political parties, charities, communes... to convince voters, volunteers or donors to trust your organization.",
+					"bgImgAlt": "Individual in big city"
+				},
+				"slide_3": {
+					"title": "Low-Priced CSR",
+					"subtitle": "Every sponsor has to pay a small fee related to the size & type of their organization. Cause real impact without investing big sums.",
+					"bgImgAlt": "Small company working on Corporate-Social-Responsibility (CSR) strategies"
+				},
+				"slide_4": {
+					"title": "Functional Ads are OUT",
+					"subtitle": "Modern campaigns trigger emotions, educate and tell stories. Ads on our platform do exactly that, are subtle (e.g. small watermark on a users post) & get shared on existing social-media.",
+					"bgImgAlt": "Light bulbs turned off"
+				},
+				"slide_5": {
+					"title": "Shortage of Volunteers?",
+					"subtitle": "Need more volunteers for your event (e.g. gathering trash in your commune)?",
+					"bgImgAlt": "Books with instructions"
+				},
+				"slide_6": {
+					"title": "Enhance the reputation of your organization",
+					"subtitle": "If society wants you to succeed, you will succeed. Give value with 0 expectations and you'll accomplish your organization's mission.",
+					"bgImgAlt": "Rating a company"
+				},
+				"slide_7": {
+					"title": "Low Effort",
+					"subtitle": "Sponsoring a challenge is easy! We create your marketing campaign, drafting a challenge will cost you no more than 5 minutes.",
+					"bgImgAlt": "Attention equals revenues"
+				},
+				"slide_8": {
+					"title": "High chance viral marketing",
+					"subtitle": "Making an ad to go viral is incredible costly and hard. In such cases quantity may increase your chance of viral posts. By sponsoring a challenge users share related media on our & other platforms with dedication to your organization.",
+					"bgImgAlt": "Virus - Viral Marketing"
+				},
+				"slide_9": {
+					"title": "Word-of-Mouth at its best",
+					"subtitle": "Just imagine people telling friends what prizes they won by doing something good. It's basically a raffle without risking money.",
+					"bgImgAlt": "Word-of-Mouth Marketing"
+				}
+			},
 			"intro": {
 				"title": "How to sponsor a challenge?",
 				"description": {
@@ -349,6 +455,53 @@
 			"header": {
 				"title": "Wavect - How does it work?",
 				"description": "Change the world by using our app, win relevant prizes and improve your curriculum vitae by gathering points (Micro-Volunteering)."
+			},
+			"slider": {
+				"slide_0": {
+					"title": "Why do we what we do?",
+					"subtitle": "Because no one else does it!",
+					"bgImgAlt": "Poor child in slums"
+				},
+				"slide_1": {
+					"title": "We need to change!",
+					"subtitle": "Our application addresses our society's biggest issues: health, environment & solidarity",
+					"bgImgAlt": "Polluted beach"
+				},
+				"slide_2": {
+					"title": "Everyone is selfish!",
+					"subtitle": "Being selfish ensures one's survival, but endangers humanity.",
+					"bgImgAlt": "Obese women"
+				},
+				"slide_3": {
+					"title": "What's the solution?",
+					"subtitle": "Our app tells users what to do (e.g. gather trash, share food with homeless, ...), aggregates the users impact, rewards them with personalized prices & is fun!",
+					"bgImgAlt": "Homeless man seeking kindness"
+				},
+				"slide_4": {
+					"title": "It's unrealistic?",
+					"subtitle": "No, it's not. Even if we just convince one person to use our app, it'll be totally worth it!",
+					"bgImgAlt": "Plastic bag on tree"
+				},
+				"slide_5": {
+					"title": "What about charities?",
+					"subtitle": "Charities are great, but they just fight ramifications. We need to get down to the root of these troubles.",
+					"bgImgAlt": "Smoking cigarettes"
+				},
+				"slide_6": {
+					"title": "Let's be honest",
+					"subtitle": "We don't live up to this either, it just takes too much energy to do sth. good. That's why our app rewards you in a variety of ways!",
+					"bgImgAlt": "Old man exhausted"
+				},
+				"slide_7": {
+					"title": "Who rewards me?",
+					"subtitle": "Organizations (e.g. communes, charities & companies) sponsor challenges with rebates, vouchers, products or even cash. Prizes are fully personalized based on your interests.",
+					"bgImgAlt": "Fish dying in plastic"
+				},
+				"slide_8": {
+					"title": "Why would organizations sponsor challenges?",
+					"subtitle": "Let's say it's low-priced & personalized CSR, a new marketing-tool and they directly address consumers' moral values.",
+					"bgImgAlt": "Man drinking alcohol, abuse"
+				}
 			},
 			"intro": {
 				"title": "How does it work?",
@@ -457,6 +610,10 @@
                 "title": "Become a hero - Let's make an impact",
                 "description": "Solve challenges related to environment protection, health and solidarity & win personalized prizes based on your interests."
             },
+			"landingview": {
+				"title": "Become a hero",
+				"subtitle": "Solve challenges, do something good and win relevant prizes & money."
+			},
 			"intro": {
 				"title": "Let's face the truth",
 				"description": "The world faces incredible huge problems: decreasing solidarity & social interaction in our society, climate change, growing pollution & health issues. We designed a platform which aims to address those issues by offering an economical value for organizations & users.",

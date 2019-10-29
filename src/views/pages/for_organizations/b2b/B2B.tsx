@@ -60,7 +60,7 @@ function B2B(props: IB2BProps) {
             </Helmet>
 
             <NavBar/>
-            <B2BPageHeader/>
+            <B2BPageHeader t={t}/>
             <div className='main'>
                 <div className='section text-center'>
                     <Container>

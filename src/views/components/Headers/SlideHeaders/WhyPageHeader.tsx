@@ -30,97 +30,106 @@ import imgWhyHealth3 from '../../../../assets/img/why/carousel/why_health_3.jpg'
 import imgWhySocial1 from '../../../../assets/img/why/carousel/why_social_1.jpg'
 import imgWhySocial2 from '../../../../assets/img/why/carousel/why_social_2.jpg'
 import imgWhySocial3 from '../../../../assets/img/why/carousel/why_social_3.jpg'
+import _schema from '../../../../controllers/system/multilinguality/_schema.json'
 import {isMobileWidth, isSmallerHeight, useWindowDimensions} from '../../../../controllers/WindowController'
 import CarouselSlide from './CarouselSlide'
 
-function WhyPageHeader() {
+interface IWhyPageHeaderProps {
+    t: (key:string, ...args:any) => string,
+}
+
+function WhyPageHeader(props:IWhyPageHeaderProps) {
+    const {t} = props
+    const schema = _schema.pages.whyhow.slider
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width, height } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
     const isShortHeight:boolean = isSmallerHeight(height)
 
+    const totalSlides = 9
+
     return (
         <div ref={pageHeader}>
-            <CarouselProvider naturalSlideWidth={width} naturalSlideHeight={height} totalSlides={9} isPlaying={true} interval={5000}>
+            <CarouselProvider naturalSlideWidth={width} naturalSlideHeight={height} totalSlides={totalSlides} isPlaying={true} interval={5000}>
                 <Slider>
                     <CarouselSlide
                         index={0}
-                        title="Why do we what we do?"
-                        subtitle="Because no one else does it!"
+                        title={t(schema.slide_0.title)}
+                        subtitle={t(schema.slide_0.subtitle)}
                         bgImage={imgWhySocial1}
-                        bgImageAlt="Poor child in slums"
+                        bgImageAlt={t(schema.slide_0.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={1}
-                        title="We need to change!"
-                        subtitle="Our application addresses our society's biggest issues: health, environment & solidarity"
+                        title={t(schema.slide_1.title)}
+                        subtitle={t(schema.slide_1.subtitle)}
                         bgImage={imgWhyEnvironment1}
-                        bgImageAlt="Polluted beach"
+                        bgImageAlt={t(schema.slide_1.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={2}
-                        title="Everyone is selfish!"
-                        subtitle="Being selfish ensures one's survival, but endangers humanity."
+                        title={t(schema.slide_2.title)}
+                        subtitle={t(schema.slide_2.subtitle)}
                         bgImage={imgWhyHealth1}
-                        bgImageAlt="Obese women"
+                        bgImageAlt={t(schema.slide_2.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={3}
-                        title="What's the solution?"
-                        subtitle="Our app tells users what to do (e.g. gather trash, share food with homeless, ...), aggregates the users impact, rewards them with personalized prices & is fun!"
+                        title={t(schema.slide_3.title)}
+                        subtitle={t(schema.slide_3.subtitle)}
                         bgImage={imgWhySocial2}
-                        bgImageAlt="Homeless man seeking kindness"
+                        bgImageAlt={t(schema.slide_3.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={4}
-                        title="It's unrealistic?"
-                        subtitle="No, it's not. Even if we just convince one person to use our app, it'll be totally worth it!"
+                        title={t(schema.slide_4.title)}
+                        subtitle={t(schema.slide_4.subtitle)}
                         bgImage={imgWhyEnvironment2}
-                        bgImageAlt="Plastic bag on tree"
+                        bgImageAlt={t(schema.slide_4.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={5}
-                        title="What about charities?"
-                        subtitle="Charities are great, but they just fight ramifications. We need to get down to the root of these troubles."
+                        title={t(schema.slide_5.title)}
+                        subtitle={t(schema.slide_5.subtitle)}
                         bgImage={imgWhyHealth2}
-                        bgImageAlt="Smoking cigarettes"
+                        bgImageAlt={t(schema.slide_5.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={6}
-                        title="Let's be honest"
-                        subtitle="We don't live up to this either, it just takes too much energy to do sth. good. That's why our app rewards you in a variety of ways!"
+                        title={t(schema.slide_6.title)}
+                        subtitle={t(schema.slide_6.subtitle)}
                         bgImage={imgWhySocial3}
-                        bgImageAlt="Old man exhausted"
+                        bgImageAlt={t(schema.slide_6.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={7}
-                        title="Who rewards me?"
-                        subtitle="Organizations (e.g. communes, charities & companies) sponsor challenges with rebates, vouchers, products or even cash. Prizes are fully personalized based on your interests."
+                        title={t(schema.slide_7.title)}
+                        subtitle={t(schema.slide_7.subtitle)}
                         bgImage={imgWhyEnvironment3}
-                        bgImageAlt="Fish dying in plastic"
+                        bgImageAlt={t(schema.slide_7.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={8}
-                        title="Why would organizations sponsor challenges?"
-                        subtitle="Let's say it's low-priced & personalized CSR, a new marketing-tool and they directly address consumers' moral values."
+                        title={t(schema.slide_8.title)}
+                        subtitle={t(schema.slide_8.subtitle)}
                         bgImage={imgWhyHealth3}
-                        bgImageAlt="Man drinking alcohol, abuse"
+                        bgImageAlt={t(schema.slide_8.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />

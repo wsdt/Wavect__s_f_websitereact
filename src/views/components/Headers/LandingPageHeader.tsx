@@ -25,7 +25,12 @@ import * as imgClouds from '../../../assets/img/clouds.png'
 import imgFoglow from '../../../assets/img/fog-low.png'
 import { isMobileWidth, useWindowDimensions } from '../../../controllers/WindowController'
 
-function LandingPageHeader() {
+interface ILandingPageHeaderProps {
+    title:string
+    subtitle:string
+}
+
+function LandingPageHeader(props:ILandingPageHeaderProps) {
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
@@ -52,7 +57,7 @@ function LandingPageHeader() {
                     <Container>
                         <div className="title-brand">
                             <h1 className="presentation-title" style={{ fontSize: `${fontSizeTitle}vw` }}>
-                                Become a hero
+                                {props.title}
                             </h1>
                             <div className="fog-low">
                                 <img alt="fog low" src={imgFoglow} />
@@ -62,7 +67,7 @@ function LandingPageHeader() {
                             </div>
                         </div>
                         <h2 className="presentation-subtitle text-center" style={{ fontSize: `${fontSizeSubtitle}vw` }}>
-                            Solve challenges, do something good and win relevant prizes & money.
+                            {props.subtitle}
                         </h2>
                         {/*<br/>
                         <div className="motto text-center">

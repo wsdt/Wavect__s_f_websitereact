@@ -62,7 +62,7 @@ function WhyHow(props: IWhyHowProps) {
             </Helmet>
 
             <NavBar/>
-            <WhyPageHeader/>
+            <WhyPageHeader t={t}/>
             <div className='main'>
                 <div className='section text-center'>
                     <Container>

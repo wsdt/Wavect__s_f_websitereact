@@ -70,7 +70,7 @@ function LandingPage(props: ILandingPageProps) {
             </Helmet>
 
             <NavBar/>
-            <LandingPageHeader/>
+            <LandingPageHeader title={t(schema.landingview.title)} subtitle={t(schema.landingview.subtitle)}/>
             <div className='main'>
                 <div className='section text-center'>
                     <Container>
@@ -79,7 +79,9 @@ function LandingPage(props: ILandingPageProps) {
                                 <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>{t(schema.intro.description)}</h5>
                                 <br/>
-                                <ModalVideo/>
+                                <ModalVideo btnLbl={t(_schema.common_components.modalvideo.landingpage.btnLbl)}
+                                            iframeTitle={t(_schema.common_components.modalvideo.landingpage.iframeTitle)}
+                                    modalTitle={t(_schema.common_components.modalvideo.landingpage.modalTitle)}/>
                             </Col>
                         </Row>
                         <br/>

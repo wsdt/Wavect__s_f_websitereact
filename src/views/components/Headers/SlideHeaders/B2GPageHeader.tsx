@@ -19,7 +19,7 @@
 import React from 'react'
 
 // reactstrap components
-import { CarouselProvider, Slider } from 'pure-react-carousel'
+import {CarouselProvider, Slider} from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import {isMobileWidth, isSmallerHeight, useWindowDimensions} from '../../../../controllers/WindowController'
 import CarouselSlide from './CarouselSlide'
@@ -34,104 +34,112 @@ import imgB2G_6 from '../../../../assets/img/b2g/carousel/imgB2G_6.jpg'
 import imgB2G_7 from '../../../../assets/img/b2g/carousel/imgB2G_7.jpg'
 import imgB2G_8 from '../../../../assets/img/b2g/carousel/imgB2G_8.jpg'
 import imgB2G_9 from '../../../../assets/img/b2g/carousel/imgB2G_9.jpg'
+import _schema from '../../../../controllers/system/multilinguality/_schema.json'
 
-function B2GPageHeader() {
+interface IB2GPageHeaderProps {
+    t: (key: string, ...args: any) => string,
+}
+
+function B2GPageHeader(props:IB2GPageHeaderProps) {
+    const {t} = props
+    const schema = _schema.pages.b2g.slider
     const pageHeader = React.createRef<HTMLDivElement>()
-    const { width, height } = useWindowDimensions(pageHeader)
+    const {width, height} = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)
     const isShortHeight: boolean = isSmallerHeight(height)
 
     return (
         <div ref={pageHeader}>
-            <CarouselProvider naturalSlideWidth={width} naturalSlideHeight={height} totalSlides={10} isPlaying={true} interval={5000}>
+            <CarouselProvider naturalSlideWidth={width} naturalSlideHeight={height} totalSlides={10} isPlaying={true}
+                              interval={5000}>
                 <Slider>
                     <CarouselSlide
                         index={0}
-                        title="Politician, NGO, charity, governmental organization or club?"
-                        subtitle="Enterprises are not the only organizations which can profit from our service."
+                        title={t(schema.slide_0.title)}
+                        subtitle={t(schema.slide_0.subtitle)}
                         bgImage={imgB2G_0}
-                        bgImageAlt="Desk full of working material"
+                        bgImageAlt={t(schema.slide_0.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={1}
-                        title="Sponsor challenges with cash, products, vouchers or rebates.."
-                        subtitle=".. to acquire volunteers, to enhance your image & to engage more people to participate in your events. "
+                        title={t(schema.slide_1.title)}
+                        subtitle={t(schema.slide_1.subtitle)}
                         bgImage={imgB2G_1}
-                        bgImageAlt="Books with instructions"
+                        bgImageAlt={t(schema.slide_1.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={2}
-                        title="Personalized CSR"
-                        subtitle="Users receive personalized challenges and win relevant prizes. This enables political parties, charities, communes... to convince voters, volunteers or donors to trust your organization."
+                        title={t(schema.slide_2.title)}
+                        subtitle={t(schema.slide_2.subtitle)}
                         bgImage={imgB2G_2}
-                        bgImageAlt="Individual in big city"
+                        bgImageAlt={t(schema.slide_2.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={3}
-                        title="Low-Priced CSR"
-                        subtitle="Every sponsor has to pay a small fee related to the size & type of their organization. Cause real impact without investing big sums."
+                        title={t(schema.slide_3.title)}
+                        subtitle={t(schema.slide_3.subtitle)}
                         bgImage={imgB2G_3}
-                        bgImageAlt="Small company working on Corporate-Social-Responsibility (CSR) strategies"
+                        bgImageAlt={t(schema.slide_3.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={4}
-                        title="Functional Ads are OUT"
-                        subtitle="Modern campaigns trigger emotions, educate and tell stories. Ads on our platform do exactly that, are subtle (e.g. small watermark on a users post) & get shared on existing social-media."
+                        title={t(schema.slide_4.title)}
+                        subtitle={t(schema.slide_4.subtitle)}
                         bgImage={imgB2G_4}
-                        bgImageAlt="Light bulbs turned off"
+                        bgImageAlt={t(schema.slide_4.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={5}
-                        title="Shortage of Volunteers?"
-                        subtitle="Need more volunteers for your event (e.g. gathering trash in your commune)?"
+                        title={t(schema.slide_5.title)}
+                        subtitle={t(schema.slide_5.subtitle)}
                         bgImage={imgB2G_5}
-                        bgImageAlt="Books with instructions"
+                        bgImageAlt={t(schema.slide_5.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={6}
-                        title="Enhance the reputation of your organization"
-                        subtitle="If society wants you to succeed, you will succeed. Give value with 0 expectations and you'll accomplish your organization's mission."
+                        title={t(schema.slide_6.title)}
+                        subtitle={t(schema.slide_6.subtitle)}
                         bgImage={imgB2G_6}
-                        bgImageAlt="Rating a company"
+                        bgImageAlt={t(schema.slide_6.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={7}
-                        title="Low Effort"
-                        subtitle="Sponsoring a challenge is easy! We create your marketing campaign, drafting a challenge will cost you no more than 5 minutes."
+                        title={t(schema.slide_7.title)}
+                        subtitle={t(schema.slide_7.subtitle)}
                         bgImage={imgB2G_7}
-                        bgImageAlt="Attention equals revenues"
+                        bgImageAlt={t(schema.slide_7.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={8}
-                        title="High chance viral marketing"
-                        subtitle="Making an ad to go viral is incredible costly and hard. In such cases quantity may increase your chance of viral posts. By sponsoring a challenge users share related media on our & other platforms with dedication to your organization."
+                        title={t(schema.slide_8.title)}
+                        subtitle={t(schema.slide_8.subtitle)}
                         bgImage={imgB2G_8}
-                        bgImageAlt="Virus - Viral Marketing"
+                        bgImageAlt={t(schema.slide_8.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
                     <CarouselSlide
                         index={9}
-                        title="Word-of-Mouth at its best"
-                        subtitle="Just imagine people telling friends what prizes they won by doing something good. It's basically a raffle without risking money."
+                        title={t(schema.slide_9.title)}
+                        subtitle={t(schema.slide_9.subtitle)}
                         bgImage={imgB2G_9}
-                        bgImageAlt="Word-of-Mouth Marketing"
+                        bgImageAlt={t(schema.slide_9.bgImgAlt)}
                         isMobile={isMobile}
                         isShortHeight={isShortHeight}
                     />
