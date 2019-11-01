@@ -17,6 +17,7 @@
 
 */
 import {faMoneyBill, faPeopleCarry, faSignInAlt, faStarHalfAlt} from '@fortawesome/free-solid-svg-icons'
+import parse from 'html-react-parser'
 import React from 'react'
 import {Helmet} from 'react-helmet'
 import {translate} from 'react-polyglot'
@@ -25,7 +26,7 @@ import {Col, Container, Row} from 'reactstrap'
 import imgAppMockup from '../../../assets/img/why/how/mockup.png'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
 import Footer from '../../components/Footers/Footer'
-import WhyPageHeader from '../../components/Headers/SlideHeaders/WhyPageHeader'
+import {WhyPageHeader} from '../../components/Headers/SlideHeaders/custom/WhyPageHeader'
 import NavBar from '../../components/Navbars/NavBar'
 import {P} from '../blogs/blogs_components/text_components/P'
 import {breadCrumbWhy} from '../breadcrumbs/breadcrumbs.constants'
@@ -34,7 +35,7 @@ import ContactForm from '../ContactForm/ContactForm'
 import {GrayColorImg} from '../grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from '../SocialShareBar/SocialShareBar'
 import ExemplaryChallenges from './ExemplaryChallenges'
-import parse from 'html-react-parser'
+import BecomeTesterForm from "./BecomeTesterForm";
 
 interface IWhyHowProps {
     routeProps:RouteProps,
@@ -77,6 +78,11 @@ function WhyHow(props: IWhyHowProps) {
                             </Col>
                         </Row>
                         <br/>
+                        <Row>
+                            <Col className='ml-auto mr-auto' md='8'>
+                                <BecomeTesterForm t={t}/>
+                            </Col>
+                        </Row>
                         <br/>
                         <Row>
                             <Col md='3'>

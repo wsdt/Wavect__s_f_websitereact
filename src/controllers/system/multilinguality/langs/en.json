@@ -5,7 +5,8 @@
 			"title": "Wavect",
 			"logoAltTag": "Wavect Logo"
 		},
-		"accesssource": "Access Source"
+		"accesssource": "Access Source",
+		"submit": "Submit"
 	},
 	"common_components": {
 		"modalvideo": {
@@ -49,7 +50,7 @@
 				"linkTitle": "All about your data"
 			},
 			"blogs": {
-				"title": "Blogs", 
+				"title": "Blogs",
 				"linkTitle": "Blogs of Co-Founders",
 				"autors": {
 					"kevinriedl": "Kevin Riedl"
@@ -91,22 +92,21 @@
 			"title": "Keep in touch?",
 			"inputs": {
 				"name": {
-					"lbl": "Name", 
+					"lbl": "Name",
 					"placeholder": "Your name"
 				},
 				"subject": {
-					"lbl": "Subject", 
+					"lbl": "Subject",
 					"placeholder": "Subject"
 				},
 				"email": {
-					"lbl": "E-Mail", 
+					"lbl": "E-Mail",
 					"placeholder": "your.mail@wavect.io"
 				},
 				"msg": {
-					"lbl": "Message", 
+					"lbl": "Message",
 					"placeholder": "Tell us your thoughts and feelings..."
-				},
-				"btnSubmit": "Send"
+				}
 			},
 			"alerts": {
 				"success": "We'll get in touch with you soon!",
@@ -145,7 +145,7 @@
 				"description": "Here you'll find personal blogs of our team-members. Topics may range from technical, economical, psychological as well as spiritual ones. Feel free to share them :-)",
 				"blogs": {
 					"kevin_riedl": {
-						"imgAltTag": "CEO: Kevin Riedl", 
+						"imgAltTag": "CEO: Kevin Riedl",
 						"title": "Kevin Riedl, Bsc.",
 						"description": "Here you'll find economical, technical & personal posts."
 					}
@@ -371,7 +371,7 @@
 					"_2": "Choose what to sponsor (e.g. giving an exclusive rebate on your products, raffle products or vouchers, cash, ...). If you don't have any products, you simply can buy vouchers/products from other organizations (e.g. Amazon) or pay out cash.",
 					"_3": "Send us a short paragraph why you sponsor the challenge you have selected.",
 					"_4": "Distribute your prizes amongst those users who have solved your challenge."
-				}, 
+				},
 				"iconcols": {
 					"lowpricedcsr": {
 						"title": "Low-Priced CSR",
@@ -386,7 +386,7 @@
 						"description": "Users have to post a video or picture to proof that they solved your challenge. A watermark will be added on their media and gets shared on Wavect as well as other social media. <strong>Modern storytelling is made by users instead of marketing specialists.</strong>"
 					},
 					"aggregatedimpact": {
-						"title": "Aggregated Impact", 
+						"title": "Aggregated Impact",
 						"description": "As you give users additional incentives to do sth. good, <strong>all impact can be dedicated to your organization</strong>. The caused impact will be aggregated to show you and your potential voters, donors or volunteers what implication your sponsoring had."
 					}
 				}
@@ -415,7 +415,7 @@
 					"_4": {
 						"quote": "Corporate-Social-Responsibility becomes increasingly interesting for consumers. 78 % of Austrians state that CSR is extremely important. Moreover, more and more Austrians expect that organizations engage socially, especially related to environment-protection and their region. Consumers are convinced that organizations should invest in CSR and profit from such measures. Social responsibility leads to a better organization-reputation, which then leads to the organization’s success.",
 						"sourceTitle": "GfK Austria, 2018/2019",
-						"sourceLongTitle": "CSR Monitor 2019. Austria: GfK Austria", 
+						"sourceLongTitle": "CSR Monitor 2019. Austria: GfK Austria",
 						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
 					},
 					"_5": {
@@ -507,17 +507,32 @@
 				"title": "How does it work?",
 				"description": "It's really easy! As soon as you have a profile on our 'social network' (we don't like it's actual definition & reputation, but our platform is more easily understood by this term), you are eligible to win prizes by doing something good for humanity.",
 				"altImg": "Wavect App Mockup",
+				"becometester": {
+					"alerts":{
+						"formSubmissionSuccessful": "Thank you for your interest. We'll contact you soon.",
+						"formSubmissionError": "A server error occurred."
+					},
+					"email": {
+						"placeholder": "Become a tester: your.mail@wavect.io",
+						"errors": {
+							"required": "Don't forget to type in your e-mail.",
+							"emailRegex": "This doesn't look like a valid mail."
+						}
+
+					},
+                  "dataprivacy": "By submitting your e-mail, you'll be added to our testing program. Necessary information will be sent to your e-mail above. You can exit this program at any time. Please refer to our terms & conditions."
+				},
 				"iconcols": {
 					"register": {
 						"title": "Register",
-						"description": "You may tell us what's important to you which helps us to show you{' '} <strong>relevant challenges based on your moral</strong> (e.g. environmental challenges esp. related to plastic,...)."
+						"description": "You may tell us what's important to you which helps us to show you <strong>relevant challenges based on your moral</strong> (e.g. environmental challenges esp. related to plastic,...)."
 					},
 					"solvechallenges": {
 						"title": "Solve challenges and...",
 						"description": "...<strong>proof it with videos/pictures or even ask a friend</strong> for verification. Additionally, your followers will rate your post based on it's authenticity to ensure high quality & fair-play."
 					},
 					"sponsoring": {
-						"title": "Sponsoring", 
+						"title": "Sponsoring",
 						"description": "If you win a prize, the sponsor will contact you to exchange further details about your prize. You will always gather karma points which will be shown on your profile and can be attached to your CV as <strong> Micro-Volunteering</strong>."
 					},
 					"impact": {
@@ -652,13 +667,13 @@
 				},
 				"cio": {
 					"imgAltTag": "CIO: Reza Shokri",
-					"name": "Reza Shokri", 
+					"name": "Reza Shokri",
 					"duty": "CIO",
 					"ownIntro": "Hi, my name is Reza. I'm an entrepreneur & software engineer. It's easier than ever before to have a social, ecological & economical impact. So, my passion is all about disruptive technologies & innovations with the possibility to reach out to billions of people."
 				},
 				"cfo": {
 					"imgAltTag": "CFO: Daniel Gosterxeier",
-					"name": "Daniel Gosterxeier", 
+					"name": "Daniel Gosterxeier",
 					"duty": "CFO",
 					"ownIntro": "Hey everybody! I’m Daniel and my role at Wavect is to find new strategy partners, networking and all about sales & finances. I get up everyday being happy, a positive mind to influence the people around me. My vision is a world without tribes - we're all a big family sitting in one boat."
 				},

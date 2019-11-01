@@ -46,7 +46,7 @@ import _schema from '../../../controllers/system/multilinguality/_schema.json'
 import {
     breadCrumbBlogs,
     breadCrumbForCompanies,
-    breadCrumbForOrganizations,
+    breadCrumbForOrganizations, breadCrumbHome,
     breadCrumbTraction,
     breadCrumbWhy,
 } from '../../pages/breadcrumbs/breadcrumbs.constants'
@@ -89,7 +89,7 @@ const NavBar = (props:INavBarProps) => {
         <Navbar className={classnames('fixed-top', navbarColor)} color-on-scroll='300' expand='lg'>
             <Container>
                 <div className='navbar-translate'>
-                    <NavbarBrand data-placement='bottom' to='/' title='Home' tag={Link}>
+                    <NavbarBrand data-placement='bottom' to={breadCrumbHome.link} title={t(schema.home.linkTitle)} tag={Link}>
                         {isNavbarBrandAsText ? t(_schema.general.wavect.title)
                             : <GrayColorImg src={imgWavectLogo} alt={t(_schema.general.wavect.logoAltTag)} width={40} />}
                     </NavbarBrand>
@@ -108,12 +108,12 @@ const NavBar = (props:INavBarProps) => {
                 <Collapse className='justify-content-end' navbar={true} isOpen={navbarCollapse}>
                     <Nav navbar={true}>
                         <NavItem>
-                            <NavLink href={breadCrumbWhy.link} title={t(breadCrumbWhy.title)}>
+                            <NavLink href={breadCrumbWhy.link} title={t(schema.whyhow.linkTitle)}>
                                 <FontAwesomeIcon icon={faGlasses} size='lg' className='d-lg-none' /> {t(breadCrumbWhy.title)}
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href={breadCrumbTraction.link} title={breadCrumbTraction.title}>
+                            <NavLink href={breadCrumbTraction.link} title={t(schema.traction.linkTitle)}>
                                 <FontAwesomeIcon icon={faHandshake} size='lg' className='d-lg-none' /> {t(breadCrumbTraction.title)}
                             </NavLink>
                         </NavItem>

@@ -30,7 +30,7 @@ interface IFactProps {
     sourceLongTitle: string
     sourceExactSource: string // link, retrieved on, etc.
     colWidth?: number
-    t: (key:string, ...args:any) => string
+    t: (key: string, ...args: any) => string
     sourceLink?: string
 }
 
@@ -46,38 +46,41 @@ class Fact extends PureComponent<IFactProps, IFactState> {
 
         return (
             <Col md={this.props.colWidth ? this.props.colWidth : '4'}>
-                <a href={this.props.sourceLink} title={t(_schema.general.accesssource)} target='_blank' rel="noopener noreferrer">
-                    <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
-                        <CardBody>
-                            <p className='card-description text-center'>"{this.props.quote}"</p>
-                            <span
-                                style={{cursor: 'pointer'}}
-                                onTouchStart={() => this.setState({isOpen: true})}
-                                onTouchEnd={() => this.setState({isOpen: false})}
-                                onMouseLeave={() => this.setState({isOpen: false})}
-                                onMouseEnter={() => this.setState({isOpen: true})}
-                            >
-                                <div className='author'>
-                                    <CardTitle tag='h4' style={{color: '#fff'}} id={this.randomId}>
-                                        {this.props.sourceTitle}
-                                    </CardTitle>
-                                </div>
-                                <Popover target={this.randomId} isOpen={this.state.isOpen} placement='bottom'>
-                                    <PopoverHeader>{this.props.sourceTitle}</PopoverHeader>
-                                    <PopoverBody>
-                                        {this.props.sourceLongTitle}
-                                        <small style={{
-                                            display: 'block',
-                                            marginTop: 6
-                                        }}>{this.props.sourceExactSource}</small>
-                                    </PopoverBody>
-                                </Popover>
-                            </span>
-                        </CardBody>
-                    </Card>
-                </a>
+                {this.props.sourceLink ?
+                    <a href={this.props.sourceLink} title={t(_schema.general.accesssource)} target='_blank'
+                       rel='noopener noreferrer'>{this.renderCard()}</a> : this.renderCard()}
             </Col>
         )
+    }
+
+    private renderCard = () => {
+        return <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+            <CardBody>
+                <p className='card-description text-center'>"{this.props.quote}"</p>
+                <span
+                    style={{cursor: 'pointer'}}
+                    onTouchStart={() => this.setState({isOpen: true})}
+                    onTouchEnd={() => this.setState({isOpen: false})}
+                    onMouseLeave={() => this.setState({isOpen: false})}
+                    onMouseEnter={() => this.setState({isOpen: true})}>
+                        <div className='author'>
+                        <CardTitle tag='h4' style={{color: '#fff'}} id={this.randomId}>
+                        {this.props.sourceTitle}
+                        </CardTitle>
+                        </div>
+                        <Popover target={this.randomId} isOpen={this.state.isOpen} placement='bottom'>
+                        <PopoverHeader>{this.props.sourceTitle}</PopoverHeader>
+                        <PopoverBody>
+                        {this.props.sourceLongTitle}
+                            <small style={{
+                                display: 'block',
+                                marginTop: 6
+                            }}>{this.props.sourceExactSource}</small>
+                        </PopoverBody>
+                        </Popover>
+                        </span>
+            </CardBody>
+        </Card>
     }
 }
 

@@ -98,8 +98,7 @@ class ContactForm extends React.PureComponent<IContactFormProps, IContactFormSta
                                                 placeholder={t(schema.inputs.email.placeholder)}
                                                 type='email'
                                                 name='autorMail'
-                                                onChange={e => this.handleOnChange('autorMail', e)}
-                                            />
+                                                onChange={e => this.handleOnChange('autorMail', e)} />
                                         </InputGroup>
                                     </Col>
                                 </Row>
@@ -114,7 +113,7 @@ class ContactForm extends React.PureComponent<IContactFormProps, IContactFormSta
                                 <Row>
                                     <Col className='ml-auto mr-auto text-center' md='12'>
                                         <Button className='btn-fill' color='danger' size='lg' onClick={() => this.sendForm()}>
-                                            {t(schema.inputs.btnSubmit)}
+                                            {t(_schema.general.submit)}
                                         </Button>
                                     </Col>
                                 </Row>

@@ -5,7 +5,8 @@
             "title": "general.wavect.title",
             "logoAltTag": "general.wavect.logoAltTag"
         },
-        "accesssource": "general.accesssource"
+        "accesssource": "general.accesssource",
+        "submit": "general.submit"
     },
     "common_components": {
         "modalvideo": {
@@ -105,8 +106,7 @@
                 "msg": {
                     "lbl": "common_components.contactform.inputs.msg.lbl",
                     "placeholder": "common_components.contactform.inputs.msg.placeholder"
-                },
-                "btnSubmit": "common_components.contactform.inputs.btnSubmit"
+                }
             },
             "alerts": {
                 "success": "common_components.contactform.alerts.success",
@@ -507,6 +507,20 @@
                 "title": "pages.whyhow.intro.title",
                 "description": "pages.whyhow.intro.description",
                 "altImg": "pages.whyhow.intro.altImg",
+                "becometester": {
+                    "alerts": {
+                        "formSubmissionSuccessful": "pages.whyhow.intro.becometester.alerts.formSubmissionSuccessful",
+                        "formSubmissionError": "pages.whyhow.intro.becometester.alerts.formSubmissionError"
+                    },
+                    "email": {
+                        "placeholder": "pages.whyhow.intro.becometester.email.placeholder",
+                        "errors": {
+                            "required": "pages.whyhow.intro.becometester.email.errors.required",
+                            "emailRegex": "pages.whyhow.intro.becometester.email.errors.emailRegex"
+                        }
+                    },
+                    "dataprivacy": "pages.whyhow.intro.becometester.dataprivacy"
+                },
                 "iconcols": {
                     "register": {
                         "title": "pages.whyhow.intro.iconcols.register.title",

@@ -17,6 +17,7 @@
 
 */
 import {faAd, faCreditCard, faFilter, faUsers} from '@fortawesome/free-solid-svg-icons'
+import parse from 'html-react-parser'
 import React from 'react'
 import {Helmet} from 'react-helmet'
 import {translate} from 'react-polyglot'
@@ -24,7 +25,7 @@ import {RouteProps} from 'react-router'
 import {Col, Container, Row} from 'reactstrap'
 import _schema from '../../../../controllers/system/multilinguality/_schema.json'
 import Footer from '../../../components/Footers/Footer'
-import B2BPageHeader from '../../../components/Headers/SlideHeaders/B2BPageHeader'
+import {B2BPageHeader} from '../../../components/Headers/SlideHeaders/custom/B2BPageHeader'
 import NavBar from '../../../components/Navbars/NavBar'
 import {Li, Ol} from '../../blogs/blogs_components/text_components/List'
 import {breadCrumbForCompanies, breadCrumbWhy} from '../../breadcrumbs/breadcrumbs.constants'
@@ -32,7 +33,6 @@ import {CollapseIconText} from '../../CollapseIconText'
 import ContactForm from '../../ContactForm/ContactForm'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import B2BFacts from './B2BFacts'
-import parse from 'html-react-parser'
 
 interface IB2BProps {
     routeProps:RouteProps,

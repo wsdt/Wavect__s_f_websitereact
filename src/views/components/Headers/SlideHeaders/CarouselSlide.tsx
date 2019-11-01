@@ -18,11 +18,9 @@
 */
 import React from 'react'
 
-import { Slide } from 'pure-react-carousel'
 import { GrayColorImg } from '../../../pages/grayscale_color/GrayColorImg/GrayColorImg'
 
 interface ICarouselSlideProps {
-    index: number
     title: string
     subtitle: string
     bgImage: string
@@ -44,7 +42,6 @@ function CarouselSlide(props: ICarouselSlideProps) {
     }
 
     return (
-        <Slide index={props.index}>
             <div className='page-header section-dark' data-parallax={true} style={{ textAlign: 'center' }}>
                 <GrayColorImg src={props.bgImage} alt={props.bgImageAlt} additionalFilters='brightness(0.4)' height='100%' width='auto' />
 
@@ -66,7 +63,6 @@ function CarouselSlide(props: ICarouselSlideProps) {
                     </div>
                 </div>
             </div>
-        </Slide>
     )
 }
 
