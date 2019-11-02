@@ -36,7 +36,7 @@ export class CarouselDots extends PagingDots {
                         borderRadius: '50%',
                         width: '6px',
                         height: '6px',
-                        background: 'red'
+                        background: 'white'
                     }}
                 />
                             </button>
