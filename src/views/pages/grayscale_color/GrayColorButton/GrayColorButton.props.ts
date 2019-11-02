@@ -5,4 +5,5 @@ export interface IGrayColorButtonProps {
     onClick: () => void
     outline: boolean
     title: string
+    isLoading?: boolean
 }

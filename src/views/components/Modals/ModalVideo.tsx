@@ -1,60 +1,44 @@
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import {faPlay} from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
-import { Button, Modal } from 'reactstrap'
-import { GrayColorButton } from '../../pages/grayscale_color/GrayColorButton/GrayColorButton'
+import {Collapse} from 'reactstrap'
+import {GrayColorButton} from '../../pages/grayscale_color/GrayColorButton/GrayColorButton'
 
 interface IModalVideoProps {
     btnLbl: string
-    modalTitle: string
     iframeTitle: string
 }
 
-function ModalVideo(props:IModalVideoProps) {
-    const [scrollingLongContent, setScrollingLongContent] = React.useState(false)
+const fbIframeId: string = 'fbIframeId'
+let isFirstOpen: boolean = true
+
+export const ModalVideo = (props: IModalVideoProps) => {
+    const [isCollapseOpen, setCollapseOpen] = React.useState(false)
+    const [isLoading, setLoading] = React.useState(true)
+
     return (
         <>
-            <GrayColorButton icon={faPlay} onClick={() => setScrollingLongContent(true)} outline={true} title={props.btnLbl} />
+            <GrayColorButton icon={faPlay} onClick={() => {
+                setCollapseOpen(!isCollapseOpen);
+                setLoading(true);
+                isFirstOpen = false
+            }} isLoading={isLoading && !isFirstOpen} outline={true} title={props.btnLbl}/>
 
-            <Modal
-                isOpen={scrollingLongContent}
-                toggle={() => setScrollingLongContent(false)}
-                className='modal-lg'
-                modalClassName='bd-example-modal-lg'>
-                <div className='modal-header'>
-                    <h5 className='modal-title' id='exampleModalLongTitle'>
-                        {props.modalTitle}
-                    </h5>
-                    <button aria-label='Close' className='close' data-dismiss='modal' type='button' onClick={() => setScrollingLongContent(false)}>
-                        <span aria-hidden={true}>×</span>
-                    </button>
-                </div>
-                <div className='modal-body' style={{ textAlign: 'center' }}>
-                    <iframe
-                        title={props.iframeTitle}
-                        src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwavect%2Fvideos%2F2634259533272490%2F&show_text=0&width=560'
-                        width='100%'
-                        height='315'
-                        style={{ border: 'none', overflow: 'hidden' }}
-                        scrolling='no'
-                        frameBorder='0'
-                        allowTransparency={true}
-                        allowFullScreen={true}
-                    />
-                </div>
-                <div className='modal-footer'>
-                    <div className='left-side'>
-                        <Button
-                            className='btn-link'
-                            color='default'
-                            data-dismiss='modal'
-                            type='button'
-                            onClick={() => setScrollingLongContent(false)}
-                        >
-                            Close
-                        </Button>
-                    </div>
-                </div>
-            </Modal>
+            <Collapse isOpen={isCollapseOpen && !isLoading}
+                      style={{marginTop: 16, overflow: 'hidden', paddingTop: '56.25%', position: 'relative'}}>
+                <iframe
+                    id={fbIframeId}
+                    title={props.iframeTitle}
+                    src={(isCollapseOpen) ? 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fwavect%2Fvideos%2F2634259533272490%2F&show_text=1&mute=0' : undefined} // TODO: Use local video (faster & more configurable) and maybe real pause instead of reload by removing src possible when hidden
+                    width='100%'
+                    height='100%'
+                    onLoad={() => setLoading(false)}
+                    style={{border: 0, overflow: 'hidden', left: 0, position: 'absolute', top: 0}}
+                    scrolling='no'
+                    frameBorder='0'
+                    allowTransparency={true}
+                    allowFullScreen={true}
+                />
+            </Collapse>
         </>
     )
 }

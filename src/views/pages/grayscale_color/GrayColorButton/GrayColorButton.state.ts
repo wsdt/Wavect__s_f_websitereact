@@ -1,3 +1,3 @@
 export interface IGrayColorButtonState {
-    isGrayscale: boolean
+    isGrayscale: boolean,
 }

@@ -4,6 +4,7 @@ import { PureComponent } from 'react'
 import { Button } from 'reactstrap'
 import { IGrayColorButtonProps } from './GrayColorButton.props'
 import { IGrayColorButtonState } from './GrayColorButton.state'
+import {faSpinner} from "@fortawesome/free-solid-svg-icons";
 
 export class GrayColorButton extends PureComponent<IGrayColorButtonProps, IGrayColorButtonState> {
     public state: IGrayColorButtonState = {
@@ -22,10 +23,18 @@ export class GrayColorButton extends PureComponent<IGrayColorButtonProps, IGrayC
                 onTouchStart={() => this.changeColorState(false)}
                 onTouchEnd={() => this.changeColorState(true)}
             >
-                <FontAwesomeIcon icon={this.props.icon} />
-                &nbsp;{this.props.title}
+                {this.getBtnContent()}
             </Button>
         )
+    }
+
+    private getBtnContent = () => {
+        if (this.props.isLoading) {
+            return <FontAwesomeIcon icon={faSpinner} spin={true} />
+        } else {
+            return <><FontAwesomeIcon icon={this.props.icon}  />
+                &nbsp;{this.props.title}</>
+        }
     }
 
     private changeColorState = (isGrayscale: boolean) => {

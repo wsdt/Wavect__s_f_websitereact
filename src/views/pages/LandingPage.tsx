@@ -80,8 +80,7 @@ function LandingPage(props: ILandingPageProps) {
                                 <h5 className='description'>{t(schema.intro.description)}</h5>
                                 <br/>
                                 <ModalVideo btnLbl={t(_schema.common_components.modalvideo.landingpage.btnLbl)}
-                                            iframeTitle={t(_schema.common_components.modalvideo.landingpage.iframeTitle)}
-                                    modalTitle={t(_schema.common_components.modalvideo.landingpage.modalTitle)}/>
+                                            iframeTitle={t(_schema.common_components.modalvideo.landingpage.iframeTitle)}/>
                             </Col>
                         </Row>
                         <br/>
