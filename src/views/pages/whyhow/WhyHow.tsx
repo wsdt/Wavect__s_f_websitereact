@@ -39,8 +39,8 @@ import BecomeTesterForm from "./BecomeTesterForm";
 import BreadCrumbs from "../breadcrumbs/Breadcrumbs";
 
 interface IWhyHowProps {
-    routeProps:RouteProps,
-    t: (key:string, ...args:any) => string,
+    routeProps: RouteProps,
+    t: (key: string, ...args: any) => string,
 }
 
 function WhyHow(props: IWhyHowProps) {
@@ -68,10 +68,18 @@ function WhyHow(props: IWhyHowProps) {
             <div className='main'>
                 <div className='section text-center' style={{paddingTop: 0}}>
                     <Container>
+                        {/* Button represents an anchor */}
+                        <button id='alpha_test' style={{
+                            margin: 0,
+                            padding: 0,
+                            border: 0,
+                            background: 'transparent',
+                            fontSize: 'inherit',
+                        }}/>
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
                                 <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbWhy]}/>
-                                <h2 className='title' id='alpha_test'>{t(schema.intro.title)}</h2>
+                                <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>
                                     <P>{t(schema.intro.description)}</P>
                                 </h5>
@@ -85,6 +93,7 @@ function WhyHow(props: IWhyHowProps) {
                                 <BecomeTesterForm t={t}/>
                             </Col>
                         </Row>
+
                         <br/>
                         <Row>
                             <Col md='3'>
@@ -92,7 +101,8 @@ function WhyHow(props: IWhyHowProps) {
                                                   descr={parse(t(schema.intro.iconcols.register.description))}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faStarHalfAlt} title={t(schema.intro.iconcols.solvechallenges.title)}
+                                <CollapseIconText icon={faStarHalfAlt}
+                                                  title={t(schema.intro.iconcols.solvechallenges.title)}
                                                   descr={parse(t(schema.intro.iconcols.solvechallenges.description))}/>
                             </Col>
                             <Col md='3'>
@@ -106,7 +116,7 @@ function WhyHow(props: IWhyHowProps) {
                         </Row>
                     </Container>
                 </div>
-               <ExemplaryChallenges t={t}/>
+                <ExemplaryChallenges t={t}/>
 
                 <ContactForm t={t}/>
                 <SocialShareBar shareUrl={breadCrumbWhy.link}/>
