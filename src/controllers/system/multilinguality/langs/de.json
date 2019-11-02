@@ -656,31 +656,31 @@
 					"imgAltTag":"CTO: Christof Jori",
 					"name": "Christof Jori",
 					"duty": "CTO",
-					"ownIntro": "Hi, ich bin Chris und bin leidenschaftlicher Programmierer. Ich liebe es neue Technologien zu erlernen sowie ständig auf dem aktuellen Stand zu bleiben. Aktuell konzentriere ich mich auf die App-Entwicklung mittels React Native sowie Bilverarbeitung (DIP) und Neuronale Netzwerke mittels Python 3. Bei Wavect bin ich hauptverantwortlich für die App-Entwicklung sowie das Software Engineering. Ich bin aber auch bei Präsentationen vertreten und kümmere mich um sonstigen Arbeitsaufgaben innerhalb von Wavect. Mein Vision ist es, ein einzigartiges Produkt zu erschaffen, dass einen großen Einfluss auf unsere Gesellschaft hat."
+					"ownIntro": "Ich bin leidenschaftlicher Programmierer, liebe es neue Technologien zu erlernen sowie ständig auf dem aktuellen Stand zu bleiben. Mein Vision ist es, ein einzigartiges Produkt zu erschaffen, dass einen großen Einfluss auf unsere Gesellschaft hat."
 				},
 				"cmo": {
 					"imgAltTag": "CMO: Mariella Galneder",
 					"name": "Mariella Galneder",
 					"duty": "CMO",
-					"ownIntro": "My name is Mariella, but as soon as I start talking English, I introduce myself as Mary. I love dedicated people who turn their dreams into a vision and pursue it. And my vision is it to open the people’s eyes and make a change together."
+					"ownIntro": "Ich liebe engagierte Menschen, die ihre Träume in eine Vision packen und versuchen zu verwirklichen. Dementsprechend ist es mir ein großes Anliegen möglichst viele Menschen zum Nachdenken zu bewegen und gemeinsam etwas zu bewirken."
 				},
 				"cio": {
 					"imgAltTag": "CIO: Reza Shokri",
 					"name": "Reza Shokri",
 					"duty": "CIO",
-					"ownIntro": "Hi, my name is Reza. I'm an entrepreneur & software engineer. It's easier than ever before to have a social, ecological & economical impact. So, my passion is all about disruptive technologies & innovations with the possibility to reach out to billions of people."
+					"ownIntro": "Ich bin Unternehmer & Software-Engineer. Es ist einfacher als je zuvor, echten sozialen, ökonomischen und ökologischen Impakt zu haben. Meine Leidenschaft dreht sich rund um disruptive Technologien & Innovationen, die möglichst viele Menschen erreichen."
 				},
 				"cfo": {
 					"imgAltTag": "CFO: Daniel Gosterxeier",
 					"name": "Daniel Gosterxeier",
 					"duty": "CFO",
-					"ownIntro": "Hey everybody! I’m Daniel and my role at Wavect is to find new strategy partners, networking and all about sales & finances. I get up everyday being happy, a positive mind to influence the people around me. My vision is a world without tribes - we're all a big family sitting in one boat."
+					"ownIntro": "Ich stehe täglich mit möglichst guter Einstellung auf, um die Menschen in meiner Umgebung positiv zu beeinflussen. Meine Vision ist eine Welt ohne Fremdenfeindlichkeit - wir sind alle eine große Familie und sitzen im gleichen Boot."
 				},
 				"ceo": {
 					"imgAltTag": "CEO: Kevin Riedl",
 					"name": "Kevin Riedl",
 					"duty": "CEO",
-					"ownIntro": "Ich möchte die Welt ein klein wenig besser hinterlassen, als ich sie vorgefunden habe. Ich liebe Herausforderungen, betrachte mich selbst als lebenslanger Student. Meine Aufgabengebiete innerhalb des Startups sind recht diversifiziert, da ich einen wirtschaftlichen wie auch technischen Hintergrund habe. Meine Tätigkeiten erstrecken sich über Präsentationen, betriebswirtschaftliche Aufgaben, Management, Software-Architektur/Engineering & Development sowie viele andere Aufgabengebiete. Als Visionär träume ich davon, unsere Gesellschaft nachhaltig zu verändern."
+					"ownIntro": "Ich möchte die Welt ein klein wenig besser hinterlassen, als ich sie vorgefunden habe. Ich liebe Herausforderungen, betrachte mich selbst als lebenslanger Student. Als Visionär träume ich davon, unsere Gesellschaft nachhaltig zu verändern."
 				}
 			}
 		}
