@@ -1,14 +1,14 @@
+import de from './langs/de.json'
 import en from './langs/en.json' // do not import via '* as en'
 
-
 export const getCurrentLang = ():string => {
-    return window.localStorage.getItem('locale') || 'en'
+    return navigator.language ? navigator.language.substring(0,2) : 'en'
 }
 
 
 /** Export here all languages which should be available */
 export const TranslationBundle: {[key:string]:any} = {
     en,
+    de,
 }
-
 

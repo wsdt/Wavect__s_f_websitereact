@@ -18,10 +18,10 @@
 */
 /*eslint-disable*/
 import React from 'react'
+import {translate} from 'react-polyglot'
 import { Container, Row } from 'reactstrap'
-import { breadCrumbDataPrivacy, breadCrumbImpressum } from '../../pages/breadcrumbs/breadcrumbs.constants'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
-import {translate} from "react-polyglot";
+import { breadCrumbDataPrivacy, breadCrumbImpressum } from '../../pages/breadcrumbs/breadcrumbs.constants'
 
 interface IFooterProps {
     t: (key:string, ...args:any) => string,
