@@ -71,7 +71,7 @@ function WhyHow(props: IWhyHowProps) {
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
                                 <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbWhy]}/>
-                                <h2 className='title'>{t(schema.intro.title)}</h2>
+                                <h2 className='title' id='alpha_test'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>
                                     <P>{t(schema.intro.description)}</P>
                                 </h5>
