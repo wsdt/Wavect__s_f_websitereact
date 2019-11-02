@@ -18,7 +18,7 @@
 		},
 		"navbar": {
 			"home": {
-				"title": "Start"
+				"title": "Start",
 				"linkTitle": "Startseite"
 			},
 			"whyhow": {
@@ -26,7 +26,7 @@
 				"linkTitle": "Unser Vision & Mission"
 			},
 			"organizations": {
-				"title": "Für Organisationen"
+				"title": "Für Organisationen",
 				"linkTitle": "B2B & B2G"
 			},
 			"b2b": {
@@ -170,7 +170,7 @@
 		},
 		"b2b": {
 			"header": {
-				"title": "Wavect für Unternehmen"
+				"title": "Wavect für Unternehmen",
 				"description": "Personalized & Low-Priced Corporate Social Responsibility. Erzeuge einen messbaren Einfluss, erwirb neue Kunden und verbessere dein Image. Modernes storytelling wird von Usern gemacht."
 			},
 			"slider": {
@@ -205,7 +205,7 @@
 					"bgImgAlt": "Kleine Unternehmen die an CSR arbeiten"
 				},
 				"slide_6": {
-					"title": Aufmerksmakeit = Ertrag"
+					"title": "Aufmerksmakeit = Ertrag",
 					"subtitle": "Nichts erzeugt mehr als Aufmerksmakeit. Reguläre Werbungen müssen aufwendig entwickelt werden. Sponsor eine Challenge, verursche Einfluss und die Benutzer werden deine Geschichte erzählen!",
 					"bgImgAlt": "Aufmerksmakeit = Ertrag"
 				},
@@ -235,14 +235,14 @@
 					},
 					"personalizedcsr": {
 						"title": "Personalisiertes CSR",
-						"description": <strong>issued to users based on their interests & ethics</strong>. Moreover, raffles are also personalized, which means that only users who are interested in your products/services can win your prizes."
+						"description": "<strong>issued to users based on their interests & ethics</strong>. Moreover, raffles are also personalized, which means that only users who are interested in your products/services can win your prizes."
 					},
 					"storytelling": {
 						"title": "Storytelling",
 						"description": "Die User posten|verschicken dabei ein Video oder Bild als Beweis. Durch ein Wasserzeichen wird dieses Bild signiert und in allen Medien geteilt. <strong>Modernes Storytelling wird von Usern erzeugt, anstelle von Marketingspezialisten .</strong>"
 					},
 					"aggregatedimpact": {
-						"title": Aggregierter Einfluss",
+						"title": "Aggregierter Einfluss",
 						"description": "????<strong>all impact can be dedicated to your organization</strong>. The caused impact will be aggregated to show you and your potential customers what implication your sponsoring had."
 					}
 				}
@@ -365,7 +365,7 @@
 				}
 			},
 			"intro": {
-				"title": "How to sponsor a challenge?",
+				"title": "Eine Challenge sponsorn",
 				"description": {
 					"_1": "Erzähle uns, welche Art von Challenge du sponsorn möchtest <a href='%{link}' title='Exemplary challenges'>(e.g. gathering trash, ...)</a>.",
 					"_2": "Wähle was du sponsorst (zB.: Exklusiver Rabatt auf dein Produkt oder eine Verlosung).",
@@ -379,14 +379,14 @@
 					},
 					"personalizedcsr": {
 						"title": "Personalisiertes CSR",
-						"description": Herausforderungen und Preise werden<strong>individuell nach den Präferenzen des Users angezeigt</strong>. Verlosungen sind ebenfalls personalisiert, das bedeutet dass User Preise gewinnen, die sie auch gerne gewinnen möchten."
+						"description": "Herausforderungen und Preise werden<strong>individuell nach den Präferenzen des Users angezeigt</strong>. Verlosungen sind ebenfalls personalisiert, das bedeutet dass User Preise gewinnen, die sie auch gerne gewinnen möchten."
 					},
 					"storytelling": {
 						"title": "Storytelling",
 						"description": "Die User posten|verschicken dabei ein Video oder Bild als Beweis. Durch ein Wasserzeichen wird dieses Bild signiert und in allen Medien geteilt. <strong>Modernes Storytelling wird von Usern erzeugt, anstelle von Marketingspezialisten .</strong>"
 					},
 					"aggregatedimpact": {
-						"title": Aggregierter Einfluss",
+						"title": "Aggregierter Einfluss",
 						"description": "Wenn Sie den Nutzern zusätzliche Anreize geben, um etwas Gutes zu tun, kann <strong> der Einfluss auf Ihre Organisation angerechnet werden </ strong>. Die verursachten Auswirkungen werden aggregiert, um Ihnen und Ihren potenziellen Wählern, Spendern oder Freiwilligen zu zeigen, welche Auswirkungen Ihr Sponsoring hatte. "
 					}
 				}
@@ -407,7 +407,7 @@
 						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
 					},
 					"_3": {
-						"quote": "Zukünftige Innovationen werden von vier Eckpfeilern geleitet: "Freiheit", "Belohnung", "Sicherheit" und "Wohlbefinden".",
+						"quote": "Zukünftige Innovationen werden von vier Eckpfeilern geleitet: 'Freiheit', 'Belohnung', 'Sicherheit' und 'Wohlbefinden'.",
 						"sourceTitle": "GfK Austria, 2017",
 						"sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
 						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
@@ -419,7 +419,7 @@
 						"sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
 					},
 					"_5": {
-						"quote": "Sport, Bewusstsein, Transparenz, Hygge, Wir-Kultur, Good-Citizen, Social-Business, Flexitarian, Zero-Waste, Minimalismus, Mindful-Economy, Glokalisierung, Outsourcing des Alltags, Edutainment, Lebenslanges Lernen, soziale Netzwerke, "OMline" 4, Verspieltheit, Konnektivität, Kreativwirtschaft und viele mehr werden in Zukunft eine wichtige Rolle spielen.",
+						"quote": "Sport, Bewusstsein, Transparenz, Hygge, Wir-Kultur, Good-Citizen, Social-Business, Flexitarian, Zero-Waste, Minimalismus, Mindful-Economy, Glokalisierung, Outsourcing des Alltags, Edutainment, Lebenslanges Lernen, soziale Netzwerke, 'OMline' 4, Verspieltheit, Konnektivität, Kreativwirtschaft und viele mehr werden in Zukunft eine wichtige Rolle spielen.",
 						"sourceTitle": "Zukunftsinstitut, 2019",
 						"sourceLongTitle": "Megatrend-Documentation. Deutschland: Zukunftsinstitut",
 						"sourceExactSource": "Retrieved 6 24, 2019, from https://onlineshop.zukunftsinstitut.de/shop/megatrend-dokumentation/"
@@ -454,7 +454,7 @@
 		"whyhow": {
 			"header": {
 				"title": "Wavect - Wie funktioniert's?",
-				"description": Verändere die Welt indem du unsere App benützt, gewinne relevante Preise und verbessere deinen Lebenslauf durch das Sammeln von Punkten (Micro-Volunteering)."
+				"description": "Verändere die Welt indem du unsere App benützt, gewinne relevante Preise und verbessere deinen Lebenslauf durch das Sammeln von Punkten (Micro-Volunteering)."
 			},
 			"slider": {
 				"slide_0": {
@@ -520,7 +520,7 @@
 						}
 
 					},
-                  "dataprivacy": "Beim Abschicken der E-Mail wirst du zu unserem Testprogramm hinzugefügt. Wichtige Informationen weredn zu deiner E-Mail gesendet. Du kannst das Programm jederzeit verlassen. Bitte beachten Sie unsere Allgemeinen Geschäftsbedingungen
+                  "dataprivacy": "Beim Abschicken der E-Mail wirst du zu unserem Testprogramm hinzugefügt. Wichtige Informationen weredn zu deiner E-Mail gesendet. Du kannst das Programm jederzeit verlassen. Bitte beachten Sie unsere Allgemeinen Geschäftsbedingungen"
 				},
 				"iconcols": {
 					"register": {
@@ -536,7 +536,7 @@
 						"description": "Gewinnst du einen Preis, wird der Sponsor dich kontaktieren. Du sammelst aber immer Karma-Punkte welche anschließend in deinem Profile angezeigt werden und auch in deinen Lebenslauf als <strong> Micro-Volunteering</strong> hinzugefügt werden können."
 					},
 					"impact": {
-						"title": "Dein Einfluss"
+						"title": "Dein Einfluss",
 						"description": "Dein Einfluss wird gesammelt und dir und deinen Followern angezeigt. <strong>Es gibt kein 'Ich kann nichts ändern' mehr</strong>."
 					}
 				}
@@ -657,7 +657,7 @@
 					"imgAltTag":"CTO: Christof Jori",
 					"name": "Christof Jori",
 					"duty": "CTO",
-					"ownIntro": Hi, Ich bin Chris und bin leidenschaftlicher Programmierer. Ich liebe es neue Technologien zu erlernen sowie ständig auf dem aktuellen Stand zu bleiben. Aktuell konzentriere ich mich auf die App-Entwicklung mittels React Native sowie Bilverarbeitung (DIP) und Neuronale Netzwerke mittels Python 3. Bei Wavect bin ich hauptverantwortlich für die App-Entwicklung sowie das Software Engineering. Ich bin aber auch bei Präsentationen vertreten und kümmere mich um sonstigen Arbeitsaufgaben innerhalb von Wavect. Mein Vision ist es, ein einzigartiges Produkt zu erschaffen, dass einen großen Einfluss auf unsere Gesellschaft hat.",
+					"ownIntro": "Hi, Ich bin Chris und bin leidenschaftlicher Programmierer. Ich liebe es neue Technologien zu erlernen sowie ständig auf dem aktuellen Stand zu bleiben. Aktuell konzentriere ich mich auf die App-Entwicklung mittels React Native sowie Bilverarbeitung (DIP) und Neuronale Netzwerke mittels Python 3. Bei Wavect bin ich hauptverantwortlich für die App-Entwicklung sowie das Software Engineering. Ich bin aber auch bei Präsentationen vertreten und kümmere mich um sonstigen Arbeitsaufgaben innerhalb von Wavect. Mein Vision ist es, ein einzigartiges Produkt zu erschaffen, dass einen großen Einfluss auf unsere Gesellschaft hat."
 				},
 				"cmo": {
 					"imgAltTag": "CMO: Mariella Galneder",
