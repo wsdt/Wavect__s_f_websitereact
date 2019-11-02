@@ -44,7 +44,7 @@ function Footer(props:IFooterProps) {
                         </ul>
                     </nav>
                     <div className='credits ml-auto'>
-                        <span className='copyright'>© {t(_schema.general.wavect.title)}</span>
+                        <span className='copyright'>© {t(_schema.general.wavect.title)}, {new Date().getFullYear()}</span>
                     </div>
                 </Row>
             </Container>

@@ -41,7 +41,7 @@ function BlogPostHappinessNeqFullfillment(_: RouteProps) {
     })
     return <>
         <Helmet>
-            <title>{breadCrumbBlogKevinRiedlHappinessNeqFulfillment.title}</title>
+            <title>Happiness != Fulfillment: Who are you really?</title>
             <meta name='description'
                   content='If you pursue happiness, you will always loose. Choose fulfillment and try to live a meaningful life.'/>
             <meta name='keywords' content='wavect,blog,post,happiness,fulfillment,life,pursue,change,lifestyle'/>

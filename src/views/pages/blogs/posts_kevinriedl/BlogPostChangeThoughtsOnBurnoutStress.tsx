@@ -36,7 +36,7 @@ import {Helmet} from "react-helmet";
 function BlogPostChangeThoughtsOnBurnoutStress(_: RouteProps) {
     return <>
         <Helmet>
-            <title>{breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.title}</title>
+            <title>Let me change the way you think about Stress & Burnout</title>
             <meta name='description'
                   content='Do you feel overwhelmed, empty, stressed, demotivated or just depressed? If sometimes or yes, then this post is for YOU!'/>
             <meta name='keywords' content='wavect,blog,post,stress,motivation,depression,help'/>

@@ -33,7 +33,7 @@ import {Helmet} from "react-helmet";
 function BlogPostStartReflectingOrDieFullOfRegrets(_: RouteProps) {
     return <>
         <Helmet>
-            <title>{breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.title}</title>
+            <title>Start reflecting or you will die full of regrets</title>
             <meta name='description'
                   content='How could you avoid a midlife crisis? You only regret those things, you have never acted on.'/>
             <meta name='keywords' content='wavect,blog,post,regret,die,reflect,midlife,crisis,act'/>

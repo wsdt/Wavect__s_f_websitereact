@@ -1,8 +1,8 @@
 import React from 'react'
+import {translate} from 'react-polyglot'
 import Breadcrumb from 'reactstrap/lib/Breadcrumb'
 import BreadcrumbItem from 'reactstrap/lib/BreadcrumbItem'
 import { BreadcrumbConstants } from './breadcrumbs.constants'
-import {translate} from "react-polyglot";
 
 export interface IBreadCrumbsProps {
     breadcrumbs: BreadcrumbConstants[] // chronological order needed!
@@ -27,7 +27,7 @@ function BreadCrumbs(props: IBreadCrumbsProps) {
                     )
                 } else {
                     return (
-                        <BreadcrumbItem tag="a" href={breadcrumb.link} key={breadcrumb.link} title={title}>
+                        <BreadcrumbItem tag='a' href={breadcrumb.link} key={breadcrumb.link} title={title}>
                             {shortenedTitle}
                         </BreadcrumbItem>
                     )

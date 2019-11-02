@@ -54,7 +54,7 @@ class Fact extends PureComponent<IFactProps, IFactState> {
     }
 
     private renderCard = () => {
-        return <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+        return <Card style={{backgroundColor: '#111', border: '1px solid #ccc'}}>
             <CardBody>
                 <p className='card-description text-center'>"{this.props.quote}"</p>
                 <span

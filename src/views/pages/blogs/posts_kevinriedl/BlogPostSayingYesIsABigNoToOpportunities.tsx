@@ -34,7 +34,7 @@ import TextPageDraft from '../blogs_components/TextPageDraft'
 function BlogPostSayingYesIsABigNoToOpportunities(_: RouteProps) {
     return <>
         <Helmet>
-            <title>{breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.title}</title>
+            <title>Saying yes is a big NO to a lot of other opportunities</title>
             <meta name='description'
                   content='Time management is out. The process of elimination helps you to put in front truly important goals.'/>
             <meta name='keywords' content='wavect,blog,post,yes,no,elimination,process,goal'/>

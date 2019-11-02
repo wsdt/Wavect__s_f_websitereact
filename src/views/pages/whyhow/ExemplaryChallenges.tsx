@@ -33,7 +33,7 @@ function ExemplaryChallenges(props: IExemplaryChallengesProps) {
                         <h2 className='title'>{t(schema.title)}</h2>
                         <Row>
                             <Col md='4'>
-                                <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+                                <Card style={{backgroundColor: '#111', border: '1px solid #ccc'}}>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
@@ -46,7 +46,7 @@ function ExemplaryChallenges(props: IExemplaryChallengesProps) {
                                 </Card>
                             </Col>
                             <Col md='4'>
-                                <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+                                <Card style={{backgroundColor: '#111', border: '1px solid #ccc'}}>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
@@ -59,7 +59,7 @@ function ExemplaryChallenges(props: IExemplaryChallengesProps) {
                                 </Card>
                             </Col>
                             <Col md='4'>
-                                <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+                                <Card style={{backgroundColor: '#111', border: '1px solid #ccc'}}>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
@@ -74,7 +74,7 @@ function ExemplaryChallenges(props: IExemplaryChallengesProps) {
                         </Row>
                         <Row>
                             <Col md='4'>
-                                <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+                                <Card style={{backgroundColor: '#111', border: '1px solid #ccc'}}>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
@@ -87,7 +87,7 @@ function ExemplaryChallenges(props: IExemplaryChallengesProps) {
                                 </Card>
                             </Col>
                             <Col md='4'>
-                                <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+                                <Card style={{backgroundColor: '#111', border: '1px solid #ccc'}}>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>
@@ -100,7 +100,7 @@ function ExemplaryChallenges(props: IExemplaryChallengesProps) {
                                 </Card>
                             </Col>
                             <Col md='4'>
-                                <Card style={{backgroundColor: 'transparent', border: '1px solid #ccc'}}>
+                                <Card style={{backgroundColor: '#111', border: '1px solid #ccc'}}>
                                     <CardBody>
                                         <a href='/#' onClick={e => e.preventDefault()}>
                                             <div className='author'>

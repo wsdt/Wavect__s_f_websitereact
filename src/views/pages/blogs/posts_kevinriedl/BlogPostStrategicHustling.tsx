@@ -34,7 +34,7 @@ import {Helmet} from "react-helmet";
 function BlogPostStrategicHustling(_: RouteProps) {
     return <>
         <Helmet>
-            <title>{breadCrumbBlogKevinRiedlStrategicHustling.title}</title>
+            <title>Strategic Hustling</title>
             <meta name='description'
                   content='Read this, if you want to have better grades, be more successful in your job or just be more independent and happy in everything you
                 do.'/>
