@@ -1,17 +1,17 @@
 {
 	"general": {
-		"readmore": "Read more",
+		"readmore": "Mehr lesen",
 		"wavect": {
 			"title": "Wavect",
 			"logoAltTag": "Wavect Logo"
 		},
-		"accesssource": "Access Source",
+		"accesssource": "Zugriff Quelle",
 		"submit": "Submit"
 	},
 	"common_components": {
 		"modalvideo": {
 			"landingpage": {
-				"btnLbl": "Watch video",
+				"btnLbl": "Video schauen",
 				"modalTitle": "Pitch-Video (German)",
 				"iframeTitle": "Facebook Video"
 			}
