@@ -3,7 +3,7 @@ import React from 'react'
 import {Collapse} from 'reactstrap'
 import {GrayColorButton} from '../../pages/grayscale_color/GrayColorButton/GrayColorButton'
 
-interface IModalVideoProps {
+interface ICollapsableVideoProps {
     btnLbl: string
     iframeTitle: string
 }
@@ -11,7 +11,7 @@ interface IModalVideoProps {
 const fbIframeId: string = 'fbIframeId'
 let isFirstOpen: boolean = true
 
-export const ModalVideo = (props: IModalVideoProps) => {
+export const CollapsableVideo = (props: ICollapsableVideoProps) => {
     const [isCollapseOpen, setCollapseOpen] = React.useState(false)
     const [isLoading, setLoading] = React.useState(true)
 
@@ -43,4 +43,4 @@ export const ModalVideo = (props: IModalVideoProps) => {
     )
 }
 
-export default ModalVideo
+export default CollapsableVideo

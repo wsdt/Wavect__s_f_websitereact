@@ -37,7 +37,7 @@ import imgKevinRiedl from '../../assets/img/team/circle/kevin_riedl.png'
 import imgMariellaGalneder from '../../assets/img/team/circle/mariella_galneder.png'
 import imgRezaShokri from '../../assets/img/team/circle/reza_shokri.png'
 import _schema from '../../controllers/system/multilinguality/_schema.json'
-import ModalVideo from '../components/Modals/ModalVideo'
+import CollapsableVideo from '../components/Modals/CollapsableVideo'
 import {breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from './CollapseIconText'
 import ContactForm from './ContactForm/ContactForm'
@@ -79,8 +79,8 @@ function LandingPage(props: ILandingPageProps) {
                                 <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>{t(schema.intro.description)}</h5>
                                 <br/>
-                                <ModalVideo btnLbl={t(_schema.common_components.modalvideo.landingpage.btnLbl)}
-                                            iframeTitle={t(_schema.common_components.modalvideo.landingpage.iframeTitle)}/>
+                                <CollapsableVideo btnLbl={t(_schema.common_components.modalvideo.landingpage.btnLbl)}
+                                                  iframeTitle={t(_schema.common_components.modalvideo.landingpage.iframeTitle)}/>
                             </Col>
                         </Row>
                         <br/>
