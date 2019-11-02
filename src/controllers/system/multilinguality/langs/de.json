@@ -626,19 +626,19 @@
 			},
 			"landingview": {
 				"title": "Werde ein Held",
-				"subtitle": "Löse Challenges und gewinne personalisierte Preise!"
+				"subtitle": "Löse Challenges, tu etwas Gutes und gewinne personalisierte Preise!"
 			},
 			"intro": {
-				"title": "Stellen wir uns der Wahrheit",
+				"title": "Die harte Wahrheit",
 				"description": "Die Welt steht vor unglaublich großen Problemen: sinkende Solidarität & soziale Interaktion in unserer Gesellschaft, Klimaschutz, wachsende Verschmutzung und Gesundheitsprobleme. Wir entwickeln eine Plattform die diese Probleme adressiert und somit einen messbaren Wert für Organisationen und Benutzer darstellt.",
 				"iconcols": {
 					"relevantchallenges":{
-						"title": "Relevante Herausforderungen",
-						"description": "Löse Herausforderungen die für dich wichtig erscheinen. Du findest den Klimaschutz wichtig? Dann erhälst du Herausforderungen die dieses Problem adressieren."
+						"title": "Relevante Challenges",
+						"description": "Löse für dich interessante Herausforderungen. Du findest den Klimaschutz wichtig? Dann erhälst du Herausforderungen die dieses Problem adressieren."
 					},
 					"personalizedprizes": {
 						"title": "Personalisierte Preise",
-						"description": "Probleme zu lösen benötigt Kraft. Beim Lösen erhälst du deshalb relevante Preise, die deinen Interessen entsprechen. Du fährst gerne Ski oder gehst gerne Wandern? Dann gewinnst du z.B.: eine Ausrüstung!"
+						"description": "Beim Lösen erhälst du relevante Preise, die deinen Interessen entsprechen. Du fährst gerne Ski? Dann gewinnst du z.B.: passende Ausrüstung!"
 					},
 					"microvolunteering": {
 						"title": "Micro-Volunteering",
