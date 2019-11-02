@@ -84,7 +84,7 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
 
             <NavBar />
             <BlogPageHeader />
-            <div className='section profile-content'>
+            <div className='section profile-content' style={{paddingTop: 0}}>
                 <Container>
                     <Row>
                         <Col className='ml-auto mr-auto text-center' md='8'>

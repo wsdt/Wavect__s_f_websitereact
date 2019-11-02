@@ -28,11 +28,12 @@ import Footer from '../../../components/Footers/Footer'
 import {B2BPageHeader} from '../../../components/Headers/SlideHeaders/custom/B2BPageHeader'
 import NavBar from '../../../components/Navbars/NavBar'
 import {Li, Ol} from '../../blogs/blogs_components/text_components/List'
-import {breadCrumbForCompanies, breadCrumbWhy} from '../../breadcrumbs/breadcrumbs.constants'
+import {breadCrumbForCompanies, breadCrumbHome, breadCrumbWhy} from '../../breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from '../../CollapseIconText'
 import ContactForm from '../../ContactForm/ContactForm'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import B2BFacts from './B2BFacts'
+import BreadCrumbs from "../../breadcrumbs/Breadcrumbs";
 
 interface IB2BProps {
     routeProps:RouteProps,
@@ -62,10 +63,12 @@ function B2B(props: IB2BProps) {
             <NavBar/>
             <B2BPageHeader t={t}/>
             <div className='main'>
-                <div className='section text-center'>
+                <div className='section text-center' style={{paddingTop: 0}}>
                     <Container>
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
+                                <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbForCompanies]}/>
+
                                 <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>
                                     <Ol>

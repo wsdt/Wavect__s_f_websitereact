@@ -27,12 +27,13 @@ import Footer from '../../../components/Footers/Footer'
 import {B2GPageHeader} from '../../../components/Headers/SlideHeaders/custom/B2GPageHeader'
 import NavBar from '../../../components/Navbars/NavBar'
 import {Li, Ol} from '../../blogs/blogs_components/text_components/List'
-import {breadCrumbForOrganizations, breadCrumbWhy,} from '../../breadcrumbs/breadcrumbs.constants'
+import {breadCrumbForOrganizations, breadCrumbHome, breadCrumbWhy,} from '../../breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from '../../CollapseIconText'
 import ContactForm from '../../ContactForm/ContactForm'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import B2GFacts from './B2GFacts'
 import parse from 'html-react-parser'
+import BreadCrumbs from "../../breadcrumbs/Breadcrumbs";
 
 interface IB2GProps {
     routeProps:RouteProps,
@@ -63,10 +64,12 @@ function B2G(props: IB2GProps) {
             <NavBar />
             <B2GPageHeader t={t} />
             <div className='main'>
-                <div className='section text-center'>
+                <div className='section text-center' style={{paddingTop: 0}}>
                     <Container>
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
+                                <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbForOrganizations]}/>
+
                                 <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>
                                     <Ol>

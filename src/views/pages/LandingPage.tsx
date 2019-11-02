@@ -43,10 +43,11 @@ import {CollapseIconText} from './CollapseIconText'
 import ContactForm from './ContactForm/ContactForm'
 import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from './SocialShareBar/SocialShareBar'
+import BreadCrumbs from "./breadcrumbs/Breadcrumbs";
 
 interface ILandingPageProps {
-    routeProps:RouteProps,
-    t: (key:string, ...args:any) => string,
+    routeProps: RouteProps,
+    t: (key: string, ...args: any) => string,
 }
 
 function LandingPage(props: ILandingPageProps) {
@@ -66,16 +67,18 @@ function LandingPage(props: ILandingPageProps) {
                 <title>{t(schema.header.title)}</title>
                 <meta name='description'
                       content={t(schema.header.description)}/>
-                      <meta name='keywords' content='wavect,challenge,environment,social,health,home'/>
+                <meta name='keywords' content='wavect,challenge,environment,social,health,home'/>
             </Helmet>
 
             <NavBar/>
             <LandingPageHeader title={t(schema.landingview.title)} subtitle={t(schema.landingview.subtitle)}/>
             <div className='main'>
-                <div className='section text-center'>
+                <div className='section text-center' style={{paddingTop: 0}}>
                     <Container>
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
+                                <BreadCrumbs breadcrumbs={[breadCrumbHome]}/>
+
                                 <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>{t(schema.intro.description)}</h5>
                                 <br/>
@@ -87,15 +90,18 @@ function LandingPage(props: ILandingPageProps) {
                         <br/>
                         <Row>
                             <Col md='3'>
-                                <CollapseIconText icon={faListAlt} title={t(schema.intro.iconcols.relevantchallenges.title)}
+                                <CollapseIconText icon={faListAlt}
+                                                  title={t(schema.intro.iconcols.relevantchallenges.title)}
                                                   descr={t(schema.intro.iconcols.relevantchallenges.description)}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faAward} title={t(schema.intro.iconcols.personalizedprizes.title)}
+                                <CollapseIconText icon={faAward}
+                                                  title={t(schema.intro.iconcols.personalizedprizes.title)}
                                                   descr={t(schema.intro.iconcols.personalizedprizes.description)}/>
                             </Col>
                             <Col md='3'>
-                                <CollapseIconText icon={faHandsHelping} title={t(schema.intro.iconcols.microvolunteering.title)}
+                                <CollapseIconText icon={faHandsHelping}
+                                                  title={t(schema.intro.iconcols.microvolunteering.title)}
                                                   descr={t(schema.intro.iconcols.microvolunteering.description)}/>
                             </Col>
                             <Col md='3'>
@@ -165,7 +171,8 @@ function LandingPage(props: ILandingPageProps) {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <GrayColorImg alt={t(schema.aboutus.cmo.imgAltTag)} src={imgMariellaGalneder}/>
+                                            <GrayColorImg alt={t(schema.aboutus.cmo.imgAltTag)}
+                                                          src={imgMariellaGalneder}/>
                                         </a>
                                     </div>
                                     <CardBody>
@@ -269,7 +276,8 @@ function LandingPage(props: ILandingPageProps) {
                                 <Card className='card-profile card-plain'>
                                     <div className='card-avatar'>
                                         <a href='/#' onClick={e => e.preventDefault()}>
-                                            <GrayColorImg alt={t(schema.aboutus.cfo.imgAltTag)} src={imgDanielGosterxeier}/>
+                                            <GrayColorImg alt={t(schema.aboutus.cfo.imgAltTag)}
+                                                          src={imgDanielGosterxeier}/>
                                         </a>
                                     </div>
                                     <CardBody>
@@ -365,7 +373,7 @@ function LandingPage(props: ILandingPageProps) {
                     </Container>
                 </div>
 
-                <ContactForm t={t} />
+                <ContactForm t={t}/>
 
                 <SocialShareBar shareUrl={breadCrumbHome.link}/>
             </div>

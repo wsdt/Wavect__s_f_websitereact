@@ -29,13 +29,14 @@ import Footer from '../../components/Footers/Footer'
 import {WhyPageHeader} from '../../components/Headers/SlideHeaders/custom/WhyPageHeader'
 import NavBar from '../../components/Navbars/NavBar'
 import {P} from '../blogs/blogs_components/text_components/P'
-import {breadCrumbWhy} from '../breadcrumbs/breadcrumbs.constants'
+import {breadCrumbHome, breadCrumbWhy} from '../breadcrumbs/breadcrumbs.constants'
 import {CollapseIconText} from '../CollapseIconText'
 import ContactForm from '../ContactForm/ContactForm'
 import {GrayColorImg} from '../grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from '../SocialShareBar/SocialShareBar'
 import ExemplaryChallenges from './ExemplaryChallenges'
 import BecomeTesterForm from "./BecomeTesterForm";
+import BreadCrumbs from "../breadcrumbs/Breadcrumbs";
 
 interface IWhyHowProps {
     routeProps:RouteProps,
@@ -65,10 +66,11 @@ function WhyHow(props: IWhyHowProps) {
             <NavBar/>
             <WhyPageHeader t={t}/>
             <div className='main'>
-                <div className='section text-center'>
+                <div className='section text-center' style={{paddingTop: 0}}>
                     <Container>
                         <Row>
                             <Col className='ml-auto mr-auto' md='8'>
+                                <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbWhy]}/>
                                 <h2 className='title'>{t(schema.intro.title)}</h2>
                                 <h5 className='description'>
                                     <P>{t(schema.intro.description)}</P>

@@ -69,11 +69,6 @@ function LandingPageHeader(props:ILandingPageHeaderProps) {
                         <h2 className="presentation-subtitle text-center" style={{ fontSize: `${fontSizeSubtitle}vw` }}>
                             {props.subtitle}
                         </h2>
-                        {/*<br/>
-                        <div className="motto text-center">
-                            <ModalVideo/>
-                        </div>
-                        <Button className="btn-round" color="neutral" type="button" outline>Become a Tester</Button>*/}
                     </Container>
                 </div>
                 <div
