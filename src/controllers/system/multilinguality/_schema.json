@@ -12,7 +12,6 @@
         "modalvideo": {
             "landingpage": {
                 "btnLbl": "common_components.modalvideo.landingpage.btnLbl",
-                "modalTitle": "common_components.modalvideo.landingpage.modalTitle",
                 "iframeTitle": "common_components.modalvideo.landingpage.iframeTitle"
             }
         },
@@ -153,7 +152,10 @@
             },
             "blogs": {
                 "general": {
-                    "posts": "pages.blog.blogs.general.posts"
+                    "posts": "pages.blog.blogs.general.posts",
+                    "languages": {
+                        "en": "pages.blog.blogs.general.languages.en"
+                    }
                 },
                 "kevinriedl": {
                     "header": {

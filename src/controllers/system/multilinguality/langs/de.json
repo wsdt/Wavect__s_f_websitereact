@@ -152,7 +152,10 @@
 			},
 			"blogs": {
 				"general": {
-					"posts": "Posts"
+					"posts": "Posts",
+					"languages": {
+						"en": "Englisch"
+					}
 				},
 				"kevinriedl": {
 					"header": {
@@ -174,7 +177,7 @@
 			},
 			"slider": {
 				"slide_0": {
-					"title": "Sponsorn Sie Herausforderungen mit Rabatten, Produkten, Gutscheinen oder gar Cash.",
+					"title": "Sponsorn Sie Herausforderungen mit Geld, Rabatten, Gutscheinen oder Produkten",
 					"subtitle": "Es war noch nie so einfach, einen ökologischen, sozialen oder gesundheitsbezogenen positiven Einfluss zu schaffen.",
 					"bgImgAlt": "Schreibtisch voll mit Arbeitsmaterial"
 				},
@@ -313,7 +316,7 @@
 			},
 			"slider": {
 				"slide_0": {
-					"title": "Politiker, NGO, Wohltätigkeitsorganisation oder Verein?",
+					"title": "Politiker, NGO, Stiftung oder Verein?",
 					"subtitle": "Unternehmen sind nicht die einzigen, die von unserem Service profitieren.",
 					"bgImgAlt": "Arbeitsmaterial"
 				},
@@ -386,7 +389,7 @@
 					},
 					"aggregatedimpact": {
 						"title": "Aggregierter Einfluss",
-						"description": "<strong>Der erzeugte Einfluss kann direkt Ihrer Organisation zugeschrieben werden</strong>. Der Einfluss wird zusammengefasst, um der Öffentlichkeit zu zeigen, was Ihr Sponsoring bewirkt hat."
+						"description": "<strong>Der erzeugte Impakt kann direkt Ihrer Organisation zugeschrieben werden</strong>. Der Einfluss wird zusammengefasst, um der Öffentlichkeit zu zeigen, was Ihr Sponsoring bewirkt hat. So einfach war CSR noch nie."
 					}
 				}
 			},

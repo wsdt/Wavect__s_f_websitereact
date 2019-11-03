@@ -152,7 +152,10 @@
 			},
 			"blogs": {
 				"general": {
-					"posts": "Posts"
+					"posts": "Posts",
+					"languages": {
+						"en": "English"
+					}
 				},
 				"kevinriedl": {
 					"header": {

@@ -141,6 +141,7 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
                                             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
                                             blogTitle={t(breadCrumbBlogKevinRiedlHappinessNeqFulfillment.title)}
                                             blogHeaderImg={imgKevinRiedlHappinessNeqFulfillment}
+                                            blogLanguage={t(schema.general.languages.en)}
                                         />
 
                                         <hr />
@@ -149,6 +150,7 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
                                             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
                                             blogTitle={t(breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.title)}
                                             blogHeaderImg={imgKevinRiedlChangeThoughtsOnBurnoutStress}
+                                            blogLanguage={t(schema.general.languages.en)}
                                         />
                                         <hr />
                                         <BlogListDraft
@@ -156,6 +158,7 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
                                             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
                                             blogTitle={t(breadCrumbBlogKevinRiedlStrategicHustling.title)}
                                             blogHeaderImg={imgKevinRiedlStrategicHustling}
+                                            blogLanguage={t(schema.general.languages.en)}
                                         />
                                         <hr />
                                         <BlogListDraft
@@ -163,6 +166,7 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
                                             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
                                             blogTitle={t(breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.title)}
                                             blogHeaderImg={imgKevinRiedlSayingYesIsABigNoToOpportunities}
+                                            blogLanguage={t(schema.general.languages.en)}
                                         />
                                         <hr />
                                         <BlogListDraft
@@ -170,6 +174,7 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
                                             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
                                             blogTitle={t(breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.title)}
                                             blogHeaderImg={imgKevinRiedlStartReflectingOrDieFullOfRegrets}
+                                            blogLanguage={t(schema.general.languages.en)}
                                         />
                                     </ul>
                                 </Col>

@@ -8,6 +8,7 @@ export interface IBlogListDraftProps {
     blogCategory: BlogCategories
     blogTitle: string
     blogHeaderImg: string
+    blogLanguage: string
 }
 
 function BlogListDraft(props: IBlogListDraftProps) {
@@ -26,7 +27,7 @@ function BlogListDraft(props: IBlogListDraftProps) {
                         <h6>
                             {props.blogTitle}
                             <br />
-                            <small>{props.blogCategory}</small>
+                            <small>{props.blogCategory} - {props.blogLanguage}</small>
                         </h6>
                     </Col>
                 </Row>
