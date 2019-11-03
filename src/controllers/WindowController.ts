@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 export const getWindowDimensions = () => {
-    const {innerWidth: width, innerHeight: height} = window
-    return {width, height}
+    const { innerWidth: width, innerHeight: height } = window
+    return { width, height }
 }
 
 export const isMobileWidth = (totalWidth: number): boolean => {

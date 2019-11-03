@@ -1,31 +1,29 @@
-import {ErrorMessage, Field, Form, Formik, FormikProps} from 'formik'
-import React, {PureComponent} from 'react'
-import {Alert, Button, Collapse, Input, InputGroup, InputGroupAddon} from 'reactstrap'
+import { ErrorMessage, Field, Form, Formik, FormikProps } from 'formik'
+import React, { PureComponent } from 'react'
+import { Alert, Button, Collapse, Input, InputGroup, InputGroupAddon } from 'reactstrap'
 import * as Yup from 'yup'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
-import {ApiResponse} from '../../../models/ApiResponse'
-import {P} from '../blogs/blogs_components/text_components/P'
-import {FormInputErrorMsg} from '../FormInputErrorMsg'
+import { ApiResponse } from '../../../models/ApiResponse'
+import { P } from '../blogs/blogs_components/text_components/P'
+import { FormInputErrorMsg } from '../FormInputErrorMsg'
 
 interface IBecomeTesterFormProps {
-    t: (key: string, ...args: any) => string,
+    t: (key: string, ...args: any) => string
 }
 
 interface IBecomeTesterFormState {
-    isCollapseOpen: boolean,
-    wasFormSubmitted: boolean,
-    wasSubmissionSuccessful: boolean,
+    isCollapseOpen: boolean
+    wasFormSubmitted: boolean
+    wasSubmissionSuccessful: boolean
 }
 
 interface IFormikValues {
-    userMail: string,
+    userMail: string
 }
 
 const schema = _schema.pages.whyhow.intro.becometester
 
-
 class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTesterFormState> {
-
     public state: IBecomeTesterFormState = {
         isCollapseOpen: false,
         wasFormSubmitted: false,
@@ -35,7 +33,7 @@ class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTest
     private validationSchema = Yup.object().shape({
         userMail: Yup.string()
             .email(this.props.t(schema.email.errors.emailRegex))
-            .required(this.props.t(schema.email.errors.required))
+            .required(this.props.t(schema.email.errors.required)),
     })
 
     private initialFormValues: IFormikValues = {
@@ -43,63 +41,74 @@ class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTest
     }
 
     public render() {
-        return <Formik
-            initialValues={this.initialFormValues}
-            validationSchema={this.validationSchema}
-            onSubmit={(values, {setSubmitting}) => this.sendForm(values, setSubmitting)}>
-            {(formikProps: FormikProps<IFormikValues>) => this.renderForm(formikProps)}
-        </Formik>
+        return (
+            <Formik
+                initialValues={this.initialFormValues}
+                validationSchema={this.validationSchema}
+                onSubmit={(values, { setSubmitting }) => this.sendForm(values, setSubmitting)}
+            >
+                {(formikProps: FormikProps<IFormikValues>) => this.renderForm(formikProps)}
+            </Formik>
+        )
     }
 
     public renderForm(formikProps: FormikProps<IFormikValues>) {
-        const {t} = this.props
+        const { t } = this.props
 
-        const {
-            isSubmitting,
-            handleChange,
-            handleSubmit,
-        } = formikProps
+        const { isSubmitting, handleChange, handleSubmit } = formikProps
 
-        return <Form onSubmit={handleSubmit}>
-            {this.getAlert()}
-            <Field name='userMail'>
-                {() => (
-                    <InputGroup>
-                        <InputGroupAddon addonType='prepend' style={{height: 45}}>@</InputGroupAddon>
-                        <Input placeholder={t(schema.email.placeholder)} type='email' style={{height:45}}
-                               name='userMail' onChange={handleChange} disabled={isSubmitting}
-                               onFocus={() => this.openCollapse(true)} onBlur={() => this.openCollapse(false)}/>
-                        <InputGroupAddon addonType='append' style={{cursor: 'pointer', height: 45}}
-                                         onClick={(e: any) => handleSubmit(e)}><Button color='secondary' type='submit' style={{height: 45}}>{t(_schema.general.submit)}</Button></InputGroupAddon>
-                    </InputGroup>
-                )}
-            </Field>
-            <ErrorMessage name='userMail' component={FormInputErrorMsg} />
+        return (
+            <Form onSubmit={handleSubmit}>
+                {this.getAlert()}
+                <Field name="userMail">
+                    {() => (
+                        <InputGroup>
+                            <InputGroupAddon addonType="prepend" style={{ height: 45 }}>
+                                @
+                            </InputGroupAddon>
+                            <Input
+                                placeholder={t(schema.email.placeholder)}
+                                type="email"
+                                style={{ height: 45 }}
+                                name="userMail"
+                                onChange={handleChange}
+                                disabled={isSubmitting}
+                                onFocus={() => this.openCollapse(true)}
+                                onBlur={() => this.openCollapse(false)}
+                            />
+                            <InputGroupAddon addonType="append" style={{ cursor: 'pointer', height: 45 }} onClick={(e: any) => handleSubmit(e)}>
+                                <Button color="secondary" type="submit" style={{ height: 45 }}>
+                                    {t(_schema.general.submit)}
+                                </Button>
+                            </InputGroupAddon>
+                        </InputGroup>
+                    )}
+                </Field>
+                <ErrorMessage name="userMail" component={FormInputErrorMsg} />
 
-
-            <Collapse isOpen={this.state.isCollapseOpen}>
-                <P>
-                    <small style={{color: '#ccc'}}>{t(schema.dataprivacy)}</small>
-                </P>
-            </Collapse>
-        </Form>
+                <Collapse isOpen={this.state.isCollapseOpen}>
+                    <P>
+                        <small style={{ color: '#ccc' }}>{t(schema.dataprivacy)}</small>
+                    </P>
+                </Collapse>
+            </Form>
+        )
     }
 
     private getAlert = () => {
-        const {t} = this.props
+        const { t } = this.props
 
         if (this.state.wasFormSubmitted) {
             return this.state.wasSubmissionSuccessful ? (
-                <Alert color='success'>{t(schema.alerts.formSubmissionSuccessful)}</Alert>
+                <Alert color="success">{t(schema.alerts.formSubmissionSuccessful)}</Alert>
             ) : (
-                <Alert color='danger'>{t(schema.alerts.formSubmissionError)}</Alert>
+                <Alert color="danger">{t(schema.alerts.formSubmissionError)}</Alert>
             )
         }
         return null
     }
 
-    private sendForm = async (values:IFormikValues, setSubmitting:(isSubmitting:boolean)=>void) => {
-
+    private sendForm = async (values: IFormikValues, setSubmitting: (isSubmitting: boolean) => void) => {
         setSubmitting(true)
 
         try {
@@ -115,19 +124,18 @@ class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTest
             })).json()
 
             if (res.err) {
-                this.setState({wasFormSubmitted: true, wasSubmissionSuccessful: false})
+                this.setState({ wasFormSubmitted: true, wasSubmissionSuccessful: false })
             } else {
-                this.setState({wasFormSubmitted: true, wasSubmissionSuccessful: true})
+                this.setState({ wasFormSubmitted: true, wasSubmissionSuccessful: true })
             }
         } catch (e) {
             console.error('BecomeTesterForm:sendForm: Could not send form -> ' + JSON.stringify(e))
-            this.setState({wasFormSubmitted: true, wasSubmissionSuccessful: false})
+            this.setState({ wasFormSubmitted: true, wasSubmissionSuccessful: false })
         }
         setSubmitting(false)
-
     }
 
-    private openCollapse = (open: boolean) => this.setState({isCollapseOpen: open})
+    private openCollapse = (open: boolean) => this.setState({ isCollapseOpen: open })
 }
 
 export default BecomeTesterForm

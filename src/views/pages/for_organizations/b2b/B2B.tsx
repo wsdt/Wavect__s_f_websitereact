@@ -16,32 +16,32 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import {faAd, faCreditCard, faFilter, faUsers} from '@fortawesome/free-solid-svg-icons'
+import { faAd, faCreditCard, faFilter, faUsers } from '@fortawesome/free-solid-svg-icons'
 import parse from 'html-react-parser'
 import React from 'react'
-import {Helmet} from 'react-helmet'
-import {translate} from 'react-polyglot'
-import {RouteProps} from 'react-router'
-import {Col, Container, Row} from 'reactstrap'
+import { Helmet } from 'react-helmet'
+import { translate } from 'react-polyglot'
+import { RouteProps } from 'react-router'
+import { Col, Container, Row } from 'reactstrap'
 import _schema from '../../../../controllers/system/multilinguality/_schema.json'
 import Footer from '../../../components/Footers/Footer'
-import {B2BPageHeader} from '../../../components/Headers/SlideHeaders/custom/B2BPageHeader'
+import { B2BPageHeader } from '../../../components/Headers/SlideHeaders/custom/B2BPageHeader'
 import NavBar from '../../../components/Navbars/NavBar'
-import {Li, Ol} from '../../blogs/blogs_components/text_components/List'
-import {breadCrumbForCompanies, breadCrumbHome, breadCrumbWhy} from '../../breadcrumbs/breadcrumbs.constants'
-import {CollapseIconText} from '../../CollapseIconText'
+import { Li, Ol } from '../../blogs/blogs_components/text_components/List'
+import { breadCrumbForCompanies, breadCrumbHome, breadCrumbWhy } from '../../breadcrumbs/breadcrumbs.constants'
+import { CollapseIconText } from '../../CollapseIconText'
 import ContactForm from '../../ContactForm/ContactForm'
 import SocialShareBar from '../../SocialShareBar/SocialShareBar'
 import B2BFacts from './B2BFacts'
-import BreadCrumbs from "../../breadcrumbs/Breadcrumbs";
+import BreadCrumbs from '../../breadcrumbs/Breadcrumbs'
 
 interface IB2BProps {
-    routeProps:RouteProps,
-    t: (key:string, ...args:any) => string,
+    routeProps: RouteProps
+    t: (key: string, ...args: any) => string
 }
 
 function B2B(props: IB2BProps) {
-    const {t} = props
+    const { t } = props
     const schema = _schema.pages.b2b
 
     document.documentElement.classList.remove('nav-open')
@@ -55,62 +55,76 @@ function B2B(props: IB2BProps) {
         <>
             <Helmet>
                 <title>{t(schema.header.title)}</title>
-                <meta name='description'
-                      content={t(schema.header.description)}/>
-                <meta name='keywords' content='wavect,sponsor,customer,corporate,social,responsibility,csr,personalize,low,price,storytelling,image,reputation'/>
+                <meta name="description" content={t(schema.header.description)} />
+                <meta
+                    name="keywords"
+                    content="wavect,sponsor,customer,corporate,social,responsibility,csr,personalize,low,price,storytelling,image,reputation"
+                />
             </Helmet>
 
-            <NavBar/>
-            <B2BPageHeader t={t}/>
-            <div className='main'>
-                <div className='section text-center' style={{paddingTop: 0}}>
+            <NavBar />
+            <B2BPageHeader t={t} />
+            <div className="main">
+                <div className="section text-center" style={{ paddingTop: 0 }}>
                     <Container>
                         <Row>
-                            <Col className='ml-auto mr-auto' md='8'>
-                                <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbForCompanies]}/>
+                            <Col className="ml-auto mr-auto" md="8">
+                                <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbForCompanies]} />
 
-                                <h2 className='title'>{t(schema.intro.title)}</h2>
-                                <h5 className='description'>
+                                <h2 className="title">{t(schema.intro.title)}</h2>
+                                <h5 className="description">
                                     <Ol>
-                                        <Li>{parse(t(schema.intro.description._1, {link:breadCrumbWhy.link}))}</Li>
+                                        <Li>{parse(t(schema.intro.description._1, { link: breadCrumbWhy.link }))}</Li>
                                         <Li>{t(schema.intro.description._2)}</Li>
                                         <Li>{t(schema.intro.description._3)}</Li>
                                         <Li>{t(schema.intro.description._4)}</Li>
                                     </Ol>
                                 </h5>
-                                <br/>
+                                <br />
                             </Col>
                         </Row>
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <Row>
-                            <Col md='3'>
-                                <CollapseIconText icon={faCreditCard} title={t(schema.intro.iconcols.lowpricedcsr.title)}
-                                                  descr={parse(t(schema.intro.iconcols.lowpricedcsr.description))}/>
+                            <Col md="3">
+                                <CollapseIconText
+                                    icon={faCreditCard}
+                                    title={t(schema.intro.iconcols.lowpricedcsr.title)}
+                                    descr={parse(t(schema.intro.iconcols.lowpricedcsr.description))}
+                                />
                             </Col>
-                            <Col md='3'>
-                                <CollapseIconText icon={faFilter} title={t(schema.intro.iconcols.personalizedcsr.title)}
-                                                  descr={parse(t(schema.intro.iconcols.personalizedcsr.description))}/>
+                            <Col md="3">
+                                <CollapseIconText
+                                    icon={faFilter}
+                                    title={t(schema.intro.iconcols.personalizedcsr.title)}
+                                    descr={parse(t(schema.intro.iconcols.personalizedcsr.description))}
+                                />
                             </Col>
-                            <Col md='3'>
-                                <CollapseIconText icon={faAd} title={t(schema.intro.iconcols.storytelling.title)}
-                                                  descr={parse(t(schema.intro.iconcols.storytelling.description))}/>
+                            <Col md="3">
+                                <CollapseIconText
+                                    icon={faAd}
+                                    title={t(schema.intro.iconcols.storytelling.title)}
+                                    descr={parse(t(schema.intro.iconcols.storytelling.description))}
+                                />
                             </Col>
-                            <Col md='3'>
-                                <CollapseIconText icon={faUsers} title={t(schema.intro.iconcols.aggregatedimpact.title)}
-                                                  descr={parse(t(schema.intro.iconcols.aggregatedimpact.description))}/>
+                            <Col md="3">
+                                <CollapseIconText
+                                    icon={faUsers}
+                                    title={t(schema.intro.iconcols.aggregatedimpact.title)}
+                                    descr={parse(t(schema.intro.iconcols.aggregatedimpact.description))}
+                                />
                             </Col>
                         </Row>
                     </Container>
                 </div>
-                <div className='section section-dark text-center'>
-                    <B2BFacts t={t}/>
+                <div className="section section-dark text-center">
+                    <B2BFacts t={t} />
                 </div>
 
-                <ContactForm t={t}/>
-                <SocialShareBar shareUrl={breadCrumbForCompanies.link}/>
+                <ContactForm t={t} />
+                <SocialShareBar shareUrl={breadCrumbForCompanies.link} />
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

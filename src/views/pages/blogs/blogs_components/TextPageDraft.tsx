@@ -28,17 +28,17 @@ import BreadCrumbs from '../../breadcrumbs/Breadcrumbs'
 import { BreadcrumbConstants } from '../../breadcrumbs/breadcrumbs.constants'
 import { BlogCategories } from '../BlogCategories'
 import { TextHeader } from './text_components/TextHeader'
-import {translate} from "react-polyglot";
+import { translate } from 'react-polyglot'
 
 export interface ITextPageDraftProps {
     blogCategory?: BlogCategories
     breadCrumbs: BreadcrumbConstants[]
-    children: any,
-    t: (key:string, ...args:any) => string,
+    children: any
+    t: (key: string, ...args: any) => string
 }
 
 function TextPageDraft(props: ITextPageDraftProps) {
-    const {t} = props
+    const { t } = props
 
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
@@ -52,7 +52,7 @@ function TextPageDraft(props: ITextPageDraftProps) {
         <>
             <NavBar />
             <BlogPageHeader />
-            <div className="section profile-content" style={{paddingTop: 0}}>
+            <div className="section profile-content" style={{ paddingTop: 0 }}>
                 <Container>
                     <Row>
                         <Col className="ml-auto mr-auto text-center" md="8">

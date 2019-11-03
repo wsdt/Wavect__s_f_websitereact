@@ -18,22 +18,23 @@
 */
 /*eslint-disable*/
 import React from 'react'
-import {translate} from 'react-polyglot'
+import { translate } from 'react-polyglot'
 import { Container, Row } from 'reactstrap'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
 import { breadCrumbDataPrivacy, breadCrumbImpressum } from '../../pages/breadcrumbs/breadcrumbs.constants'
 
 interface IFooterProps {
-    t: (key:string, ...args:any) => string,
+    t: (key: string, ...args: any) => string
 }
 
-function Footer(props:IFooterProps) {
-    const {t} = props
+function Footer(props: IFooterProps) {
+    const { t } = props
 
-    return <footer className='footer footer-black footer-white'>
+    return (
+        <footer className="footer footer-black footer-white">
             <Container>
                 <Row>
-                    <nav className='footer-nav'>
+                    <nav className="footer-nav">
                         <ul>
                             <li>
                                 <a href={breadCrumbImpressum.link}>{t(breadCrumbImpressum.title)}</a>
@@ -43,12 +44,15 @@ function Footer(props:IFooterProps) {
                             </li>
                         </ul>
                     </nav>
-                    <div className='credits ml-auto'>
-                        <span className='copyright'>© {t(_schema.general.wavect.title)}, {new Date().getFullYear()}</span>
+                    <div className="credits ml-auto">
+                        <span className="copyright">
+                            © {t(_schema.general.wavect.title)}, {new Date().getFullYear()}
+                        </span>
                     </div>
                 </Row>
             </Container>
         </footer>
+    )
 }
 
 export default translate()(Footer)

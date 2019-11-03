@@ -1,6 +1,6 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
 
 export interface IGrayColorIconProps {
-    icon: IconDefinition,
+    icon: IconDefinition
     onClick?: () => void
 }

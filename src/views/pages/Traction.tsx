@@ -17,8 +17,8 @@
 
 */
 import React from 'react'
-import {Helmet} from 'react-helmet'
-import {translate} from 'react-polyglot'
+import { Helmet } from 'react-helmet'
+import { translate } from 'react-polyglot'
 import { RouteProps } from 'react-router'
 import { Col, Container, Row } from 'reactstrap'
 import _schema from '../../controllers/system/multilinguality/_schema.json'
@@ -34,12 +34,12 @@ import Competitions from './traction/Competitions'
 import Partners from './traction/Partners'
 
 interface ITractionProps {
-    routeProps:RouteProps,
-    t: (key:string, ...args:any) => string,
+    routeProps: RouteProps
+    t: (key: string, ...args: any) => string
 }
 
 function Traction(props: ITractionProps) {
-    const {t} = props
+    const { t } = props
 
     document.documentElement.classList.remove('nav-open')
     React.useEffect(() => {
@@ -53,16 +53,15 @@ function Traction(props: ITractionProps) {
         <>
             <Helmet>
                 <title>{t(_schema.pages.traction.header.title)}</title>
-                <meta name='description'
-                      content={t(_schema.pages.traction.header.description)}/>
-                <meta name='keywords' content='wavect,traction,change,inspire,partner,sponsor,impact'/>
+                <meta name="description" content={t(_schema.pages.traction.header.description)} />
+                <meta name="keywords" content="wavect,traction,change,inspire,partner,sponsor,impact" />
             </Helmet>
             <NavBar />
             <BlogPageHeader />
-            <div className='section profile-content' style={{paddingTop: 0}}>
+            <div className="section profile-content" style={{ paddingTop: 0 }}>
                 <Container>
                     <Row>
-                        <Col className='ml-auto mr-auto text-left' md='8'>
+                        <Col className="ml-auto mr-auto text-left" md="8">
                             <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbTraction]} />
 
                             <TextHeader>{t(_schema.pages.traction.intro.title)}</TextHeader>
@@ -76,11 +75,11 @@ function Traction(props: ITractionProps) {
                 </Container>
             </div>
 
-            <div className='section section-dark text-center'>
+            <div className="section section-dark text-center">
                 <Container>
                     <Row>
-                        <Col className='ml-auto mr-auto text-left' md='8'>
-                            <Partners t={t}/>
+                        <Col className="ml-auto mr-auto text-left" md="8">
+                            <Partners t={t} />
                         </Col>
                     </Row>
                 </Container>

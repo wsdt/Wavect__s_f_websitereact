@@ -18,19 +18,19 @@
 */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {I18n} from 'react-polyglot'
+import { I18n } from 'react-polyglot'
 import './assets/css/bootstrap.min.css'
 import './assets/demo/demo.css'
 import './assets/scss/paper-kit.scss'
-import {TranslationBundle} from './controllers/system/multilinguality/TranslationBundler'
-import {getCurrentLang} from './controllers/system/multilinguality/TranslationBundler'
+import { TranslationBundle } from './controllers/system/multilinguality/TranslationBundler'
+import { getCurrentLang } from './controllers/system/multilinguality/TranslationBundler'
 import CustomRouter from './controllers/system/routers/CustomRouter'
 
-const lang:string = getCurrentLang()
+const lang: string = getCurrentLang()
 
 ReactDOM.render(
     <I18n locale={lang} messages={TranslationBundle[lang]}>
-        <CustomRouter/>
+        <CustomRouter />
     </I18n>,
     document.getElementById('root')
 )

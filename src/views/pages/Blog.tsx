@@ -26,55 +26,56 @@ import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 
 // assets
-import {Helmet} from 'react-helmet'
-import {RouteProps} from 'react-router'
+import { Helmet } from 'react-helmet'
+import { RouteProps } from 'react-router'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import _schema from '../../controllers/system/multilinguality/_schema.json'
 import TextPageDraft from './blogs/blogs_components/TextPageDraft'
-import {breadCrumbBlogs, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
-import {GrayColorImg} from './grayscale_color/GrayColorImg/GrayColorImg'
+import { breadCrumbBlogs, breadCrumbHome } from './breadcrumbs/breadcrumbs.constants'
+import { GrayColorImg } from './grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from './SocialShareBar/SocialShareBar'
-import {translate} from "react-polyglot";
+import { translate } from 'react-polyglot'
 
 interface IBlogProps {
-    routeProps:RouteProps,
-    t: (key:string, ...args:any) => string,
+    routeProps: RouteProps
+    t: (key: string, ...args: any) => string
 }
 
 function Blog(props: IBlogProps) {
-    const {t} = props
+    const { t } = props
     const schema = _schema.pages.blog
 
-    return <>
-        <Helmet>
-            <title>{t(schema.header.title)}</title>
-            <meta name='description'
-                  content={t(schema.header.description)}/>
-            <meta name='keywords' content='wavect,blog,founder,post,personal,development,software,technical,economical,topic'/>
-        </Helmet>
+    return (
+        <>
+            <Helmet>
+                <title>{t(schema.header.title)}</title>
+                <meta name="description" content={t(schema.header.description)} />
+                <meta name="keywords" content="wavect,blog,founder,post,personal,development,software,technical,economical,topic" />
+            </Helmet>
 
-        <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]}>
-            <p>{t(schema.intro.description)}</p>
-            <br/>
-            {/*
+            <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]}>
+                <p>{t(schema.intro.description)}</p>
+                <br />
+                {/*
                             <Button className='btn-round' color='default' outline={true}>
                                 <i className='fa fa-cog' /> Settings
                             </Button>*/}
 
-            <a href='/blogs/kevin-riedl' style={{color: '#fff'}}>
-                <Card style={{width: '20rem'}}>
-                    <GrayColorImg src={imgKevinRiedl} alt={t(schema.intro.blogs.kevin_riedl.imgAltTag)}/>
-                    <CardBody>
-                        <CardTitle style={{fontWeight: 'bold'}}>{t(schema.intro.blogs.kevin_riedl.title)}</CardTitle>
-                        <CardText>{t(schema.intro.blogs.kevin_riedl.description)}</CardText>
-                        <Button color='info'>{t(schema.general.readposts)}</Button>
-                    </CardBody>
-                </Card>
-            </a>
+                <a href="/blogs/kevin-riedl" style={{ color: '#fff' }}>
+                    <Card style={{ width: '20rem' }}>
+                        <GrayColorImg src={imgKevinRiedl} alt={t(schema.intro.blogs.kevin_riedl.imgAltTag)} />
+                        <CardBody>
+                            <CardTitle style={{ fontWeight: 'bold' }}>{t(schema.intro.blogs.kevin_riedl.title)}</CardTitle>
+                            <CardText>{t(schema.intro.blogs.kevin_riedl.description)}</CardText>
+                            <Button color="info">{t(schema.general.readposts)}</Button>
+                        </CardBody>
+                    </Card>
+                </a>
 
-            <SocialShareBar shareUrl={breadCrumbBlogs.link}/>
-        </TextPageDraft>
-    </>
+                <SocialShareBar shareUrl={breadCrumbBlogs.link} />
+            </TextPageDraft>
+        </>
+    )
 }
 
 export default translate()(Blog)

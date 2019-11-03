@@ -27,7 +27,9 @@ function BlogListDraft(props: IBlogListDraftProps) {
                         <h6>
                             {props.blogTitle}
                             <br />
-                            <small>{props.blogCategory} - {props.blogLanguage}</small>
+                            <small>
+                                {props.blogCategory} - {props.blogLanguage}
+                            </small>
                         </h6>
                     </Col>
                 </Row>

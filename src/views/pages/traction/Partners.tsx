@@ -28,11 +28,11 @@ import { GrayColorImg } from '../grayscale_color/GrayColorImg/GrayColorImg'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
 
 interface IPartnersProps {
-    t: (key:string) => string,
+    t: (key: string) => string
 }
 
 function Partners(props: IPartnersProps) {
-    const {t} = props
+    const { t } = props
     const schema = _schema.pages.traction.partners
 
     return (
@@ -40,76 +40,76 @@ function Partners(props: IPartnersProps) {
             <H2 hasDarkBackground={true}>{t(schema.title)}</H2>
             <P hasDarkBackground={true}>{t(schema.description)}</P>
             <Row>
-                <Col md='4' xs='8' className='ml-auto mr-auto text-center'>
-                    <Card className='card-profile card-plain'>
-                        <div className='card-avatar'>
-                            <a href='https://www.digipuls.com' target='_blank' rel='noopener noreferrer'>
+                <Col md="4" xs="8" className="ml-auto mr-auto text-center">
+                    <Card className="card-profile card-plain">
+                        <div className="card-avatar">
+                            <a href="https://www.digipuls.com" target="_blank" rel="noopener noreferrer">
                                 <GrayColorImg alt={t(schema.partner.digipuls.altImg)} src={imgPartnerDigipuls} />
                             </a>
                         </div>
                         <CardBody>
-                            <a href='https://www.digipuls.com' target='_blank' rel='noopener noreferrer'>
-                                <div className='author'>
-                                    <CardTitle tag='h4'>{t(schema.partner.digipuls.title)}</CardTitle>
-                                    <h6 className='card-category'>{t(schema.partner.digipuls.subtitle)}</h6>
+                            <a href="https://www.digipuls.com" target="_blank" rel="noopener noreferrer">
+                                <div className="author">
+                                    <CardTitle tag="h4">{t(schema.partner.digipuls.title)}</CardTitle>
+                                    <h6 className="card-category">{t(schema.partner.digipuls.subtitle)}</h6>
                                 </div>
                             </a>
-                            <p className='card-description text-center'>{t(schema.partner.digipuls.description)}</p>
+                            <p className="card-description text-center">{t(schema.partner.digipuls.description)}</p>
                         </CardBody>
-                        <CardFooter className='text-center'>
-                            <a href='https://www.digipuls.com' target='_blank' rel='noopener noreferrer'>
-                                <Button className='btn-just-icon btn-neutral' color='link'>
-                                    <i className='fa fa-link' />
+                        <CardFooter className="text-center">
+                            <a href="https://www.digipuls.com" target="_blank" rel="noopener noreferrer">
+                                <Button className="btn-just-icon btn-neutral" color="link">
+                                    <i className="fa fa-link" />
                                 </Button>
                             </a>
 
-                            <a href='https://www.facebook.com/digipuls/' target='_blank' rel='noopener noreferrer'>
-                                <Button className='btn-just-icon btn-neutral ml-1' color='link'>
-                                    <i className='fa fa-facebook' />
+                            <a href="https://www.facebook.com/digipuls/" target="_blank" rel="noopener noreferrer">
+                                <Button className="btn-just-icon btn-neutral ml-1" color="link">
+                                    <i className="fa fa-facebook" />
                                 </Button>
                             </a>
 
-                            <a href='https://www.instagram.com/digipuls' target='_blank' rel='noopener noreferrer'>
-                                <Button className='btn-just-icon btn-neutral ml-1' color='link'>
-                                    <i className='fa fa-instagram' />
+                            <a href="https://www.instagram.com/digipuls" target="_blank" rel="noopener noreferrer">
+                                <Button className="btn-just-icon btn-neutral ml-1" color="link">
+                                    <i className="fa fa-instagram" />
                                 </Button>
                             </a>
                         </CardFooter>
                     </Card>
                 </Col>
 
-                <Col md='4' xs='8' className='ml-auto mr-auto text-center'>
-                    <Card className='card-profile card-plain'>
-                        <div className='card-avatar'>
-                            <a href='https://inncubator.at' target='_blank' rel='noopener noreferrer'>
+                <Col md="4" xs="8" className="ml-auto mr-auto text-center">
+                    <Card className="card-profile card-plain">
+                        <div className="card-avatar">
+                            <a href="https://inncubator.at" target="_blank" rel="noopener noreferrer">
                                 <GrayColorImg alt={t(schema.partner.innc.altImg)} src={imgPartnerInncubator} />
                             </a>
                         </div>
                         <CardBody>
-                            <a href='https://inncubator.at' target='_blank' rel='noopener noreferrer'>
-                                <div className='author'>
-                                    <CardTitle tag='h4'>{t(schema.partner.innc.title)}</CardTitle>
-                                    <h6 className='card-category'>{t(schema.partner.innc.subtitle)}</h6>
+                            <a href="https://inncubator.at" target="_blank" rel="noopener noreferrer">
+                                <div className="author">
+                                    <CardTitle tag="h4">{t(schema.partner.innc.title)}</CardTitle>
+                                    <h6 className="card-category">{t(schema.partner.innc.subtitle)}</h6>
                                 </div>
                             </a>
-                            <p className='card-description text-center'>{t(schema.partner.innc.description)} </p>
+                            <p className="card-description text-center">{t(schema.partner.innc.description)} </p>
                         </CardBody>
-                        <CardFooter className='text-center'>
-                            <a href='https://inncubator.at' target='_blank' rel='noopener noreferrer'>
-                                <Button className='btn-just-icon btn-neutral' color='link'>
-                                    <i className='fa fa-link' />
+                        <CardFooter className="text-center">
+                            <a href="https://inncubator.at" target="_blank" rel="noopener noreferrer">
+                                <Button className="btn-just-icon btn-neutral" color="link">
+                                    <i className="fa fa-link" />
                                 </Button>
                             </a>
 
-                            <a href='https://www.facebook.com/inncubator.at/' target='_blank' rel='noopener noreferrer'>
-                                <Button className='btn-just-icon btn-neutral ml-1' color='link'>
-                                    <i className='fa fa-facebook' />
+                            <a href="https://www.facebook.com/inncubator.at/" target="_blank" rel="noopener noreferrer">
+                                <Button className="btn-just-icon btn-neutral ml-1" color="link">
+                                    <i className="fa fa-facebook" />
                                 </Button>
                             </a>
 
-                            <a href='https://www.instagram.com/inncubator/' target='_blank' rel='noopener noreferrer'>
-                                <Button className='btn-just-icon btn-neutral ml-1' color='link'>
-                                    <i className='fa fa-instagram' />
+                            <a href="https://www.instagram.com/inncubator/" target="_blank" rel="noopener noreferrer">
+                                <Button className="btn-just-icon btn-neutral ml-1" color="link">
+                                    <i className="fa fa-instagram" />
                                 </Button>
                             </a>
                         </CardFooter>

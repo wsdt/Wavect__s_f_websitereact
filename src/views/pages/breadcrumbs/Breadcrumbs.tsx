@@ -1,16 +1,16 @@
 import React from 'react'
-import {translate} from 'react-polyglot'
+import { translate } from 'react-polyglot'
 import Breadcrumb from 'reactstrap/lib/Breadcrumb'
 import BreadcrumbItem from 'reactstrap/lib/BreadcrumbItem'
 import { BreadcrumbConstants } from './breadcrumbs.constants'
 
 export interface IBreadCrumbsProps {
     breadcrumbs: BreadcrumbConstants[] // chronological order needed!
-    t: (key:string, ...args:any) => string,
+    t: (key: string, ...args: any) => string
 }
 
 function BreadCrumbs(props: IBreadCrumbsProps) {
-    const {t} = props
+    const { t } = props
 
     return (
         <Breadcrumb style={{ marginTop: 15 }}>
@@ -27,7 +27,7 @@ function BreadCrumbs(props: IBreadCrumbsProps) {
                     )
                 } else {
                     return (
-                        <BreadcrumbItem tag='a' href={breadcrumb.link} key={breadcrumb.link} title={title}>
+                        <BreadcrumbItem tag="a" href={breadcrumb.link} key={breadcrumb.link} title={title}>
                             {shortenedTitle}
                         </BreadcrumbItem>
                     )

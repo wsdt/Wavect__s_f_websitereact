@@ -26,11 +26,11 @@ import imgFoglow from '../../../assets/img/fog-low.png'
 import { isMobileWidth, useWindowDimensions } from '../../../controllers/WindowController'
 
 interface ILandingPageHeaderProps {
-    title:string
-    subtitle:string
+    title: string
+    subtitle: string
 }
 
-function LandingPageHeader(props:ILandingPageHeaderProps) {
+function LandingPageHeader(props: ILandingPageHeaderProps) {
     const pageHeader = React.createRef<HTMLDivElement>()
     const { width } = useWindowDimensions(pageHeader)
     const isMobile: boolean = isMobileWidth(width)

@@ -23,8 +23,8 @@ import { Button, Col, Container, Nav, NavItem, NavLink, Row, TabContent, TabPane
 import Footer from '../../components/Footers/Footer'
 import NavBar from '../../components/Navbars/NavBar'
 
-import {Helmet} from 'react-helmet'
-import {translate} from 'react-polyglot'
+import { Helmet } from 'react-helmet'
+import { translate } from 'react-polyglot'
 import { RouteProps } from 'react-router'
 import imgKevinRiedlChangeThoughtsOnBurnoutStress from '../../../assets/img/blogs/kevin_riedl/changethoughtsonburnoutstress_profilepic.jpg'
 import imgKevinRiedlHappinessNeqFulfillment from '../../../assets/img/blogs/kevin_riedl/happinessneqfulfillment_profilepic.jpg'
@@ -39,24 +39,24 @@ import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress,
     breadCrumbBlogKevinRiedlHappinessNeqFulfillment,
-    breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities, breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
+    breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities,
+    breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
     breadCrumbBlogKevinRiedlStrategicHustling,
     breadCrumbBlogs,
-    breadCrumbHome
+    breadCrumbHome,
 } from '../breadcrumbs/breadcrumbs.constants'
 import { GrayColorImg } from '../grayscale_color/GrayColorImg/GrayColorImg'
 import SocialShareBar from '../SocialShareBar/SocialShareBar'
 import { BlogCategories } from './BlogCategories'
 import BlogListDraft from './blogs_components/BlogListDraft'
 
-
 interface IBlogKevinRiedlProps {
-    routeProps:RouteProps,
-    t: (key:string, ...args:any) => string,
+    routeProps: RouteProps
+    t: (key: string, ...args: any) => string
 }
 
 function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
-    const {t} = props
+    const { t } = props
     const schema = _schema.pages.blog.blogs
     const [activeTab, setActiveTab] = React.useState('1')
 
@@ -77,46 +77,54 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
         <>
             <Helmet>
                 <title>{t(schema.kevinriedl.header.title)}</title>
-                <meta name='description'
-                      content={t(schema.kevinriedl.header.description)}/>
-                <meta name='keywords' content='wavect,blog,ceo,kevin,riedl,post,technical,economical,personal'/>
+                <meta name="description" content={t(schema.kevinriedl.header.description)} />
+                <meta name="keywords" content="wavect,blog,ceo,kevin,riedl,post,technical,economical,personal" />
             </Helmet>
 
             <NavBar />
             <BlogPageHeader />
-            <div className='section profile-content' style={{paddingTop: 0}}>
+            <div className="section profile-content" style={{ paddingTop: 0 }}>
                 <Container>
                     <Row>
-                        <Col className='ml-auto mr-auto text-center' md='8'>
+                        <Col className="ml-auto mr-auto text-center" md="8">
                             <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl]} />
-                            <div className='owner' style={{ marginTop: 100 }}>
-                                <div className='avatar'>
-                                    <GrayColorImg alt={t(schema.kevinriedl.intro.name)} className='img-circle img-no-padding img-responsive' src={imgKevinRiedl} />
+                            <div className="owner" style={{ marginTop: 100 }}>
+                                <div className="avatar">
+                                    <GrayColorImg
+                                        alt={t(schema.kevinriedl.intro.name)}
+                                        className="img-circle img-no-padding img-responsive"
+                                        src={imgKevinRiedl}
+                                    />
                                 </div>
-                                <div className='name'>
-                                    <h4 className='title'>
+                                <div className="name">
+                                    <h4 className="title">
                                         {t(schema.kevinriedl.intro.name)} <br />
                                     </h4>
-                                    <h6 className='description'>{t(schema.kevinriedl.intro.shortDescription)}</h6>
+                                    <h6 className="description">{t(schema.kevinriedl.intro.shortDescription)}</h6>
                                 </div>
                             </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col className='ml-auto mr-auto text-center' md='8'>
+                        <Col className="ml-auto mr-auto text-center" md="8">
                             <p>{t(schema.kevinriedl.intro.description)}</p>
                             <br />
-                            <a href='https://www.linkedin.com/in/kevin-riedl-947219158/' target='_blank' rel='noopener noreferrer' title={t(_schema.common_components.navbar.linkedin.linkTitle)}>
-                                <Button className='btn-round' color='default' outline={true}>
-                                    <i className='fa fa-linkedin' /> {t(_schema.common_components.navbar.linkedin.title)}
+                            <a
+                                href="https://www.linkedin.com/in/kevin-riedl-947219158/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title={t(_schema.common_components.navbar.linkedin.linkTitle)}
+                            >
+                                <Button className="btn-round" color="default" outline={true}>
+                                    <i className="fa fa-linkedin" /> {t(_schema.common_components.navbar.linkedin.title)}
                                 </Button>
                             </a>
                         </Col>
                     </Row>
                     <br />
-                    <div className='nav-tabs-navigation'>
-                        <div className='nav-tabs-wrapper'>
-                            <Nav role='tablist' tabs={true}>
+                    <div className="nav-tabs-navigation">
+                        <div className="nav-tabs-wrapper">
+                            <Nav role="tablist" tabs={true}>
                                 <NavItem>
                                     <NavLink
                                         className={activeTab === '1' ? 'active' : ''}
@@ -131,11 +139,11 @@ function BlogKevinRiedl(props: IBlogKevinRiedlProps) {
                         </div>
                     </div>
                     {/* Tab panes */}
-                    <TabContent className='following' activeTab={activeTab}>
-                        <TabPane tabId='1' id='follows'>
+                    <TabContent className="following" activeTab={activeTab}>
+                        <TabPane tabId="1" id="follows">
                             <Row>
-                                <Col className='ml-auto mr-auto' md='auto'>
-                                    <ul className='list-unstyled follows'>
+                                <Col className="ml-auto mr-auto" md="auto">
+                                    <ul className="list-unstyled follows">
                                         <BlogListDraft
                                             blogLink={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link}
                                             blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
