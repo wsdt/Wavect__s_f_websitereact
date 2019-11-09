@@ -19,9 +19,9 @@
 import Carousel, { CarouselSlideRenderControlProps } from 'nuka-carousel'
 import React from 'react'
 import { isMobileWidth, isSmallerHeight, useWindowDimensions } from '../../../../controllers/WindowController'
+import { CarouselNextBtn, CarouselPrevBtn } from './CarouselControlBtns'
 import { CarouselDots } from './CarouselDots'
 import CarouselSlide from './CarouselSlide'
-import { CarouselNextBtn, CarouselPrevBtn } from './CarouselControlBtns'
 
 interface ISlide {
     title: string
@@ -54,7 +54,7 @@ export const BasePageHeader = (props: IBasePageHeaderProps) => {
                 initialSlideHeight={height}
                 pauseOnHover={true} // better ux, for longer texts
                 speed={1500}
-                easing="easeCubicInOut"
+                easing='easeCubicInOut'
                 renderBottomCenterControls={(controlProps: CarouselSlideRenderControlProps) => <CarouselDots {...controlProps} />}
                 renderCenterLeftControls={(controlProps: CarouselSlideRenderControlProps) => <CarouselPrevBtn {...controlProps} />}
                 renderCenterRightControls={(controlProps: CarouselSlideRenderControlProps) => <CarouselNextBtn {...controlProps} />}

@@ -10,7 +10,7 @@ export class CarouselDots extends PagingDots {
                 {indexes.map(index => {
                     return (
                         <li
-                            style={this.getListItemStyles()}
+                            // style={this.getListItemStyles()}
                             key={index}
                             className={this.props.currentSlide === index ? 'paging-item active' : 'paging-item'}
                         >
