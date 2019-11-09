@@ -515,7 +515,7 @@
                         "formSubmissionError": "A server error occurred."
                     },
                     "email": {
-                        "placeholder": "Become a tester: your.mail@wavect.io",
+                        "placeholder": "Become Android-Tester: your.google-account@wavect.io",
                         "errors": {
                             "required": "Don't forget to type in your e-mail.",
                             "emailRegex": "This doesn't look like a valid mail."

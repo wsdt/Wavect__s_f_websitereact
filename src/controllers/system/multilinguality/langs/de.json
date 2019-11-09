@@ -515,7 +515,7 @@
                         "formSubmissionError": "Ein Fehler ist aufgetreten."
                     },
                     "email": {
-                        "placeholder": "Werde Tester: your.mail@wavect.io",
+                        "placeholder": "Werde Android-Tester: dein.google-account@wavect.io",
                         "errors": {
                             "required": "Vergiss nicht, deine E-Mail einzutragen!.",
                             "emailRegex": "Das sieht nicht wie eine E-Mail aus."
