@@ -514,6 +514,9 @@
                         "formSubmissionSuccessful": "Vielen Dank für dein Interesse. Wir werden dich bald kontaktieren.",
                         "formSubmissionError": "Ein Fehler ist aufgetreten."
                     },
+                    "newsletter": {
+                        "msg": "Ich möchte auch den monatlichen Newsletter empfangen."
+                    },
                     "email": {
                         "placeholder": "Werde Android-Tester: dein.google-account@wavect.io",
                         "errors": {
@@ -623,8 +626,8 @@
         },
         "landingPage": {
             "header": {
-                "title": "Werde ein Held - Lass uns einen Impakt erzeugen!",
-                "description": "Löse Challenges die den Umweltschutz, die Gesundheit oder die Solidarität adressieren und gewinne personalisierte Preise!"
+                "title": "Werde ein Held - Lass uns etwas verändern",
+                "description": "Löse Challenges die den Umweltschutz, die Gesundheit oder die Solidarität adressieren und gewinne personalisierte Preise."
             },
             "landingview": {
                 "title": "Werde ein Held",
@@ -632,7 +635,7 @@
             },
             "intro": {
                 "title": "Die harte Wahrheit",
-                "description": "Die Welt steht vor unglaublich großen Problemen: sinkende Solidarität & soziale Interaktion in unserer Gesellschaft, Klimaschutz, wachsende Verschmutzung und Gesundheitsprobleme. Wir entwickeln eine Plattform die diese Probleme adressiert und somit einen messbaren Wert für Organisationen und Benutzer darstellt.",
+                "description": "Die Welt steht vor unglaublich großen Problemen: sinkende Solidarität & soziale Interaktion in unserer Gesellschaft, der Klimawandel & die zunehmende Umweltverschmutzung und Gesundheitsprobleme. Wir entwickeln eine Plattform die diese Probleme adressiert und messbaren Wert für Organisationen und Benutzer schafft.",
                 "iconcols": {
                     "relevantchallenges": {
                         "title": "Relevante Challenges",

@@ -514,6 +514,9 @@
                         "formSubmissionSuccessful": "pages.whyhow.intro.becometester.alerts.formSubmissionSuccessful",
                         "formSubmissionError": "pages.whyhow.intro.becometester.alerts.formSubmissionError"
                     },
+                    "newsletter": {
+                        "msg": "pages.whyhow.intro.becometester.newsletter.msg"
+                    },
                     "email": {
                         "placeholder": "pages.whyhow.intro.becometester.email.placeholder",
                         "errors": {

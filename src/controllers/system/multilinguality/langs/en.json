@@ -514,6 +514,9 @@
                         "formSubmissionSuccessful": "Thank you for your interest. We'll contact you soon.",
                         "formSubmissionError": "A server error occurred."
                     },
+                    "newsletter": {
+                        "msg": "I want to receive the monthly newsletter, too."
+                    },
                     "email": {
                         "placeholder": "Become Android-Tester: your.google-account@wavect.io",
                         "errors": {
