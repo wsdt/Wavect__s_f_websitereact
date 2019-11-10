@@ -17,23 +17,19 @@
 
 */
 import React from 'react'
-
-// core components
 import Button from 'reactstrap/lib/Button'
 import Card from 'reactstrap/lib/Card'
 import CardBody from 'reactstrap/lib/CardBody'
 import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
-
-// assets
 import { Helmet } from 'react-helmet'
 import { RouteProps } from 'react-router'
 import imgKevinRiedl from '../../assets/img/team/kevin_riedl.jpg'
 import _schema from '../../controllers/system/multilinguality/_schema.json'
-import TextPageDraft from './blogs/blogs_components/TextPageDraft'
-import { breadCrumbBlogs, breadCrumbHome } from './breadcrumbs/breadcrumbs.constants'
-import { GrayColorImg } from './grayscale_color/GrayColorImg/GrayColorImg'
-import SocialShareBar from './SocialShareBar/SocialShareBar'
+import TextPageDraft from './TextPageDraft/TextPageDraft'
+import { breadCrumbBlogs, breadCrumbHome } from '../../controllers/system/routers/BreadcrumbRoutes'
+import { GrayColorImg } from '../functional/GrayscaleColor/GrayColorImg/GrayColorImg'
+import {SocialShareBar} from '../functional/SocialShareBar/SocialShareBar'
 import { translate } from 'react-polyglot'
 
 interface IBlogProps {

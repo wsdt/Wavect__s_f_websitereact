@@ -17,21 +17,21 @@
 
 */
 import React from 'react'
+import { Helmet } from 'react-helmet'
+import { RouteProps } from 'react-router'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress,
     breadCrumbBlogs,
     breadCrumbHome,
-} from '../../breadcrumbs/breadcrumbs.constants'
+} from '../../../../controllers/system/routers/BreadcrumbRoutes'
+import { BlockQuote } from '../../../functional/TextComponents/BlockQuote/BlockQuote'
+import { H2 } from '../../../functional/TextComponents/H2/H2'
+import { Li, Ul } from '../../../functional/TextComponents/List/List'
+import { P } from '../../../functional/TextComponents/P/P'
+import {SocialShareBar} from '../../../functional/SocialShareBar/SocialShareBar'
+import TextPageDraft from '../../TextPageDraft/TextPageDraft'
 import { BlogCategories } from '../BlogCategories'
-import { BlockQuote } from '../blogs_components/text_components/BlockQuote'
-import { H2 } from '../blogs_components/text_components/H2'
-import { P } from '../blogs_components/text_components/P'
-import { Li, Ul } from '../blogs_components/text_components/List'
-import TextPageDraft from '../blogs_components/TextPageDraft'
-import { RouteProps } from 'react-router'
-import SocialShareBar from '../../SocialShareBar/SocialShareBar'
-import { Helmet } from 'react-helmet'
 
 function BlogPostChangeThoughtsOnBurnoutStress(_: RouteProps) {
     return (
@@ -39,10 +39,10 @@ function BlogPostChangeThoughtsOnBurnoutStress(_: RouteProps) {
             <Helmet>
                 <title>Let me change the way you think about Stress & Burnout</title>
                 <meta
-                    name="description"
-                    content="Do you feel overwhelmed, empty, stressed, demotivated or just depressed? If sometimes or yes, then this post is for YOU!"
+                    name='description'
+                    content='Do you feel overwhelmed, empty, stressed, demotivated or just depressed? If sometimes or yes, then this post is for YOU!'
                 />
-                <meta name="keywords" content="wavect,blog,post,stress,motivation,depression,help" />
+                <meta name='keywords' content='wavect,blog,post,stress,motivation,depression,help' />
             </Helmet>
 
             <TextPageDraft
@@ -53,11 +53,11 @@ function BlogPostChangeThoughtsOnBurnoutStress(_: RouteProps) {
                 <H2>What is Stress?</H2>
                 <BlockQuote
                     quoteLink={'https://my.clevelandclinic.org/health/articles/11874-stress'}
-                    quoteSourceTitle="Stress"
-                    quoteLastViewedDate="09.10.2019"
-                    quoteSourceYear="2019"
-                    autor="Cleveland Clinic"
-                    quote="Stress is the body’s reaction to any change that requires an adjustment or response. The body reacts to these changes with physical, mental, and emotional responses. Stress is a normal part of life. You can experience stress from your environment, your body, and your thoughts. Even positive life changes such as a promotion, a mortgage, or the birth of a child produce stress."
+                    quoteSourceTitle='Stress'
+                    quoteLastViewedDate='09.10.2019'
+                    quoteSourceYear='2019'
+                    autor='Cleveland Clinic'
+                    quote='Stress is the body’s reaction to any change that requires an adjustment or response. The body reacts to these changes with physical, mental, and emotional responses. Stress is a normal part of life. You can experience stress from your environment, your body, and your thoughts. Even positive life changes such as a promotion, a mortgage, or the birth of a child produce stress.'
                 />
 
                 <P>
@@ -87,12 +87,12 @@ function BlogPostChangeThoughtsOnBurnoutStress(_: RouteProps) {
 
                 <H2>Burnout</H2>
                 <BlockQuote
-                    quoteLink="https://www.ncbi.nlm.nih.gov/books/NBK279286/"
-                    quoteSourceTitle="Depression: What is burnout?"
-                    quoteLastViewedDate="09.10.2019"
-                    quoteSourceYear="2012"
-                    quote="Experts have not yet agreed on how to define burnout. And strictly speaking, there is no such diagnosis as “burnout.” This is unlike having “depression” diagnosed, for example, which is a widely accepted and well-studied condition. That is not the case with burnout. Some experts think that other conditions are behind being “burned out” — such as depression or an anxiety disorder. Physical illnesses may also cause burnout-like symptoms. Being diagnosed with “burnout” too soon might then mean that the real problems aren’t identified and treated appropriately."
-                    autor="Institute for Quality and Efficiency in Health Care"
+                    quoteLink='https://www.ncbi.nlm.nih.gov/books/NBK279286/'
+                    quoteSourceTitle='Depression: What is burnout?'
+                    quoteLastViewedDate='09.10.2019'
+                    quoteSourceYear='2012'
+                    quote='Experts have not yet agreed on how to define burnout. And strictly speaking, there is no such diagnosis as “burnout.” This is unlike having “depression” diagnosed, for example, which is a widely accepted and well-studied condition. That is not the case with burnout. Some experts think that other conditions are behind being “burned out” — such as depression or an anxiety disorder. Physical illnesses may also cause burnout-like symptoms. Being diagnosed with “burnout” too soon might then mean that the real problems aren’t identified and treated appropriately.'
+                    autor='Institute for Quality and Efficiency in Health Care'
                 />
 
                 <P>

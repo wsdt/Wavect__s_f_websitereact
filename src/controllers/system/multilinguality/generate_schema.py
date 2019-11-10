@@ -3,7 +3,7 @@ import json
 import os
 
 currDir = os.path.dirname(os.path.realpath(__file__))
-importJsonPath = currDir+"/langs/en.json"
+importJsonPath = currDir+"/../../../assets/langs/en.json"
 exportJsonSchemaPath = currDir+"/_schema.json"
 
 # De as default for schema generation as certainly always available

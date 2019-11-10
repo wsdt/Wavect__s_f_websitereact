@@ -17,11 +17,11 @@
 
 */
 import React from 'react'
-import { H2 } from './blogs/blogs_components/text_components/H2'
-import { P } from './blogs/blogs_components/text_components/P'
-import { Li, Ul } from './blogs/blogs_components/text_components/List'
-import TextPageDraft from './blogs/blogs_components/TextPageDraft'
-import { breadCrumbHome, breadCrumbImpressum } from './breadcrumbs/breadcrumbs.constants'
+import { H2 } from '../functional/TextComponents/H2/H2'
+import { P } from '../functional/TextComponents/P/P'
+import { Li, Ul } from '../functional/TextComponents/List/List'
+import TextPageDraft from './TextPageDraft/TextPageDraft'
+import { breadCrumbHome, breadCrumbImpressum } from '../../controllers/system/routers/BreadcrumbRoutes'
 import { RouteProps } from 'react-router'
 import { Helmet } from 'react-helmet'
 import { translate } from 'react-polyglot'

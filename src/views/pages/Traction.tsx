@@ -22,16 +22,16 @@ import { translate } from 'react-polyglot'
 import { RouteProps } from 'react-router'
 import { Col, Container, Row } from 'reactstrap'
 import _schema from '../../controllers/system/multilinguality/_schema.json'
-import Footer from '../components/Footers/Footer'
-import BlogPageHeader from '../components/Headers/BlogPageHeader'
-import NavBar from '../components/Navbars/NavBar'
-import { P } from './blogs/blogs_components/text_components/P'
-import { TextHeader } from './blogs/blogs_components/text_components/TextHeader'
-import BreadCrumbs from './breadcrumbs/Breadcrumbs'
-import { breadCrumbHome, breadCrumbTraction } from './breadcrumbs/breadcrumbs.constants'
-import SocialShareBar from './SocialShareBar/SocialShareBar'
-import Competitions from './traction/Competitions'
-import Partners from './traction/Partners'
+import { breadCrumbHome, breadCrumbTraction } from '../../controllers/system/routers/BreadcrumbRoutes'
+import BreadCrumbs from '../functional/BreadcrumbHeader/BreadcrumbHeader'
+import { P } from '../functional/TextComponents/P/P'
+import { TextPageHeader } from '../functional/TextComponents/TextPageHeader/TextPageHeader'
+import Footer from '../pageComponents/Footers/Footer'
+import BlogPageHeader from '../pageComponents/Headers/BlogPageHeader'
+import NavBar from '../pageComponents/Navbars/NavBar'
+import {SocialShareBar} from '../functional/SocialShareBar/SocialShareBar'
+import {Competitions} from '../functional/Competitions/Competitions'
+import {Partners} from '../functional/Partners/Partners'
 
 interface ITractionProps {
     routeProps: RouteProps
@@ -53,18 +53,18 @@ function Traction(props: ITractionProps) {
         <>
             <Helmet>
                 <title>{t(_schema.pages.traction.header.title)}</title>
-                <meta name="description" content={t(_schema.pages.traction.header.description)} />
-                <meta name="keywords" content="wavect,traction,change,inspire,partner,sponsor,impact" />
+                <meta name='description' content={t(_schema.pages.traction.header.description)} />
+                <meta name='keywords' content='wavect,traction,change,inspire,partner,sponsor,impact' />
             </Helmet>
             <NavBar />
             <BlogPageHeader />
-            <div className="section profile-content" style={{ paddingTop: 0 }}>
+            <div className='section profile-content' style={{ paddingTop: 0 }}>
                 <Container>
                     <Row>
-                        <Col className="ml-auto mr-auto text-left" md="8">
+                        <Col className='ml-auto mr-auto text-left' md='8'>
                             <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbTraction]} />
 
-                            <TextHeader>{t(_schema.pages.traction.intro.title)}</TextHeader>
+                            <TextPageHeader>{t(_schema.pages.traction.intro.title)}</TextPageHeader>
                             <P>{t(_schema.pages.traction.intro.description)}</P>
                             <hr />
                             <br />
@@ -75,10 +75,10 @@ function Traction(props: ITractionProps) {
                 </Container>
             </div>
 
-            <div className="section section-dark text-center">
+            <div className='section section-dark text-center'>
                 <Container>
                     <Row>
-                        <Col className="ml-auto mr-auto text-left" md="8">
+                        <Col className='ml-auto mr-auto text-left' md='8'>
                             <Partners t={t} />
                         </Col>
                     </Row>

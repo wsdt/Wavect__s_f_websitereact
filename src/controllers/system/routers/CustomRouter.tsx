@@ -22,7 +22,7 @@ import {
     breadCrumbImpressum,
     breadCrumbTraction,
     breadCrumbWhy,
-} from '../../../views/pages/breadcrumbs/breadcrumbs.constants'
+} from './BreadcrumbRoutes'
 import DataPrivacy from '../../../views/pages/DataPrivacy'
 import B2B from '../../../views/pages/for_organizations/b2b/B2B'
 import B2G from '../../../views/pages/for_organizations/b2g/B2G'

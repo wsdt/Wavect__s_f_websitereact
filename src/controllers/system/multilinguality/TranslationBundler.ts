@@ -1,5 +1,5 @@
-import de from './langs/de.json'
-import en from './langs/en.json' // do not import via '* as en'
+import de from '../../../assets/langs/de.json'
+import en from '../../../assets/langs/en.json' // do not import via '* as en'
 
 export const getCurrentLang = (): string => {
     return navigator.language ? navigator.language.substring(0, 2) : 'en'

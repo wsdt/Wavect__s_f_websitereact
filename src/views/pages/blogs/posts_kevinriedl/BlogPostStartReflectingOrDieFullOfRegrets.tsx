@@ -23,11 +23,11 @@ import {
     breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets,
     breadCrumbBlogs,
     breadCrumbHome,
-} from '../../breadcrumbs/breadcrumbs.constants'
-import SocialShareBar from '../../SocialShareBar/SocialShareBar'
+} from '../../../../controllers/system/routers/BreadcrumbRoutes'
+import {SocialShareBar} from '../../../functional/SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
-import { P } from '../blogs_components/text_components/P'
-import TextPageDraft from '../blogs_components/TextPageDraft'
+import { P } from '../../../functional/TextComponents/P/P'
+import TextPageDraft from '../../TextPageDraft/TextPageDraft'
 import { Helmet } from 'react-helmet'
 
 function BlogPostStartReflectingOrDieFullOfRegrets(_: RouteProps) {

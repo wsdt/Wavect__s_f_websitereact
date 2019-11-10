@@ -21,11 +21,11 @@ import {Helmet} from 'react-helmet'
 import {translate} from 'react-polyglot'
 import {RouteProps} from 'react-router'
 import _schema from '../../controllers/system/multilinguality/_schema.json'
-import {H2} from './blogs/blogs_components/text_components/H2'
-import {Li, Ul} from './blogs/blogs_components/text_components/List'
-import {P} from './blogs/blogs_components/text_components/P'
-import TextPageDraft from './blogs/blogs_components/TextPageDraft'
-import {breadCrumbDataPrivacy, breadCrumbHome} from './breadcrumbs/breadcrumbs.constants'
+import {H2} from '../functional/TextComponents/H2/H2'
+import {Li, Ul} from '../functional/TextComponents/List/List'
+import {P} from '../functional/TextComponents/P/P'
+import TextPageDraft from './TextPageDraft/TextPageDraft'
+import {breadCrumbDataPrivacy, breadCrumbHome} from '../../controllers/system/routers/BreadcrumbRoutes'
 
 interface IDataPrivacyProps {
     routeProps:RouteProps,

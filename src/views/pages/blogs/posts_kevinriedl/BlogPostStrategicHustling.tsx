@@ -23,12 +23,12 @@ import {
     breadCrumbBlogKevinRiedlStrategicHustling,
     breadCrumbBlogs,
     breadCrumbHome,
-} from '../../breadcrumbs/breadcrumbs.constants'
-import SocialShareBar from '../../SocialShareBar/SocialShareBar'
+} from '../../../../controllers/system/routers/BreadcrumbRoutes'
+import {SocialShareBar} from '../../../functional/SocialShareBar/SocialShareBar'
 import { BlogCategories } from '../BlogCategories'
-import { H2 } from '../blogs_components/text_components/H2'
-import { P } from '../blogs_components/text_components/P'
-import TextPageDraft from '../blogs_components/TextPageDraft'
+import { H2 } from '../../../functional/TextComponents/H2/H2'
+import { P } from '../../../functional/TextComponents/P/P'
+import TextPageDraft from '../../TextPageDraft/TextPageDraft'
 import { Helmet } from 'react-helmet'
 
 function BlogPostStrategicHustling(_: RouteProps) {
