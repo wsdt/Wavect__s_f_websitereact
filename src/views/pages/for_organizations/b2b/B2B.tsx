@@ -24,16 +24,16 @@ import { translate } from 'react-polyglot'
 import { RouteProps } from 'react-router'
 import { Col, Container, Row } from 'reactstrap'
 import _schema from '../../../../controllers/system/multilinguality/_schema.json'
-import Footer from '../../../pageComponents/Footers/Footer'
-import { B2BPageHeader } from '../../../pageComponents/Headers/SlideHeaders/custom/B2BPageHeader'
-import NavBar from '../../../pageComponents/Navbars/NavBar'
-import { Li, Ol } from '../../../functional/TextComponents/List/List'
 import { breadCrumbForCompanies, breadCrumbHome, breadCrumbWhy } from '../../../../controllers/system/routers/BreadcrumbRoutes'
 import { CollapseIconText } from '../../../classbased/CollapseIconText/CollapseIconText'
 import ContactForm from '../../../classbased/ContactForm/ContactForm'
-import {SocialShareBar} from '../../../functional/SocialShareBar/SocialShareBar'
-import B2BFacts from './B2BFacts'
 import BreadCrumbs from '../../../functional/BreadcrumbHeader/BreadcrumbHeader'
+import {SocialShareBar} from '../../../functional/SocialShareBar/SocialShareBar'
+import { Li, Ol } from '../../../functional/TextComponents/List/List'
+import Footer from '../../../pageComponents/Footers/Footer'
+import { B2BPageHeader } from '../../../pageComponents/Headers/SlideHeaders/custom/B2BPageHeader'
+import NavBar from '../../../pageComponents/Navbars/NavBar'
+import B2BFacts from './B2BFacts'
 
 interface IB2BProps {
     routeProps: RouteProps
@@ -55,24 +55,24 @@ function B2B(props: IB2BProps) {
         <>
             <Helmet>
                 <title>{t(schema.header.title)}</title>
-                <meta name="description" content={t(schema.header.description)} />
+                <meta name='description' content={t(schema.header.description)} />
                 <meta
-                    name="keywords"
-                    content="wavect,sponsor,customer,corporate,social,responsibility,csr,personalize,low,price,storytelling,image,reputation"
+                    name='keywords'
+                    content='wavect,sponsor,customer,corporate,social,responsibility,csr,personalize,low,price,storytelling,image,reputation'
                 />
             </Helmet>
 
             <NavBar />
             <B2BPageHeader t={t} />
-            <div className="main">
-                <div className="section text-center" style={{ paddingTop: 0 }}>
+            <div className='main'>
+                <div className='section text-center' style={{ paddingTop: 0 }}>
                     <Container>
                         <Row>
-                            <Col className="ml-auto mr-auto" md="8">
+                            <Col className='ml-auto mr-auto' md='8'>
                                 <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbForCompanies]} />
 
-                                <h2 className="title">{t(schema.intro.title)}</h2>
-                                <h5 className="description">
+                                <h2 className='title'>{t(schema.intro.title)}</h2>
+                                <h5 className='description'>
                                     <Ol>
                                         <Li>{parse(t(schema.intro.description._1, { link: breadCrumbWhy.link }))}</Li>
                                         <Li>{t(schema.intro.description._2)}</Li>
@@ -86,28 +86,28 @@ function B2B(props: IB2BProps) {
                         <br />
                         <br />
                         <Row>
-                            <Col md="3">
+                            <Col md='3'>
                                 <CollapseIconText
                                     icon={faCreditCard}
                                     title={t(schema.intro.iconcols.lowpricedcsr.title)}
                                     descr={parse(t(schema.intro.iconcols.lowpricedcsr.description))}
                                 />
                             </Col>
-                            <Col md="3">
+                            <Col md='3'>
                                 <CollapseIconText
                                     icon={faFilter}
                                     title={t(schema.intro.iconcols.personalizedcsr.title)}
                                     descr={parse(t(schema.intro.iconcols.personalizedcsr.description))}
                                 />
                             </Col>
-                            <Col md="3">
+                            <Col md='3'>
                                 <CollapseIconText
                                     icon={faAd}
                                     title={t(schema.intro.iconcols.storytelling.title)}
                                     descr={parse(t(schema.intro.iconcols.storytelling.description))}
                                 />
                             </Col>
-                            <Col md="3">
+                            <Col md='3'>
                                 <CollapseIconText
                                     icon={faUsers}
                                     title={t(schema.intro.iconcols.aggregatedimpact.title)}
@@ -117,7 +117,7 @@ function B2B(props: IB2BProps) {
                         </Row>
                     </Container>
                 </div>
-                <div className="section section-dark text-center">
+                <div className='section section-dark text-center'>
                     <B2BFacts t={t} />
                 </div>
 

@@ -19,7 +19,7 @@
 import React from 'react'
 import { Container, Row } from 'reactstrap'
 import _schema from '../../../../controllers/system/multilinguality/_schema.json'
-import Fact from '../Fact'
+import {Fact} from '../../../classbased/Fact/Fact'
 
 interface IB2BFactsProps {
     t: (key: string, ...args: any) => string
