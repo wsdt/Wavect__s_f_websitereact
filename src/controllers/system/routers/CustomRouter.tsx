@@ -1,12 +1,12 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
-import Blog from '../../../views/pages/Blog'
-import BlogKevinRiedl from '../../../views/pages/blogs/BlogKevinRiedl'
-import BlogPostChangeThoughtsOnBurnoutStress from '../../../views/pages/blogs/posts_kevinriedl/BlogPostChangeThoughtsOnBurnoutStress'
-import BlogPostHappinessNeqFulfillment from '../../../views/pages/blogs/posts_kevinriedl/BlogPostHappinessNeqFulfillment'
-import BlogPostSayingYesIsABigNoToOpportunities from '../../../views/pages/blogs/posts_kevinriedl/BlogPostSayingYesIsABigNoToOpportunities'
-import BlogPostStartReflectingOrDieFullOfRegrets from '../../../views/pages/blogs/posts_kevinriedl/BlogPostStartReflectingOrDieFullOfRegrets'
-import BlogPostStrategicHustling from '../../../views/pages/blogs/posts_kevinriedl/BlogPostStrategicHustling'
+import Blog from '../../../views/pages/Blog/Blog'
+import BlogKevinRiedl from '../../../views/pages/Blog/Authors/BlogKevinRiedl/BlogKevinRiedl'
+import BlogPostChangeThoughtsOnBurnoutStress from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostChangeThoughtsOnBurnoutStress'
+import BlogPostHappinessNeqFulfillment from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostHappinessNeqFulfillment'
+import BlogPostSayingYesIsABigNoToOpportunities from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostSayingYesIsABigNoToOpportunities'
+import BlogPostStartReflectingOrDieFullOfRegrets from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostStartReflectingOrDieFullOfRegrets'
+import BlogPostStrategicHustling from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostStrategicHustling'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress,
@@ -23,13 +23,13 @@ import {
     breadCrumbTraction,
     breadCrumbWhy,
 } from './BreadcrumbRoutes'
-import DataPrivacy from '../../../views/pages/DataPrivacy'
-import B2B from '../../../views/pages/for_organizations/b2b/B2B'
-import B2G from '../../../views/pages/for_organizations/b2g/B2G'
-import Impressum from '../../../views/pages/Impressum'
-import LandingPage from '../../../views/pages/LandingPage'
-import Traction from '../../../views/pages/Traction'
-import WhyHow from '../../../views/pages/whyhow/WhyHow'
+import DataPrivacy from '../../../views/pages/DataPrivacy/DataPrivacy'
+import B2B from '../../../views/pages/ForOrganizations/B2B/B2B'
+import B2G from '../../../views/pages/ForOrganizations/B2G/B2G'
+import Impressum from '../../../views/pages/Impressum/Impressum'
+import LandingPage from '../../../views/pages/LandingPage/LandingPage'
+import Traction from '../../../views/pages/Traction/Traction'
+import WhyHow from '../../../views/pages/WhyHow/WhyHow'
 import { BrowserRouter } from 'react-router-dom'
 
 const CustomRouter = () => {

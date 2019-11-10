@@ -1,4 +1,4 @@
-import {BlogCategories} from '../../pages/blogs/BlogCategories'
+import {BlogCategories} from '../../pages/Blog/Authors/BlogCategories'
 
 export interface IBlogListDraftProps {
     blogLink: string
