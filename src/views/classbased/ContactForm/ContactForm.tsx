@@ -20,7 +20,7 @@ import React from 'react'
 import { Alert, Button, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
 import { ApiResponse } from '../../../models/ApiResponse'
-import {IContactFormProps} from './ContactForm.props'
+import { IContactFormProps } from './ContactForm.props'
 import { IContactFormState } from './ContactForm.state'
 
 const schema = _schema.common_components.contactform
@@ -40,61 +40,61 @@ class ContactForm extends React.PureComponent<IContactFormProps, IContactFormSta
         const { t } = this.props
 
         return (
-            <div className='section landing-section'>
+            <div className="section landing-section">
                 <Container>
                     {this.getAlert()}
                     <Row>
-                        <Col className='ml-auto mr-auto' md='8'>
-                            <h2 className='text-center'>{t(schema.title)}</h2>
+                        <Col className="ml-auto mr-auto" md="8">
+                            <h2 className="text-center">{t(schema.title)}</h2>
 
-                            <Form className='contact-form'>
+                            <Form className="contact-form">
                                 <Row>
-                                    <Col md='6'>
+                                    <Col md="6">
                                         <label>{t(schema.inputs.name.lbl)}</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType='prepend'>
+                                            <InputGroupAddon addonType="prepend">
                                                 <InputGroupText>
-                                                    <i className='nc-icon nc-single-02' />
+                                                    <i className="nc-icon nc-single-02" />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
                                                 placeholder={t(schema.inputs.name.placeholder)}
-                                                type='text'
-                                                name='autorName'
+                                                type="text"
+                                                name="autorName"
                                                 onChange={e => this.handleOnChange('autorName', e)}
                                             />
                                         </InputGroup>
                                     </Col>
-                                    <Col md='6'>
+                                    <Col md="6">
                                         <label>{t(schema.inputs.subject.lbl)}</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType='prepend'>
+                                            <InputGroupAddon addonType="prepend">
                                                 <InputGroupText>
-                                                    <i className='nc-icon nc-single-02' />
+                                                    <i className="nc-icon nc-single-02" />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
                                                 placeholder={t(schema.inputs.subject.placeholder)}
-                                                type='text'
-                                                name='subject'
+                                                type="text"
+                                                name="subject"
                                                 onChange={e => this.handleOnChange('subject', e)}
                                             />
                                         </InputGroup>
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col md='12'>
+                                    <Col md="12">
                                         <label>{t(schema.inputs.email.lbl)}</label>
                                         <InputGroup>
-                                            <InputGroupAddon addonType='prepend'>
+                                            <InputGroupAddon addonType="prepend">
                                                 <InputGroupText>
-                                                    <i className='nc-icon nc-email-85' />
+                                                    <i className="nc-icon nc-email-85" />
                                                 </InputGroupText>
                                             </InputGroupAddon>
                                             <Input
                                                 placeholder={t(schema.inputs.email.placeholder)}
-                                                type='email'
-                                                name='autorMail'
+                                                type="email"
+                                                name="autorMail"
                                                 onChange={e => this.handleOnChange('autorMail', e)}
                                             />
                                         </InputGroup>
@@ -103,14 +103,14 @@ class ContactForm extends React.PureComponent<IContactFormProps, IContactFormSta
                                 <label>{t(schema.inputs.msg.lbl)}</label>
                                 <Input
                                     placeholder={t(schema.inputs.msg.placeholder)}
-                                    type='textarea'
-                                    rows='4'
-                                    name='text'
+                                    type="textarea"
+                                    rows="4"
+                                    name="text"
                                     onChange={e => this.handleOnChange('text', e)}
                                 />
                                 <Row>
-                                    <Col className='ml-auto mr-auto text-center' md='12'>
-                                        <Button className='btn-fill' color='danger' size='lg' onClick={() => this.sendForm()}>
+                                    <Col className="ml-auto mr-auto text-center" md="12">
+                                        <Button className="btn-fill" color="danger" size="lg" onClick={() => this.sendForm()}>
                                             {t(_schema.general.submit)}
                                         </Button>
                                     </Col>
@@ -128,13 +128,13 @@ class ContactForm extends React.PureComponent<IContactFormProps, IContactFormSta
 
         if (this.state.wasFormSubmitted) {
             return this.state.wasSubmissionSuccessful ? (
-                <Alert color='success'>{t(schema.alerts.success)}</Alert>
+                <Alert color="success">{t(schema.alerts.success)}</Alert>
             ) : (
-                <Alert color='danger'>{t(schema.alerts.servererror)}</Alert>
+                <Alert color="danger">{t(schema.alerts.servererror)}</Alert>
             )
         } else if (this.state.error) {
             // if not already submitted validate form
-            return <Alert color='warning'>{this.state.error}</Alert>
+            return <Alert color="warning">{this.state.error}</Alert>
         }
         return null
     }

@@ -1,4 +1,4 @@
-import {BlogCategories} from '../../../pages/Blog/Authors/BlogCategories'
+import { BlogCategories } from '../../../pages/Blog/Authors/BlogCategories'
 
 export interface ITextPageHeaderProps {
     blogCategory?: BlogCategories

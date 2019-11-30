@@ -7,6 +7,7 @@ import BlogPostHappinessNeqFulfillment from '../../../views/pages/Blog/Authors/B
 import BlogPostSayingYesIsABigNoToOpportunities from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostSayingYesIsABigNoToOpportunities'
 import BlogPostStartReflectingOrDieFullOfRegrets from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostStartReflectingOrDieFullOfRegrets'
 import BlogPostStrategicHustling from '../../../views/pages/Blog/Authors/BlogKevinRiedl/posts/BlogPostStrategicHustling'
+import Pricing from '../../../views/pages/Pricing/Pricing'
 import {
     breadCrumbBlogKevinRiedl,
     breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress,
@@ -19,7 +20,7 @@ import {
     breadCrumbForCompanies,
     breadCrumbForOrganizations,
     breadCrumbHome,
-    breadCrumbImpressum,
+    breadCrumbImpressum, breadCrumbPricing,
     breadCrumbTraction,
     breadCrumbWhy,
 } from './BreadcrumbRoutes'
@@ -64,6 +65,7 @@ const CustomRouter = () => {
                 <Route exact={true} path={breadCrumbBlogKevinRiedl.link} render={props => <BlogKevinRiedl {...props} />} />
                 <Route exact={true} path={breadCrumbBlogs.link} render={props => <Blog {...props} />} />
 
+                <Route exact={true} path={breadCrumbPricing.link} render={props => <Pricing {...props} />} />
                 <Route exact={true} path={breadCrumbTraction.link} render={props => <Traction {...props} />} />
                 <Route exact={true} path={breadCrumbImpressum.link} render={props => <Impressum {...props} />} />
                 <Route exact={true} path={breadCrumbDataPrivacy.link} render={props => <DataPrivacy {...props} />} />

@@ -20,6 +20,10 @@
                 "title": "Home",
                 "linkTitle": "Home page"
             },
+            "pricing": {
+                "title": "Pricing",
+                "linkTitle": "Fees, Pricing models, ..."
+            },
             "whyhow": {
                 "title": "Why & How?",
                 "linkTitle": "Our vision & mission"
@@ -120,6 +124,26 @@
         }
     },
     "pages": {
+        "pricing": {
+            "header": {
+                "title": "Pricing for Organizations",
+                "description": "NGOs/Charities, companies, governmental organizations, politicians etc. have to pay an usage fee according to the size of their organization."
+            },
+            "general": {
+                "btnSeeMore": "Read more"
+            },
+            "intro": {
+                "description": "Right now our application is tested from our Alpha Testers. Nevertheless, as we have a quite stable infrastructure, a steadily growing community & receive regular feedback we can offer your organization following services."
+            },
+            "packages": {
+                "taster": {
+                    "preview": {
+                        "title": "Taster-Package",
+                        "description": "Sponsor a challenge with rebates, products or vouchers during our alpha-test phase."
+                    }
+                }
+            }
+        },
         "impressum": {
             "header": {
                 "title": "Wavect - Impressum",

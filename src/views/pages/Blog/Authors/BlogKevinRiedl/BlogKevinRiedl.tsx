@@ -39,10 +39,10 @@ import {
 import BlogListDraft from '../../../../functional/BlogListDraft/BlogListDraft'
 import BreadCrumbs from '../../../../functional/BreadcrumbHeader/BreadcrumbHeader'
 import { GrayColorImg } from '../../../../functional/GrayscaleColor/GrayColorImg/GrayColorImg'
-import {SocialShareBar} from '../../../../functional/SocialShareBar/SocialShareBar'
+import { SocialShareBar } from '../../../../functional/SocialShareBar/SocialShareBar'
 import BlogPageHeader from '../../../../pageComponents/Headers/BlogPageHeader'
-import {IBasePageProps} from '../../../Templates/BasePage.props'
-import {Page} from '../../../Templates/Page/Page'
+import { IBasePageProps } from '../../../Templates/BasePage.props'
+import { Page } from '../../../Templates/Page/Page'
 import { BlogCategories } from '../BlogCategories'
 
 const schema = _schema.pages.blog.blogs
@@ -57,118 +57,120 @@ const BlogKevinRiedl = (props: IBasePageProps) => {
         }
     }
 
-    return <Page currBreadcrumb={breadCrumbBlogKevinRiedl} header={<BlogPageHeader/>} t={t}>
-        <div className='section profile-content' style={{ paddingTop: 0 }}>
-            <Container>
-                <Row>
-                    <Col className='ml-auto mr-auto text-center' md='8'>
-                        <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl]} />
-                        <div className='owner' style={{ marginTop: 100 }}>
-                            <div className='avatar'>
-                                <GrayColorImg
-                                    alt={t(schema.kevinriedl.intro.name)}
-                                    className='img-circle img-no-padding img-responsive'
-                                    src={imgKevinRiedl}
-                                />
+    return (
+        <Page currBreadcrumb={breadCrumbBlogKevinRiedl} header={<BlogPageHeader />} t={t}>
+            <div className="section profile-content" style={{ paddingTop: 0 }}>
+                <Container>
+                    <Row>
+                        <Col className="ml-auto mr-auto text-center" md="8">
+                            <BreadCrumbs breadcrumbs={[breadCrumbHome, breadCrumbBlogs, breadCrumbBlogKevinRiedl]} />
+                            <div className="owner" style={{ marginTop: 100 }}>
+                                <div className="avatar">
+                                    <GrayColorImg
+                                        alt={t(schema.kevinriedl.intro.name)}
+                                        className="img-circle img-no-padding img-responsive"
+                                        src={imgKevinRiedl}
+                                    />
+                                </div>
+                                <div className="name">
+                                    <h4 className="title">
+                                        {t(schema.kevinriedl.intro.name)} <br />
+                                    </h4>
+                                    <h6 className="description">{t(schema.kevinriedl.intro.shortDescription)}</h6>
+                                </div>
                             </div>
-                            <div className='name'>
-                                <h4 className='title'>
-                                    {t(schema.kevinriedl.intro.name)} <br />
-                                </h4>
-                                <h6 className='description'>{t(schema.kevinriedl.intro.shortDescription)}</h6>
-                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="ml-auto mr-auto text-center" md="8">
+                            <p>{t(schema.kevinriedl.intro.description)}</p>
+                            <br />
+                            <a
+                                href="https://www.linkedin.com/in/kevin-riedl-947219158/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title={t(_schema.common_components.navbar.linkedin.linkTitle)}
+                            >
+                                <Button className="btn-round" color="default" outline={true}>
+                                    <i className="fa fa-linkedin" /> {t(_schema.common_components.navbar.linkedin.title)}
+                                </Button>
+                            </a>
+                        </Col>
+                    </Row>
+                    <br />
+                    <div className="nav-tabs-navigation">
+                        <div className="nav-tabs-wrapper">
+                            <Nav role="tablist" tabs={true}>
+                                <NavItem>
+                                    <NavLink
+                                        className={activeTab === '1' ? 'active' : ''}
+                                        onClick={() => {
+                                            toggle('1')
+                                        }}
+                                    >
+                                        {t(schema.general.posts)}
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
                         </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className='ml-auto mr-auto text-center' md='8'>
-                        <p>{t(schema.kevinriedl.intro.description)}</p>
-                        <br />
-                        <a
-                            href='https://www.linkedin.com/in/kevin-riedl-947219158/'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            title={t(_schema.common_components.navbar.linkedin.linkTitle)}
-                        >
-                            <Button className='btn-round' color='default' outline={true}>
-                                <i className='fa fa-linkedin' /> {t(_schema.common_components.navbar.linkedin.title)}
-                            </Button>
-                        </a>
-                    </Col>
-                </Row>
-                <br />
-                <div className='nav-tabs-navigation'>
-                    <div className='nav-tabs-wrapper'>
-                        <Nav role='tablist' tabs={true}>
-                            <NavItem>
-                                <NavLink
-                                    className={activeTab === '1' ? 'active' : ''}
-                                    onClick={() => {
-                                        toggle('1')
-                                    }}
-                                >
-                                    {t(schema.general.posts)}
-                                </NavLink>
-                            </NavItem>
-                        </Nav>
                     </div>
-                </div>
-                {/* Tab panes */}
-                <TabContent className='following' activeTab={activeTab}>
-                    <TabPane tabId='1' id='follows'>
-                        <Row>
-                            <Col className='ml-auto mr-auto' md='auto'>
-                                <ul className='list-unstyled follows'>
-                                    <BlogListDraft
-                                        blogLink={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link}
-                                        blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                        blogTitle={t(breadCrumbBlogKevinRiedlHappinessNeqFulfillment.title)}
-                                        blogHeaderImg={imgKevinRiedlHappinessNeqFulfillment}
-                                        blogLanguage={t(schema.general.languages.en)}
-                                    />
+                    {/* Tab panes */}
+                    <TabContent className="following" activeTab={activeTab}>
+                        <TabPane tabId="1" id="follows">
+                            <Row>
+                                <Col className="ml-auto mr-auto" md="auto">
+                                    <ul className="list-unstyled follows">
+                                        <BlogListDraft
+                                            blogLink={breadCrumbBlogKevinRiedlHappinessNeqFulfillment.link}
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle={t(breadCrumbBlogKevinRiedlHappinessNeqFulfillment.title)}
+                                            blogHeaderImg={imgKevinRiedlHappinessNeqFulfillment}
+                                            blogLanguage={t(schema.general.languages.en)}
+                                        />
 
-                                    <hr />
-                                    <BlogListDraft
-                                        blogLink={breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.link}
-                                        blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                        blogTitle={t(breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.title)}
-                                        blogHeaderImg={imgKevinRiedlChangeThoughtsOnBurnoutStress}
-                                        blogLanguage={t(schema.general.languages.en)}
-                                    />
-                                    <hr />
-                                    <BlogListDraft
-                                        blogLink={breadCrumbBlogKevinRiedlStrategicHustling.link}
-                                        blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                        blogTitle={t(breadCrumbBlogKevinRiedlStrategicHustling.title)}
-                                        blogHeaderImg={imgKevinRiedlStrategicHustling}
-                                        blogLanguage={t(schema.general.languages.en)}
-                                    />
-                                    <hr />
-                                    <BlogListDraft
-                                        blogLink={breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.link}
-                                        blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                        blogTitle={t(breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.title)}
-                                        blogHeaderImg={imgKevinRiedlSayingYesIsABigNoToOpportunities}
-                                        blogLanguage={t(schema.general.languages.en)}
-                                    />
-                                    <hr />
-                                    <BlogListDraft
-                                        blogLink={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link}
-                                        blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
-                                        blogTitle={t(breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.title)}
-                                        blogHeaderImg={imgKevinRiedlStartReflectingOrDieFullOfRegrets}
-                                        blogLanguage={t(schema.general.languages.en)}
-                                    />
-                                </ul>
-                            </Col>
-                        </Row>
-                    </TabPane>
-                </TabContent>
+                                        <hr />
+                                        <BlogListDraft
+                                            blogLink={breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.link}
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle={t(breadCrumbBlogKevinRiedlChangeYourThoughtsOnStress.title)}
+                                            blogHeaderImg={imgKevinRiedlChangeThoughtsOnBurnoutStress}
+                                            blogLanguage={t(schema.general.languages.en)}
+                                        />
+                                        <hr />
+                                        <BlogListDraft
+                                            blogLink={breadCrumbBlogKevinRiedlStrategicHustling.link}
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle={t(breadCrumbBlogKevinRiedlStrategicHustling.title)}
+                                            blogHeaderImg={imgKevinRiedlStrategicHustling}
+                                            blogLanguage={t(schema.general.languages.en)}
+                                        />
+                                        <hr />
+                                        <BlogListDraft
+                                            blogLink={breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.link}
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle={t(breadCrumbBlogKevinRiedlSayingYesIsABigNoToOpportunities.title)}
+                                            blogHeaderImg={imgKevinRiedlSayingYesIsABigNoToOpportunities}
+                                            blogLanguage={t(schema.general.languages.en)}
+                                        />
+                                        <hr />
+                                        <BlogListDraft
+                                            blogLink={breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.link}
+                                            blogCategory={BlogCategories.PERSONAL_DEVELOPMENT}
+                                            blogTitle={t(breadCrumbBlogKevinRiedlStartReflectingOrDieFullOfRegrets.title)}
+                                            blogHeaderImg={imgKevinRiedlStartReflectingOrDieFullOfRegrets}
+                                            blogLanguage={t(schema.general.languages.en)}
+                                        />
+                                    </ul>
+                                </Col>
+                            </Row>
+                        </TabPane>
+                    </TabContent>
 
-                <SocialShareBar shareUrl={breadCrumbBlogKevinRiedl.link} />
-            </Container>
-        </div>
-    </Page>
+                    <SocialShareBar shareUrl={breadCrumbBlogKevinRiedl.link} />
+                </Container>
+            </div>
+        </Page>
+    )
 }
 
 export default translate()(BlogKevinRiedl)

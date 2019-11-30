@@ -1,5 +1,5 @@
-import {ReactNode} from 'react'
-import {BreadcrumbRoute} from '../../../../models/BreadcrumbRoute'
+import { ReactNode } from 'react'
+import { BreadcrumbRoute } from '../../../../models/BreadcrumbRoute'
 
 export interface IPageProps {
     currBreadcrumb: BreadcrumbRoute

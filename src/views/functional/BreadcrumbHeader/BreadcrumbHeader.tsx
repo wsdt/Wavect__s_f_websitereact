@@ -2,8 +2,8 @@ import React from 'react'
 import { translate } from 'react-polyglot'
 import Breadcrumb from 'reactstrap/lib/Breadcrumb'
 import BreadcrumbItem from 'reactstrap/lib/BreadcrumbItem'
-import {BreadcrumbRoute} from '../../../models/BreadcrumbRoute'
-import {IBreadcrumbHeaderProps} from './BreadcrumbHeader.props'
+import { BreadcrumbRoute } from '../../../models/BreadcrumbRoute'
+import { IBreadcrumbHeaderProps } from './BreadcrumbHeader.props'
 
 const BreadcrumbHeader = (props: IBreadcrumbHeaderProps) => {
     const { t } = props
@@ -23,7 +23,7 @@ const BreadcrumbHeader = (props: IBreadcrumbHeaderProps) => {
                     )
                 } else {
                     return (
-                        <BreadcrumbItem tag='a' href={breadcrumb.link} key={breadcrumb.link} title={title}>
+                        <BreadcrumbItem tag="a" href={breadcrumb.link} key={breadcrumb.link} title={title}>
                             {shortenedTitle}
                         </BreadcrumbItem>
                     )

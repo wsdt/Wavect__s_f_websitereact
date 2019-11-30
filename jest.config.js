@@ -1,4 +1,3 @@
-
 module.exports = {
     roots: ['<rootDir>/src'],
     transform: {
@@ -12,4 +11,3 @@ module.exports = {
         '.(scss|css|jpg|png)$': '<rootDir>/jest_non-ts-files-handler.js',
     },
 }
-

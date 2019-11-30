@@ -1,25 +1,25 @@
 export class BreadcrumbRoute {
     get metaTitle(): string {
-        return this._metaTitle;
+        return this._metaTitle
     }
 
     set metaTitle(value: string) {
-        this._metaTitle = value;
+        this._metaTitle = value
     }
     get metaKeywords(): string {
-        return this._metaKeywords;
+        return this._metaKeywords
     }
 
     set metaKeywords(value: string) {
-        this._metaKeywords = value;
+        this._metaKeywords = value
     }
 
     get metaDescription(): string {
-        return this._metaDescription;
+        return this._metaDescription
     }
 
     set metaDescription(value: string) {
-        this._metaDescription = value;
+        this._metaDescription = value
     }
 
     get title(): string {

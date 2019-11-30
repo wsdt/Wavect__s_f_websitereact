@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { WhatsappIcon, WhatsappShareButton } from 'react-share'
 import '../SocialShare.css'
-import {ISocialShareProps} from '../SocialShare.props'
+import { ISocialShareProps } from '../SocialShare.props'
 
 export const WhatsAppShare = (props: ISocialShareProps) => {
     return (

@@ -20,6 +20,10 @@
                 "title": "Start",
                 "linkTitle": "Startseite"
             },
+            "pricing": {
+                "title": "Preise",
+                "linkTitle": "Gebühren, Preismodelle, ..."
+            },
             "whyhow": {
                 "title": "Warum und Wie?",
                 "linkTitle": "Unsere Vision & Mission"
@@ -120,6 +124,26 @@
         }
     },
     "pages": {
+        "pricing": {
+            "header": {
+                "title": "Vermittlungsgebühren für Organisationen",
+                "description": "NGOs/Wohltätigkeitsorganisationen, Unternehmen, Regierungsinstitutionen, Politiker etc. müssen entsprechend der Größe ihrer Organisationen eine entsprechende Gebühr entrichten."
+            },
+            "general": {
+                "btnSeeMore": "Mehr erfahren"
+            },
+            "intro": {
+                "description": "Aktuell befindet sich unsere Applikation noch in der Alpha-Test Phase. Durch unsere bereits recht stabile Infrastruktur, wachsende User-Base & stetiges Feedback können schon folgende Services angeboten werden."
+            },
+            "packages": {
+                "taster": {
+                    "preview": {
+                        "title": "Taster-Paket",
+                        "description": "Sponsorn Sie eine Herausforderung mit einem Rabatt, Produkt oder Gutschein während unserer Alpha-Testphase."
+                    }
+                }
+            }
+        },
         "impressum": {
             "header": {
                 "title": "Wavect - Impressum",

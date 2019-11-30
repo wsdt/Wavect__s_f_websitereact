@@ -1,5 +1,5 @@
-import {BreadcrumbRoute} from '../../../../models/BreadcrumbRoute'
-import {BlogCategories} from '../../Blog/Authors/BlogCategories'
+import { BreadcrumbRoute } from '../../../../models/BreadcrumbRoute'
+import { BlogCategories } from '../../Blog/Authors/BlogCategories'
 
 export interface ITextPageDraftProps {
     blogCategory?: BlogCategories

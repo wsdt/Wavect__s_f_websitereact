@@ -54,7 +54,7 @@ export const BasePageHeader = (props: IBasePageHeaderProps) => {
                 initialSlideHeight={height}
                 pauseOnHover={true} // better ux, for longer texts
                 speed={1500}
-                easing='easeCubicInOut'
+                easing="easeCubicInOut"
                 renderBottomCenterControls={(controlProps: CarouselSlideRenderControlProps) => <CarouselDots {...controlProps} />}
                 renderCenterLeftControls={(controlProps: CarouselSlideRenderControlProps) => <CarouselPrevBtn {...controlProps} />}
                 renderCenterRightControls={(controlProps: CarouselSlideRenderControlProps) => <CarouselNextBtn {...controlProps} />}

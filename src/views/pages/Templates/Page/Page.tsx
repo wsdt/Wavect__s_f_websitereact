@@ -17,11 +17,10 @@
 
 */
 import React from 'react'
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import Footer from '../../../pageComponents/Footers/Footer'
 import NavBar from '../../../pageComponents/Navbars/NavBar'
-import {IPageProps} from './Page.props'
-
+import { IPageProps } from './Page.props'
 
 export const Page = (props: IPageProps) => {
     document.documentElement.classList.remove('nav-open')
@@ -32,14 +31,14 @@ export const Page = (props: IPageProps) => {
         }
     })
 
-    const {t} = props
+    const { t } = props
 
     return (
         <>
             <Helmet>
                 <title>{t(props.currBreadcrumb.metaTitle)}</title>
-                <meta name='description' content={t(props.currBreadcrumb.metaDescription)} />
-                <meta name='keywords' content={t(props.currBreadcrumb.metaKeywords)} />
+                <meta name="description" content={t(props.currBreadcrumb.metaDescription)} />
+                <meta name="keywords" content={props.currBreadcrumb.metaKeywords} />
             </Helmet>
             <NavBar />
             {props.header}

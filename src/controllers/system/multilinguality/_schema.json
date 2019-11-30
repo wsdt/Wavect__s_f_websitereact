@@ -20,6 +20,10 @@
                 "title": "common_components.navbar.home.title",
                 "linkTitle": "common_components.navbar.home.linkTitle"
             },
+            "pricing": {
+                "title": "common_components.navbar.pricing.title",
+                "linkTitle": "common_components.navbar.pricing.linkTitle"
+            },
             "whyhow": {
                 "title": "common_components.navbar.whyhow.title",
                 "linkTitle": "common_components.navbar.whyhow.linkTitle"
@@ -120,6 +124,26 @@
         }
     },
     "pages": {
+        "pricing": {
+            "header": {
+                "title": "pages.pricing.header.title",
+                "description": "pages.pricing.header.description"
+            },
+            "general": {
+                "btnSeeMore": "pages.pricing.general.btnSeeMore"
+            },
+            "intro": {
+                "description": "pages.pricing.intro.description"
+            },
+            "packages": {
+                "taster": {
+                    "preview": {
+                        "title": "pages.pricing.packages.taster.preview.title",
+                        "description": "pages.pricing.packages.taster.preview.description"
+                    }
+                }
+            }
+        },
         "impressum": {
             "header": {
                 "title": "pages.impressum.header.title",

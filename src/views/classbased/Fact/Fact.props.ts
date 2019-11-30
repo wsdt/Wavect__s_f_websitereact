@@ -1,4 +1,3 @@
-
 export interface IFactProps {
     quote: string
     sourceTitle: string

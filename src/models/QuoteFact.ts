@@ -1,11 +1,11 @@
 /** Only save already translated strings into class to make code more comprehensible */
 export class QuoteFact {
-    get colWidth(): number|undefined {
-        return this._colWidth;
+    get colWidth(): number | undefined {
+        return this._colWidth
     }
 
-    set colWidth(value: number|undefined) {
-        this._colWidth = value;
+    set colWidth(value: number | undefined) {
+        this._colWidth = value
     }
     get quote(): string {
         return this._quote
@@ -21,11 +21,11 @@ export class QuoteFact {
     set sourceTitle(value: string) {
         this._sourceTitle = value
     }
-    get sourceLink(): string|undefined {
+    get sourceLink(): string | undefined {
         return this._sourceLink
     }
 
-    set sourceLink(value: string|undefined) {
+    set sourceLink(value: string | undefined) {
         this._sourceLink = value
     }
     get sourceLongTitle(): string {
@@ -45,12 +45,19 @@ export class QuoteFact {
 
     private _quote!: string
     private _sourceTitle!: string
-    private _sourceLink?: string|undefined
+    private _sourceLink?: string | undefined
     private _sourceLongTitle!: string
     private _sourceExactSource!: string
-    private _colWidth?: number|undefined
+    private _colWidth?: number | undefined
 
-    public constructor(quote: string, sourceTitle: string, sourceLongTitle: string, sourceExactSource: string, sourceLink?: string|undefined, colWidth?: number) {
+    public constructor(
+        quote: string,
+        sourceTitle: string,
+        sourceLongTitle: string,
+        sourceExactSource: string,
+        sourceLink?: string | undefined,
+        colWidth?: number
+    ) {
         this.quote = quote
         this.sourceTitle = sourceTitle
         this.sourceLink = sourceLink

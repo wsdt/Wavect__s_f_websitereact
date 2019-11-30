@@ -25,34 +25,40 @@ import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 import imgKevinRiedl from '../../../assets/img/team/kevin_riedl.jpg'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
-import { breadCrumbBlogs, breadCrumbHome } from '../../../controllers/system/routers/BreadcrumbRoutes'
+import {
+    breadCrumbBlogKevinRiedl,
+    breadCrumbBlogs,
+    breadCrumbHome
+} from '../../../controllers/system/routers/BreadcrumbRoutes'
 import { GrayColorImg } from '../../functional/GrayscaleColor/GrayColorImg/GrayColorImg'
-import {SocialShareBar} from '../../functional/SocialShareBar/SocialShareBar'
-import {IBasePageProps} from '../Templates/BasePage.props'
-import {TextPageDraft} from '../Templates/TextPageDraft/TextPageDraft'
+import { SocialShareBar } from '../../functional/SocialShareBar/SocialShareBar'
+import { IBasePageProps } from '../Templates/BasePage.props'
+import { TextPageDraft } from '../Templates/TextPageDraft/TextPageDraft'
 
 const schema = _schema.pages.blog
 
 const Blog = (props: IBasePageProps) => {
     const { t } = props
 
-    return <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]} t={t}>
-                <p>{t(schema.intro.description)}</p>
-                <br />
+    return (
+        <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbBlogs]} t={t}>
+            <p>{t(schema.intro.description)}</p>
+            <br />
 
-                <a href='/blogs/kevin-riedl' style={{ color: '#fff' }}>
-                    <Card style={{ width: '20rem' }}>
-                        <GrayColorImg src={imgKevinRiedl} alt={t(schema.intro.blogs.kevin_riedl.imgAltTag)} />
-                        <CardBody>
-                            <CardTitle style={{ fontWeight: 'bold' }}>{t(schema.intro.blogs.kevin_riedl.title)}</CardTitle>
-                            <CardText>{t(schema.intro.blogs.kevin_riedl.description)}</CardText>
-                            <Button color='info'>{t(schema.general.readposts)}</Button>
-                        </CardBody>
-                    </Card>
-                </a>
+            <a href={breadCrumbBlogKevinRiedl.link} style={{ color: '#fff' }}>
+                <Card style={{ width: '20rem' }}>
+                    <GrayColorImg src={imgKevinRiedl} alt={t(schema.intro.blogs.kevin_riedl.imgAltTag)} />
+                    <CardBody>
+                        <CardTitle style={{ fontWeight: 'bold' }}>{t(schema.intro.blogs.kevin_riedl.title)}</CardTitle>
+                        <CardText>{t(schema.intro.blogs.kevin_riedl.description)}</CardText>
+                        <Button color="info">{t(schema.general.readposts)}</Button>
+                    </CardBody>
+                </Card>
+            </a>
 
-                <SocialShareBar shareUrl={breadCrumbBlogs.link} />
-            </TextPageDraft>
+            <SocialShareBar shareUrl={breadCrumbBlogs.link} />
+        </TextPageDraft>
+    )
 }
 
 export default translate()(Blog)

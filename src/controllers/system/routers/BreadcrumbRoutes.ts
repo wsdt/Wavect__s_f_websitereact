@@ -1,19 +1,81 @@
-import {BreadcrumbRoute} from '../../../models/BreadcrumbRoute'
+import { BreadcrumbRoute } from '../../../models/BreadcrumbRoute'
 import _schema from '../multilinguality/_schema.json'
-
 
 const navSchema = _schema.common_components.navbar
 const pageSchema = _schema.pages
 
-export const breadCrumbHome: BreadcrumbRoute = new BreadcrumbRoute(navSchema.home.title, pageSchema.landingPage.header.title, pageSchema.landingPage.header.description, 'wavect,challenge,environment,social,health,home','/')
-export const breadCrumbWhy: BreadcrumbRoute = new BreadcrumbRoute(navSchema.whyhow.title, pageSchema.whyhow.header.title, pageSchema.whyhow.header.description, 'wavect,challenge,app,function,prize,curriculum,reputation', '/vision-our-why-and-how')
-export const breadCrumbForCompanies: BreadcrumbRoute = new BreadcrumbRoute(navSchema.b2b.title, pageSchema.b2b.header.title, pageSchema.b2b.header.description, 'wavect,sponsor,customer,corporate,social,responsibility,csr,personalize,low,price,storytelling,image,reputation','/b2b')
-export const breadCrumbForOrganizations: BreadcrumbRoute = new BreadcrumbRoute(navSchema.b2g.title, pageSchema.b2g.header.title, pageSchema.b2g.header.description, 'wavect,government,issue,society,solidarity,environment,health,charity,reputation,sustainability', '/b2g')
-export const breadCrumbTraction: BreadcrumbRoute = new BreadcrumbRoute(navSchema.traction.title, pageSchema.traction.header.title, pageSchema.traction.header.description, 'wavect,traction,change,inspire,partner,sponsor,impact', '/traction')
-export const breadCrumbImpressum: BreadcrumbRoute = new BreadcrumbRoute(navSchema.impressum.title, pageSchema.impressum.header.title, pageSchema.impressum.header.description, 'wavect,impressum,data,privacy,user,protection', '/impressum')
-export const breadCrumbDataPrivacy: BreadcrumbRoute = new BreadcrumbRoute(navSchema.dataprivacy.title, pageSchema.dataprivacy.header.title, pageSchema.dataprivacy.header.description, 'wavect,data,privacy,value,experience,social,media', '/data-privacy')
-export const breadCrumbBlogs: BreadcrumbRoute = new BreadcrumbRoute(navSchema.blogs.title, pageSchema.blog.header.title, pageSchema.blog.header.description, 'wavect,blog,founder,post,personal,development,software,technical,economical,topic', '/blogs')
-export const breadCrumbBlogKevinRiedl: BreadcrumbRoute = new BreadcrumbRoute(navSchema.blogs.autors.kevinriedl, pageSchema.blog.blogs.kevinriedl.header.title, pageSchema.blog.blogs.kevinriedl.header.description, 'wavect,blog,ceo,kevin,riedl,post,technical,economical,personal', '/blogs/kevin-riedl')
+export const breadCrumbHome: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.home.title,
+    pageSchema.landingPage.header.title,
+    pageSchema.landingPage.header.description,
+    'wavect,challenge,environment,social,health,home',
+    '/'
+)
+export const breadCrumbWhy: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.whyhow.title,
+    pageSchema.whyhow.header.title,
+    pageSchema.whyhow.header.description,
+    'wavect,challenge,app,function,prize,curriculum,reputation',
+    '/vision-our-why-and-how'
+)
+export const breadCrumbForCompanies: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.b2b.title,
+    pageSchema.b2b.header.title,
+    pageSchema.b2b.header.description,
+    'wavect,sponsor,customer,corporate,social,responsibility,csr,personalize,low,price,storytelling,image,reputation',
+    '/b2b'
+)
+export const breadCrumbForOrganizations: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.b2g.title,
+    pageSchema.b2g.header.title,
+    pageSchema.b2g.header.description,
+    'wavect,government,issue,society,solidarity,environment,health,charity,reputation,sustainability',
+    '/b2g'
+)
+export const breadCrumbTraction: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.traction.title,
+    pageSchema.traction.header.title,
+    pageSchema.traction.header.description,
+    'wavect,traction,change,inspire,partner,sponsor,impact',
+    '/traction'
+)
+export const breadCrumbImpressum: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.impressum.title,
+    pageSchema.impressum.header.title,
+    pageSchema.impressum.header.description,
+    'wavect,impressum,data,privacy,user,protection',
+    '/impressum'
+)
+export const breadCrumbDataPrivacy: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.dataprivacy.title,
+    pageSchema.dataprivacy.header.title,
+    pageSchema.dataprivacy.header.description,
+    'wavect,data,privacy,value,experience,social,media',
+    '/data-privacy'
+)
+
+export const breadCrumbPricing: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.pricing.title,
+    pageSchema.pricing.header.title,
+    pageSchema.pricing.header.description,
+    'wavect,pricing,cost,csr,product,service,social,environment,health',
+    '/pricing'
+)
+
+export const breadCrumbBlogs: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.blogs.title,
+    pageSchema.blog.header.title,
+    pageSchema.blog.header.description,
+    'wavect,blog,founder,post,personal,development,software,technical,economical,topic',
+    '/blogs'
+)
+export const breadCrumbBlogKevinRiedl: BreadcrumbRoute = new BreadcrumbRoute(
+    navSchema.blogs.autors.kevinriedl,
+    pageSchema.blog.blogs.kevinriedl.header.title,
+    pageSchema.blog.blogs.kevinriedl.header.description,
+    'wavect,blog,ceo,kevin,riedl,post,technical,economical,personal',
+    '/blogs/kevin-riedl'
+)
 export const breadCrumbBlogKevinRiedlStrategicHustling: BreadcrumbRoute = new BreadcrumbRoute(
     navSchema.blogs.posts.strategichustling,
     'Strategic Hustling',

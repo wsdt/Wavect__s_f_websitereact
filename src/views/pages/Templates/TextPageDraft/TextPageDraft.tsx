@@ -17,34 +17,36 @@
 
 */
 import React from 'react'
-import {Col, Container, Row} from 'reactstrap'
-import {BreadcrumbRoute} from '../../../../models/BreadcrumbRoute'
+import { Col, Container, Row } from 'reactstrap'
+import { BreadcrumbRoute } from '../../../../models/BreadcrumbRoute'
 import BreadCrumbs from '../../../functional/BreadcrumbHeader/BreadcrumbHeader'
-import {TextPageHeader} from '../../../functional/TextComponents/TextPageHeader/TextPageHeader'
+import { TextPageHeader } from '../../../functional/TextComponents/TextPageHeader/TextPageHeader'
 import BlogPageHeader from '../../../pageComponents/Headers/BlogPageHeader'
-import {Page} from '../Page/Page'
-import {ITextPageDraftProps} from './TextPageDraft.props'
-
+import { Page } from '../Page/Page'
+import { ITextPageDraftProps } from './TextPageDraft.props'
 
 export const TextPageDraft = (props: ITextPageDraftProps) => {
     const currBreadcrumb: BreadcrumbRoute = props.breadCrumbs[props.breadCrumbs.length - 1]
-    const {t} = props
+    const { t } = props
 
-    return <Page currBreadcrumb={currBreadcrumb} header={<BlogPageHeader/>} t={t}>
-        <div className='section profile-content' style={{paddingTop: 0}}>
-            <Container>
-                <Row>
-                    <Col className='ml-auto mr-auto text-center' md='8'>
-                        <BreadCrumbs breadcrumbs={props.breadCrumbs}/>
+    return (
+        <Page currBreadcrumb={currBreadcrumb} header={<BlogPageHeader />} t={t}>
+            <div className="section profile-content" style={{ paddingTop: 0 }}>
+                <Container>
+                    <Row>
+                        <Col className="ml-auto mr-auto text-center" md="8">
+                            <BreadCrumbs breadcrumbs={props.breadCrumbs} />
 
-                        <TextPageHeader
-                            blogCategory={props.blogCategory}>{t(props.breadCrumbs[props.breadCrumbs.length - 1].title)}</TextPageHeader>
+                            <TextPageHeader blogCategory={props.blogCategory}>
+                                {t(props.breadCrumbs[props.breadCrumbs.length - 1].title)}
+                            </TextPageHeader>
 
-                        {props.children}
-                    </Col>
-                </Row>
-                <br/>
-            </Container>
-        </div>
-    </Page>
+                            {props.children}
+                        </Col>
+                    </Row>
+                    <br />
+                </Container>
+            </div>
+        </Page>
+    )
 }
