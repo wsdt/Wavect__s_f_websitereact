@@ -126,20 +126,20 @@
     "pages": {
         "pricing": {
             "header": {
-                "title": "Vermittlungsgebühren für Organisationen",
+                "title": "Vermittlungsgebühr für Organisationen",
                 "description": "NGOs/Wohltätigkeitsorganisationen, Unternehmen, Regierungsinstitutionen, Politiker etc. müssen entsprechend der Größe ihrer Organisationen eine entsprechende Gebühr entrichten."
             },
             "general": {
                 "btnSeeMore": "Mehr erfahren"
             },
             "intro": {
-                "description": "Aktuell befindet sich unsere Applikation noch in der Alpha-Test Phase. Durch unsere bereits recht stabile Infrastruktur, wachsende User-Base & stetiges Feedback können schon folgende Services angeboten werden."
+                "description": "Aktuell befindet sich unsere Applikation noch in der Beta-Test Phase. Durch unsere bereits recht stabile Infrastruktur, wachsende User-Base & stetiges Feedback können schon folgende Services angeboten werden."
             },
             "packages": {
                 "taster": {
                     "preview": {
                         "title": "Taster-Paket",
-                        "description": "Sponsorn Sie eine Herausforderung mit einem Rabatt, Produkt oder Gutschein während unserer Alpha-Testphase."
+                        "description": "Sponsorn Sie eine Herausforderung mit einem Rabatt, Produkt oder Gutschein während unserer Testphase."
                     }
                 }
             }
