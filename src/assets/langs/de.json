@@ -61,9 +61,9 @@
                 "posts": {
                     "strategichustling": "Strategisches Hustlen",
                     "changethoughtsonstress": "Lasst mich eure Meinung zu Stress & Burnout ändern",
-                    "reflectorregret": "Fang an zu reflektieren oder du wirst voller Reue sterben",
+                    "reflectorregret": "Fang an zu reflektieren oder du wirst es bereuen",
                     "yesisabignotoopportunities": "Ein 'Ja' ist ein großes NEIN zu vielen anderen Gelegenheiten",
-                    "happinessneqfulfillment": "Glück! = Erfüllung: Wer bist du wirklich?"
+                    "happinessneqfulfillment": "Glück != Erfüllung: Wer bist du wirklich?"
                 }
             },
             "email": {
@@ -116,7 +116,7 @@
                 "servererror": "E-Mail konnte nicht gesendet werden",
                 "clientvalidationerror": {
                     "autorName": "Bitte gib deinen Namen an",
-                    "autorMail": "Wir benötigen deine E-Mail, um dir gegebenenfalls zu antworten",
+                    "autorMail": "Wir benötigen deine E-Mail, um dir gegebenenfalls zu antworten.",
                     "subject": "Warum schreibst du uns?",
                     "text": "Eine E-Mail ohne Text?"
                 }
@@ -127,19 +127,19 @@
         "pricing": {
             "header": {
                 "title": "Vermittlungsgebühr für Organisationen",
-                "description": "NGOs/Wohltätigkeitsorganisationen, Unternehmen, Regierungsinstitutionen, Politiker etc. müssen entsprechend der Größe ihrer Organisationen eine entsprechende Gebühr entrichten."
+                "description": "NGOs/Wohltätigkeitsorganisationen, Unternehmen, Regierungsinstitutionen, Politiker etc. müssen entsprechend der Größe ihrer Organisation eine angemessene Gebühr entrichten."
             },
             "general": {
                 "btnSeeMore": "Mehr erfahren"
             },
             "intro": {
-                "description": "Aktuell befindet sich unsere Applikation noch in der Beta-Test Phase. Durch unsere bereits recht stabile Infrastruktur, wachsende User-Base & stetiges Feedback können schon folgende Services angeboten werden."
+                "description": "Aktuell befindet sich unsere Applikation noch in der Testphase. Durch unsere bereits recht stabile Infrastruktur, wachsende User-Base & stetiges Feedback können schon folgende Services angeboten werden."
             },
             "packages": {
                 "taster": {
                     "preview": {
                         "title": "Taster-Paket",
-                        "description": "Sponsorn Sie eine Herausforderung mit einem Rabatt, Produkt oder Gutschein während unserer Testphase."
+                        "description": "Sponsorn Sie eine nicht-personalisierte Herausforderung mit einem Rabatt, Produkt oder Gutschein während unserer Testphase."
                     }
                 }
             }
@@ -153,7 +153,7 @@
         "dataprivacy": {
             "header": {
                 "title": "Wavect - Data Privacy",
-                "description": "Wir schätzen deine Privatsphäre. Nichtsdestotrotz sind Daten wichtig, um dir ein gutes Erlebnis zu ermöglichen."
+                "description": "Wir schätzen deine Privatsphäre. Nichtsdestotrotz sind gewisse Daten wichtig, um dir Inhalte korrekt anzuzeigen."
             }
         },
         "blog": {
@@ -197,79 +197,79 @@
         "b2b": {
             "header": {
                 "title": "Wavect für Unternehmen",
-                "description": "Personalisiertes & günstiges Corporate Social Responsibility. Erzeugen Sie einen messbaren Einfluss, erwerben Sie neue Kunden und verbesseren Sie Ihr Image. Modernes Storytelling wird von Usern erzählt."
+                "description": "Personalisiertes & günstiges Corporate-Social-Responsibility. Erzeugen Sie einen messbaren Impakt, erwerben Sie neue Kunden und verbesseren Sie Ihr Image. Modernes Storytelling wird von Usern erzählt."
             },
             "slider": {
                 "slide_0": {
                     "title": "Sponsorn Sie Herausforderungen mit Geld, Rabatten, Gutscheinen oder Produkten",
-                    "subtitle": "Es war noch nie so einfach, einen ökologischen, sozialen oder gesundheitsbezogenen positiven Einfluss zu schaffen.",
+                    "subtitle": "Es war noch nie so einfach, einen ökologischen, sozialen oder gesundheitsbezogenen Impakt zu schaffen.",
                     "bgImgAlt": "Schreibtisch voll mit Arbeitsmaterial"
                 },
                 "slide_1": {
                     "title": "Wie funktioniert's?",
-                    "subtitle": "Such Sie sich eine Challenge aus, entscheiden Sie was Sie sponsorn und erhalten Sie neue Kunden indem Sie Emotionen auslösen.",
-                    "bgImgAlt": "Books with instructions"
+                    "subtitle": "Challenge aussuchen, Sponsoring wählen und Kunden akquirieren indem Sie Emotionen wecken.",
+                    "bgImgAlt": "Bücher mit Instruktionen"
                 },
                 "slide_2": {
                     "title": "Personalisiertes CSR",
-                    "subtitle": "Benutzer erhalten persönliche Challenges und gewinnen relevante Preise. Das maximiert den Einfluss und erlaubt es, Kundenbedürfnisse direkt anzusprechen.",
+                    "subtitle": "Benutzer erhalten persönliche Challenges und gewinnen relevante Preise. Dies maximiert den Impakt und ermöglicht es, Kundenbedürfnisse direkt anzusprechen.",
                     "bgImgAlt": "Individuell in einer großen Stadt"
                 },
                 "slide_3": {
-                    "title": "Funktionale Werbungen sind OUT",
-                    "subtitle": "Moderne Werbungen erzeugen Emotionen und erzählen Geschichten. Anzeigen auf unserer Plattform tun genau das, sind subtil und werden auf sozialen Medien geteilt.",
-                    "bgImgAlt": "Light bulbs turned off"
+                    "title": "Funktionale Werbungen sind obsolet",
+                    "subtitle": "Moderne Werbung weckt Emotionen und erzählt Geschichten. Anzeigen auf unserer Plattform tun genau das, sind subtil und gehen wahrscheinlicher viral.",
+                    "bgImgAlt": "Ausgeschaltete Glühbirnen"
                 },
                 "slide_4": {
-                    "title": "Verbessern Sie das Image Ihres Unternehmens",
-                    "subtitle": "Keine Idee wie Sie starten? Sponsorn Sie eine Challenge anstelle von teuren Marketing-Kampagnen. Kein Green-Washing, Sie erzeugen realen, messbaren Einfluss.",
+                    "title": "Unternehmensimage verbessern",
+                    "subtitle": "Sponsorn Sie eine Challenge anstelle von teuren Marketing-Kampagnen. Kein Green-Washing, Sie erzeugen realen, messbaren Impakt.",
                     "bgImgAlt": "Unternehmen bewerten"
                 },
                 "slide_5": {
                     "title": "Low-Priced CSR",
-                    "subtitle": "CSR wird zunehmend wichtiger. Jeder Sponsor bezahlt in Relation zur Größe des Unternehmens eine kleine Gebühr. Das Preisschema und unser Service macht CSR erreichbar für KMUs.",
+                    "subtitle": "CSR wird zunehmend wichtiger, weshalb zukünftig auch KMUs davon profitieren sollten. Jeder Sponsor bezahlt eine kleine Gebühr in Relation zur Größe des Unternehmens.",
                     "bgImgAlt": "Kleine Unternehmen die an CSR arbeiten"
                 },
                 "slide_6": {
                     "title": "Aufmerksmakeit = Ertrag",
-                    "subtitle": "Nichts erzeugt mehr Gewinn als Aufmerksmakeit. Reguläre Werbungeanzeigen müssen aufwendig entwickelt werden. Sponsorn Sie eine Challenge, schaffen Sie Einfluss und die Benutzer werden Ihre Geschichte erzählen!",
+                    "subtitle": "Eine starke Marke ist heutzutage immens wichtig. Reguläre Werbungeanzeigen müssen aufwendig entwickelt werden. Ein Sponsoring hingegen ist einfach!",
                     "bgImgAlt": "Aufmerksmakeit = Ertrag"
                 },
                 "slide_7": {
                     "title": "Virales Marketing",
-                    "subtitle": "Damit eine Werbung viral geht, muss meist viel investiert werden. In so einem Fall steigt die Wahrscheinlichkeit mit höherer Quantität. Beim Sponsoring einer unserer Challenges werden vom User relevante Informationen über Ihr Unternehmen verbreitet.",
+                    "subtitle": "Damit Werbung viral geht, muss meist viel investiert werden. Lassen Sie unsere Nutzer Ihre Challenge lösen und Videos/Bilder mit Ihrer Kampagne schmücken.",
                     "bgImgAlt": "Virus - Virales Marketing"
                 },
                 "slide_8": {
-                    "title": "Mundpropagande vom Feinsten",
-                    "subtitle": "Stellen Sie sich vor, dass Leute erzählen was für Preise sie von Ihrem Unternehmen gewonnen haben indem sie etwas Gutes getan haben. Eine Verlosung, ohne Geld zu verlieren.",
-                    "bgImgAlt": "Word-of-Mouth Marketing"
+                    "title": "Mundpropaganda vom Feinsten",
+                    "subtitle": "Menschen gewinnen personalisierte Preise indem Gutes getan wird. Eine Verlosung der gute Taten anstatt eines Geldeinsatzes gegenüberstehen.",
+                    "bgImgAlt": "Mundpropaganda 2.0"
                 }
             },
             "intro": {
-                "title": "Wie sponsort man?",
+                "title": "Wie funktioniert's?",
                 "description": {
-                    "_1": "Erzählen Sie uns, welche Art von Challenge Sie sponsorn möchten <a href='%{link}' title='Exemplary challenges'>(e.g. Müll sammeln, ...)</a>.",
-                    "_2": "Entscheide was du sponsorst (zB.: Exklusiver Rabatt auf dein Produkt oder eine Produktverlosung,...).",
-                    "_3": "Senden Sie uns einen kurzen Absatz warum Sie diese Herausforderung sponsorn.",
+                    "_1": "Erzählen Sie uns, welche Art von Challenge Sie sponsorn möchten <a href='%{link}' title='Beispielhafte Herausforderungen'>(e.g. Müll sammeln, ...)</a>.",
+                    "_2": "Entscheiden Sie was Sie sponsorn (zB.: Exklusiver Rabatt auf ein Produkt oder eine Produktverlosung,...).",
+                    "_3": "Schicken Sie uns einen Einzeiler warum Sie diese Herausforderung sponsorn. So bleiben Sie authentisch.",
                     "_4": "Verteilen Sie die Preise unter den Usern, die Ihre Challenge gelöst haben."
                 },
                 "iconcols": {
                     "lowpricedcsr": {
                         "title": "Günstiges CSR",
-                        "description": "Eine kleine Gebühr muss für das Sponsoring bezahlt werden. <strong>Diese Gebühr ist abhängig von der Größe Ihres Unternehmens</strong>, Dadurch ermöglichen wir auch kleinen Unternehmen das Betreiben von CSR."
+                        "description": "Eine kleine Gebühr muss für das Sponsoring entrichtet werden. <strong>Diese Gebühr ist abhängig von der Größe Ihres Unternehmens</strong>. Dadurch ermöglichen wir auch kleinen Unternehmen das Betreiben von CSR."
                     },
                     "personalizedcsr": {
                         "title": "Personalisiertes CSR",
-                        "description": "Herausforderungen und Preise werden<strong> individuell nach den Präferenzen des Users angezeigt</strong>. Verlosungen sind ebenfalls personalisiert, das bedeutet, dass User Preise gewinnen, für die sie sich auch interessieren."
+                        "description": "Herausforderungen und Preise werden<strong> individuell an die Präferenzen des Users angepasst</strong>. Verlosungen sind ebenfalls personalisiert, was bedeutet, dass User Preise gewinnen, für die sie sich auch interessieren."
                     },
                     "storytelling": {
                         "title": "Storytelling",
-                        "description": "Die User posten ein Video oder Bild als Beweis. Durch ein Wasserzeichen wird dieses Bild signiert und in allen Medien geteilt. <strong>Modernes Storytelling wird von Usern erzeugt, anstelle von Marketingspezialisten.</strong>"
+                        "description": "Die User posten ein Video oder Bild als Beweis. Durch ein Wasserzeichen wird dieses Bild signiert und in diversen sozialen Netzwerken geteilt. <strong>Modernes Storytelling kommt seitens Kunden, anstelle von Marketingspezialisten.</strong>"
                     },
                     "aggregatedimpact": {
-                        "title": "Aggregierter Einfluss",
-                        "description": "<strong>Der erzeugte Einfluss kann direkt Ihrem Unternehmen zugeschrieben werden</strong>. Der Einfluss wird zusammengefasst, um Ihnen und Ihren potenziellen Kunden zu zeigen, was Ihr Sponsoring bewirkt hat."
+                        "title": "Aggregierter Impakt",
+                        "description": "<strong>Der erzeugte Impakt wird direkt Ihrem Unternehmen zugeschrieben</strong>. Der Einfluss wird aggregiert, um Ihnen und Ihren potenziellen Kunden zu zeigen, was Ihr Sponsoring bewirkt hat."
                     }
                 }
             },
@@ -277,13 +277,13 @@
                 "title": "Fakten",
                 "elems": {
                     "_1": {
-                        "quote": "CSR erregt Aufmerksamkeit und erzeugt positivere Emotionen für Produkte, Marken und Organisationen.",
+                        "quote": "CSR erregt Aufmerksamkeit und weckt positive Emotionen für Produkte, Marken und Organisationen.",
                         "sourceTitle": "GfK Austria, 2017",
                         "sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
                     },
                     "_2": {
-                        "quote": "Etwa 41% der Befragten sind Stammkunden, 68% fühlen sich von Unternehmen ignoriert. ",
+                        "quote": "Etwa 41% der Befragten sind Stammkunden, 68% fühlen sich von Unternehmen ignoriert.",
                         "sourceTitle": "Reichl, 2019",
                         "sourceLongTitle": "Consumer Trends",
                         "sourceExactSource": "AMC Study 2019. Vienna, Austria: GfK Austria"
@@ -292,128 +292,128 @@
                         "quote": "Viele Marken haben Schwierigkeiten, ihre Produkte und Dienstleistungen an Millennials zu vermarkten.",
                         "sourceTitle": "GfK Austria, 2017",
                         "sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from  https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from  https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
                     },
                     "_4": {
-                        "quote": "Corporate-Social-Responsibility wird für Verbraucher immer interessanter. 78% der Österreicher geben an, dass CSR extrem wichtig ist. Darüber hinaus erwarten immer mehr Österreicher, dass sich Organisationen sozial engagieren, insbesondere in Bezug auf den Umweltschutz und ihre Region. Die Verbraucher sind davon überzeugt, dass Organisationen in CSR investieren und von solchen Maßnahmen profitieren sollten. Soziale Verantwortung führt zu einer besseren Reputation der Organisation, die dann zum Erfolg der Organisation führt.",
+                        "quote": "Corporate-Social-Responsibility wird für Verbraucher immer wichtiger. 78% der Österreicher geben an, dass CSR extrem wichtig ist. Darüber hinaus erwarten immer mehr Österreicher, dass sich Organisationen sozial engagieren, insbesondere in Bezug auf den Umweltschutz und ihre Region. Konsumenten sind davon überzeugt, dass Organisationen in CSR investieren sollten und von solchen Maßnahmen profitieren. Soziale Verantwortung führt zu einer besseren Reputation der Organisation, die wiederum zum Erfolg der Organisation führt.",
                         "sourceTitle": "GfK Austria, 2018/2019",
                         "sourceLongTitle": "CSR Monitor 2019. Austria: GfK Austria",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
                     },
                     "_5": {
-                        "quote": "Das Image einer Marke hat einen spezifischen Einfluss auf die Wahrnehmung von Produkt- und Servicequalität durch die Kunden, während die Reputation des Unternehmens einen breiten Einfluss auf die Wahrnehmung von Kundennutzen/-bindung hat.",
+                        "quote": "Das Image einer Marke hat einen direkten Einfluss auf die Wahrnehmung von Produkt- und Servicequalität durch die Kunden, während die Reputation des Unternehmens einen messbaren Einfluss auf die Wahrnehmung von Kundennutzen/-bindung hat.",
                         "sourceTitle": "Cretu, A. E., & Roderick, B. J., 2017",
                         "sourceLongTitle": "The influence of brand image and company reputation where manufacturers market to small firms: A customer value perspective.",
                         "sourceExactSource": "Industrial marketing management, 36(2), pp. 230-240. doi:https://doi.org/10.1016/j.indmarman.2005.08.013"
                     },
                     "_6": {
-                        "quote": "Ungefähr 45% der Verbraucher fühlen sich schuldig, wenn sie etwas tun, das der Umwelt schadet. Rund 32% der Verbraucher geben an, dass Nachhaltigkeit wirklich wichtig ist. 40% halten es für äußerst wichtig. ",
+                        "quote": "Ungefähr 45% der Verbraucher fühlen sich schuldig, wenn sie etwas tun, das der Umwelt schadet. Rund 32% der Verbraucher geben an, dass Nachhaltigkeit wirklich wichtig ist. 40% halten es für äußerst wichtig.",
                         "sourceTitle": "Reichl, 2019",
                         "sourceLongTitle": "Consumer Trends",
                         "sourceExactSource": "AMC Study 2019. Vienna, Austria: GfK Austria"
                     },
                     "_7": {
-                        "quote": "Empirische Erkenntnisse legen nahe, dass (1) die Reaktion eines Käufers auf eine Dienstleistung mit seiner Einstellung zum Ruf des Anbieters übereinstimmt, (2) der dem Ruf eines Unternehmens zugrunde liegende gemeinsame Faktor in erster Linie eindimensional ist und (3) die Wirksamkeit eines bestimmten Faktors Kommunikationsprogramm kann durch Nutzung des Rufs des Unternehmens verbessert werden. ",
+                        "quote": "Empirische Erkenntnisse legen nahe, dass (1) die Reaktion eines Käufers auf eine Dienstleistung mit seiner Einstellung zum Ruf des Anbieters übereinstimmt, (2) der dem Ruf eines Unternehmens zugrunde liegende gemeinsame Faktor in erster Linie eindimensional ist und (3) die Wirksamkeit einer Marketingkampagne kann durch ein besseres Unternehmensimage verbessert werden. ",
                         "sourceTitle": "Yoon, E., Guffey, H. J., & Kijewski, V., 1993",
                         "sourceLongTitle": "The effects on information and company reputation on intentions to buy a business service.",
                         "sourceExactSource": "Journal of Business research, 27(3), pp. 215-228. doi:https://doi.org/10.1016/0148-2963(93)90027-M"
                     },
                     "_8": {
-                        "quote": "Laut einer französischen Umfrage ist die breite Öffentlichkeit der Ansicht, dass reguläre Anzeigen überholt sind, während Sponsoring als State-of-the-Art gilt.",
+                        "quote": "Laut einer französischen Umfrage ist die breite Öffentlichkeit der Ansicht, dass reguläre Anzeigen obsolet sind, während Sponsoring als State-of-the-Art gilt.",
                         "sourceTitle": "Walliser, 2013",
                         "sourceLongTitle": "Sponsoring: Bedeutung, Wirkung und Kontrollmöglichkeiten.",
                         "sourceExactSource": "Springer-Verlag"
                     },
                     "_9": {
-                        "quote": "Nachhaltige Produkte werden immer mehr nachgefragt. Eine steigende Zahl von Verbrauchern wählt Produkte / Dienstleistungen unter bestimmten Bedingungen in ethischen Fragen aus. ",
+                        "quote": "Nachhaltige Produkte werden immer mehr nachgefragt. Eine wachsende Zahl von Verbrauchern entscheidet sich für Produkte / Dienstleistungen aufgrund ethischer Prinzipien.",
                         "sourceTitle": "Lange, 2019",
                         "sourceLongTitle": "Manager-Magazin",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from Top 10 Global Consumer Trends: https://www.manager-magazin.de/unternehmen/handel/top-10-global-consumer-trends-2019-von-euromonitor-verbrauchertrends-a-1247990.html"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from Top 10 Global Consumer Trends: https://www.manager-magazin.de/unternehmen/handel/top-10-global-consumer-trends-2019-von-euromonitor-verbrauchertrends-a-1247990.html"
                     }
                 }
             }
         },
         "b2g": {
             "header": {
-                "title": "Wavect für NGOs, politische oder andere Regierungsorganisation",
-                "description": "Bekämpfen Sie gesellschaftliche Probleme an der Wurzel. Verbessern Sie den Einfluss Ihrer Organisation und erzeugen Sie nachhaltigen Einfluss."
+                "title": "Wavect für NGOs, politische oder andere Regierungsorganisationen",
+                "description": "Adressieren Sie gesellschaftliche Probleme an der Wurzel. Ihre Organisation kann helfen nachhaltigen Impakt zu erzeugen."
             },
             "slider": {
                 "slide_0": {
                     "title": "Politiker, NGO, Stiftung oder Verein?",
-                    "subtitle": "Unternehmen sind nicht die einzigen, die von unserem Service profitieren.",
+                    "subtitle": "Nicht nur Unternehmen profitieren von unserer Dienstleistung.",
                     "bgImgAlt": "Arbeitsmaterial"
                 },
                 "slide_1": {
-                    "title": "Sponsorn Sie Herausforderungen mit Geld, Rabatten, Gutscheinen oder Produkten",
-                    "subtitle": ".. um Freiwillige zu akquirieren, Ihr Image zu verbessern & und Menschen zu motivieren, an Ihren Events teilzunehmen.",
-                    "bgImgAlt": "Books with instructions"
+                    "title": "Sponsorn Sie Herausforderungen mit Geld, Rabatten, Gutscheinen oder Produkten.",
+                    "subtitle": ".. um Freiwillige zu akquirieren, Ihr Image aufzubessern und Menschen zu motivieren, an Ihren Events teilzunehmen.",
+                    "bgImgAlt": "Bücher mit Instruktionen"
                 },
                 "slide_2": {
                     "title": "Personalisiertes CSR",
-                    "subtitle": "User erhalten personalisierte Herausforderungen und können relevante Preise gewinnen. Das ermöglicht politischen Parteien, Wohltätigkeitsorganisationen Menschen zu überzeugen, Ihrer Organisation zu vertrauen.",
-                    "bgImgAlt": "Individual in big city"
+                    "subtitle": "User erhalten personalisierte Herausforderungen und können relevante Preise gewinnen. Menschen vertrauen grundsätzlich den Organisationen, bei denen sie ein gutes Gefühl haben.",
+                    "bgImgAlt": "Einzelner in großer Stadt"
                 },
                 "slide_3": {
                     "title": "Preiswertes CSR",
-                    "subtitle": "Jeder Sponsor zahlt eine kleine Gebühr basierend auf Größe und Typ der Organisation. Erzeugen Sie realen Einfluss ohne groß zu investieren.",
-                    "bgImgAlt": "Small company working on Corporate-Social-Responsibility (CSR) strategies"
+                    "subtitle": "Jeder Sponsor zahlt eine kleine Gebühr basierend auf Größe und Typ der Organisation. Erzeugen Sie realen Impakt ohne teure Marketingagenturen.",
+                    "bgImgAlt": "Kleines Unternehmen, das an CSR Strategien arbeitet"
                 },
                 "slide_4": {
-                    "title": "Funktionale Werbungen sind OUT",
-                    "subtitle": "Moderne Werbungen erzeugen Emotionen und erzählen Geschichten. Werbeanzeigen auf unserer Plattform tun genau das, sind subtil und werden auf sozialen Medien geteilt.",
-                    "bgImgAlt": "Light bulbs turned off"
+                    "title": "Funktionale Werbungen sind obsolet",
+                    "subtitle": "Moderne Werbung weckt Emotionen und erzählt Geschichten. Anzeigen auf unserer Plattform tun genau das, sind subtil und gehen wahrscheinlicher viral.",
+                    "bgImgAlt": "Ausgeschaltete Glühbirnen"
                 },
                 "slide_5": {
-                    "title": "Freiwilligenmangel?",
-                    "subtitle": "Sie benötigen mehr Freiwillige für Ihr Event (z.B. Müllsammeln in Ihrer Gemeinde)",
-                    "bgImgAlt": "Books with instructions"
+                    "title": "Mangel an Freiwilligen?",
+                    "subtitle": "Motivieren Sie Menschen freiwilliges Engagement für eine spezifische Tätigkeit zu zeigen (z.B. Müllsammeln in Ihrer Gemeinde).",
+                    "bgImgAlt": "Bücher mit Instruktionen"
                 },
                 "slide_6": {
-                    "title": "Verbessern Sie das Image Ihrer Organisation",
+                    "title": "Ein besseres Image für Ihre Organisation",
                     "subtitle": "Wenn die Gesellschaft will, dass Sie Erfolg haben, dann sind Sie es.",
-                    "bgImgAlt": "Rating a company"
+                    "bgImgAlt": "Unternehmen bewerten"
                 },
                 "slide_7": {
                     "title": "Geringer Aufwand",
-                    "subtitle": "Eine Herausforderung zu sponsorn ist einfach! Wir kümmern uns um Ihre Marketing-Kampagne, eine Challenge zu entwerfen kostet Sie keine 5 Minuten.",
-                    "bgImgAlt": "Attention equals revenues"
+                    "subtitle": "Eine Herausforderung zu sponsorn ist einfach! Wir kümmern uns um Ihre Marketing-Kampagne, eine Challenge zu sponsorn kostet Sie keine 5 Minuten.",
+                    "bgImgAlt": "Geringer Aufwand - Titelbild"
                 },
                 "slide_8": {
-                    "title": "Große Chance auf virales Marketing",
-                    "subtitle": "Damit eine Werbung viral geht, muss meist viel investiert werden. In so einem Fall erhöht Quantität die Chance auf virale Posts. Beim Sponsorn von einer unserer Challenges werden vom User relevante Informationen über Ihre Organisation verbreitet.",
-                    "bgImgAlt": "Virus - Viral Marketing"
+                    "title": "Virales Marketing",
+                    "subtitle": "Damit Werbung viral geht, muss meist viel investiert werden. Lassen Sie unsere Nutzer Ihre Challenge lösen und Videos/Bilder mit Ihrer Kampagne schmücken.",
+                    "bgImgAlt": "Virales Marketing - Titelbild"
                 },
                 "slide_9": {
-                    "title": "Mundpropagande vom Feinsten",
-                    "subtitle": "Stellen Sie sich vor, wie Menschen erzählen, was sie durch Ihre Organisation gewonnen haben indem sie Gutes getan haben. Eine Verlosung, ohne Geldeinsatz.",
+                    "title": "Mundpropaganda vom Feinsten",
+                    "subtitle": "Menschen gewinnen personalisierte Preise indem Gutes getan wird. Eine Verlosung der gute Taten anstatt eines Geldeinsatzes gegenüberstehen.",
                     "bgImgAlt": "Word-of-Mouth Marketing"
                 }
             },
             "intro": {
-                "title": "Sponsorn einer Challenge",
+                "title": "Wie funktioniert's?",
                 "description": {
-                    "_1": "Erzähle uns, welche Art von Challenge Sie sponsorn möchten <a href='%{link}' title='Beispielhafte Herausforderungen'>(z.B. Müllsammeln, ...)</a>.",
-                    "_2": "Entscheiden Sie was Sie sponsorn (zB.: Exklusiver Rabatt auf Ihr Produkt, Gutscheine oder eine Verlosung).",
-                    "_3": "Senden Sie uns einen kurzen Absatz warum Sie diese Herausforderung sponsorn.",
-                    "_4": "Verteilen Sie die Preise unter den Usern, die Ihre Challenge abgeschlossen haben."
+                    "_1": "Erzählen Sie uns, welche Art von Challenge Sie sponsorn möchten <a href='%{link}' title='Beispielhafte Herausforderungen'>(e.g. Müll sammeln, ...)</a>.",
+                    "_2": "Entscheiden Sie was Sie sponsorn (zB.: Exklusiver Rabatt auf ein Produkt oder eine Produktverlosung,...).",
+                    "_3": "Schicken Sie uns einen Einzeiler warum Sie diese Herausforderung sponsorn. So bleiben Sie authentisch.",
+                    "_4": "Verteilen Sie die Preise unter den Usern, die Ihre Challenge gelöst haben."
                 },
                 "iconcols": {
                     "lowpricedcsr": {
                         "title": "Günstiges CSR",
-                        "description": "Eine kleine Gebühr muss für das Sponsoring bezahlt werden. <strong>Die Gebühr ist abhängig von der Größe der Organisation</strong>. Dadurch ermöglichen wir es, dass auch kleine Unternehmen CSR betreiben können."
+                        "description": "Eine kleine Gebühr muss für das Sponsoring entrichtet werden. <strong>Diese Gebühr ist abhängig von der Größe Ihres Unternehmens</strong>. Dadurch ermöglichen wir auch kleinen Unternehmen das Betreiben von CSR."
                     },
                     "personalizedcsr": {
                         "title": "Personalisiertes CSR",
-                        "description": "Herausforderungen und Preise werden<strong> individuell nach den Präferenzen des Users angezeigt</strong>. Verlosungen sind ebenfalls personalisiert, das bedeutet, dass User Preise gewinnen, für die sie sich auch interessieren."
+                        "description": "Herausforderungen und Preise werden<strong> individuell an die Präferenzen des Users angepasst</strong>. Verlosungen sind ebenfalls personalisiert, was bedeutet, dass User Preise gewinnen, für die sie sich auch interessieren."
                     },
                     "storytelling": {
                         "title": "Storytelling",
-                        "description": "Die User posten ein Video oder Bild als Beweis. Durch ein Wasserzeichen wird dieses Bild signiert und in sozialen Medien geteilt. <strong>Modernes Storytelling wird von Usern erzählt, anstelle von Marketingspezialisten.</strong>"
+                        "description": "Die User posten ein Video oder Bild als Beweis. Durch ein Wasserzeichen wird dieses Bild signiert und in diversen sozialen Netzwerken geteilt. <strong>Modernes Storytelling kommt seitens Kunden, anstelle von Marketingspezialisten.</strong>"
                     },
                     "aggregatedimpact": {
-                        "title": "Aggregierter Einfluss",
-                        "description": "<strong>Der erzeugte Impakt kann direkt Ihrer Organisation zugeschrieben werden</strong>. Der Einfluss wird zusammengefasst, um der Öffentlichkeit zu zeigen, was Ihr Sponsoring bewirkt hat. So einfach war CSR noch nie."
+                        "title": "Aggregierter Impakt",
+                        "description": "<strong>Der erzeugte Impakt wird direkt Ihrem Unternehmen zugeschrieben</strong>. Der Einfluss wird aggregiert, um Ihnen und Ihren potenziellen Kunden zu zeigen, was Ihr Sponsoring bewirkt hat."
                     }
                 }
             },
@@ -421,49 +421,49 @@
                 "title": "Fakten",
                 "elems": {
                     "_1": {
-                        "quote": "CSR erregt Aufmerksamkeit und positiveren Emotionen für Produkte, Marken und Organisationen.",
+                        "quote": "CSR erregt Aufmerksamkeit und weckt positive Emotionen für Produkte, Marken und Organisationen.",
                         "sourceTitle": "GfK Austria, 2017",
                         "sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
                     },
                     "_2": {
                         "quote": "Viele Marken haben Schwierigkeiten, ihre Produkte und Dienstleistungen an Millennials zu vermarkten.",
                         "sourceTitle": "GfK Austria, 2017",
                         "sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
                     },
                     "_3": {
                         "quote": "Zukünftige Innovationen werden von 4 Eckpfeilern geleitet: 'Freiheit', 'Belohnung', 'Sicherheit' & 'Wohlbefinden'.",
                         "sourceTitle": "GfK Austria, 2017",
                         "sourceLongTitle": "Market Opportunities & Innovation / GfK Consumer Life. Austria: GfK. Growth from Knowledge.",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/website_content/products/DE_20171113_GfK_Consumer_Life_Einblicke_in_das_taeglich_Leben_Ihrer_Zielgruppe.pdf"
                     },
                     "_4": {
-                        "quote": "Corporate-Social-Responsibility wird für Verbraucher immer interessanter. 78% der Österreicher geben an, dass CSR extrem wichtig ist. Darüber hinaus erwarten immer mehr Österreicher, dass sich Organisationen sozial engagieren, insbesondere in Bezug auf den Umweltschutz und ihre Region. Die Verbraucher sind davon überzeugt, dass Organisationen in CSR investieren und von solchen Maßnahmen profitieren sollten. Soziale Verantwortung führt zu einer besseren Reputation der Organisation, die dann zum Erfolg der Organisation führt.",
+                        "quote": "Corporate-Social-Responsibility wird für Verbraucher immer wichtiger. 78% der Österreicher geben an, dass CSR extrem wichtig ist. Darüber hinaus erwarten immer mehr Österreicher, dass sich Organisationen sozial engagieren, insbesondere in Bezug auf den Umweltschutz und ihre Region. Die Verbraucher sind davon überzeugt, dass Organisationen in CSR investieren sollten und von solchen Maßnahmen profitieren. Soziale Verantwortung führt zu einer besseren Reputation der Organisation, die wiederum zum Erfolg der Organisation führt.",
                         "sourceTitle": "GfK Austria, 2018/2019",
                         "sourceLongTitle": "CSR Monitor 2019. Austria: GfK Austria",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from https://www.gfk.com/fileadmin/user_upload/country_one_pager/AT/documents/Angebot_CSR_Monitor_2018_19_CGR.pdf"
                     },
                     "_5": {
-                        "quote": "Sport, Bewusstsein, Transparenz, Hygge, Wir-Kultur, Good-Citizen, Social-Business, Flexitarian, Zero-Waste, Minimalismus, Mindful-Economy, Glokalisierung, Outsourcing des Alltags, Edutainment, Lebenslanges Lernen, soziale Netzwerke, 'OMline' 4, Verspieltheit, Konnektivität, Kreativwirtschaft und viele mehr werden in Zukunft eine wichtige Rolle spielen.",
+                        "quote": "Sport, Bewusstsein, Transparenz, Hygge, Wir-Kultur, Good-Citizen, Social-Business, Flexitarier, Zero-Waste, Minimalismus, Mindful-Economy, Glokalisierung, Outsourcing des Alltags, Edutainment, Lebenslanges Lernen, soziale Netzwerke, 'OMline' 4, Verspieltheit, Konnektivität, Kreativwirtschaft und viele mehr werden in Zukunft eine wichtige Rolle spielen.",
                         "sourceTitle": "Zukunftsinstitut, 2019",
                         "sourceLongTitle": "Megatrend-Documentation. Deutschland: Zukunftsinstitut",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from https://onlineshop.zukunftsinstitut.de/shop/megatrend-dokumentation/"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from https://onlineshop.zukunftsinstitut.de/shop/megatrend-dokumentation/"
                     },
                     "_6": {
-                        "quote": "Der Anteil älterer Menschen steigt. Nach dem „Consumer Trends Report von Euromonitor“ werden Produkte und Dienstleistungen, die sich nicht auf bestimmte Altersgruppen konzentrieren, in Zukunft erfolgreicher sein. Daher könnten Unternehmen, die sich eher auf Ähnlichkeiten als auf Unterschiede zwischen verschiedenen Altersgruppen konzentrieren, stärker profitieren.",
+                        "quote": "Die Bevölkerung wird immer älter. Nach dem „Consumer Trends Report von Euromonitor“ werden Produkte und Dienstleistungen, die sich nicht auf bestimmte Altersgruppen konzentrieren, in Zukunft erfolgreicher sein. Daher könnten Unternehmen, die sich eher auf Ähnlichkeiten als auf Unterschiede zwischen verschiedenen Altersgruppen konzentrieren, stärker profitieren.",
                         "sourceTitle": "Lange, 2019",
                         "sourceLongTitle": "Manager-Magazin",
-                        "sourceExactSource": "Retrieved 6 24, 2019, from Top 10 Global Consumer Trends: https://www.manager-magazin.de/unternehmen/handel/top-10-global-consumer-trends-2019-von-euromonitor-verbrauchertrends-a-1247990.html"
+                        "sourceExactSource": "Aufgerufen 6 24, 2019, from Top 10 Global Consumer Trends: https://www.manager-magazin.de/unternehmen/handel/top-10-global-consumer-trends-2019-von-euromonitor-verbrauchertrends-a-1247990.html"
                     },
                     "_7": {
-                        "quote": "Shawn Achor (Harvard University) entdeckte, dass 75% des Berufserfolgs durch Glück vorhergesagt werden können, da dies zu mehr Intelligenz, Kreativität, Produktivität, einem längeren Leben und mehr Geld führt. ",
+                        "quote": "Shawn Achor (Harvard University) entdeckte, dass 75% des Berufserfolgs durch Glück vorhergesagt werden kann, da dies zu mehr Intelligenz, Kreativität, Produktivität, einem längeren Leben und mehr Geld führt. ",
                         "sourceTitle": "Achor, S., 2010",
                         "sourceLongTitle": "The Happiness Advantage",
                         "sourceExactSource": "How a Positive Brain Fuels Success in Work and Life. USA: Currency."
                     },
                     "_8": {
-                        "quote": "Das Image einer Organisation hat einen spezifischeren Einfluss auf die Wahrnehmung von Produkt- und Servicequalität durch die Kunden, während die Reputation der Organisation einen breiteren Einfluss auf die Wahrnehmung von Kundennutzen und Kundenbindung hat.",
+                        "quote": "Das Image einer Organisation hat einen direkten Einfluss auf die Wahrnehmung von Produkt- und Servicequalität durch Konsumenten, während die Reputation der Organisation einen breiteren Einfluss auf die Wahrnehmung von Kundennutzen und Kundenbindung hat.",
                         "sourceTitle": "Cretu, A. E., & Roderick, B. J., 2017",
                         "sourceLongTitle": "The influence of brand image and company reputation where manufacturers market to small firms: A customer value perspective.",
                         "sourceExactSource": "Industrial marketing management, 36(2), pp. 230-240. doi:https://doi.org/10.1016/j.indmarman.2005.08.013"
@@ -486,52 +486,52 @@
                 "slide_0": {
                     "title": "Warum tun wir das?",
                     "subtitle": "Weil es sonst keiner macht!",
-                    "bgImgAlt": "Poor child in slums"
+                    "bgImgAlt": "Armes Kind in Slums"
                 },
                 "slide_1": {
-                    "title": "Wir müssen uns ändern",
-                    "subtitle": "Unsere Anwendung adressiert die drei größten Probleme unserer Gesellschaft: Gesundheit, Umwelt & Solidarität",
-                    "bgImgAlt": "Polluted beach"
+                    "title": "Wir alle müssen uns ändern",
+                    "subtitle": "Unsere Anwendung adressiert die drei größten Probleme unserer Gesellschaft: Gesundheit, Umweltschutz & Solidarität",
+                    "bgImgAlt": "Verschmutzter Strand"
                 },
                 "slide_2": {
-                    "title": "Jeder ist eigensinnig!",
-                    "subtitle": "Egoistisch zu sein sichert das eigene Überleben, gefährdet aber die Menschheit.",
-                    "bgImgAlt": "Obese women"
+                    "title": "Egoismus ist natürlich",
+                    "subtitle": "Egoistisch zu sein sichert das eigene Überleben, gefährdet langfristig aber die Menschheit. Wir wollen das ändern.",
+                    "bgImgAlt": "Übergewichtige Frauen"
                 },
                 "slide_3": {
-                    "title": "Wie sieht die Lösung aus?",
-                    "subtitle": "Unsere App zeigt den Benutzern was zu tun ist (z.B.: Müll sammeln, Essen teilen, ...), aggregiert dabei nachhaltig einen positiven Einfluss",
-                    "bgImgAlt": "Homeless man seeking kindness"
+                    "title": "Unsere Lösung",
+                    "subtitle": "Unsere App zeigt Usern was zu tun ist (z.B.: Müll sammeln, Essen teilen, ...), belohnt euch mit personalisierten Preisen und aggregiert den Impakt, damit ihr seht was ihr & andere bewirkt habt.",
+                    "bgImgAlt": "Obdachloser sucht Freundlichkeit"
                 },
                 "slide_4": {
                     "title": "Unrealistisch?",
-                    "subtitle": "Nein, ist es nicht. Auch wenn nur eine Person unsere App benützt, hätte sich der Aufwand gelohnt!",
+                    "subtitle": "Nein, ist es nicht. Jeder User zählt und motiviert andere zu ähnlichen guten Taten!",
                     "bgImgAlt": "Plastic bag on tree"
                 },
                 "slide_5": {
                     "title": "Was ist mit Wohltätigkeitsorganisationen?",
-                    "subtitle": "Wohltätigkeitsorganisationen sind wichtig, sie bekämpfen allerdings nur die Folgen. Wir setzen an der Wurzel des Problems an!",
-                    "bgImgAlt": "Smoking cigarettes"
+                    "subtitle": "Charities sind wichtig, sie bekämpfen allerdings meist nur die Folgen. Wir setzen mit euch gemeinsam an der Wurzel des Problems an.",
+                    "bgImgAlt": "Zigaretten rauchen"
                 },
                 "slide_6": {
                     "title": "Seien wir ehrlich",
-                    "subtitle": "Wir werden dem auch nicht gerecht, es braucht einfach zu viel Energie, um etwas Gutes zu tun. Deshalb belohnt euch unsere App auf vielfältige Weise!",
-                    "bgImgAlt": "Old man exhausted"
+                    "subtitle": "Wir werden dem auch nicht gerecht. Es braucht einfach zu viel Energie, um etwas Gutes zu tun. Deshalb schafft unsere Plattform unterschiedlichste Anreize, um eure Mühen zu belohnen.",
+                    "bgImgAlt": "Alter Mann erschöpft"
                 },
                 "slide_7": {
                     "title": "Wer belohnt mich?",
-                    "subtitle": "Organisationen (z.B. Kommunen, Unternehmen) sponsorn Herausforderungen mit Rabatten, Gutscheinen, Produkten oder Cash. Die Preise sind dabei vollkommen personalisiert.",
-                    "bgImgAlt": "Fish dying in plastic"
+                    "subtitle": "Organisationen (z.B. Kommunen, Unternehmen) sponsorn Herausforderungen mit Rabatten, Gutscheinen, Produkten oder Cash. Die Preise sind ähnlich zu Werbeanzeigen an deine Interessen angepasst.",
+                    "bgImgAlt": "Fisch stirbt in Plastik"
                 },
                 "slide_8": {
-                    "title": "Warum sollten Organisationen das tun?",
+                    "title": "Was haben Organisationen davon?",
                     "subtitle": "Es ist günstiges & personalisiertes CSR und ein neues Marketing-Tool, das sich direkt mit den moralischen Werten der Verbraucher befasst.",
-                    "bgImgAlt": "Man drinking alcohol, abuse"
+                    "bgImgAlt": "Mann trinkt Akohol"
                 }
             },
             "intro": {
                 "title": "Wie funktioniert's?",
-                "description": "Es ist wirklich einfach! Sobald du ein Profil auf unserem 'Sozialen Netwerk' (Uns gefällt die Definition auch nicht, aber unsere Plattform kann so leichter verstanden werden) erstellt hast, kannst du Preise gewinnen indem du etwas Gutes für die Menschheit tust!",
+                "description": "Es ist wirklich einfach! Sobald du ein Profil auf unserer Plattform erstellt hast, kannst du Preise gewinnen indem du etwas zum Wohl der Gesellschaft beiträgst.",
                 "altImg": "Wavect App Mockup",
                 "becometester": {
                     "alerts": {
@@ -548,24 +548,24 @@
                             "emailRegex": "Das sieht nicht wie eine E-Mail aus."
                         }
                     },
-                    "dataprivacy": "Beim Abschicken der E-Mail wirst du zu unserem Testprogramm hinzugefügt. Wichtige Informationen werden zu deiner E-Mail gesendet. Du kannst das Programm jederzeit verlassen. Bitte beachten dabei unsere AGBs."
+                    "dataprivacy": "Beim Abschicken der E-Mail wirst du zu unserem Testprogramm hinzugefügt. Wichtige Informationen werden zu deiner E-Mail gesendet. Du kannst das Programm jederzeit verlassen."
                 },
                 "iconcols": {
                     "register": {
                         "title": "Registrieren",
-                        "description": "Erzähle uns doch was für dich wichtig ist, damit wir dir <strong>relevante Herausforderungen basierend auf deinen Interessen</strong> zu zeigen."
+                        "description": "Erzähle uns was dir wichtig ist, damit wir dir <strong>relevante Herausforderungen basierend auf deinen Interessen</strong> zeigen können."
                     },
                     "solvechallenges": {
-                        "title": "Absolviere Challengese und...",
-                        "description": "...<strong>beweis es mit einem Video/Foto oder frag einen Freund</strong> zur Verifizierung. Zusätzlich wird dein Post noch von deinen Followern bewertet, um die Authentizität sicherzustellen."
+                        "title": "Absolviere Challenges und...",
+                        "description": "...<strong>beweis es mit einem Video/Foto oder frag einen Freund</strong> um Bestätigung. Zusätzlich wird dein Post noch von deinen Followern bewertet, um die Authentizität des Posts zu bewerten."
                     },
                     "sponsoring": {
                         "title": "Sponsoring",
-                        "description": "Gewinnst du einen Preis, wird der Sponsor dich kontaktieren. Du sammelst aber immer Karma-Punkte welche anschließend in deinem Profile angezeigt werden und auch in deinen Lebenslauf als <strong> Micro-Volunteering</strong> hinzugefügt werden können."
+                        "description": "Der Sponsor dich kontaktieren, wenn du einen Preis gewonnen hast. Du sammelst immer Karma-Punkte welche anschließend in deinem Profil angezeigt und auch in deinen Lebenslauf als <strong> Micro-Volunteering</strong> hinzugefügt werden können."
                     },
                     "impact": {
-                        "title": "Dein Einfluss",
-                        "description": "Dein Einfluss wird gesammelt und dir und deinen Followern angezeigt. <strong>Es gibt kein 'Ich kann nichts ändern' mehr</strong>."
+                        "title": "Dein Impakt",
+                        "description": "Dein Einfluss auf die Welt wird aufsummiert und dir und deinen Followern angezeigt. <strong>Das 'Ich kann nichts ändern' gibt es nicht mehr</strong>."
                     }
                 }
             },
@@ -579,15 +579,15 @@
                 "challenges": {
                     "invitestrangerdrink": {
                         "title": "Ein Drink für Fremde",
-                        "description": "Lade einen Fremden auf einen Drink ein, den du z.B.: auf der Straße begegnest. Mach ein Selfie mit deinem neuen Freund und beziehe deinen Preis."
+                        "description": "Lade einen Fremden auf einen Drink ein, den du z.B.: auf der Straße begegnest. Mach ein Selfie, idealerweise mit deinem Bekannten, und freue dich auf die Verlosung."
                     },
                     "goforawalk": {
                         "title": "Geh 15min spazieren",
-                        "description": "Spazieren ist gesund, reduziert deinen Stresslevel und das Allerbeste: Du kommst an die frische Luft. Mach einfach ein Selfie während du spazierst."
+                        "description": "Spazieren ist gesund, reduziert deinen Stresslevel und das Allerbeste: Du kommst an die frische Luft. Ein Selfie während du spazierst genügt."
                     },
                     "gathertrash": {
                         "title": "Sammle 5 Stk. Müll",
-                        "description": "Sammle Zigarettenstümmel oder anderen Müll, der auf der Straße liegt. Vergiss dabei aber bitte nicht auf Handschuhe. Mach ein Foto und teile es."
+                        "description": "Sammle Zigarettenstümmel oder anderen Müll, der auf der Straße liegt und entsorge ihn. Vergiss dabei aber bitte nicht auf Handschuhe. Mach ein Foto und teile es."
                     },
                     "assistretirementhome": {
                         "title": "Hilf im Altersheim aus",
@@ -595,11 +595,11 @@
                     },
                     "holdhandstand": {
                         "title": "5 Sekunden Handstand",
-                        "description": "Ein kontrollierter Handstand ist schwer zu lernen, aber gut für deine intramuskuläre Koordination. Dennoch vernachlässigen die meisten Athleten das Training ihres Gleichgewichts und Körperspannung."
+                        "description": "Ein kontrollierter Handstand ist schwer zu lernen, aber gut für deine intramuskuläre Koordination. Dennoch vernachlässigen die meisten Athleten das Training ihres Gleichgewichts."
                     },
                     "planttree": {
                         "title": "Pflanz einen Baum",
-                        "description": "Jeder Baum zählt! Durch unzählige Waldbrände wurden viele Wälkder zerstört. Kauf einen Pflanzling und setze ihn an einem Ort deiner Wahl. Mach ein Selfie oder Video!"
+                        "description": "Jeder Baum zählt! Durch unzählige Waldbrände wurden bereits viele Wälkder zerstört. Kauf einen Pflanzling und setze ihn an einen Ort deiner Wahl. Mach ein Selfie oder Video!"
                     }
                 }
             }
@@ -620,12 +620,12 @@
                     "adventurex_2019": {
                         "title": "Adventure X - Innsbruck",
                         "subtitle": "Finalist (2019)",
-                        "description": "AdventureX ist ein Geschäftsmodell-Wettbewerb für junge als auch etablierte Statups. Unser Geschäftsmodell erzielte hierbei eine Top-6 Positionierung unter über 55 Unternehmen."
+                        "description": "AdventureX ist ein Geschäftsmodell-Wettbewerb für junge als auch etablierte Startups. Unser Geschäftsmodell erzielte hierbei eine Top-6 Positionierung unter über 55 Unternehmen."
                     },
                     "beadydays_2019": {
                         "title": "Beady Awards - Kufstein",
                         "subtitle": "Finalist (2019)",
-                        "description": "Die Beady Awards ehren die besten Konzepte von jungen Unternehmen die sich für eine bessere Welt einsetzen. Unser Gschäftsmodell erreichte eine Top-3 Platierung bei den Beady Awards 2019."
+                        "description": "Die Beady Awards ehren die besten Konzepte von jungen Unternehmen die sich für eine bessere Welt einsetzen. Unser Geschäftsmodell erreichte eine Top-3 Platierung bei den Beady Awards 2019."
                     }
                 }
             },
@@ -637,7 +637,7 @@
                         "altImg": "DigiPuls, Oliver Feldkircher",
                         "title": "digiPULS",
                         "subtitle": "Oliver Feldkircher, CEO",
-                        "description": "Unsere Beziehung zu Oliver & seine fachliche Beratung kann als einvernehmlicher Mentor bezeichnet werden."
+                        "description": "Unsere Beziehung zu Oliver & seine fachliche Beratung kann als freundschaftliches Mentoring bezeichnet werden."
                     },
                     "innc": {
                         "altImg": "Inncubator, Innsbruck (WiFi, Tyrol)",
@@ -659,7 +659,7 @@
             },
             "intro": {
                 "title": "Die harte Wahrheit",
-                "description": "Die Welt steht vor unglaublich großen Problemen: sinkende Solidarität & soziale Interaktion in unserer Gesellschaft, der Klimawandel & die zunehmende Umweltverschmutzung und Gesundheitsprobleme. Wir entwickeln eine Plattform die diese Probleme adressiert und messbaren Wert für Organisationen und Benutzer schafft.",
+                "description": "Die Welt steht vor unglaublich großen Problemen: sinkende Solidarität & soziale Interaktion in unserer Gesellschaft, der Klimawandel & die zunehmende Umweltverschmutzung und Gesundheitsprobleme. Deshalb entwickeln wir eine Plattform die diese Probleme adressiert und messbaren Wert für Organisationen und Benutzer schafft.",
                 "iconcols": {
                     "relevantchallenges": {
                         "title": "Relevante Challenges",
@@ -675,7 +675,7 @@
                     },
                     "measurableimpact": {
                         "title": "Messbarer Impakt",
-                        "description": "Der Einfluss jeder Challenge wird gesammelt und zeigt dir wieviel Einfluss oder welche positiven Auswirkungen du bereits erreicht hast!"
+                        "description": "Der Einfluss jeder Challenge wird aufsummiert und zeigt dir wieviel Impakt oder welche positiven Auswirkungen du bereits auf unsere Welt hattes.!"
                     }
                 }
             },
@@ -685,7 +685,7 @@
                     "imgAltTag": "CTO: Christof Jori",
                     "name": "Christof Jori",
                     "duty": "CTO",
-                    "ownIntro": "Ich bin leidenschaftlicher Programmierer, liebe es neue Technologien zu erlernen sowie ständig auf dem aktuellen Stand zu bleiben. Mein Vision ist es, ein einzigartiges Produkt zu erschaffen, dass einen großen Einfluss auf unsere Gesellschaft hat."
+                    "ownIntro": "Ich bin leidenschaftlicher Programmierer, liebe es neue Technologien zu erlernen und ständig auf dem aktuellen Stand zu bleiben. Mein Vision ist es, ein einzigartiges Produkt zu erschaffen, dass einen großen Einfluss auf unsere Gesellschaft hat."
                 },
                 "cmo": {
                     "imgAltTag": "CMO: Mariella Galneder",
@@ -709,7 +709,7 @@
                     "imgAltTag": "CEO: Kevin Riedl",
                     "name": "Kevin Riedl",
                     "duty": "CEO",
-                    "ownIntro": "Ich möchte die Welt ein klein wenig besser hinterlassen, als ich sie vorgefunden habe. Ich liebe Herausforderungen, betrachte mich selbst als lebenslanger Student. Als Visionär träume ich davon, unsere Gesellschaft nachhaltig zu verändern."
+                    "ownIntro": "Ich möchte die Welt ein klein wenig besser hinterlassen, als ich sie vorgefunden habe. Ich liebe Herausforderungen und betrachte mich selbst als lebenslanger Student. Als Visionär träume ich davon, unsere Gesellschaft nachhaltig zu verändern."
                 }
             }
         }
