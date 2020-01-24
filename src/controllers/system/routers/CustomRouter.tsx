@@ -20,7 +20,8 @@ import {
     breadCrumbForCompanies,
     breadCrumbForOrganizations,
     breadCrumbHome,
-    breadCrumbImpressum, breadCrumbPricing,
+    breadCrumbImpressum,
+    breadCrumbPricing,
     breadCrumbTraction,
     breadCrumbWhy,
 } from './BreadcrumbRoutes'

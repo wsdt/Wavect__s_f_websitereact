@@ -644,6 +644,24 @@
                         "title": "pages.traction.partners.partner.innc.title",
                         "subtitle": "pages.traction.partners.partner.innc.subtitle",
                         "description": "pages.traction.partners.partner.innc.description"
+                    },
+                    "setup": {
+                        "altImg": "pages.traction.partners.partner.setup.altImg",
+                        "title": "pages.traction.partners.partner.setup.title",
+                        "subtitle": "pages.traction.partners.partner.setup.subtitle",
+                        "description": "pages.traction.partners.partner.setup.description"
+                    },
+                    "cemit": {
+                        "altImg": "pages.traction.partners.partner.cemit.altImg",
+                        "title": "pages.traction.partners.partner.cemit.title",
+                        "subtitle": "pages.traction.partners.partner.cemit.subtitle",
+                        "description": "pages.traction.partners.partner.cemit.description"
+                    },
+                    "wia": {
+                        "altImg": "pages.traction.partners.partner.wia.altImg",
+                        "title": "pages.traction.partners.partner.wia.title",
+                        "subtitle": "pages.traction.partners.partner.wia.subtitle",
+                        "description": "pages.traction.partners.partner.wia.description"
                     }
                 }
             }

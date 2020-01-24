@@ -25,11 +25,7 @@ import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 import imgKevinRiedl from '../../../assets/img/team/kevin_riedl.jpg'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
-import {
-    breadCrumbBlogKevinRiedl,
-    breadCrumbBlogs,
-    breadCrumbHome
-} from '../../../controllers/system/routers/BreadcrumbRoutes'
+import { breadCrumbBlogKevinRiedl, breadCrumbBlogs, breadCrumbHome } from '../../../controllers/system/routers/BreadcrumbRoutes'
 import { GrayColorImg } from '../../functional/GrayscaleColor/GrayColorImg/GrayColorImg'
 import { SocialShareBar } from '../../functional/SocialShareBar/SocialShareBar'
 import { IBasePageProps } from '../Templates/BasePage.props'

@@ -22,7 +22,7 @@ import { I18n } from 'react-polyglot'
 import './assets/css/bootstrap.min.css'
 import './assets/demo/demo.css'
 import './assets/scss/paper-kit.scss'
-import {getLangBundle} from './controllers/system/multilinguality/TranslationBundler'
+import { getLangBundle } from './controllers/system/multilinguality/TranslationBundler'
 import { getCurrentLang } from './controllers/system/multilinguality/TranslationBundler'
 import CustomRouter from './controllers/system/routers/CustomRouter'
 

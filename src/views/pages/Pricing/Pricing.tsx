@@ -17,52 +17,48 @@
 
 */
 import React from 'react'
-import {translate} from 'react-polyglot'
-import {Collapse} from 'reactstrap'
+import { translate } from 'react-polyglot'
+import { Collapse } from 'reactstrap'
 import Button from 'reactstrap/lib/Button'
 import Card from 'reactstrap/lib/Card'
 import CardBody from 'reactstrap/lib/CardBody'
 import CardText from 'reactstrap/lib/CardText'
 import CardTitle from 'reactstrap/lib/CardTitle'
 import _schema from '../../../controllers/system/multilinguality/_schema.json'
-import {breadCrumbHome, breadCrumbPricing} from '../../../controllers/system/routers/BreadcrumbRoutes'
-import {SocialShareBar} from '../../functional/SocialShareBar/SocialShareBar'
-import {IBasePageProps} from '../Templates/BasePage.props'
-import {TextPageDraft} from '../Templates/TextPageDraft/TextPageDraft'
-import {IPricingState} from './Pricing.state'
+import { breadCrumbHome, breadCrumbPricing } from '../../../controllers/system/routers/BreadcrumbRoutes'
+import { SocialShareBar } from '../../functional/SocialShareBar/SocialShareBar'
+import { IBasePageProps } from '../Templates/BasePage.props'
+import { TextPageDraft } from '../Templates/TextPageDraft/TextPageDraft'
+import { IPricingState } from './Pricing.state'
 
 const schema = _schema.pages.pricing
 
 class Pricing extends React.PureComponent<IBasePageProps, IPricingState> {
-    public state:IPricingState = {
+    public state: IPricingState = {
         isPricingFormOpen: false,
     }
 
-
     public render() {
-        const {t} = this.props
+        const { t } = this.props
 
         return (
             <TextPageDraft breadCrumbs={[breadCrumbHome, breadCrumbPricing]} t={t}>
                 <p>{t(schema.intro.description)}</p>
-                <br/>
+                <br />
 
-                <a href={breadCrumbPricing.link} style={{color: '#fff'}}>
-                    <Card style={{width: '20rem'}}>
+                <a href={breadCrumbPricing.link} style={{ color: '#fff' }}>
+                    <Card style={{ width: '20rem' }}>
                         <CardBody>
-                            <CardTitle
-                                style={{fontWeight: 'bold'}}>{t(schema.packages.taster.preview.title)}</CardTitle>
+                            <CardTitle style={{ fontWeight: 'bold' }}>{t(schema.packages.taster.preview.title)}</CardTitle>
                             <CardText>{t(schema.packages.taster.preview.description)}ddd</CardText>
-                            <Button color='info'>{t(schema.general.btnSeeMore)}</Button>
+                            <Button color="info">{t(schema.general.btnSeeMore)}</Button>
                         </CardBody>
                     </Card>
                 </a>
 
-                <Collapse isOpen={this.state.isPricingFormOpen}>
+                <Collapse isOpen={this.state.isPricingFormOpen}></Collapse>
 
-                </Collapse>
-
-                <SocialShareBar shareUrl={breadCrumbPricing.link}/>
+                <SocialShareBar shareUrl={breadCrumbPricing.link} />
             </TextPageDraft>
         )
     }

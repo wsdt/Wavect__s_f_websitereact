@@ -642,8 +642,26 @@
                     "innc": {
                         "altImg": "Inncubator, Innsbruck (WiFi, Tyrol)",
                         "title": "Inncubator",
-                        "subtitle": "Incubator in Innsbruck",
-                        "description": "Der Inncubator [sic] ist ein Incnubator Programm der Universität Innsbruck und der WKO für junge Startups."
+                        "subtitle": "Inkubator in Innsbruck",
+                        "description": "Der Inncubator [sic] ist ein Incubator Programm der Universität Innsbruck und der Wirtschaftskammer für junge Startups."
+                    },
+                    "setup": {
+                        "altImg": "Setup, Innsbruck (Kulturbäckerei)",
+                        "title": "Setup",
+                        "subtitle": "Inkubator in Innsbruck",
+                        "description": "Setup ist ein Inkubator Programm, in der Kulturbäckerei, für Social-Startups und ähnliche Organisationen."
+                    },
+                    "cemit": {
+                        "altImg": "CEMIT, Innsbruck",
+                        "title": "CEMIT",
+                        "subtitle": "CEMIT - Alles rund um Innovationsprojekte",
+                        "description": "Unser Unternehmen begleitet Menschen und Organisationen, die Neues ausprobieren wollen und den technologischen Vorsprung suchen."
+                    },
+                    "wia": {
+                        "altImg": "WIA, World Impact Alliance",
+                        "title": "WIA",
+                        "subtitle": "World Impact Alliance",
+                        "description": "WIA ist eine private Initiative, die Unternehmen, andere Organisationen, Medien und Experten zusammenbringt, um die größten Probleme (z.B. Umweltschutz) unserer Zeit zu adressieren."
                     }
                 }
             }

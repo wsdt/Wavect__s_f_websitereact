@@ -7,8 +7,8 @@ export const getCurrentLang = (): string => {
     return navigator.language ? navigator.language.substring(0, 2) : defaultLang
 }
 
-export const getLangBundle = (lang:string) => {
-    const langBundle:{[key:string]:any} = TranslationBundle[lang]
+export const getLangBundle = (lang: string) => {
+    const langBundle: { [key: string]: any } = TranslationBundle[lang]
     if (langBundle) {
         return langBundle
     } else {

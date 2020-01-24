@@ -1,6 +1,3 @@
-
-
-
 export interface IPricingState {
-    isPricingFormOpen: boolean,
+    isPricingFormOpen: boolean
 }
