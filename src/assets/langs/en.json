@@ -662,6 +662,12 @@
                         "title": "WIA",
                         "subtitle": "World Impact Alliance",
                         "description": "WIA is a private initiative that brings together companies, institutions, media and experts to find and apply solutions to priority challenges."
+                    },
+                    "inndisus": {
+                        "altImg": "Inndisus",
+                        "title": "Inndisus",
+                        "subtitle": "Consultancy",
+                        "description": "Empowering everyone to sustainably disrupt the world."
                     }
                 }
             }

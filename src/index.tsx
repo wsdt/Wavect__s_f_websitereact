@@ -26,11 +26,26 @@ import { getLangBundle } from './controllers/system/multilinguality/TranslationB
 import { getCurrentLang } from './controllers/system/multilinguality/TranslationBundler'
 import CustomRouter from './controllers/system/routers/CustomRouter'
 
+
 const lang: string = getCurrentLang()
 
+/*
 ReactDOM.render(
     <I18n locale={lang} messages={getLangBundle(lang)}>
         <CustomRouter />
     </I18n>,
     document.getElementById('root')
 )
+*/
+
+const child = <I18n locale={lang} messages={getLangBundle(lang)}>
+    <CustomRouter />
+</I18n>
+
+const rootElement = document.getElementById('root')
+// @ts-ignore
+if (rootElement.hasChildNodes()) {
+    ReactDOM.hydrate(child, rootElement)
+} else {
+    ReactDOM.render(child, rootElement)
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import Row from 'reactstrap/lib/Row'
 import imgPartnerCemit from '../../../assets/img/traction/partners/partner_cemit.png'
 import imgPartnerDigipuls from '../../../assets/img/traction/partners/partner_digipuls.png'
+import imgPartnerInndisus from '../../../assets/img/traction/partners/partner_indisus.png'
 import imgPartnerInncubator from '../../../assets/img/traction/partners/partner_inncubator.png'
 import imgPartnerSetup from '../../../assets/img/traction/partners/partner_setup.png'
 import imgPartnerWIA from '../../../assets/img/traction/partners/partner_wia.png'
@@ -46,6 +47,10 @@ export const Partners = (props: IPartnersProps) => {
                          title={schema.partner.wia.title} subtitle={schema.partner.wia.subtitle}
                          description={schema.partner.wia.description} websiteUri='https://wia.world/'
                          instagramUri='https://www.instagram.com/worldimpactalliance/'/>
+
+                <Partner t={t} altImg={schema.partner.inndisus.altImg} logoImg={imgPartnerInndisus}
+                         title={schema.partner.inndisus.title} subtitle={schema.partner.inndisus.subtitle}
+                         description={schema.partner.inndisus.description} websiteUri='https://www.inndisus.com/'/>
             </Row>
         </>
     )

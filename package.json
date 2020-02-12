@@ -32,11 +32,16 @@
     "scripts": {
         "start": "nps",
         "build": "react-scripts build",
+        "postbuild": "react-snap",
         "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
         "compile-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
         "minify-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --output-style compressed",
         "map-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css --source-map true"
     },
+    "reactSnap": {
+        "inlineCss": true
+    },
+
     "eslintConfig": {
         "extends": "react-app"
     },
@@ -71,6 +76,7 @@
         "jest": "^24.9.0",
         "nps": "^5.9.12",
         "prettier": "^1.19.1",
+        "react-snap": "^1.23.0",
         "sass-loader": "^8.0.0",
         "ts-jest": "^24.2.0",
         "tslint": "^5.20.1",

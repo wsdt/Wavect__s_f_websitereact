@@ -599,7 +599,7 @@
                     },
                     "planttree": {
                         "title": "Pflanz einen Baum",
-                        "description": "Jeder Baum zählt! Durch unzählige Waldbrände wurden bereits viele Wälkder zerstört. Kauf einen Pflanzling und setze ihn an einen Ort deiner Wahl. Mach ein Selfie oder Video!"
+                        "description": "Jeder Baum zählt! Durch unzählige Waldbrände wurden bereits viele Wälder zerstört. Kauf einen Pflanzling und setze ihn an einen Ort deiner Wahl. Mach ein Selfie oder Video!"
                     }
                 }
             }
@@ -625,7 +625,7 @@
                     "beadydays_2019": {
                         "title": "Beady Awards - Kufstein",
                         "subtitle": "Finalist (2019)",
-                        "description": "Die Beady Awards ehren die besten Konzepte von jungen Unternehmen die sich für eine bessere Welt einsetzen. Unser Geschäftsmodell erreichte eine Top-3 Platierung bei den Beady Awards 2019."
+                        "description": "Die Beady Awards ehren die besten Konzepte von jungen Unternehmen die sich für eine bessere Welt einsetzen. Unser Geschäftsmodell erreichte eine Top-3 Platzierung bei den Beady Awards 2019."
                     }
                 }
             },
@@ -662,6 +662,12 @@
                         "title": "WIA",
                         "subtitle": "World Impact Alliance",
                         "description": "WIA ist eine private Initiative, die Unternehmen, andere Organisationen, Medien und Experten zusammenbringt, um die größten Probleme (z.B. Umweltschutz) unserer Zeit zu adressieren."
+                    },
+                    "inndisus": {
+                        "altImg": "Inndisus",
+                        "title": "Inndisus",
+                        "subtitle": "Beratung",
+                        "description": "Wir unterstützen jeden, die Welt nachhaltig zu verändern."
                     }
                 }
             }
