@@ -662,6 +662,12 @@
                         "title": "pages.traction.partners.partner.wia.title",
                         "subtitle": "pages.traction.partners.partner.wia.subtitle",
                         "description": "pages.traction.partners.partner.wia.description"
+                    },
+                    "inndisus": {
+                        "altImg": "pages.traction.partners.partner.inndisus.altImg",
+                        "title": "pages.traction.partners.partner.inndisus.title",
+                        "subtitle": "pages.traction.partners.partner.inndisus.subtitle",
+                        "description": "pages.traction.partners.partner.inndisus.description"
                     }
                 }
             }
