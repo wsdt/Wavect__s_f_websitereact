@@ -668,6 +668,12 @@
                         "title": "Inndisus",
                         "subtitle": "Beratung",
                         "description": "Jeden dazu befähigen, die Welt nachhaltig zu verändern."
+                    },
+                    "businessfragen": {
+                        "altImg": "BusinessFragen",
+                        "title": "BusinessFragen",
+                        "subtitle": "Unternehmensberatung & Digitalisierung",
+                        "description": "BusinessFragen.com ist Ihr Partner in Sachen Business & Digitalisierung."
                     }
                 }
             }

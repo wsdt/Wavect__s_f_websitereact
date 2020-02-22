@@ -668,6 +668,12 @@
                         "title": "pages.traction.partners.partner.inndisus.title",
                         "subtitle": "pages.traction.partners.partner.inndisus.subtitle",
                         "description": "pages.traction.partners.partner.inndisus.description"
+                    },
+                    "businessfragen": {
+                        "altImg": "pages.traction.partners.partner.businessfragen.altImg",
+                        "title": "pages.traction.partners.partner.businessfragen.title",
+                        "subtitle": "pages.traction.partners.partner.businessfragen.subtitle",
+                        "description": "pages.traction.partners.partner.businessfragen.description"
                     }
                 }
             }

@@ -7,26 +7,26 @@ import {IPartnerProps} from './Partner.props'
 export const Partner = (props: IPartnerProps) => {
     const {t} = props
 
-    return <Col md="4" xs="8" className="ml-auto mr-auto text-center">
-        <Card className="card-profile card-plain">
-            <div className="card-avatar">
-                <a href={props.websiteUri} target="_blank" rel="noopener noreferrer">
+    return <Col md='4' xs='8' className='ml-auto mr-auto text-center'>
+        <Card className='card-profile card-plain'>
+            <div className='card-avatar'>
+                <a href={props.websiteUri} target='_blank' rel='noopener noreferrer'>
                     <GrayColorImg alt={t(props.altImg)} src={props.logoImg}/>
                 </a>
             </div>
             <CardBody>
-                <a href={props.websiteUri} target="_blank" rel="noopener noreferrer">
-                    <div className="author">
-                        <CardTitle tag="h4">{t(props.title)}</CardTitle>
-                        <h6 className="card-category">{t(props.subtitle)}</h6>
+                <a href={props.websiteUri} target='_blank' rel='noopener noreferrer'>
+                    <div className='author'>
+                        <CardTitle tag='h4'>{t(props.title)}</CardTitle>
+                        <h6 className='card-category'>{t(props.subtitle)}</h6>
                     </div>
                 </a>
-                <p className="card-description text-center">{t(props.description)} </p>
+                <p className='card-description text-center'>{t(props.description)} </p>
             </CardBody>
-            <CardFooter className="text-center">
-                <a href={props.websiteUri} target="_blank" rel="noopener noreferrer">
-                    <Button className="btn-just-icon btn-neutral" color="link">
-                        <i className="fa fa-link"/>
+            <CardFooter className='text-center'>
+                <a href={props.websiteUri} target='_blank' rel='noopener noreferrer'>
+                    <Button className='btn-just-icon btn-neutral' color='link'>
+                        <i className='fa fa-link'/>
                     </Button>
                 </a>
 
@@ -40,17 +40,25 @@ export const Partner = (props: IPartnerProps) => {
 const getSocialMedia = (props: IPartnerProps) => {
     const tsx = []
     if (props.facebookUri) {
-        tsx.push(<a href={props.facebookUri} target="_blank" rel="noopener noreferrer">
-            <Button className="btn-just-icon btn-neutral ml-1" color="link">
-                <i className="fa fa-facebook"/>
+        tsx.push(<a href={props.facebookUri} target='_blank' rel='noopener noreferrer'>
+            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                <i className='fa fa-facebook'/>
             </Button>
         </a>)
     }
 
     if (props.instagramUri) {
-        tsx.push(<a href={props.instagramUri} target="_blank" rel="noopener noreferrer">
-            <Button className="btn-just-icon btn-neutral ml-1" color="link">
-                <i className="fa fa-instagram"/>
+        tsx.push(<a href={props.instagramUri} target='_blank' rel='noopener noreferrer'>
+            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                <i className='fa fa-instagram'/>
+            </Button>
+        </a>)
+    }
+
+    if (props.linkedinUri) {
+        tsx.push(<a href={props.linkedinUri} target='_blank' rel='noopener noreferrer'>
+            <Button className='btn-just-icon btn-neutral ml-1' color='link'>
+                <i className='fa fa-linkedin'/>
             </Button>
         </a>)
     }

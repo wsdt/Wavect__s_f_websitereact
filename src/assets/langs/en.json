@@ -668,6 +668,12 @@
                         "title": "Inndisus",
                         "subtitle": "Consultancy",
                         "description": "Empowering everyone to sustainably disrupt the world."
+                    },
+                    "businessfragen": {
+                        "altImg": "BusinessFragen",
+                        "title": "BusinessFragen",
+                        "subtitle": "Consultancy & Digitalization",
+                        "description": "BusinessFragen.com is your partner in business and digitization."
                     }
                 }
             }

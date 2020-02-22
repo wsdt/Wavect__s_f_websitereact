@@ -8,4 +8,5 @@ export interface IPartnerProps {
     logoImg: string
     facebookUri?: string
     instagramUri?: string
+    linkedinUri?: string
 }
