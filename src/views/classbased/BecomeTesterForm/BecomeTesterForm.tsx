@@ -1,3 +1,14 @@
+import React from 'react'
+import {IBecomeTesterFormProps} from './BecomeTesterForm.props'
+
+const html:string = '<a class="typeform-share button" href="https://kevinriedl.typeform.com/to/A085SE" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#606060;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="3" target="_blank">Tester werden </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
+
+
+const BecomeTesterForm = (_props:IBecomeTesterFormProps) => {
+    return <span dangerouslySetInnerHTML={{__html: html}} />
+}
+
+/*
 import { ErrorMessage, Field, Form, Formik, FormikProps } from 'formik'
 import React, { PureComponent } from 'react'
 import { Alert, Button, Collapse, Input, InputGroup, InputGroupAddon } from 'reactstrap'
@@ -10,7 +21,9 @@ import { IBecomeTesterFormProps } from './BecomeTesterForm.props'
 import { IBecomeTesterFormState } from './BecomeTesterForm.state'
 import { craftValidationSchema } from './BecomeTesterForm.yup'
 
+
 const schema = _schema.pages.whyhow.intro.becometester
+
 
 class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTesterFormState> {
     public state: IBecomeTesterFormState = {
@@ -23,7 +36,7 @@ class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTest
 
     private initialFormValues: IFormInputs = {
         userMail: '',
-        wantsNewsletter: true,
+        wantsNewsletter: false,
     }
 
     public render() {
@@ -31,8 +44,7 @@ class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTest
             <Formik
                 initialValues={this.initialFormValues}
                 validationSchema={this.validationSchema}
-                onSubmit={(values, { setSubmitting }) => this.sendForm(values, setSubmitting)}
-            >
+                onSubmit={(values, { setSubmitting }) => this.sendForm(values, setSubmitting)}>
                 {(formikProps: FormikProps<IFormInputs>) => this.renderForm(formikProps)}
             </Formik>
         )
@@ -49,7 +61,7 @@ class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTest
                 <Field name={inputIds.userMail}>
                     {() => (
                         <InputGroup>
-                            <InputGroupAddon addonType="prepend" style={{ height: 45 }}>
+                            <InputGroupAddon addonType='prepend' style={{ height: 45 }}>
                                 @
                             </InputGroupAddon>
                             <Input
@@ -137,5 +149,5 @@ class BecomeTesterForm extends PureComponent<IBecomeTesterFormProps, IBecomeTest
         setSubmitting(false)
     }
 }
-
+*/
 export default BecomeTesterForm
