@@ -1,4 +1,4 @@
-# Wavect.io [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors) [![GitHub license](https://img.shields.io/github/license/wsdt/Wavect__s_f_websitereact.svg)](https://github.com/wsdt/Wavect__s_f_websitereact//blob/master/LICENSE) [![Generic badge](https://img.shields.io/badge/Made%20with-React-orange)](https://reactjs.org/)  [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://docker.com)
+# Wavect.io [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors) [![GitHub license](https://img.shields.io/github/license/wsdt/Wavect__s_f_websitereact.svg)](https://github.com/wsdt/Wavect__s_f_websitereact//blob/master/LICENSE) [![Generic badge](https://img.shields.io/badge/Made%20with-React-yellow)](https://reactjs.org/)  [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://docker.com)
 Simple website for Wavect.io
 
 
