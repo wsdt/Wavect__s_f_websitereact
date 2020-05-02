@@ -2,7 +2,7 @@
 Simple website for Wavect.io
 
 <img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Top.png" width="900"/>
-<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Middle.png" width="450"/> <img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Why_Top.PNG" width="450"/>
+<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Middle.png" width="450"/> <img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Why_Top.PNG" width="350"/>
 
 
 ## What was Wavect®? ("BeKind" from October 2018 - April 2019)
