@@ -1,9 +1,8 @@
 # Wavect.io [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors) [![GitHub license](https://img.shields.io/github/license/wsdt/Wavect__s_f_websitereact.svg)](https://github.com/wsdt/Wavect__s_f_websitereact//blob/master/LICENSE) [![Generic badge](https://img.shields.io/badge/Made%20with-React-yellow)](https://reactjs.org/)  [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://docker.com)
 Simple website for Wavect.io
 
-<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Top.png" width="800"/>
-<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Middle.png" width="400"/>
-<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Why_Top.PNG" width="400"/>
+<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Top.png" width="900"/>
+<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Middle.png" width="450"/> <img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Why_Top.PNG" width="450"/>
 
 
 ## What was Wavect®? ("BeKind" from October 2018 - April 2019)
