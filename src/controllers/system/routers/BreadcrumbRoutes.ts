@@ -9,7 +9,7 @@ export const breadCrumbHome: BreadcrumbRoute = new BreadcrumbRoute(
     pageSchema.landingPage.header.title,
     pageSchema.landingPage.header.description,
     'wavect,challenge,environment,social,health,home',
-    '/Wavect__s_f_websitereact/'
+    '/Wavect__s_f_websitereact'
 )
 export const breadCrumbWhy: BreadcrumbRoute = new BreadcrumbRoute(
     navSchema.whyhow.title,

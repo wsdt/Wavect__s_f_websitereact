@@ -32,11 +32,11 @@ import Impressum from '../../../views/pages/Impressum/Impressum'
 import LandingPage from '../../../views/pages/LandingPage/LandingPage'
 import Traction from '../../../views/pages/Traction/Traction'
 import WhyHow from '../../../views/pages/WhyHow/WhyHow'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 const CustomRouter = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route
                     exact={true}
@@ -79,7 +79,7 @@ const CustomRouter = () => {
 
                 <Redirect to="/" />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
