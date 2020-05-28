@@ -2,6 +2,7 @@
     "name": "s_f_website_paperkit",
     "version": "1.0.0",
     "private": true,
+    "homepage": "https://wsdt.github.io/wavect.io",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.26",
         "@fortawesome/free-brands-svg-icons": "^5.12.0",
@@ -30,8 +31,12 @@
         "yup": "^0.28.0"
     },
     "scripts": {
-        "start": "nps",
+        "start": "react-scripts start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
         "_postbuild": "react-snap",
         "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
         "compile-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
@@ -41,7 +46,6 @@
     "reactSnap": {
         "inlineCss": true
     },
-
     "eslintConfig": {
         "extends": "react-app"
     },
@@ -72,6 +76,7 @@
         "@types/react-share": "^3.0.3",
         "@types/reactstrap": "^8.2.0",
         "@types/yup": "^0.26.27",
+        "gh-pages": "^2.2.0",
         "husky": "^3.1.0",
         "jest": "^24.9.0",
         "nps": "^5.9.12",

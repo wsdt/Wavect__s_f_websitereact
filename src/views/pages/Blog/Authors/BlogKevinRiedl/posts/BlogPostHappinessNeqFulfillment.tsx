@@ -79,7 +79,7 @@ const BlogPostHappinessNeqFullfillment = (props: IBasePageProps) => {
                 journey as there is always room for improvement and progress.
             </P>
             <P>
-                One thing you could do today: Write three things down for what you are grateful for and ask yourself -> “Would I do what I do, when
+                One thing you could do today: Write three things down for what you are grateful for and ask yourself; “Would I do what I do, when
                 nobody is watching, I’m dying within a year or money would not be relevant?”
             </P>
 
