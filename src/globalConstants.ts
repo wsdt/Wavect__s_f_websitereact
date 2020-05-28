@@ -1,1 +1,1 @@
-export const HOST: string = 'https://wavect.io'
+export const HOST: string = 'https://wsdt.github.io'
