@@ -3,7 +3,7 @@ Simple website for Wavect.io - Client-Side-Rendered React.
 
 Design-Principle according to our **Corporate-Identity: Everything in Grayscale, on hover or interaction in color**.
 
-<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Top.png" width="450"/> <img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Why_Top.PNG" width="450"/>
+<img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Index_Top.png" width="400"/> <img src="https://github.com/wsdt/Wavect__s_f_websitereact/blob/master/Documentation/Why_Top.PNG" width="400"/>
 
 
 ## What was Wavect®? ("BeKind" from October 2018 - August 2020)
