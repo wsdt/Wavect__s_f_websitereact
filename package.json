@@ -13,7 +13,7 @@
         "html-react-parser": "^0.10.0",
         "moment": "2.24.0",
         "node-polyglot": "^2.4.0",
-        "node-sass": "^4.13.0",
+        "node-sass": "^7.0.0",
         "nouislider": "14.1.1",
         "nuka-carousel": "^4.6.0",
         "react": "16.12.0",
